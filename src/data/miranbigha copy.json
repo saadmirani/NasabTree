@@ -1,0 +1,594 @@
+{
+   "id": "p26",
+   "name": "Syed Wajahat Rasool Mirani",
+   "gender": "male",
+   "alive": false,
+   "dob": "Not known",
+   "dod": "1946",
+   "place": "Miran Bigha",
+   "about": "Youngest son of Miran Syed Ali Hussain. Participated in Khilafat Movement and Indian Freedom Struggle against British Raj.",
+   "burial": {
+      "place": "Miran Bigha",
+      "map": "https://maps.app.goo.gl/WhoeC5T5TsL2Cy9L8"
+   },
+   "spouse": {
+      "name": "Lateef-un-Nisa",
+      "fname": "Syed Mazhar Hussain",
+      "gender": "female",
+      "alive": false,
+      "dob": "Not Known",
+      "dod": "1958",
+      "place": "Hazaribagh",
+      "burial": {
+         "place": "Miran Bigha",
+         "map": "https://maps.app.goo.gl/WhoeC5T5TsL2Cy9L8"
+      },
+      "about": "Lawer by profession"
+   },
+   "children": [
+      {
+         "id": "p130",
+         "name": "Syed Wajahat Rasool Mirani",
+         "gender": "male",
+         "alive": false,
+         "dob": "Not known",
+         "dod": "1946",
+         "place": "Miran Bigha",
+         "about": "Youngest son of Miran Syed Ali Hussain. Participated in Khilafat Movement and Indian Freedom Struggle against British Raj.",
+         "burial": {
+            "place": "Miran Bigha",
+            "map": "https://maps.app.goo.gl/WhoeC5T5TsL2Cy9L8"
+         },
+         "spouse": {
+            "name": "Lateef-un-Nisa",
+            "fname": "Syed Mazhar Hussain",
+            "gender": "female",
+            "alive": false,
+            "dob": "Not Known",
+            "dod": "1958",
+            "place": "Hazaribagh",
+            "burial": {
+               "place": "Miran Bigha",
+               "map": "https://maps.app.goo.gl/WhoeC5T5TsL2Cy9L8"
+            },
+            "about": "Lawer by profession"
+         },
+         "children": [
+            {
+               "id": "p131",
+               "name": "Syed Khaleel Ashraf Mirani",
+               "gender": "male",
+               "alive": false,
+               "dob": "01/01/1907",
+               "dod": "04/01/1974",
+               "place": "Miran Bigha",
+               "about": "Worked in excise department, Baghmara,Dhanbad",
+               "spouse": {
+                  "name": "Bani-ur-Fatma",
+                  "fname": "Syed Mohammad Yaqoob Ashraf",
+                  "gender": "female",
+                  "alive": false,
+                  "dob": "Not Known",
+                  "dod": "Not Known",
+                  "place": "Bitho Shareef, Gaya",
+                  "burial": {
+                     "place": "Miran Bigha",
+                     "map": "https://maps.app.goo.gl/WhoeC5T5TsL2Cy9L8"
+                  },
+                  "about": null
+               },
+               "children": [
+                  {
+                     "id": "p132",
+                     "name": "Syed Mohammad Wakeel Akhtar",
+                     "gender": "male",
+                     "alive": true,
+                     "dob": "1944",
+                     "dod": null,
+                     "place": "Rajauli, Nawada",
+                     "about": "Teacher | Only son of Syed Khaleel Ashraf Mirani",
+                     "burial": null,
+                     "spouse": [
+                        {
+                           "name": "Shaheena Khatoon",
+                           "fname": "Syed Badruddin",
+                           "gender": "female",
+                           "alive": false,
+                           "dob": "Not Known",
+                           "dod": "Not Known",
+                           "place": "Bitho Shareef, Gaya",
+                           "burial": {
+                              "place": "Patna City, Shah ki Imli, Bihar",
+                              "map": "https://maps.app.goo.gl/JPYyzpfCJhtBfY7s8"
+                           },
+                           "about": "Syed Afroz, Tabassum, and Aarzoo are from first wife"
+                        },
+                        {
+                           "name": "Nafees Fatma/Ghuncha",
+                           "fname": "Hasan Murtaza",
+                           "gender": "female",
+                           "alive": true,
+                           "dob": "01/01/1960",
+                           "dod": null,
+                           "place": "Aurangabad, Bihar",
+                           "burial": null,
+                           "about": "Syed Naseh Akhtar is from second wife"
+                        }
+                     ],
+                     "children": [
+                        {
+                           "id": "p133",
+                           "name": "Syed Afroz Akhtar",
+                           "gender": "male",
+                           "alive": true,
+                           "dob": "29/10/1969",
+                           "dod": null,
+                           "place": "Jikatiya, Ahmadpur, Rafiganj",
+                           "burial": null,
+                           "about": "Businessman",
+                           "spouse": {
+                              "name": "Husn-e-Ara",
+                              "fname": "Syed Moqeed Haidar",
+                              "gender": "female",
+                              "alive": true,
+                              "dob": "11/09/1985",
+                              "dod": null,
+                              "place": "Ibrahimpur, Arwal",
+                              "burial": null,
+                              "about": "Not known"
+                           },
+                           "children": [
+                              {
+                                 "id": "p134",
+                                 "name": "Mosanna Afroz",
+                                 "gender": "male",
+                                 "alive": true,
+                                 "dob": "30/12/2002",
+                                 "dod": null,
+                                 "place": "Sherghati",
+                                 "burial": null,
+                                 "about": "Student",
+                                 "spouse": null,
+                                 "children": []
+                              },
+                              {
+                                 "id": "p135",
+                                 "name": "Tahseen Afroz",
+                                 "gender": "male",
+                                 "alive": true,
+                                 "dob": "10/07/2004",
+                                 "dod": null,
+                                 "place": "Sherghati",
+                                 "about": "None",
+                                 "burial": null,
+                                 "spouse": null,
+                                 "children": []
+                              }
+                           ]
+                        },
+                        {
+                           "id": "p136",
+                           "name": "Tabassum",
+                           "gender": "female",
+                           "alive": true,
+                           "dob": "Not Known",
+                           "dod": null,
+                           "place": "Sherghati",
+                           "about": "None",
+                           "burial": null,
+                           "spouse": null,
+                           "children": []
+                        },
+                        {
+                           "id": "p137",
+                           "name": "Aarzoo",
+                           "gender": "female",
+                           "alive": true,
+                           "dob": "Not Known",
+                           "dod": null,
+                           "place": "Sherghati",
+                           "burial": null,
+                           "about": "None",
+                           "spouse": null,
+                           "children": []
+                        },
+                        {
+                           "id": "p138",
+                           "name": "Syed Naseh Akhtar",
+                           "gender": "male",
+                           "alive": true,
+                           "dob": "1998",
+                           "dod": null,
+                           "place": "Sherghati",
+                           "burial": null,
+                           "about": "Student | Otherwise known as Shiroz",
+                           "spouse": null,
+                           "children": []
+                        }
+                     ]
+                  }
+               ]
+            },
+            {
+               "id": "p139",
+               "name": "Syed Mushtaque Rasool Mirani",
+               "gender": "male",
+               "alive": false,
+               "dob": "1914",
+               "dod": "1981",
+               "place": "Miran Bigha",
+               "about": "Pharmacist by profession. Second son of Miran Syed Ali Hussain",
+               "burial": {
+                  "place": "Miran Bigha",
+                  "map": "https://maps.app.goo.gl/WhoeC5T5TsL2Cy9L8"
+               },
+               "spouse": {
+                  "name": "Syeda Tahira Khatoon",
+                  "fname": "Syed Ahmad Kareem",
+                  "gender": "female",
+                  "alive": false,
+                  "dob": "1937",
+                  "dod": "2013",
+                  "place": "Ahmadpur, Rafiganj",
+                  "burial": {
+                     "place": "Miran Bigha",
+                     "map": "https://maps.app.goo.gl/WhoeC5T5TsL2Cy9L8"
+                  },
+                  "about": null
+               },
+               "children": [
+                  {
+                     "id": "p140",
+                     "name": "Syed Ghulam Sarwar Mirani",
+                     "gender": "male",
+                     "alive": true,
+                     "dob": "30/12/1951",
+                     "dod": null,
+                     "place": "Miran Bigha",
+                     "burial": null,
+                     "about": "Social Worker (RJD). Eldest son of Syed Mushtaque Rasool Mirani",
+                     "spouse": {
+                        "name": "Syeda Rasheeda Khatoon",
+                        "fname": "Syed Manzoor Ahmad",
+                        "gender": "female",
+                        "alive": true,
+                        "dob": "Not Known",
+                        "dod": null,
+                        "place": "Mograin, Gaya",
+                        "burial": null,
+                        "about": null
+                     },
+                     "children": [
+                        {
+                           "id": "p141",
+                           "name": "Faizan Rasool Mirani",
+                           "gender": "male",
+                           "alive": true,
+                           "dob": "04/01/1983",
+                           "dod": null,
+                           "place": "Sherghati",
+                           "burial": null,
+                           "about": "Businessman",
+                           "spouse": {
+                              "name": "Suraiyya Khatoon",
+                              "fname": "Syed Sagheer Hussain",
+                              "gender": "female",
+                              "alive": true,
+                              "dob": "02/01/1992",
+                              "dod": null,
+                              "place": "Maner, Gaya",
+                              "burial": null,
+                              "about": "Homemaker"
+                           },
+                           "children": [
+                              {
+                                 "id": "p142",
+                                 "name": "Afsheen Mirani",
+                                 "gender": "female",
+                                 "alive": true,
+                                 "dob": "Not Known",
+                                 "dod": null,
+                                 "place": "Gaya",
+                                 "burial": null,
+                                 "about": "Student",
+                                 "spouse": null,
+                                 "children": []
+                              }
+                           ]
+                        }
+                     ]
+                  },
+                  {
+                     "id": "p143",
+                     "name": "Miran Tajuddin Ashraf Quadri",
+                     "gender": "male",
+                     "alive": true,
+                     "dob": "05/09/1960",
+                     "dod": null,
+                     "place": "Gaya",
+                     "burial": null,
+                     "about": "Sajjada Khanqah Hazrat Syed Miran Bhik",
+                     "spouse": {
+                        "name": "Syeda Zakiya Usmani",
+                        "fname": "Syed Shah Mansoor Ahmad Usmani",
+                        "gender": "female",
+                        "alive": true,
+                        "dob": "Not Known",
+                        "dod": null,
+                        "place": "Deora, Osas, gaya",
+                        "burial": null,
+                        "about": null
+                     },
+                     "children": [
+                        {
+                           "id": "p144",
+                           "name": "Ummul Wara Mirani",
+                           "gender": "female",
+                           "alive": true,
+                           "dob": "Not Known",
+                           "dod": null,
+                           "place": "Gaya",
+                           "burial": null,
+                           "about": "Adopted Daughter of Miran Tajuddin Ashraf Quadri",
+                           "spouse": null,
+                           "children": []
+                        }
+                     ]
+                  }
+               ]
+            },
+            {
+               "id": "p145",
+               "name": "Syed Ashique Rasool Mirani",
+               "gender": "male",
+               "alive": false,
+               "dob": "Not known",
+               "dod": "23/03/1994",
+               "place": "Miran Bigha",
+               "about": "Jan Sevak (VLW) Sherghati Block. Youngest son of Miran Syed Wajahat Rasool",
+               "spouse": {
+                  "name": "Syeda Nafeesa Khatoon Usmani",
+                  "fname": "Syed Shah Muhammad Usmani Firdausi",
+                  "alive": false,
+                  "gender": "female",
+                  "dob": "Not Known",
+                  "dod": "Not Known",
+                  "place": "Simla",
+                  "burial": {
+                     "place": "Miran Bigha",
+                     "map": "https://maps.app.goo.gl/WhoeC5T5TsL2Cy9L8"
+                  },
+                  "about": null
+               },
+               "children": [
+                  {
+                     "id": "p146",
+                     "name": "Safdar Bakht Mirani",
+                     "gender": "male",
+                     "alive": true,
+                     "dob": "29/12/1958",
+                     "dod": null,
+                     "place": "Dinara, Rohtas",
+                     "about": "Lecturer by profession. Eldest son of Syed Ashique Rasool Mirani",
+                     "burial": null,
+                     "spouse": {
+                        "name": "Rahla Usmani",
+                        "fname": "Hakeem Jamal Aulia Usmani",
+                        "gender": "female",
+                        "alive": true,
+                        "dob": "1974",
+                        "dod": null,
+                        "place": "Hajipur, Rafiganj",
+                        "burial": null,
+                        "about": null
+                     },
+                     "children": [
+                        {
+                           "id": "p147",
+                           "name": "Samra Mirani",
+                           "gender": "female",
+                           "alive": true,
+                           "dob": "31/05/1997",
+                           "dod": null,
+                           "place": "Gaya",
+                           "burial": null,
+                           "about": "Homemaker",
+                           "spouse": {
+                              "name": "Syed Zohaib Ahmad",
+                              "fname": "Quazi Syed Sarwar Ahmad",
+                              "gender": "male",
+                              "alive": true,
+                              "dob": "27/11/1991",
+                              "dod": null,
+                              "place": "Sherghati Gaya",
+                              "burial": null,
+                              "about": "Civil Engineer by profession"
+                           },
+                           "children": []
+                        },
+                        {
+                           "id": "p148",
+                           "name": "Saad Ahmad Mirani",
+                           "gender": "male",
+                           "alive": true,
+                           "dob": "04/08/1998",
+                           "dod": null,
+                           "place": "Gaya",
+                           "about": "Engineer by profession",
+                           "burial": null,
+                           "spouse": null,
+                           "children": []
+                        },
+                        {
+                           "id": "p149",
+                           "name": "Sadiya Mirani",
+                           "gender": "female",
+                           "alive": true,
+                           "dob": "21/11/1999",
+                           "dod": null,
+                           "place": "Gaya",
+                           "burial": null,
+                           "about": "Student",
+                           "spouse": null,
+                           "children": []
+                        },
+                        {
+                           "id": "p150",
+                           "name": "Amash Mirani",
+                           "gender": "male",
+                           "alive": true,
+                           "dob": "31/01/2001",
+                           "dod": null,
+                           "place": "Gaya",
+                           "burial": null,
+                           "about": "Student",
+                           "spouse": null,
+                           "children": []
+                        }
+                     ]
+                  },
+                  {
+                     "id": "p151",
+                     "name": "Shabana Anjum",
+                     "gender": "female",
+                     "alive": true,
+                     "dob": "Not Known",
+                     "dod": null,
+                     "place": "Dinara, Rohtas",
+                     "about": "Teacher",
+                     "burial": null,
+                     "spouse": {
+                        "name": "Rasheed Ahmad Siddiqi",
+                        "fname": "Not Known",
+                        "gender": "male",
+                        "alive": true,
+                        "dob": "Not Known",
+                        "dod": null,
+                        "place": "Not Known",
+                        "burial": null,
+                        "about": null
+                     },
+                     "children": []
+                  },
+                  {
+                     "id": "p152",
+                     "name": "Talib Rasool Mirani",
+                     "gender": "male",
+                     "alive": true,
+                     "dob": "10/01/1971",
+                     "dod": null,
+                     "place": "Dinara, Rohtas",
+                     "about": "Businessman | Social Worker (AIMIM).",
+                     "burial": null,
+                     "spouse": {
+                        "name": "Tanzeela Khatoon",
+                        "fname": "Syed Amjad Kareem",
+                        "gender": "female",
+                        "alive": true,
+                        "dob": "10/11/1977",
+                        "dod": null,
+                        "place": "Ahmadpur, Rafiganj",
+                        "burial": null,
+                        "about": null
+                     },
+                     "children": [
+                        {
+                           "id": "p153",
+                           "name": "Zikra Mirani",
+                           "gender": "female",
+                           "alive": true,
+                           "dob": "30/08/2006",
+                           "dod": null,
+                           "place": "Gaya",
+                           "burial": null,
+                           "about": "Student",
+                           "spouse": null,
+                           "children": []
+                        }
+                     ]
+                  },
+                  {
+                     "id": "p154",
+                     "name": "Tauqeer Ashraf Mirani",
+                     "gender": "male",
+                     "alive": true,
+                     "dob": "08/02/1970",
+                     "dod": null,
+                     "place": "Dinara, Rohtas",
+                     "about": "Technician | Businessman",
+                     "burial": null,
+                     "spouse": [
+                        {
+                           "name": "Farhan Khatoon",
+                           "fname": "Syed Zeyauddin",
+                           "gender": "female",
+                           "alive": false,
+                           "dob": "01/01/1975",
+                           "dod": "25/03/2014",
+                           "place": "Peer Bigha, Chakand, Gaya",
+                           "burial": {
+                              "place": "Peer Bigha",
+                              "map": "https://maps.app.goo.gl/gmh316qUGtYhCQLTA"
+                           },
+                           "about": "All three children are from first wife, Hadiya, Haniya and Abdullah"
+                        },
+                        {
+                           "name": "Farhana Jabeen",
+                           "fname": "Nazahat Hussain",
+                           "gender": "female",
+                           "alive": true,
+                           "dob": "05/02/1994",
+                           "dod": null,
+                           "place": "Not Known",
+                           "burial": null,
+                           "about": null
+                        }
+                     ],
+                     "children": [
+                        {
+                           "id": "p155",
+                           "name": "Hadiya Ashraf Mirani",
+                           "gender": "female",
+                           "alive": true,
+                           "dob": "31/01/2001",
+                           "dod": null,
+                           "place": "Gaya",
+                           "burial": null,
+                           "about": "Student",
+                           "spouse": null,
+                           "children": []
+                        },
+                        {
+                           "id": "p156",
+                           "name": "Haniya Ashraf Mirani",
+                           "gender": "female",
+                           "alive": true,
+                           "dob": "22/08/2005",
+                           "dod": null,
+                           "place": "Gaya",
+                           "burial": null,
+                           "about": "Student",
+                           "spouse": null,
+                           "children": []
+                        },
+                        {
+                           "id": "p157",
+                           "name": "Abdullah Ashraf Mirani",
+                           "gender": "male",
+                           "alive": true,
+                           "dob": "05/09/2008",
+                           "dod": null,
+                           "place": "Gaya",
+                           "burial": null,
+                           "about": "Student",
+                           "spouse": null,
+                           "children": []
+                        }
+                     ]
+                  }
+               ]
+            }
+         ]
+      }
+   ]
+}

@@ -1,0 +1,773 @@
+{
+   "id": "p01",
+   "name": "Sayedna Hazrat Ali ibn Abi Talib R.A",
+   "gender": "male",
+   "alive": false,
+   "dob": "600 CE",
+   "dod": "661 CE",
+   "place": "Mecca, Hejaz, Saudi Arabia",
+   "about": "4th Caliph of Islam and 1st Imam in Shia Islam, cousin and son-in-law of Prophet Muhammad (PBUH).",
+   "burial": {
+      "place": "Najaf, Iraq",
+      "map": "https://geohack.toolforge.org/geohack.php?pagename=Imam_Ali_Shrine&params=31.9959_N_44.3146_E_region:IQ_type:landmark"
+   },
+   "spouse": {
+      "name": "Syeda Hazrat Fatma bint Muhammad R.A",
+      "fname": "Hazrat Muhammad bin Abdullah (PBUH)",
+      "gender": "female",
+      "alive": false,
+      "dob": "605 CE",
+      "dod": "632 CE",
+      "place": "Mecca, Hejaz, Saudi Arabia",
+      "burial": {
+         "place": "Madina, Saudi Arabia",
+         "map": "https://geohack.toolforge.org/geohack.php?pagename=Al-Baqi_Cemetery&params=24.4669_N_39.6164_E_type:landmark"
+      },
+      "about": "Daughter of Prophet Muhammad (PBUH) and Hazrat Khadija R.H, wife of Hazrat Ali R.A"
+   },
+   "children": [
+      {
+         "id": "p28",
+         "name": "Sayedna Hazrat Hasan ibn Ali R.A",
+         "gender": "male",
+         "alive": false,
+         "dob": "04/03/625 CE",
+         "dod": "05/03/670 CE",
+         "place": "Madina, Saudi Arabia",
+         "about": "2nd Imam of Shia Islam, son of Hazrat Ali R.A and Hazrat Fatma bint Muhammad R.A",
+         "burial": {
+            "place": "Madina, Saudi Arabia",
+            "map": "https://geohack.toolforge.org/geohack.php?pagename=Imam_Ali_Shrine&params=31.9959_N_44.3146_E_region:IQ_type:landmark"
+         },
+         "spouse": {
+            "name": "Syeda Hafsah bint Abdur Rahman R.A",
+            "fname": "Not Known",
+            "gender": "female",
+            "alive": false,
+            "dob": "Not Known",
+            "dod": "Not Known",
+            "place": "Not Known",
+            "burial": null,
+            "about": null
+         },
+         "children": [
+            {
+               "id": "p33",
+               "name": "Sayedna Imam Hasan al-Musanna R.A",
+               "gender": "male",
+               "alive": false,
+               "dob": "≈660-661 CE",
+               "dod": "≈715-716 CE",
+               "place": "Madina, Saudi Arabia",
+               "about": "One of the noble sons of Hazrat Hasan ibn Ali R.A. An important figure of the lineage of Imam Hasan continued after Karbala. He's one of the few male descendants of Imam Hasand who survived karbala due to the intervention of his maternal relatives from Banu Fazara",
+               "burial": {
+                  "place": "Jannat al Baqi, Madina, Saudi Arabia",
+                  "map": "https://geohack.toolforge.org/geohack.php?pagename=Imam_Ali_Shrine&params=31.9959_N_44.3146_E_region:IQ_type:landmark"
+               },
+               "spouse": {
+                  "name": "Syeda Hazrat Fatima bint Hussain R.A",
+                  "fname": "Syedna Hazrat Hussain ibn Ali R.A",
+                  "gender": "female",
+                  "alive": false,
+                  "dob": "≈665 CE",
+                  "dod": "≈728-735 CE",
+                  "place": "Madina, Saudi Arabia",
+                  "burial": null,
+                  "about": "She was one of the prominent figure present at the tragedy of Karbala and taken as part of the captives to Kufa and Damascus, and later returned to Madina."
+               },
+               "children": [
+                  {
+                     "id": "p34",
+                     "name": "Sayedna Imam Hasan al-Musanna R.A",
+                     "gender": "male",
+                     "alive": false,
+                     "dob": "≈660-661 CE",
+                     "dod": "≈715-716 CE",
+                     "place": "Madina, Saudi Arabia",
+                     "about": "One of the noble sons of Hazrat Hasan ibn Ali R.A. An important figure of the lineage of Imam Hasan continued after Karbala. He's one of the few male descendants of Imam Hasand who survived karbala due to the intervention of his maternal relatives from Banu Fazara",
+                     "burial": {
+                        "place": "Jannat al Baqi, Madina, Saudi Arabia",
+                        "map": "https://geohack.toolforge.org/geohack.php?pagename=Imam_Ali_Shrine&params=31.9959_N_44.3146_E_region:IQ_type:landmark"
+                     },
+                     "spouse": {
+                        "name": "Syeda Hazrat Fatima bint Hussain R.A",
+                        "fname": "Syedna Hazrat Hussain ibn Ali R.A",
+                        "gender": "female",
+                        "alive": false,
+                        "dob": "≈665 CE",
+                        "dod": "≈728-735 CE",
+                        "place": "Madina, Saudi Arabia",
+                        "burial": null,
+                        "about": "She was one of the prominent figure present at the tragedy of Karbala and taken as part of the captives to Kufa and Damascus, and later returned to Madina."
+                     },
+                     "children": [
+                        {
+                           "id": "p35",
+                           "name": "Syedna Abdullah Al-Mahz R.H",
+                           "gender": "male",
+                           "alive": false,
+                           "dob": "≈689 CE",
+                           "dod": "≈762 CE",
+                           "place": "Madina, Saudi Arabia",
+                           "about": "Otherwise known as Abdullah al-Kamil and Abdullah al-Akbar. He's known for his piety, leadership and being father of Muhammad al-Nafz al-Zakiyya and Idris (Founder of the Idrisi dynasty in Morocco). He died in 762 CE in improsonment under the Abbasid caliph al-Mansur.",
+                           "burial": {
+                              "place": "Madina, Saudi Arabia",
+                              "map": "https://geohack.toolforge.org/geohack.php?pagename=Imam_Ali_Shrine&params=31.9959_N_44.3146_E_region:IQ_type:landmark"
+                           },
+                           "spouse": {
+                              "name": "Hazrat Hind bint Abi Ubayda",
+                              "fname": "Hazrat Abi Ubayda R.A",
+                              "gender": "female",
+                              "alive": false,
+                              "dob": "Not Known",
+                              "dod": "Not Known",
+                              "place": "Madina, Saudi Arabia",
+                              "burial": null,
+                              "about": "Most commonly mentioned wife of Abdullah al-Mahz in Syed lineage."
+                           },
+                           "children": [
+                              {
+                                 "id": "p40",
+                                 "name": "Syedna Moosa al-jawn R.H",
+                                 "gender": "male",
+                                 "alive": false,
+                                 "dob": "Not Known",
+                                 "dod": "≈170 AH (Doubtful)",
+                                 "place": "Madina, Saudi Arabia",
+                                 "about": "Al-Jawn means dark/olive complexion. Given as laqab probably.",
+                                 "burial": {
+                                    "place": "Madina, Saudi Arabia (reported)",
+                                    "map": null
+                                 },
+                                 "spouse": null,
+                                 "children": [
+                                    {
+                                       "id": "p41",
+                                       "name": "Syedna Hazrat Abdullah/ Abdullah Saani R.H",
+                                       "gender": "male",
+                                       "alive": false,
+                                       "dob": "Not Known",
+                                       "dod": "Not Known",
+                                       "place": "Madina, Saudi Arabia",
+                                       "about": "Not Known",
+                                       "burial": {
+                                          "place": "Hijaz region (reported)",
+                                          "map": null
+                                       },
+                                       "spouse": null,
+                                       "children": [
+                                          {
+                                             "id": "p42",
+                                             "name": "Syedna Hazrat Moosa bin Abdullah R.H",
+                                             "gender": "male",
+                                             "alive": false,
+                                             "dob": "Not Known",
+                                             "dod": "Not Known",
+                                             "place": "Madina, Saudi Arabia",
+                                             "about": "Not Known",
+                                             "burial": {
+                                                "place": "Hijaz/ Iraq (reported)",
+                                                "map": null
+                                             },
+                                             "spouse": null,
+                                             "children": [
+                                                {
+                                                   "id": "p43",
+                                                   "name": "Syedna Hazrat Dawood R.H",
+                                                   "gender": "male",
+                                                   "alive": false,
+                                                   "dob": "Not Known",
+                                                   "dod": "Not Known",
+                                                   "place": "Unknown",
+                                                   "about": "Not Known",
+                                                   "burial": null,
+                                                   "spouse": null,
+                                                   "children": [
+                                                      {
+                                                         "id": "p44",
+                                                         "name": "Syedna Hazrat Muhammad R.H",
+                                                         "gender": "male",
+                                                         "alive": false,
+                                                         "dob": "Not Known",
+                                                         "dod": "Not Known",
+                                                         "place": "Iraq",
+                                                         "about": "Not Known",
+                                                         "burial": null,
+                                                         "spouse": null,
+                                                         "children": [
+                                                            {
+                                                               "id": "p45",
+                                                               "name": "Syedna Hazrat Abi Abdullah R.H",
+                                                               "gender": "male",
+                                                               "alive": false,
+                                                               "dob": "Not Known",
+                                                               "dod": "Not Known",
+                                                               "place": "Iraq",
+                                                               "about": "Known for being father of Abu Musa Salih or otherwise known as Moosa jangi dost.",
+                                                               "burial": {
+                                                                  "place": "Iraq",
+                                                                  "map": null
+                                                               },
+                                                               "spouse": null,
+                                                               "children": [
+                                                                  {
+                                                                     "id": "p46",
+                                                                     "name": "Syedna Hazrat Abu Saleh Moosa al-Hasani R.H",
+                                                                     "gender": "male",
+                                                                     "alive": false,
+                                                                     "dob": "Not Known",
+                                                                     "dod": "5th century AH",
+                                                                     "place": "Jilan",
+                                                                     "about": "Otherwise known as Abu saleh Jilani/ Moosa jangi dost al-Hasani.",
+                                                                     "burial": {
+                                                                        "place": "Jilan region (reported)",
+                                                                        "map": null
+                                                                     },
+                                                                     "spouse": {
+                                                                        "name": "Syedna Umm al-Khair Fatima R.H",
+                                                                        "fname": "Not Known",
+                                                                        "gender": "female",
+                                                                        "alive": false,
+                                                                        "dob": "Not Known",
+                                                                        "dod": "Not Known",
+                                                                        "place": "Not Known",
+                                                                        "burial": null,
+                                                                        "about": null
+                                                                     },
+                                                                     "children": [
+                                                                        {
+                                                                           "id": "p47",
+                                                                           "name": "Syedna Shaikh Abdul Qadir al-Jilani R.H",
+                                                                           "gender": "male",
+                                                                           "alive": false,
+                                                                           "dob": "1077 CE",
+                                                                           "dod": "1166 CE",
+                                                                           "place": "Jilan, Iran",
+                                                                           "about": "Not Known",
+                                                                           "burial": {
+                                                                              "place": "Baghdad, Iraq",
+                                                                              "map": null
+                                                                           },
+                                                                           "spouse": null,
+                                                                           "children": [
+                                                                              {
+                                                                                 "id": "p48",
+                                                                                 "name": "Hazrat Sheikh Abdur Razzaq R.H",
+                                                                                 "gender": "male",
+                                                                                 "alive": false,
+                                                                                 "dob": "520 AH",
+                                                                                 "dod": "603 AH",
+                                                                                 "place": "Baghdad, Iraq",
+                                                                                 "about": "Not Known",
+                                                                                 "burial": {
+                                                                                    "place": "Hijaz/ Iraq (reported)",
+                                                                                    "map": null
+                                                                                 },
+                                                                                 "spouse": null,
+                                                                                 "children": [
+                                                                                    {
+                                                                                       "id": "p57",
+                                                                                       "name": "Hazrat Sheikh Abul Qasim Abdul Raheem R.H",
+                                                                                       "gender": "male",
+                                                                                       "alive": false,
+                                                                                       "dob": "530 AH",
+                                                                                       "dod": "606 AH",
+                                                                                       "place": "Baghdad, Iraq",
+                                                                                       "about": "Known with multiple other names in different Shajras like Karam allah qadri, kareemullah qadri, abdul wahid qadri etc.",
+                                                                                       "burial": null,
+                                                                                       "spouse": null,
+                                                                                       "children": [
+                                                                                          {
+                                                                                             "id": "p70",
+                                                                                             "name": "Hazrat Sheikh Abdul Jaleel Qadri R.H",
+                                                                                             "gender": "male",
+                                                                                             "alive": false,
+                                                                                             "dob": "Not Known",
+                                                                                             "dod": "Not Known",
+                                                                                             "place": "Not Known",
+                                                                                             "about": "Not Known",
+                                                                                             "burial": null,
+                                                                                             "spouse": null,
+                                                                                             "children": [
+                                                                                                {
+                                                                                                   "id": "p71",
+                                                                                                   "name": "Hazrat Sheikh Abdul Hayi Qadri R.H",
+                                                                                                   "gender": "male",
+                                                                                                   "alive": false,
+                                                                                                   "dob": "Not Known",
+                                                                                                   "dod": "Not Known",
+                                                                                                   "place": "Not Known",
+                                                                                                   "about": "Not Known",
+                                                                                                   "burial": null,
+                                                                                                   "spouse": null,
+                                                                                                   "children": [
+                                                                                                      {
+                                                                                                         "id": "p72",
+                                                                                                         "name": "Hazrat Sheikh Abdul Lateef Qadri R.H",
+                                                                                                         "gender": "male",
+                                                                                                         "alive": false,
+                                                                                                         "dob": "Not Known",
+                                                                                                         "dod": "Not Known",
+                                                                                                         "place": "Not Known",
+                                                                                                         "about": "Not Known",
+                                                                                                         "burial": null,
+                                                                                                         "spouse": null,
+                                                                                                         "children": [
+                                                                                                            {
+                                                                                                               "id": "p73",
+                                                                                                               "name": "Hazrat Sheikh Abdur Rahman Qadri R.H",
+                                                                                                               "gender": "male",
+                                                                                                               "alive": false,
+                                                                                                               "dob": "Not Known",
+                                                                                                               "dod": "Not Known",
+                                                                                                               "place": "Not Known",
+                                                                                                               "about": "Not Known",
+                                                                                                               "burial": null,
+                                                                                                               "spouse": null,
+                                                                                                               "children": []
+                                                                                                            }
+                                                                                                         ]
+                                                                                                      }
+                                                                                                   ]
+                                                                                                }
+                                                                                             ]
+                                                                                          }
+                                                                                       ]
+                                                                                    },
+                                                                                    {
+                                                                                       "id": "p58",
+                                                                                       "name": "Hazrat Sheikh Syed Abu Saleh Nasr R.H",
+                                                                                       "gender": "male",
+                                                                                       "alive": false,
+                                                                                       "dob": "534 AH",
+                                                                                       "dod": "632 AH",
+                                                                                       "place": "Baghdad, Iraq",
+                                                                                       "about": "Known with multiple other names (alqaab) such as Abu Saleh Jilani, Nasr Jilani, Nasr al-Hasani, Nasr al-Hasani al-Jilani etc.",
+                                                                                       "burial": null,
+                                                                                       "spouse": null,
+                                                                                       "children": []
+                                                                                    },
+                                                                                    {
+                                                                                       "id": "p59",
+                                                                                       "name": "Hazrat Sheikh Syed Fazlullah R.H",
+                                                                                       "gender": "male",
+                                                                                       "alive": false,
+                                                                                       "dob": "Not Known",
+                                                                                       "dod": "606 AH",
+                                                                                       "place": "Baghdad, Iraq",
+                                                                                       "about": "Not Known",
+                                                                                       "burial": null,
+                                                                                       "spouse": null,
+                                                                                       "children": []
+                                                                                    },
+                                                                                    {
+                                                                                       "id": "p60",
+                                                                                       "name": "Hazrat Sheikh Syed Suleman R.H",
+                                                                                       "gender": "male",
+                                                                                       "alive": false,
+                                                                                       "dob": "553 AH",
+                                                                                       "dod": "611 AH",
+                                                                                       "place": "Baghdad, Iraq",
+                                                                                       "about": "Not Known",
+                                                                                       "burial": null,
+                                                                                       "spouse": null,
+                                                                                       "children": []
+                                                                                    }
+                                                                                 ]
+                                                                              },
+                                                                              {
+                                                                                 "id": "p49",
+                                                                                 "name": "Hazrat Sheikh Syed Abdullah R.H",
+                                                                                 "gender": "male",
+                                                                                 "alive": false,
+                                                                                 "dob": "508 AH",
+                                                                                 "dod": "Not Known",
+                                                                                 "place": "Baghdad, Iraq",
+                                                                                 "about": "Not Known",
+                                                                                 "burial": null,
+                                                                                 "spouse": null,
+                                                                                 "children": []
+                                                                              },
+                                                                              {
+                                                                                 "id": "p50",
+                                                                                 "name": "Hazrat Sheikh Syed Abdul Wahaab R.H",
+                                                                                 "gender": "male",
+                                                                                 "alive": false,
+                                                                                 "dob": "522 AH",
+                                                                                 "dod": "593 AH",
+                                                                                 "place": "Baghdad, Iraq",
+                                                                                 "about": "Not Known",
+                                                                                 "burial": null,
+                                                                                 "spouse": null,
+                                                                                 "children": [
+                                                                                    {
+                                                                                       "id": "p74",
+                                                                                       "name": "Hazrat Sheikh Abdus Salaam Qadri R.H",
+                                                                                       "gender": "male",
+                                                                                       "alive": false,
+                                                                                       "dob": "548 AH",
+                                                                                       "dod": "613 AH",
+                                                                                       "place": "Not Known",
+                                                                                       "about": "Not Known",
+                                                                                       "burial": null,
+                                                                                       "spouse": null,
+                                                                                       "children": [
+                                                                                          {
+                                                                                             "id": "p61",
+                                                                                             "name": "Hazrat Sheikh Safiuddin R.H",
+                                                                                             "gender": "male",
+                                                                                             "alive": false,
+                                                                                             "dob": "Not Known",
+                                                                                             "dod": "Not Known",
+                                                                                             "place": "Not Known",
+                                                                                             "about": "Not Known",
+                                                                                             "burial": null,
+                                                                                             "spouse": null,
+                                                                                             "children": [
+                                                                                                {
+                                                                                                   "id": "p62",
+                                                                                                   "name": "Hazrat Sheikh Ahmad Qadri R.H",
+                                                                                                   "gender": "male",
+                                                                                                   "alive": false,
+                                                                                                   "dob": "Not Known",
+                                                                                                   "dod": "Not Known",
+                                                                                                   "place": "Not Known",
+                                                                                                   "about": "Not Known",
+                                                                                                   "burial": null,
+                                                                                                   "spouse": null,
+                                                                                                   "children": [
+                                                                                                      {
+                                                                                                         "id": "p63",
+                                                                                                         "name": "Hazrat Sheikh Masood Qadri R.H",
+                                                                                                         "gender": "male",
+                                                                                                         "alive": false,
+                                                                                                         "dob": "Not Known",
+                                                                                                         "dod": "Not Known",
+                                                                                                         "place": "Not Known",
+                                                                                                         "about": "Not Known",
+                                                                                                         "burial": null,
+                                                                                                         "spouse": null,
+                                                                                                         "children": [
+                                                                                                            {
+                                                                                                               "id": "p64",
+                                                                                                               "name": "Hazrat Sheikh Ali Qadri R.H",
+                                                                                                               "gender": "male",
+                                                                                                               "alive": false,
+                                                                                                               "dob": "Not Known",
+                                                                                                               "dod": "Not Known",
+                                                                                                               "place": "Not Known",
+                                                                                                               "about": "Not Known",
+                                                                                                               "burial": null,
+                                                                                                               "spouse": null,
+                                                                                                               "children": []
+                                                                                                            }
+                                                                                                         ]
+                                                                                                      }
+                                                                                                   ]
+                                                                                                }
+                                                                                             ]
+                                                                                          }
+                                                                                       ]
+                                                                                    }
+                                                                                 ]
+                                                                              },
+                                                                              {
+                                                                                 "id": "p51",
+                                                                                 "name": "Hazrat Sheikh Abu-bakr Abdul Azeez R.H",
+                                                                                 "gender": "male",
+                                                                                 "alive": false,
+                                                                                 "dob": "532 AH",
+                                                                                 "dod": "602 AH",
+                                                                                 "place": "Baghdad, Iraq",
+                                                                                 "about": "Not Known",
+                                                                                 "burial": null,
+                                                                                 "spouse": null,
+                                                                                 "children": [
+                                                                                    {
+                                                                                       "id": "p52",
+                                                                                       "name": "Hazrat Sheikh Muhammad Qadri R.H",
+                                                                                       "gender": "male",
+                                                                                       "alive": false,
+                                                                                       "dob": "Not Known",
+                                                                                       "dod": "Not Known",
+                                                                                       "place": "Not Known",
+                                                                                       "about": "Not Known",
+                                                                                       "burial": null,
+                                                                                       "spouse": null,
+                                                                                       "children": [
+                                                                                          {
+                                                                                             "id": "p64",
+                                                                                             "name": "Hazrat Sheikh Ali Qadri R.H",
+                                                                                             "gender": "male",
+                                                                                             "alive": false,
+                                                                                             "dob": "Not Known",
+                                                                                             "dod": "Not Known",
+                                                                                             "place": "Not Known",
+                                                                                             "about": "Not Known",
+                                                                                             "burial": null,
+                                                                                             "spouse": null,
+                                                                                             "children": []
+                                                                                          }
+                                                                                       ]
+                                                                                    }
+                                                                                 ]
+                                                                              },
+                                                                              {
+                                                                                 "id": "p51",
+                                                                                 "name": "Hazrat Sheikh Syed Moosa R.H",
+                                                                                 "gender": "male",
+                                                                                 "alive": false,
+                                                                                 "dob": "535 AH",
+                                                                                 "dod": "618 AH",
+                                                                                 "place": "Baghdad, Iraq",
+                                                                                 "about": "Not Known",
+                                                                                 "burial": null,
+                                                                                 "spouse": null,
+                                                                                 "children": []
+                                                                              },
+                                                                              {
+                                                                                 "id": "p52",
+                                                                                 "name": "Hazrat Sheikh Syed Isa R.H",
+                                                                                 "gender": "male",
+                                                                                 "alive": false,
+                                                                                 "dob": "Not Known",
+                                                                                 "dod": "573 AH",
+                                                                                 "place": "Baghdad, Iraq",
+                                                                                 "about": "Not Known",
+                                                                                 "burial": null,
+                                                                                 "spouse": null,
+                                                                                 "children": []
+                                                                              },
+                                                                              {
+                                                                                 "id": "p53",
+                                                                                 "name": "Hazrat Sheikh Syed Abdul Jabbar R.H",
+                                                                                 "gender": "male",
+                                                                                 "alive": false,
+                                                                                 "dob": "Not Known",
+                                                                                 "dod": "575 AH",
+                                                                                 "place": "Baghdad, Iraq",
+                                                                                 "about": "Not Known",
+                                                                                 "burial": null,
+                                                                                 "spouse": null,
+                                                                                 "children": []
+                                                                              },
+                                                                              {
+                                                                                 "id": "p54",
+                                                                                 "name": "Hazrat Sheikh Syed Ibraheem R.H",
+                                                                                 "gender": "male",
+                                                                                 "alive": false,
+                                                                                 "dob": "Not Known",
+                                                                                 "dod": "592 AH",
+                                                                                 "place": "Baghdad, Iraq",
+                                                                                 "about": "Not Known",
+                                                                                 "burial": null,
+                                                                                 "spouse": null,
+                                                                                 "children": []
+                                                                              },
+                                                                              {
+                                                                                 "id": "p55",
+                                                                                 "name": "Hazrat Sheikh Mohammad R.H",
+                                                                                 "gender": "male",
+                                                                                 "alive": false,
+                                                                                 "dob": "Not Known",
+                                                                                 "dod": "600 AH",
+                                                                                 "place": "Baghdad, Iraq",
+                                                                                 "about": "Not Known",
+                                                                                 "burial": null,
+                                                                                 "spouse": null,
+                                                                                 "children": []
+                                                                              },
+                                                                              {
+                                                                                 "id": "p56",
+                                                                                 "name": "Hazrat Sheikh Syed Yahya R.H",
+                                                                                 "gender": "male",
+                                                                                 "alive": false,
+                                                                                 "dob": "550 AH",
+                                                                                 "dod": "600 AH",
+                                                                                 "place": "Baghdad, Iraq",
+                                                                                 "about": "Not Known",
+                                                                                 "burial": null,
+                                                                                 "spouse": null,
+                                                                                 "children": []
+                                                                              }
+                                                                           ]
+                                                                        }
+                                                                     ]
+                                                                  }
+                                                               ]
+                                                            }
+                                                         ]
+                                                      }
+                                                   ]
+                                                }
+                                             ]
+                                          }
+                                       ]
+                                    }
+                                 ]
+                              }
+                           ]
+                        },
+                        {
+                           "id": "p36",
+                           "name": "Syedna Hazrat Ibrahim",
+                           "gender": "male",
+                           "alive": false,
+                           "dob": "Not Known",
+                           "dod": "Young age",
+                           "place": "Madina, Saudi Arabia",
+                           "about": "He's Mentioned in several genealogies but little biographical details survives about him.",
+                           "burial": {
+                              "place": "Madina, Saudi Arabia",
+                              "map": "https://geohack.toolforge.org/geohack.php?pagename=Imam_Ali_Shrine&params=31.9959_N_44.3146_E_region:IQ_type:landmark"
+                           },
+                           "spouse": null,
+                           "children": []
+                        },
+                        {
+                           "id": "p37",
+                           "name": "Syedna Hazrat Hasan al-Musallas",
+                           "gender": "male",
+                           "alive": false,
+                           "dob": "Not Known",
+                           "dod": "≈145 AH",
+                           "place": "Madina, Saudi Arabia",
+                           "about": "Many Sayyad family trace their lineage back to him.",
+                           "burial": {
+                              "place": "Madina, Saudi Arabia",
+                              "map": "https://geohack.toolforge.org/geohack.php?pagename=Imam_Ali_Shrine&params=31.9959_N_44.3146_E_region:IQ_type:landmark"
+                           },
+                           "spouse": null,
+                           "children": []
+                        },
+                        {
+                           "id": "p38",
+                           "name": "Hazrat Zaynab bint al-Musanna",
+                           "gender": "female",
+                           "alive": false,
+                           "dob": "Not Known",
+                           "dod": "Not Known",
+                           "place": "Madina, Saudi Arabia",
+                           "about": "He's Mentioned in several genealogies but little biographical details survives about him.",
+                           "burial": {
+                              "place": "Madina, Saudi Arabia (reported)",
+                              "map": "https://geohack.toolforge.org/geohack.php?pagename=Imam_Ali_Shrine&params=31.9959_N_44.3146_E_region:IQ_type:landmark"
+                           },
+                           "spouse": null,
+                           "children": []
+                        },
+                        {
+                           "id": "p39",
+                           "name": "Hazrat Fatimah bint al-Musanna",
+                           "gender": "female",
+                           "alive": false,
+                           "dob": "Not Known",
+                           "dod": "Young age",
+                           "place": "Madina, Saudi Arabia",
+                           "about": "Not Known",
+                           "burial": {
+                              "place": "Madina, Saudi Arabia",
+                              "map": "https://geohack.toolforge.org/geohack.php?pagename=Imam_Ali_Shrine&params=31.9959_N_44.3146_E_region:IQ_type:landmark"
+                           },
+                           "spouse": null,
+                           "children": []
+                        }
+                     ]
+                  }
+               ]
+            }
+         ]
+      },
+      {
+         "id": "p29",
+         "name": "Sayedna Hazrat Hussain ibn Ali R.A",
+         "gender": "male",
+         "alive": false,
+         "dob": "11/01/626 CE",
+         "dod": "10/10/680 CE",
+         "place": "Madina, Saudi Arabia",
+         "about": "3rd Imam of Shia Islam, son of Hazrat Ali R.A and Hazrat Fatma bint Muhammad R.A",
+         "burial": {
+            "place": "Karbala, Iraq",
+            "map": null
+         },
+         "spouse": {
+            "name": "Not Known",
+            "fname": "Not Known",
+            "gender": "female",
+            "alive": false,
+            "dob": "Not Known",
+            "dod": "Not Known",
+            "place": "Not Known",
+            "burial": null,
+            "about": null
+         },
+         "children": []
+      },
+      {
+         "id": "p30",
+         "name": "Sayedna Hazrat Zaynab bint Ali R.A",
+         "gender": "female",
+         "alive": false,
+         "dob": "626 CE",
+         "dod": "682 CE",
+         "place": "Madina, Saudi Arabia",
+         "about": "Daughter of Hazrat Ali R.A and Hazrat Fatma bint Muhammad R.A",
+         "burial": {
+            "place": "Damascus or Cairo, Egypt",
+            "map": null
+         },
+         "spouse": {
+            "name": "Syed Abd Allah ibn ja'ffar R.A",
+            "fname": "Hazrat Ja'ffar ibn Abi Talib al Hashimi R.A",
+            "gender": "male",
+            "alive": false,
+            "dob": "Not Known",
+            "dod": "Not Known",
+            "place": "Not Known",
+            "burial": null,
+            "about": "N/A"
+         },
+         "children": []
+      },
+      {
+         "id": "p31",
+         "name": "Sayedna Hazrat Umm Kulsoom bint Ali R.A",
+         "gender": "female",
+         "alive": false,
+         "dob": "≈627 CE",
+         "dod": "≈680 CE",
+         "place": "Madina, Saudi Arabia",
+         "about": "Daughter of Hazrat Ali R.A and Hazrat Fatma bint Muhammad R.A",
+         "burial": {
+            "place": "Jannat al Baqi, Madina, Saudi Arabia",
+            "map": "https://geohack.toolforge.org/geohack.php?pagename=Al-Baqi_Cemetery&params=24.4669_N_39.6164_E_type:landmark"
+         },
+         "spouse": {
+            "name": "Not Known",
+            "fname": "Not Known",
+            "gender": "female",
+            "alive": false,
+            "dob": "Not Known",
+            "dod": "Not Known",
+            "place": "Not Known",
+            "burial": null,
+            "about": "N/A"
+         },
+         "children": []
+      },
+      {
+         "id": "p32",
+         "name": "Sayedna Hazrat Mohsin ibn Ali R.A",
+         "gender": "male",
+         "alive": false,
+         "dob": "Infant",
+         "dod": "Infant",
+         "place": "N/A",
+         "about": "Muhsin ibn Ali, also spelled Mohsin, was the youngest son of Fatima bint Muhammad and Ali ibn Abi Talib, and thus a maternal grandson of the Islamic prophet Muhammad. He was a brother of Husayn and Hasan. Controversy surrounds the fate of Muhsin as some canonical Shia sources report that Muhsin died in miscarriage, following a raid on Fatima's house led by Umar, a companion of Muhammad (PBUH). Alternatively, Sunnis hold that Muhsin died in infancy of natural causes.",
+         "burial": null,
+         "spouse": null,
+         "children": []
+      }
+   ]
+}

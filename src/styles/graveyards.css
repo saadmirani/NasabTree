@@ -1,0 +1,85 @@
+.graveyards-container {
+   display: flex;
+   gap: 20px;
+   padding: 24px;
+}
+
+.graveyard-list {
+   width: 260px;
+   background: rgba(255, 255, 255, 0.03);
+   padding: 16px;
+   border-radius: 8px;
+   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+.graveyard-list h3 {
+   margin-top: 0;
+   margin-bottom: 8px
+}
+
+.graveyard-list ul {
+   list-style: none;
+   padding: 0;
+   margin: 8px 0
+}
+
+.graveyard-list li {
+   padding: 8px 10px;
+   border-radius: 6px;
+   cursor: pointer
+}
+
+.graveyard-list li:hover {
+   background: rgba(255, 255, 255, 0.04)
+}
+
+.graveyard-list li.active {
+   background: linear-gradient(90deg, #F6D365, #F59E0B);
+   color: #222;
+   font-weight: 600
+}
+
+.instructions {
+   font-size: 0.9em;
+   margin-top: 12px;
+   color: rgba(255, 255, 255, 0.8)
+}
+
+.instructions ol {
+   padding-left: 18px
+}
+
+.graveyard-view {
+   flex: 1
+}
+
+.graveyard-view h2 {
+   margin: 0 0 6px 0
+}
+
+.graveyard-view .desc {
+   margin: 0 0 12px 0;
+   color: rgba(255, 255, 255, 0.85)
+}
+
+.viewer-wrap {
+   background: rgba(255, 255, 255, 0.03);
+   border-radius: 8px;
+   padding: 12px
+}
+
+.placeholder {
+   padding: 40px;
+   text-align: center;
+   color: rgba(255, 255, 255, 0.6)
+}
+
+@media(max-width:900px) {
+   .graveyards-container {
+      flex-direction: column
+   }
+
+   .graveyard-list {
+      width: 100%
+   }
+}

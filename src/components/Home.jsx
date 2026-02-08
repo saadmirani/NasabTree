@@ -1,0 +1,154 @@
+import React from "react";
+import "../styles/home.css";
+
+export default function Home() {
+   return (
+      <div className="home-container">
+         {/* Hero Section */}
+         <section className="hero">
+            <div className="hero-content">
+               <h1>Aal-e-Soofiya Akraam | آلِ صوفیاء کرام</h1>
+               <p className="subtitle">Preserving the Legacy of Sufi Saints and Their Genealogy</p>
+               <p className="tagline">Connecting generations through history, spirituality, and heritage</p>
+            </div>
+         </section>
+
+         {/* Purpose Section */}
+         <section className="section purpose-section">
+            <h2>Our Mission</h2>
+            <div className="cards-grid">
+               <div className="card">
+                  <div className="card-icon">📚</div>
+                  <h3>Preserve History</h3>
+                  <p>
+                     Retain the rich history, teachings, and spiritual legacy of Sufi saints
+                     for generations to come.
+                  </p>
+               </div>
+               <div className="card">
+                  <div className="card-icon">🌳</div>
+                  <h3>Genealogy Exploration</h3>
+                  <p>
+                     Explore detailed family lineages and understand the connections within
+                     the Saadat community.
+                  </p>
+               </div>
+               <div className="card">
+                  <div className="card-icon">💭</div>
+                  <h3>Spiritual Connection</h3>
+                  <p>
+                     Keep the feelings, wisdom, and spiritual influence of our ancestors alive
+                     in our hearts and minds.
+                  </p>
+               </div>
+            </div>
+         </section>
+
+         {/* Current Focus Section */}
+         <section className="section focus-section">
+            <h2>Current Focus</h2>
+            <div className="focus-content">
+               <div className="focus-text">
+                  <h3>Saadat-e-Miran Bigha Tekari</h3>
+                  <p>
+                     We are currently dedicated to documenting and preserving the genealogy
+                     of <strong>Saadat-e-Miran Bigha Tekari</strong>, a significant center
+                     of spiritual and scholarly heritage in Bihar.
+                  </p>
+                  <p>
+                     This genealogy project is the birthplace of the developer, <strong>Saad Ahmad Mirani</strong>,
+                     who is committed to bringing this legacy to a global audience through this
+                     interactive digital platform.
+                  </p>
+               </div>
+            </div>
+         </section>
+
+         {/* Future Plans Section */}
+         <section className="section future-section">
+            <h2>What's Coming Next</h2>
+            <div className="timeline">
+               <div className="timeline-item">
+                  <div className="timeline-dot"></div>
+                  <div className="timeline-content">
+                     <h3>Expanding Genealogies</h3>
+                     <p>
+                        We will soon be adding more genealogies from other Saadat communities across
+                        Bihar and beyond, creating a comprehensive digital archive.
+                     </p>
+                  </div>
+               </div>
+               <div className="timeline-item">
+                  <div className="timeline-dot"></div>
+                  <div className="timeline-content">
+                     <h3>Digital Library</h3>
+                     <p>
+                        A collection of books related to <strong>Saadat-e-Bihar</strong> and other
+                        historical texts—many not yet transcribed or easily accessible—will be available here.
+                     </p>
+                  </div>
+               </div>
+               <div className="timeline-item">
+                  <div className="timeline-dot"></div>
+                  <div className="timeline-content">
+                     <h3>Qabristan (Graveyard) Mapping</h3>
+                     <p>
+                        Explore and view the sacred graveyards where Sufi saints are buried.
+                        A visual guide to honor their resting places and their contributions to spirituality.
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         {/* Features Section */}
+         <section className="section features-section">
+            <h2>Available Features</h2>
+            <div className="features-grid">
+               <div className="feature-item">
+                  <span className="feature-icon">🔍</span>
+                  <h4>Interactive Family Trees</h4>
+                  <p>Explore detailed genealogies with zoom, pan, and node information.</p>
+               </div>
+               <div className="feature-item">
+                  <span className="feature-icon">🗺️</span>
+                  <h4>Graveyard Locations</h4>
+                  <p>View and locate sacred burial sites of our Sufi saints.</p>
+               </div>
+               <div className="feature-item">
+                  <span className="feature-icon">📖</span>
+                  <h4>Historical Records</h4>
+                  <p>Access detailed biographical information and historical context.</p>
+               </div>
+               <div className="feature-item">
+                  <span className="feature-icon">👥</span>
+                  <h4>Community Heritage</h4>
+                  <p>Discover your connection to the greater Saadat community.</p>
+               </div>
+            </div>
+         </section>
+
+         {/* Call to Action Section */}
+         <section className="section cta-section">
+            <h2>Explore the Genealogy</h2>
+            <p>
+               Select a Silsila from the left menu to begin your journey through the family trees
+               and discover the rich heritage of our ancestors.
+            </p>
+            <p className="cta-hint">
+               💡 <em>Click on any person in the tree to view their detailed biographical information.</em>
+            </p>
+         </section>
+
+         {/* Footer Section */}
+         <section className="section footer-section">
+            <p className="footer-text">
+               Built with devotion to preserve the legacy of Sufi saints and their genealogies.
+            </p>
+            <p className="footer-credit">
+               Developed by <strong>Saad Ahmad Mirani</strong>
+            </p>
+         </section>
+      </div>
+   );
+}

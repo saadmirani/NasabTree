@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState, useCallback, memo } from "react";
 import * as d3 from "d3";
 import miranBighaData from "../data/miranbigha.json";
 import "../styles/tree.css";
@@ -18,7 +18,7 @@ export default function NasabMiranBigha() {
       drawTree();
    }, []);
 
-   const handleNodeClick = (d, event) => {
+   const handleNodeClick = useCallback((d, event) => {
       event.stopPropagation();
       const rect = svgRef.current.getBoundingClientRect();
       let x = event.pageX - rect.left;
@@ -37,10 +37,10 @@ export default function NasabMiranBigha() {
 
       setPopupPos({ x, y });
       setSelectedNode(d.data);
-   };
+   }, []);
 
    // Focus a node by id (re-uses tree layout stored in rootRef)
-   const focusNodeById = (id) => {
+   const focusNodeById = useCallback((id) => {
       const svg = d3.select(svgRef.current);
       const root = rootRef.current;
       if (!root) return;
@@ -53,7 +53,7 @@ export default function NasabMiranBigha() {
       const ty = height / 2 - node.y * s;
       const zoom = zoomRef.current || d3.zoom();
       svg.transition().duration(750).call(zoom.transform, d3.zoomIdentity.translate(tx, ty).scale(s));
-   };
+   }, []);
 
    const shortName = (full) => {
       if (!full) return "";
@@ -61,7 +61,7 @@ export default function NasabMiranBigha() {
       return parts.slice(0, 2).join(" ");
    };
 
-   const onQueryChange = (q) => {
+   const onQueryChange = useCallback((q) => {
       setQuery(q);
       if (!q || q.trim().length === 0) {
          setSuggestions([]);
@@ -70,15 +70,15 @@ export default function NasabMiranBigha() {
       const ql = q.toLowerCase();
       const matches = peopleRef.current.filter((p) => (p.name || "").toLowerCase().includes(ql) || (p.fname || "").toLowerCase().includes(ql));
       setSuggestions(matches.slice(0, 10));
-   };
+   }, []);
 
-   const onSelectSuggestion = (item) => {
+   const onSelectSuggestion = useCallback((item) => {
       setQuery("");
       setSuggestions([]);
       if (item && item.focusId) focusNodeById(item.focusId);
-   };
+   }, [focusNodeById]);
 
-   const drawTree = () => {
+   const drawTree = useCallback(() => {
       const width = window.innerWidth - 280;
       const height = window.innerHeight - 140;
 
@@ -256,7 +256,7 @@ export default function NasabMiranBigha() {
       svg.on("dblclick", () => {
          svg.transition().duration(750).call(zoom.transform, d3.zoomIdentity);
       });
-   };
+   }, [handleNodeClick]);
 
    return (
       <div className="tree-container" onClick={() => setSelectedNode(null)}>
@@ -328,7 +328,7 @@ export default function NasabMiranBigha() {
 }
 
 // Detail Popup Component
-function DetailPopup({ data, position, onClose }) {
+const DetailPopup = memo(function DetailPopup({ data, position, onClose }) {
    return (
       <div
          className="detail-popup"
@@ -373,10 +373,10 @@ function DetailPopup({ data, position, onClose }) {
          </div>
       </div>
    );
-}
+});
 
 // Spouse Section Component
-function SpouseSection({ spouse, personGender }) {
+const SpouseSection = memo(function SpouseSection({ spouse, personGender }) {
    const relation = personGender === "male" ? "D/O" : "S/O";
 
    return (
@@ -401,4 +401,4 @@ function SpouseSection({ spouse, personGender }) {
          )}
       </div>
    );
-}
+});

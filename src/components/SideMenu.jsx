@@ -74,7 +74,7 @@ export default function SideMenu({ section, setSection }) {
                      onClick={() => setSection("miranbigha")}
                   >
                      <span className="icon"><NasabIcon /></span>
-                     <span className="label">Silsila Miran Bigha</span>
+                     <span className="label">Qasba Miran Bigha</span>
                   </button>
 
                   <button
@@ -82,7 +82,7 @@ export default function SideMenu({ section, setSection }) {
                      onClick={() => setSection("simla")}
                   >
                      <span className="icon"><NasabIcon /></span>
-                     <span className="label">Silsila Simla</span>
+                     <span className="label">Qasba Simla</span>
                   </button>
 
                   <button
@@ -90,7 +90,7 @@ export default function SideMenu({ section, setSection }) {
                      onClick={() => setSection("deora")}
                   >
                      <span className="icon"><NasabIcon /></span>
-                     <span className="label">Silsila Deora</span>
+                     <span className="label">Qasba Deora</span>
                   </button>
                </div>
             )}

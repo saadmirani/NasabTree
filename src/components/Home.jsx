@@ -49,15 +49,17 @@ export default function Home() {
             <h2>Current Focus</h2>
             <div className="focus-content">
                <div className="focus-text">
-                  <h3>Saadat-e-Miran Bigha Tekari</h3>
+                  <h3>Saadat Genealogies</h3>
                   <p>
-                     We are currently dedicated to documenting and preserving the genealogy
-                     of <strong>Saadat-e-Miran Bigha Tekari</strong>, a significant center
-                     of spiritual and scholarly heritage in Bihar.
+                     We are dedicated to documenting and preserving the genealogies of
+                     multiple Saadat communities, including <strong>Saadat-e-Miran Bigha Tekari</strong>,
+                     <strong>Saadat-e-Simla</strong>, and <strong>Saadat-e-Deora</strong> — significant centers
+                     of spiritual and scholarly heritage across Bihar.
                   </p>
                   <p>
-                     This genealogy project is the birthplace of the developer, <strong>Saad Ahmad Mirani</strong>,
-                     who is committed to bringing this legacy to a global audience through this
+                     Starting with <strong>Saadat-e-Miran Bigha Tekari</strong>, the birthplace of the developer
+                     <strong>Saad Ahmad Mirani</strong>, we are committed to expanding this legacy and bringing
+                     the genealogies of other Saadat communities to a global audience through this
                      interactive digital platform.
                   </p>
                </div>

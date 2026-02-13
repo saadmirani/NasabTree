@@ -173,3 +173,29 @@
    border-radius: 3px;
    letter-spacing: 0.5px;
 }
+
+/* Urdu Language Support */
+.sidemenu.urdu {
+   direction: rtl;
+}
+
+.sidemenu.urdu .menu-item,
+.sidemenu.urdu .submenu-item {
+   font-family: "Noto Nastaliq Urdu", "Jameel Noori Nastaleeq", serif;
+   text-align: right;
+   direction: rtl;
+}
+
+.sidemenu.urdu .icon {
+   order: 2;
+   margin-right: auto;
+   margin-left: 0;
+}
+
+.sidemenu.urdu .label {
+   order: 1;
+}
+
+.sidemenu.urdu .submenu-arrow {
+   order: 3;
+}

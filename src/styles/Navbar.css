@@ -4,8 +4,15 @@
    color: #fff;
    display: flex;
    align-items: center;
+   justify-content: space-between;
    padding: 0 24px;
    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.navbar-left {
+   display: flex;
+   align-items: center;
+   gap: 12px;
 }
 
 .navbar-title {
@@ -27,4 +34,97 @@
 
 .navbar .navbar-logo {
    background: transparent;
+}
+
+/* Language Toggle */
+.language-toggle {
+   display: flex;
+   align-items: center;
+}
+
+.lang-toggle {
+   position: relative;
+   width: 120px;
+   /* slightly wider */
+   height: 38px;
+
+   padding: 3px;
+   /* important fix */
+
+   border-radius: 20px;
+   border: 1px solid rgba(255, 255, 255, 0.35);
+
+   background: rgba(255, 255, 255, 0.15);
+   backdrop-filter: blur(6px);
+
+   cursor: pointer;
+
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+
+   font-size: 13px;
+   font-weight: 600;
+   color: #fff;
+
+   overflow: hidden;
+   transition: all 0.3s ease;
+
+   outline: none;
+   /* remove weird border */
+}
+
+/* Labels */
+.toggle-label {
+   width: 50%;
+   text-align: center;
+   z-index: 2;
+   transition: color 0.3s ease;
+}
+
+.toggle-label.ur {
+   font-family: "Noto Nastaliq Urdu", "Jameel Noori Nastaleeq", serif;
+   font-size: 13px;
+}
+
+/* Sliding Background */
+.toggle-slider {
+   position: absolute;
+   top: 3px;
+   left: 3px;
+
+   width: calc(50% - 3px);
+   /* fix width */
+   height: calc(100% - 6px);
+
+   background: #ffffff;
+   border-radius: 16px;
+
+   transition: transform 0.3s ease;
+   z-index: 1;
+}
+
+/* When Urdu is active */
+.lang-toggle.ur .toggle-slider {
+   transform: translateX(100%);
+}
+
+/* Text color change depending on active */
+.lang-toggle.en .toggle-label.en {
+   color: #1e3c72;
+}
+
+.lang-toggle.ur .toggle-label.ur {
+   color: #1e3c72;
+}
+
+/* Hover effect */
+.lang-toggle:hover {
+   background: rgba(255, 255, 255, 0.25);
+}
+
+.lang-toggle:focus,
+.lang-toggle:focus-visible {
+   outline: none;
+   box-shadow: none;
 }

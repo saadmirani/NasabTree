@@ -24,7 +24,7 @@ export default function ContactUs() {
                   <h3>Email</h3>
                   <p>
                      <a href="mailto:saadahmadmirani2026@gmail.com" className="contact-link">
-                        saadahmadmirani2026@gmail.com
+                        ahmadmirani2026@gmail.com
                      </a>
                   </p>
                </div>
@@ -45,9 +45,9 @@ export default function ContactUs() {
 
                <div className="location-card">
                   <div className="location-icon">🕌</div>
-                  <h3>Khanqah Miran Bigha Tekari</h3>
+                  <h3>Khanqah Miran Bheek</h3>
                   <p className="location-address">
-                     Miran Bigha Tekari<br />
+                     Miran Bigha, Tekari<br />
                      Gaya, Bihar<br />
                      India
                   </p>

@@ -174,28 +174,55 @@
    }
 }
 
-.popup-close {
+.detail-popup>.popup-close {
    position: absolute;
-   top: 12px;
-   right: 12px;
-   width: 28px;
-   height: 28px;
-   background: rgba(255, 255, 255, 0.1);
+   top: 14px;
+   right: 14px;
+
+   width: 36px;
+   height: 36px;
+
+   padding: 0;
    border: none;
-   border-radius: 6px;
+   border-radius: 10px;
+
+   background: rgba(255, 255, 255, 0.08);
+   backdrop-filter: blur(6px);
+
    color: #ffffff;
-   font-size: 24px;
-   cursor: pointer;
+   font-size: 20px;
+   font-weight: 600;
+   line-height: 1;
+
    display: flex;
    align-items: center;
    justify-content: center;
-   transition: background 0.2s ease;
-   flex-shrink: 0;
+
+   cursor: pointer;
+   transition: all 0.25s ease;
+
+   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+
+   outline: none;
    z-index: 1001;
 }
 
-.popup-close:hover {
-   background: rgba(255, 255, 255, 0.2);
+/* Hover */
+.detail-popup>.popup-close:hover {
+   background: #ffffff;
+   color: #dc2626;
+   box-shadow: 0 6px 14px rgba(0, 0, 0, 0.30);
+}
+
+/* Click */
+.detail-popup>.popup-close:active {
+   transform: scale(0.96);
+   /* subtle press only */
+}
+
+/* Clean keyboard focus */
+.detail-popup>.popup-close:focus-visible {
+   box-shadow: 0 0 0 2px #ffffff, 0 0 0 5px #dc2626;
 }
 
 .popup-section {
@@ -401,6 +428,34 @@
 
 .search-suggestions strong {
    color: #0f172a;
+}
+
+/* Shajra Download Button */
+.shajra-download-btn {
+   width: 100%;
+   padding: 8px 12px;
+   background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+   color: #ffffff;
+   border: none;
+   border-radius: 8px;
+   font-size: 13px;
+   font-weight: 600;
+   cursor: pointer;
+   transition: all 0.2s ease;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 8px;
+}
+
+.shajra-download-btn:hover {
+   background: linear-gradient(135deg, #16a34a 0%, #15803d 100%);
+   transform: translateY(-2px);
+   box-shadow: 0 8px 16px rgba(34, 197, 94, 0.3);
+}
+
+.shajra-download-btn:active {
+   transform: translateY(0);
 }
 
 .suggest-fname {

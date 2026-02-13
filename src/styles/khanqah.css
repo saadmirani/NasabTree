@@ -1,0 +1,300 @@
+/* Khanqah List Container */
+.khanqah-container {
+   display: flex;
+   flex-direction: column;
+   height: 100vh;
+   padding: 0;
+   max-width: 100%;
+   margin: 0;
+}
+
+.khanqah-section {
+   display: flex;
+   flex-direction: column;
+   height: 100%;
+   padding: 0;
+}
+
+.khanqah-section h1 {
+   font-size: 28px;
+   font-weight: 700;
+   color: #1f2937;
+   margin: 0;
+   padding: 20px 20px 12px 20px;
+   border-bottom: 3px solid #22c55e;
+   flex-shrink: 0;
+   position: sticky;
+   top: 0;
+   z-index: 100;
+   background: white;
+   margin-bottom: 12px;
+}
+
+/* Search Input */
+.khanqah-search {
+   padding: 16px 20px;
+   display: flex;
+   gap: 12px;
+   flex-shrink: 0;
+   position: sticky;
+   top: 76px;
+   z-index: 100;
+   background: white;
+   border-bottom: 1px solid #e5e7eb;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.search-input {
+   flex: 1;
+   padding: 12px 16px;
+   border: 2px solid #e5e7eb;
+   border-radius: 8px;
+   font-size: 14px;
+   transition: all 0.2s ease;
+   font-family: inherit;
+}
+
+.search-input:focus {
+   outline: none;
+   border-color: #22c55e;
+   box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.1);
+}
+
+/* Khanqah Cards Grid */
+.khanqah-cards-grid {
+   display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+   gap: 16px;
+   padding: 16px 20px;
+   overflow-y: scroll;
+   flex: 1;
+   min-height: 0;
+   scroll-padding-top: 140px;
+}
+
+.khanqah-card {
+   background: white;
+   border-radius: 12px;
+   padding: 12px;
+   border: 1px solid #e5e7eb;
+   cursor: pointer;
+   transition: all 0.3s ease;
+   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+   display: flex;
+   flex-direction: column;
+   gap: 6px;
+   height: auto;
+}
+
+.khanqah-card:hover {
+   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+   border-color: #22c55e;
+}
+
+.khanqah-card-info {
+   display: flex;
+   flex-direction: column;
+   gap: 4px;
+}
+
+.khanqah-location,
+.khanqah-order,
+.khanqah-sajjada {
+   font-size: 12px;
+   color: #6b7280;
+   margin: 0;
+   display: flex;
+   align-items: center;
+   gap: 6px;
+}
+
+.khanqah-location .icon,
+.khanqah-order .icon,
+.khanqah-sajjada .icon {
+   font-size: 16px;
+}
+
+.no-results {
+   grid-column: 1 / -1;
+   text-align: center;
+   color: #9ca3af;
+   padding: 40px 20px;
+   font-size: 16px;
+   font-style: italic;
+}
+
+/* Khanqah Popup */
+.khanqah-popup-overlay {
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background: rgba(0, 0, 0, 0.5);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   z-index: 2000;
+   padding: 20px;
+}
+
+.khanqah-popup {
+   background: white;
+   border-radius: 16px;
+   max-width: 600px;
+   width: 100%;
+   max-height: 85vh;
+   overflow-y: auto;
+   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+   position: relative;
+}
+
+.khanqah-popup-content {
+   padding: 28px;
+}
+
+.khanqah-popup h2 {
+   font-size: 22px;
+   font-weight: 700;
+   color: #111827;
+   margin-bottom: 8px;
+}
+
+.khanqah-details {
+   margin: 20px 0;
+}
+
+.detail-row {
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-start;
+   padding: 12px 0;
+   border-bottom: 1px solid #e5e7eb;
+   font-size: 13px;
+   gap: 16px;
+}
+
+.detail-row:last-of-type {
+   border-bottom: none;
+}
+
+.detail-row strong {
+   color: #374151;
+   font-weight: 600;
+   min-width: 160px;
+   flex-shrink: 0;
+}
+
+.detail-row span {
+   color: #6b7280;
+   text-align: right;
+   flex: 1;
+}
+
+.detail-row a {
+   color: #22c55e;
+   text-decoration: none;
+   font-weight: 600;
+   transition: color 0.2s ease;
+}
+
+.detail-row a:hover {
+   color: #16a34a;
+   text-decoration: underline;
+}
+
+.map-link {
+   color: #22c55e;
+   text-decoration: none;
+   font-weight: 600;
+   transition: all 0.2s ease;
+   display: inline-flex;
+   align-items: center;
+   gap: 8px;
+}
+
+.map-link:hover {
+   color: #16a34a;
+   text-decoration: underline;
+}
+
+.khanqah-description {
+   margin-top: 20px;
+   padding-top: 20px;
+   border-top: 2px solid #e5e7eb;
+}
+
+.khanqah-description h3 {
+   font-size: 16px;
+   font-weight: 700;
+   color: #111827;
+   margin-bottom: 12px;
+}
+
+.khanqah-description p {
+   color: #6b7280;
+   line-height: 1.6;
+   font-size: 13px;
+}
+
+.popupbtn-close {
+   position: absolute;
+   top: 16px;
+   right: 16px;
+   width: 36px;
+   height: 36px;
+   background: #ffffff;
+   border: 1px solid #000000;
+   border-radius: 6px;
+   font-size: 20px;
+   cursor: pointer;
+   transition: all 0.16s ease;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.popupbtn-close:hover {
+   background: #fa1919;
+   color: #ffffff;
+   border: 1px solid #ff0000;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+   .khanqah-container {
+      padding: 0;
+   }
+
+   .khanqah-section h1 {
+      padding: 12px 12px 8px 12px;
+      margin-bottom: 8px;
+   }
+
+   .khanqah-search {
+      padding: 12px 12px;
+      top: 64px;
+   }
+
+   .khanqah-cards-grid {
+      grid-template-columns: 1fr;
+      padding: 12px;
+   }
+
+   .khanqah-popup {
+      max-width: 90vw;
+   }
+
+   .detail-row {
+      flex-direction: column;
+      gap: 8px;
+   }
+
+   .detail-row strong {
+      min-width: auto;
+   }
+
+   .detail-row span {
+      text-align: left;
+   }
+}

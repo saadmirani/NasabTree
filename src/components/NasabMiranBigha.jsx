@@ -302,6 +302,7 @@ export default function NasabMiranBigha() {
                data={selectedNode}
                position={popupPos}
                onClose={() => setSelectedNode(null)}
+               rootRef={rootRef}
             />
          )}
 
@@ -328,7 +329,50 @@ export default function NasabMiranBigha() {
 }
 
 // Detail Popup Component
-const DetailPopup = memo(function DetailPopup({ data, position, onClose }) {
+const DetailPopup = memo(function DetailPopup({ data, position, onClose, rootRef }) {
+   const generateAndDownloadShajra = useCallback(() => {
+      if (!rootRef.current || !data.id) return;
+
+      // Find the node in the tree by ID
+      const findNodeById = (node, id) => {
+         if (node.data.id === id) return node;
+         if (node.children) {
+            for (let child of node.children) {
+               const found = findNodeById(child, id);
+               if (found) return found;
+            }
+         }
+         return null;
+      };
+
+      const node = findNodeById(rootRef.current, data.id);
+      if (!node) return;
+
+      // Trace back to root
+      const chain = [];
+      let current = node;
+      while (current) {
+         chain.unshift(current.data); // Add to beginning
+         current = current.parent;
+      }
+
+      // Generate text
+      let text = `Shajra-e-Nasb ${data.name}\n\n`;
+      chain.forEach((person, index) => {
+         text += `${index + 1}. ${person.name}\n`;
+      });
+
+      // Download file
+      const element = document.createElement('a');
+      const file = new Blob([text], { type: 'text/plain' });
+      element.href = URL.createObjectURL(file);
+      element.download = `Shajra_${data.name.replace(/\s+/g, '_')}.txt`;
+      document.body.appendChild(element);
+      element.click();
+      document.body.removeChild(element);
+      URL.revokeObjectURL(element.href);
+   }, [data, rootRef]);
+
    return (
       <div
          className="detail-popup"
@@ -370,6 +414,14 @@ const DetailPopup = memo(function DetailPopup({ data, position, onClose }) {
                   )}
                </>
             )}
+
+            {/* Shajra Download Section */}
+            <div className="popup-divider"></div>
+            <div className="popup-section">
+               <button className="shajra-download-btn" onClick={generateAndDownloadShajra}>
+                  📥 Generate Shajra (This Person)
+               </button>
+            </div>
          </div>
       </div>
    );

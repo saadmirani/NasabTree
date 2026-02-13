@@ -7,7 +7,10 @@ export default function Home() {
          {/* Hero Section */}
          <section className="hero">
             <div className="hero-content">
-               <h1>Aal-e-Soofiya Akraam | آلِ صوفیاء کرام</h1>
+               <h1>
+                  Aal-e-Soofiya Akraam |
+                  <span className="urdu-title"> آلِ صوفیاء کرام</span>
+               </h1>
                <p className="subtitle">Preserving the Legacy of Sufi Saints and Their Genealogy</p>
                <p className="tagline">Connecting generations through history, spirituality, and heritage</p>
             </div>

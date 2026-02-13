@@ -1,4 +1,6 @@
 import React from "react";
+import { useLanguage } from "../context/LanguageContext";
+import { t } from "../translations";
 import "../styles/Sidemenu.css";
 
 const HomeIcon = () => (
@@ -43,6 +45,18 @@ const ContactIcon = () => (
    </svg>
 );
 
+const CalendarIcon = () => (
+   <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden>
+      <path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11z" />
+   </svg>
+);
+
+const MosqueIcon = () => (
+   <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden>
+      <path d="M12 2L4 6v8h2v6h12v-6h2V6l-8-4zm0 3l5 2.5V10h-2v4h-6v-4H7V7.5l5-2.5zm-3 10h2v4h2v-4h2v4h2v-4h1v6H6v-6z" />
+   </svg>
+);
+
 export default function SideMenu({ section, setSection }) {
    const [showSilsilas, setShowSilsilas] = React.useState(false);
 
@@ -63,7 +77,7 @@ export default function SideMenu({ section, setSection }) {
                onClick={() => setShowSilsilas(!showSilsilas)}
             >
                <span className="icon"><NasabIcon /></span>
-               <span className="label">Silsilas</span>
+               <span className="label">Shajra-e-Saadaat</span>
                <span className={`submenu-arrow ${showSilsilas ? "open" : ""}`}>▼</span>
             </button>
 
@@ -102,6 +116,22 @@ export default function SideMenu({ section, setSection }) {
          >
             <span className="icon"><BooksIcon /></span>
             <span className="label">Books</span>
+         </button>
+
+         <button
+            className={`menu-item ${section === "urs" ? "active" : ""}`}
+            onClick={() => setSection("urs")}
+         >
+            <span className="icon"><CalendarIcon /></span>
+            <span className="label">Urs Calendar</span>
+         </button>
+
+         <button
+            className={`menu-item ${section === "khanqah" ? "active" : ""}`}
+            onClick={() => setSection("khanqah")}
+         >
+            <span className="icon"><MosqueIcon /></span>
+            <span className="label">Khanqah List</span>
          </button>
 
          <button

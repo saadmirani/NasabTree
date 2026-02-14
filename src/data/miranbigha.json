@@ -357,68 +357,77 @@
                                                                                                    "spouse": null,
                                                                                                    "children": [
                                                                                                       {
-                                                                                                         "id": "p49",
-                                                                                                         "name": "Hazrat Miran Syed Muhammad Qadri R.H",
+                                                                                                         "id": "p50",
+                                                                                                         "name": "Hazrat Miran Syed Shah Ahmad Qadri R.H",
                                                                                                          "gender": "male",
                                                                                                          "alive": false,
                                                                                                          "dob": "Not Known",
                                                                                                          "dod": "Not Known",
                                                                                                          "place": "Not Known",
-                                                                                                         "about": "Not Known",
+                                                                                                         "about": "He came to Bihar and settled in Gaya District. Details about his life are under research. He got burried in Gaya district at a place called Mira Peth. Multiple graves are present at the site and research is going on.",
                                                                                                          "burial": null,
                                                                                                          "spouse": null,
                                                                                                          "children": [
                                                                                                             {
-                                                                                                               "id": "p50",
-                                                                                                               "name": "Hazrat Miran Syed Shah Ahmad Qadri R.H",
+                                                                                                               "id": "p51",
+                                                                                                               "name": "Hazrat Miran Syed Shah Qutb Alam Urf Bheeka Qadri R.H",
                                                                                                                "gender": "male",
                                                                                                                "alive": false,
                                                                                                                "dob": "Not Known",
                                                                                                                "dod": "Not Known",
                                                                                                                "place": "Not Known",
-                                                                                                               "about": "He came to Bihar and settled in Gaya District. Details about his life are under research. He got burried in Gaya district at a place called Mira Peth. Multiple graves are present at the site and research is going on.",
-                                                                                                               "burial": null,
+                                                                                                               "about": "He got settled in near by village named Miran Bigha, Tekari its old name was saidpura. His shrine is located in Miran Bigha, Tekari. Urs is celebrated every year on 12th of Zul Hijja.",
+                                                                                                               "burial": {
+                                                                                                                  "place": "Miran Bigha",
+                                                                                                                  "map": "https://maps.app.goo.gl/WhoeC5T5TsL2Cy9L8"
+                                                                                                               },
                                                                                                                "spouse": null,
                                                                                                                "children": [
                                                                                                                   {
-                                                                                                                     "id": "p51",
-                                                                                                                     "name": "Hazrat Miran Syed Shah Qutb Alam Urf Bheeka Qadri R.H",
+                                                                                                                     "id": "p53",
+                                                                                                                     "name": "Hazrat Miran Syed Hasan Gesudaraaz Qadri R.H",
                                                                                                                      "gender": "male",
                                                                                                                      "alive": false,
                                                                                                                      "dob": "Not Known",
                                                                                                                      "dod": "Not Known",
                                                                                                                      "place": "Not Known",
-                                                                                                                     "about": "He got settled in near by village named Miran Bigha, Tekari its old name was saidpura. His shrine is located in Miran Bigha, Tekari. Urs is celebrated every year on 12th of Zul Hijja.",
-                                                                                                                     "burial": null,
+                                                                                                                     "about": "Not Known",
+                                                                                                                     "burial": {
+                                                                                                                        "place": "Miran Bigha",
+                                                                                                                        "map": "https://maps.app.goo.gl/WhoeC5T5TsL2Cy9L8"
+                                                                                                                     },
                                                                                                                      "spouse": null,
                                                                                                                      "children": [
                                                                                                                         {
-                                                                                                                           "id": "p53",
-                                                                                                                           "name": "Hazrat Miran Syed Hasan Gesudaraaz Qadri R.H",
+                                                                                                                           "id": "p54",
+                                                                                                                           "name": "Hazrat Miran Syed Shah Ali Awwal Qadri R.H",
                                                                                                                            "gender": "male",
                                                                                                                            "alive": false,
                                                                                                                            "dob": "Not Known",
                                                                                                                            "dod": "Not Known",
                                                                                                                            "place": "Not Known",
-                                                                                                                           "about": "Not Known",
-                                                                                                                           "burial": null,
+                                                                                                                           "about": "Otheriwse known as Saif-uz-Zaman urf Syed Sahab.",
+                                                                                                                           "burial": {
+                                                                                                                              "place": "Miran Bigha",
+                                                                                                                              "map": "https://maps.app.goo.gl/WhoeC5T5TsL2Cy9L8"
+                                                                                                                           },
                                                                                                                            "spouse": null,
                                                                                                                            "children": [
                                                                                                                               {
-                                                                                                                                 "id": "p54",
-                                                                                                                                 "name": "Hazrat Miran Syed Shah Ali Awwal Qadri R.H",
+                                                                                                                                 "id": "p55",
+                                                                                                                                 "name": "Hazrat Miran Syed Shah Muhammad Saani R.H",
                                                                                                                                  "gender": "male",
                                                                                                                                  "alive": false,
                                                                                                                                  "dob": "Not Known",
                                                                                                                                  "dod": "Not Known",
                                                                                                                                  "place": "Not Known",
-                                                                                                                                 "about": "Otheriwse known as Saif-uz-Zaman urf Syed Sahab.",
+                                                                                                                                 "about": "Not Known",
                                                                                                                                  "burial": null,
                                                                                                                                  "spouse": null,
                                                                                                                                  "children": [
                                                                                                                                     {
-                                                                                                                                       "id": "p55",
-                                                                                                                                       "name": "Hazrat Miran Syed Shah Muhammad Saani R.H",
+                                                                                                                                       "id": "p56",
+                                                                                                                                       "name": "Hazrat Miran Syed Shah Aazam R.H",
                                                                                                                                        "gender": "male",
                                                                                                                                        "alive": false,
                                                                                                                                        "dob": "Not Known",
@@ -427,10 +436,26 @@
                                                                                                                                        "about": "Not Known",
                                                                                                                                        "burial": null,
                                                                                                                                        "spouse": null,
+                                                                                                                                       "children": []
+                                                                                                                                    },
+                                                                                                                                    {
+                                                                                                                                       "id": "p57",
+                                                                                                                                       "name": "Hazrat Miran Syed Shah Aalam R.H",
+                                                                                                                                       "gender": "male",
+                                                                                                                                       "alive": false,
+                                                                                                                                       "dob": "Not Known",
+                                                                                                                                       "dod": "Not Known",
+                                                                                                                                       "place": "Not Known",
+                                                                                                                                       "about": "Not Known",
+                                                                                                                                       "burial": {
+                                                                                                                                          "place": "Miran Bigha",
+                                                                                                                                          "map": "https://maps.app.goo.gl/WhoeC5T5TsL2Cy9L8"
+                                                                                                                                       },
+                                                                                                                                       "spouse": null,
                                                                                                                                        "children": [
                                                                                                                                           {
-                                                                                                                                             "id": "p56",
-                                                                                                                                             "name": "Hazrat Miran Syed Shah Aazam R.H",
+                                                                                                                                             "id": "p158",
+                                                                                                                                             "name": "Hazrat Miran Syed Arab R.H",
                                                                                                                                              "gender": "male",
                                                                                                                                              "alive": false,
                                                                                                                                              "dob": "Not Known",
@@ -439,18 +464,208 @@
                                                                                                                                              "about": "Not Known",
                                                                                                                                              "burial": null,
                                                                                                                                              "spouse": null,
-                                                                                                                                             "children": []
+                                                                                                                                             "children": [
+                                                                                                                                                {
+                                                                                                                                                   "id": "p163",
+                                                                                                                                                   "name": "Hazrat Miran Syed Ashraf R.H",
+                                                                                                                                                   "gender": "male",
+                                                                                                                                                   "alive": false,
+                                                                                                                                                   "dob": "Not Known",
+                                                                                                                                                   "dod": "Not Known",
+                                                                                                                                                   "place": "Not Known",
+                                                                                                                                                   "about": "Not Known",
+                                                                                                                                                   "burial": null,
+                                                                                                                                                   "spouse": null,
+                                                                                                                                                   "children": [
+                                                                                                                                                      {
+                                                                                                                                                         "id": "p166",
+                                                                                                                                                         "name": "Hazrat Miran Syed Ghulam Ghous R.H",
+                                                                                                                                                         "gender": "male",
+                                                                                                                                                         "alive": false,
+                                                                                                                                                         "dob": "Not Known",
+                                                                                                                                                         "dod": "Not Known",
+                                                                                                                                                         "place": "Not Known",
+                                                                                                                                                         "about": "Not Known",
+                                                                                                                                                         "burial": null,
+                                                                                                                                                         "spouse": null,
+                                                                                                                                                         "children": [
+                                                                                                                                                            {
+                                                                                                                                                               "id": "p167",
+                                                                                                                                                               "name": "Hazrat Miran Syed Ameer ulallah R.H",
+                                                                                                                                                               "gender": "male",
+                                                                                                                                                               "alive": false,
+                                                                                                                                                               "dob": "Not Known",
+                                                                                                                                                               "dod": "Not Known",
+                                                                                                                                                               "place": "Not Known",
+                                                                                                                                                               "about": "Not Known",
+                                                                                                                                                               "burial": null,
+                                                                                                                                                               "spouse": null,
+                                                                                                                                                               "children": [
+                                                                                                                                                                  {
+                                                                                                                                                                     "id": "p169",
+                                                                                                                                                                     "name": "Hazrat Syed Darban Ali R.H",
+                                                                                                                                                                     "gender": "male",
+                                                                                                                                                                     "alive": false,
+                                                                                                                                                                     "dob": "Not Known",
+                                                                                                                                                                     "dod": "Not Known",
+                                                                                                                                                                     "place": "Not Known",
+                                                                                                                                                                     "about": "Not Known",
+                                                                                                                                                                     "burial": null,
+                                                                                                                                                                     "spouse": null,
+                                                                                                                                                                     "children": [
+                                                                                                                                                                        {
+                                                                                                                                                                           "id": "p174",
+                                                                                                                                                                           "name": "Hazrat Mahboob Ali Ali R.H",
+                                                                                                                                                                           "gender": "male",
+                                                                                                                                                                           "alive": false,
+                                                                                                                                                                           "dob": "Not Known",
+                                                                                                                                                                           "dod": "Not Known",
+                                                                                                                                                                           "place": "Not Known",
+                                                                                                                                                                           "about": "Not Known",
+                                                                                                                                                                           "burial": null,
+                                                                                                                                                                           "spouse": null,
+                                                                                                                                                                           "children": [
+                                                                                                                                                                              {
+                                                                                                                                                                                 "id": "p175",
+                                                                                                                                                                                 "name": "Hazrat Syed Dawood Ali Ali R.H",
+                                                                                                                                                                                 "gender": "male",
+                                                                                                                                                                                 "alive": false,
+                                                                                                                                                                                 "dob": "Not Known",
+                                                                                                                                                                                 "dod": "Not Known",
+                                                                                                                                                                                 "place": "Not Known",
+                                                                                                                                                                                 "about": "Otherwise known as Hazrat Bhaggo",
+                                                                                                                                                                                 "burial": null,
+                                                                                                                                                                                 "spouse": null,
+                                                                                                                                                                                 "children": null
+                                                                                                                                                                              }
+                                                                                                                                                                           ]
+                                                                                                                                                                        }
+                                                                                                                                                                     ]
+                                                                                                                                                                  },
+                                                                                                                                                                  {
+                                                                                                                                                                     "id": "p170",
+                                                                                                                                                                     "name": "Hazrat Miran Syed Karamat Ali R.H",
+                                                                                                                                                                     "gender": "male",
+                                                                                                                                                                     "alive": false,
+                                                                                                                                                                     "dob": "Not Known",
+                                                                                                                                                                     "dod": "Not Known",
+                                                                                                                                                                     "place": "Not Known",
+                                                                                                                                                                     "about": "Not Known",
+                                                                                                                                                                     "burial": null,
+                                                                                                                                                                     "spouse": null,
+                                                                                                                                                                     "children": [
+                                                                                                                                                                        {
+                                                                                                                                                                           "id": "p173",
+                                                                                                                                                                           "name": "Hazrat Miran Syed Alam Ali Ali R.H",
+                                                                                                                                                                           "gender": "male",
+                                                                                                                                                                           "alive": false,
+                                                                                                                                                                           "dob": "Not Known",
+                                                                                                                                                                           "dod": "Not Known",
+                                                                                                                                                                           "place": "Not Known",
+                                                                                                                                                                           "about": "Not Known",
+                                                                                                                                                                           "burial": null,
+                                                                                                                                                                           "spouse": null,
+                                                                                                                                                                           "children": null
+                                                                                                                                                                        }
+                                                                                                                                                                     ]
+                                                                                                                                                                  },
+                                                                                                                                                                  {
+                                                                                                                                                                     "id": "p171",
+                                                                                                                                                                     "name": "Hazrat Miran Syed Qadir Ali R.H",
+                                                                                                                                                                     "gender": "male",
+                                                                                                                                                                     "alive": false,
+                                                                                                                                                                     "dob": "Not Known",
+                                                                                                                                                                     "dod": "Not Known",
+                                                                                                                                                                     "place": "Not Known",
+                                                                                                                                                                     "about": "Not Known",
+                                                                                                                                                                     "burial": null,
+                                                                                                                                                                     "spouse": null,
+                                                                                                                                                                     "children": null
+                                                                                                                                                                  },
+                                                                                                                                                                  {
+                                                                                                                                                                     "id": "p172",
+                                                                                                                                                                     "name": "Hazrat Bibi Awardani R.H",
+                                                                                                                                                                     "gender": "female",
+                                                                                                                                                                     "alive": false,
+                                                                                                                                                                     "dob": "Not Known",
+                                                                                                                                                                     "dod": "Not Known",
+                                                                                                                                                                     "place": "Not Known",
+                                                                                                                                                                     "about": "Not Known",
+                                                                                                                                                                     "burial": null,
+                                                                                                                                                                     "spouse": {
+                                                                                                                                                                        "name": "Syed Hazrat Sabir Ali Fareedpuri R.A",
+                                                                                                                                                                        "fname": "Not Known",
+                                                                                                                                                                        "gender": "male",
+                                                                                                                                                                        "alive": false,
+                                                                                                                                                                        "dob": "Not Known",
+                                                                                                                                                                        "dod": "Not Known",
+                                                                                                                                                                        "place": "Fareedpur, Bihar, India",
+                                                                                                                                                                        "burial": null,
+                                                                                                                                                                        "about": "Not Known"
+                                                                                                                                                                     },
+                                                                                                                                                                     "children": [
+                                                                                                                                                                        {
+                                                                                                                                                                           "id": "p176",
+                                                                                                                                                                           "name": "Hazrat Qazi Syed Tabarak Ali R.H",
+                                                                                                                                                                           "gender": "male",
+                                                                                                                                                                           "alive": false,
+                                                                                                                                                                           "dob": "Not Known",
+                                                                                                                                                                           "dod": "Not Known",
+                                                                                                                                                                           "place": "Not Known",
+                                                                                                                                                                           "about": "Not Known",
+                                                                                                                                                                           "burial": null,
+                                                                                                                                                                           "spouse": null,
+                                                                                                                                                                           "children": null
+                                                                                                                                                                        }
+                                                                                                                                                                     ]
+                                                                                                                                                                  }
+                                                                                                                                                               ]
+                                                                                                                                                            },
+                                                                                                                                                            {
+                                                                                                                                                               "id": "p168",
+                                                                                                                                                               "name": "Hazrat Miran Syed Oyuz R.H",
+                                                                                                                                                               "gender": "male",
+                                                                                                                                                               "alive": false,
+                                                                                                                                                               "dob": "Not Known",
+                                                                                                                                                               "dod": "Not Known",
+                                                                                                                                                               "place": "Not Known",
+                                                                                                                                                               "about": "Not Known",
+                                                                                                                                                               "burial": null,
+                                                                                                                                                               "spouse": null,
+                                                                                                                                                               "children": null
+                                                                                                                                                            }
+                                                                                                                                                         ]
+                                                                                                                                                      }
+                                                                                                                                                   ]
+                                                                                                                                                },
+                                                                                                                                                {
+                                                                                                                                                   "id": "p164",
+                                                                                                                                                   "name": "Hazrat Miran Syed Afzal R.H",
+                                                                                                                                                   "gender": "male",
+                                                                                                                                                   "alive": false,
+                                                                                                                                                   "dob": "Not Known",
+                                                                                                                                                   "dod": "Not Known",
+                                                                                                                                                   "place": "Not Known",
+                                                                                                                                                   "about": "Not Known",
+                                                                                                                                                   "burial": null,
+                                                                                                                                                   "spouse": null,
+                                                                                                                                                   "children": null
+                                                                                                                                                }
+                                                                                                                                             ]
                                                                                                                                           },
                                                                                                                                           {
-                                                                                                                                             "id": "p57",
-                                                                                                                                             "name": "Hazrat Miran Syed Shah Aalam R.H",
+                                                                                                                                             "id": "p159",
+                                                                                                                                             "name": "Hazrat Miran Syed Ali Saani R.H",
                                                                                                                                              "gender": "male",
                                                                                                                                              "alive": false,
                                                                                                                                              "dob": "Not Known",
                                                                                                                                              "dod": "Not Known",
                                                                                                                                              "place": "Not Known",
                                                                                                                                              "about": "Not Known",
-                                                                                                                                             "burial": null,
+                                                                                                                                             "burial": {
+                                                                                                                                                "place": "Miran Bigha",
+                                                                                                                                                "map": "https://maps.app.goo.gl/WhoeC5T5TsL2Cy9L8"
+                                                                                                                                             },
                                                                                                                                              "spouse": null,
                                                                                                                                              "children": [
                                                                                                                                                 {
@@ -499,7 +714,10 @@
                                                                                                                                                                "dod": "Not Known",
                                                                                                                                                                "place": "Not Known",
                                                                                                                                                                "about": "Otherwise known as Dargahi",
-                                                                                                                                                               "burial": null,
+                                                                                                                                                               "burial": {
+                                                                                                                                                                  "place": "Miran Bigha",
+                                                                                                                                                                  "map": "https://maps.app.goo.gl/WhoeC5T5TsL2Cy9L8"
+                                                                                                                                                               },
                                                                                                                                                                "spouse": null,
                                                                                                                                                                "children": [
                                                                                                                                                                   {
@@ -511,7 +729,10 @@
                                                                                                                                                                      "dod": "Not Known",
                                                                                                                                                                      "place": "Not Known",
                                                                                                                                                                      "about": "Not Known",
-                                                                                                                                                                     "burial": null,
+                                                                                                                                                                     "burial": {
+                                                                                                                                                                        "place": "Miran Bigha",
+                                                                                                                                                                        "map": "https://maps.app.goo.gl/WhoeC5T5TsL2Cy9L8"
+                                                                                                                                                                     },
                                                                                                                                                                      "spouse": null,
                                                                                                                                                                      "children": [
                                                                                                                                                                         {
@@ -523,7 +744,10 @@
                                                                                                                                                                            "dod": "Not Known",
                                                                                                                                                                            "place": "Not Known",
                                                                                                                                                                            "about": "Not Known",
-                                                                                                                                                                           "burial": null,
+                                                                                                                                                                           "burial": {
+                                                                                                                                                                              "place": "Miran Bigha",
+                                                                                                                                                                              "map": "https://maps.app.goo.gl/WhoeC5T5TsL2Cy9L8"
+                                                                                                                                                                           },
                                                                                                                                                                            "spouse": null,
                                                                                                                                                                            "children": [
                                                                                                                                                                               {
@@ -535,7 +759,10 @@
                                                                                                                                                                                  "dod": "Not Known",
                                                                                                                                                                                  "place": "Not Known",
                                                                                                                                                                                  "about": "Not Known",
-                                                                                                                                                                                 "burial": null,
+                                                                                                                                                                                 "burial": {
+                                                                                                                                                                                    "place": "Miran Bigha",
+                                                                                                                                                                                    "map": "https://maps.app.goo.gl/WhoeC5T5TsL2Cy9L8"
+                                                                                                                                                                                 },
                                                                                                                                                                                  "spouse": null,
                                                                                                                                                                                  "children": []
                                                                                                                                                                               },
@@ -975,8 +1202,8 @@
                                                                                                                                                                            "name": "Hazrat Miran Syed Safdar Bakhsh Qadri R.H",
                                                                                                                                                                            "gender": "male",
                                                                                                                                                                            "alive": false,
-                                                                                                                                                                           "dob": "≈1680 AH",
-                                                                                                                                                                           "dod": "28 Zulhijja ≈1730 AH",
+                                                                                                                                                                           "dob": "≈1680 CE",
+                                                                                                                                                                           "dod": "28 Zulhijja ≈1730 CE",
                                                                                                                                                                            "place": "Miran Bigha, Tekari",
                                                                                                                                                                            "about": "Father of Miran Syed Rahma Bakhsh Qadri",
                                                                                                                                                                            "burial": {
@@ -989,7 +1216,7 @@
                                                                                                                                                                               "gender": "female",
                                                                                                                                                                               "alive": false,
                                                                                                                                                                               "dob": "Not Known",
-                                                                                                                                                                              "dod": "03 Ziqada ≈1750 AH",
+                                                                                                                                                                              "dod": "03 Ziqada ≈1750 CE",
                                                                                                                                                                               "place": "Not Known",
                                                                                                                                                                               "burial": {
                                                                                                                                                                                  "place": "Miran Bigha",
@@ -1003,11 +1230,14 @@
                                                                                                                                                                                  "name": "Hazrat Miran Syed Rahman Bakhsh Qadri R.H",
                                                                                                                                                                                  "gender": "male",
                                                                                                                                                                                  "alive": false,
-                                                                                                                                                                                 "dob": "≈1710 AH",
-                                                                                                                                                                                 "dod": "28 Zulhijja ≈1770 AH",
+                                                                                                                                                                                 "dob": "≈1710 CE",
+                                                                                                                                                                                 "dod": "28 Zulhijja ≈1770 CE",
                                                                                                                                                                                  "place": "Miran Bigha, Tekari",
                                                                                                                                                                                  "about": "He was the last known famous saint from Miran Bigha. He had many mureeds in different genealogy. One of them was the sajjada of Khanqah Kharbaiyya.",
-                                                                                                                                                                                 "burial": null,
+                                                                                                                                                                                 "burial": {
+                                                                                                                                                                                    "place": "Miran Bigha",
+                                                                                                                                                                                    "map": "https://maps.app.goo.gl/WhoeC5T5TsL2Cy9L8"
+                                                                                                                                                                                 },
                                                                                                                                                                                  "spouse": null,
                                                                                                                                                                                  "children": [
                                                                                                                                                                                     {
@@ -1035,7 +1265,10 @@
                                                                                                                                                                                        "dod": "Not Known",
                                                                                                                                                                                        "place": "Not Known",
                                                                                                                                                                                        "about": "Not Known",
-                                                                                                                                                                                       "burial": null,
+                                                                                                                                                                                       "burial": {
+                                                                                                                                                                                          "place": "Miran Bigha",
+                                                                                                                                                                                          "map": "https://maps.app.goo.gl/WhoeC5T5TsL2Cy9L8"
+                                                                                                                                                                                       },
                                                                                                                                                                                        "spouse": null,
                                                                                                                                                                                        "children": [
                                                                                                                                                                                           {
@@ -1043,7 +1276,7 @@
                                                                                                                                                                                              "name": "Syed Wajahat Rasool Mirani",
                                                                                                                                                                                              "gender": "male",
                                                                                                                                                                                              "alive": false,
-                                                                                                                                                                                             "dob": "Not known",
+                                                                                                                                                                                             "dob": "1884",
                                                                                                                                                                                              "dod": "1946",
                                                                                                                                                                                              "place": "Miran Bigha",
                                                                                                                                                                                              "about": "Youngest son of Miran Syed Ali Hussain. Participated in Khilafat Movement and Indian Freedom Struggle against British Raj.",
@@ -1611,7 +1844,10 @@
                                                                                                                                                                                              "dod": "Not Known",
                                                                                                                                                                                              "place": "Not Known",
                                                                                                                                                                                              "about": "Not Known",
-                                                                                                                                                                                             "burial": null,
+                                                                                                                                                                                             "burial": {
+                                                                                                                                                                                                "place": "Miran Bigha",
+                                                                                                                                                                                                "map": "https://maps.app.goo.gl/WhoeC5T5TsL2Cy9L8"
+                                                                                                                                                                                             },
                                                                                                                                                                                              "spouse": null,
                                                                                                                                                                                              "children": []
                                                                                                                                                                                           }
@@ -2086,8 +2322,8 @@
                                                                                                                                              ]
                                                                                                                                           },
                                                                                                                                           {
-                                                                                                                                             "id": "p56",
-                                                                                                                                             "name": "Hazrat Miran Syed Shah Bheeka Saani R.H",
+                                                                                                                                             "id": "p160",
+                                                                                                                                             "name": "Hazrat Miran Syed Al-Haq R.H",
                                                                                                                                              "gender": "male",
                                                                                                                                              "alive": false,
                                                                                                                                              "dob": "Not Known",
@@ -2098,8 +2334,8 @@
                                                                                                                                              "spouse": null,
                                                                                                                                              "children": [
                                                                                                                                                 {
-                                                                                                                                                   "id": "p57",
-                                                                                                                                                   "name": "Hazrat Miran Shah Syed R.H",
+                                                                                                                                                   "id": "p165",
+                                                                                                                                                   "name": "Hazrat Miran Syed Sayeed R.H",
                                                                                                                                                    "gender": "male",
                                                                                                                                                    "alive": false,
                                                                                                                                                    "dob": "Not Known",
@@ -2108,13 +2344,53 @@
                                                                                                                                                    "about": "Not Known",
                                                                                                                                                    "burial": null,
                                                                                                                                                    "spouse": null,
-                                                                                                                                                   "children": []
+                                                                                                                                                   "children": null
                                                                                                                                                 }
                                                                                                                                              ]
                                                                                                                                           },
                                                                                                                                           {
-                                                                                                                                             "id": "p58",
-                                                                                                                                             "name": "Hazrat Miran Syed Shah KalaaN R.H",
+                                                                                                                                             "id": "p161",
+                                                                                                                                             "name": "Hazrat Miran Syed Shakir R.H",
+                                                                                                                                             "gender": "male",
+                                                                                                                                             "alive": false,
+                                                                                                                                             "dob": "Not Known",
+                                                                                                                                             "dod": "Not Known",
+                                                                                                                                             "place": "Not Known",
+                                                                                                                                             "about": "Not Known",
+                                                                                                                                             "burial": null,
+                                                                                                                                             "spouse": null,
+                                                                                                                                             "children": null
+                                                                                                                                          },
+                                                                                                                                          {
+                                                                                                                                             "id": "p162",
+                                                                                                                                             "name": "Hazrat Miran Syed Muhammad R.H",
+                                                                                                                                             "gender": "male",
+                                                                                                                                             "alive": false,
+                                                                                                                                             "dob": "Not Known",
+                                                                                                                                             "dod": "Not Known",
+                                                                                                                                             "place": "Not Known",
+                                                                                                                                             "about": "Not Known",
+                                                                                                                                             "burial": null,
+                                                                                                                                             "spouse": null,
+                                                                                                                                             "children": null
+                                                                                                                                          }
+                                                                                                                                       ]
+                                                                                                                                    },
+                                                                                                                                    {
+                                                                                                                                       "id": "p56",
+                                                                                                                                       "name": "Hazrat Miran Syed Shah Bheeka Saani R.H",
+                                                                                                                                       "gender": "male",
+                                                                                                                                       "alive": false,
+                                                                                                                                       "dob": "Not Known",
+                                                                                                                                       "dod": "Not Known",
+                                                                                                                                       "place": "Not Known",
+                                                                                                                                       "about": "Not Known",
+                                                                                                                                       "burial": null,
+                                                                                                                                       "spouse": null,
+                                                                                                                                       "children": [
+                                                                                                                                          {
+                                                                                                                                             "id": "p57",
+                                                                                                                                             "name": "Hazrat Miran Shah Syed R.H",
                                                                                                                                              "gender": "male",
                                                                                                                                              "alive": false,
                                                                                                                                              "dob": "Not Known",
@@ -2124,52 +2400,68 @@
                                                                                                                                              "burial": null,
                                                                                                                                              "spouse": null,
                                                                                                                                              "children": []
-                                                                                                                                          },
-                                                                                                                                          {
-                                                                                                                                             "id": "p59",
-                                                                                                                                             "name": "Hazrat Syed Bibi Malihan R.H",
-                                                                                                                                             "gender": "female",
-                                                                                                                                             "alive": false,
-                                                                                                                                             "dob": "Not Known",
-                                                                                                                                             "dod": "Not Known",
-                                                                                                                                             "place": "Not Known",
-                                                                                                                                             "about": "Otherwise known as Malo Sahiba. She was very pious lady who bought Kharbaiyya village by selling her bangles and there descendants started living there. She married to Miran Syed Habeeb Rizwi, Kharbaiyya.",
-                                                                                                                                             "burial": null,
-                                                                                                                                             "spouse": {
-                                                                                                                                                "name": "Syed Shah Habeeb Rizwi R.H",
-                                                                                                                                                "fname": "Hazrat Miran Syed Bade R.A",
-                                                                                                                                                "gender": "male",
-                                                                                                                                                "alive": false,
-                                                                                                                                                "dob": "Not Known",
-                                                                                                                                                "dod": "Not Known",
-                                                                                                                                                "place": "Not Known",
-                                                                                                                                                "burial": null,
-                                                                                                                                                "about": "N/A"
-                                                                                                                                             },
-                                                                                                                                             "children": []
                                                                                                                                           }
                                                                                                                                        ]
+                                                                                                                                    },
+                                                                                                                                    {
+                                                                                                                                       "id": "p58",
+                                                                                                                                       "name": "Hazrat Miran Syed Shah KalaaN R.H",
+                                                                                                                                       "gender": "male",
+                                                                                                                                       "alive": false,
+                                                                                                                                       "dob": "Not Known",
+                                                                                                                                       "dod": "Not Known",
+                                                                                                                                       "place": "Not Known",
+                                                                                                                                       "about": "Not Known",
+                                                                                                                                       "burial": null,
+                                                                                                                                       "spouse": null,
+                                                                                                                                       "children": []
+                                                                                                                                    },
+                                                                                                                                    {
+                                                                                                                                       "id": "p59",
+                                                                                                                                       "name": "Hazrat Syed Bibi Malihan R.H",
+                                                                                                                                       "gender": "female",
+                                                                                                                                       "alive": false,
+                                                                                                                                       "dob": "Not Known",
+                                                                                                                                       "dod": "Not Known",
+                                                                                                                                       "place": "Miran Bigha",
+                                                                                                                                       "about": "Otherwise known as Malo Sahiba. She was very pious lady who bought Kharbaiyya village by selling her bangles and their descendants started living there. She married to Miran Syed Habeeb Rizwi, Kharbaiyya.",
+                                                                                                                                       "burial": {
+                                                                                                                                          "place": "Kharbaiyya",
+                                                                                                                                          "map": "https://www.bing.com/maps/search?FORM=HDRSC6&style=r&q=Kharbhaiya&ss=id.vdpid%3A6955550409909862401&cp=25.399721%7E85.212015&lvl=14.2"
+                                                                                                                                       },
+                                                                                                                                       "spouse": {
+                                                                                                                                          "name": "Syed Shah Habeeb Rizwi R.H",
+                                                                                                                                          "fname": "Hazrat Miran Syed Bade R.A",
+                                                                                                                                          "gender": "male",
+                                                                                                                                          "alive": false,
+                                                                                                                                          "dob": "Not Known",
+                                                                                                                                          "dod": "Not Known",
+                                                                                                                                          "place": "Not Known",
+                                                                                                                                          "burial": null,
+                                                                                                                                          "about": "N/A"
+                                                                                                                                       },
+                                                                                                                                       "children": []
                                                                                                                                     }
                                                                                                                                  ]
                                                                                                                               }
                                                                                                                            ]
                                                                                                                         }
                                                                                                                      ]
-                                                                                                                  },
-                                                                                                                  {
-                                                                                                                     "id": "p52",
-                                                                                                                     "name": "Hazrat Miran Syed Ibraheem Qadri R.H",
-                                                                                                                     "gender": "male",
-                                                                                                                     "alive": false,
-                                                                                                                     "dob": "Not Known",
-                                                                                                                     "dod": "Not Known",
-                                                                                                                     "place": "Not Known",
-                                                                                                                     "about": "His grave is believed to be in nearby village of Miran Bigha.",
-                                                                                                                     "burial": null,
-                                                                                                                     "spouse": null,
-                                                                                                                     "children": []
                                                                                                                   }
                                                                                                                ]
+                                                                                                            },
+                                                                                                            {
+                                                                                                               "id": "p52",
+                                                                                                               "name": "Hazrat Miran Syed Ibraheem Qadri R.H",
+                                                                                                               "gender": "male",
+                                                                                                               "alive": false,
+                                                                                                               "dob": "Not Known",
+                                                                                                               "dod": "Not Known",
+                                                                                                               "place": "Not Known",
+                                                                                                               "about": "His grave is believed to be in nearby village of Miran Bigha.",
+                                                                                                               "burial": null,
+                                                                                                               "spouse": null,
+                                                                                                               "children": []
                                                                                                             }
                                                                                                          ]
                                                                                                       }

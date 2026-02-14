@@ -15,7 +15,7 @@ export default function KhanqahList() {
    return (
       <div className="khanqah-container">
          <section className="khanqah-section">
-            <h1>Fehrist-e-Khanqah Auliya-e-Karaam</h1>
+            <h1>Fehrist-e-Khanqah Sooba Bihar</h1>
 
             <div className="khanqah-search">
                <input

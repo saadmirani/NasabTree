@@ -3,9 +3,16 @@
    background: linear-gradient(180deg, #ffffff 0%, #f9fafb 100%);
    border-right: 1px solid #e5e7eb;
    padding: 24px 12px;
+
    display: flex;
    flex-direction: column;
    gap: 8px;
+
+   height: 100vh;
+   /* important */
+   overflow-y: auto;
+   /* enable vertical scroll */
+
    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.04);
 }
 

@@ -1,0 +1,737 @@
+{
+   "id": "p01",
+   "name": "Sayedna Hazrat Usman Bin Affan R.Z",
+   "gender": "male",
+   "alive": false,
+   "dob": "573/576 CE",
+   "dod": "17/06/656 CE",
+   "place": "Mecca, Hejaz, Saudi Arabia",
+   "about": "He was the third caliph of the Rashidun Caliphate, ruling from 644 until his assassination in 656. Uthman, a second cousin, son-in-law, and senior companion of the Islamic prophet Muhammad, played a major role in early Islamic history. During his reign as caliph, he was known for ordering the official compilation of the standardized version of the Quran, known as the Uthmanic codex, which is still used today.",
+   "burial": {
+      "place": "Jannat al-Baqi, Medina, Saudi Arabia",
+      "map": "https://geohack.toolforge.org/geohack.php?pagename=Al-Baqi_Cemetery&params=24.4669_N_39.6164_E_type:landmark"
+   },
+   "spouse": {
+      "name": "Bibi Umm Amr R.Z",
+      "fname": "Hazrat Jundab Doosi",
+      "gender": "female",
+      "alive": false,
+      "dob": "Not Known",
+      "dod": "Not Known",
+      "place": "Mecca, Hejaz, Saudi Arabia",
+      "burial": {
+         "place": "Jannat al-Baqi, Medina, Saudi Arabia",
+         "map": "https://geohack.toolforge.org/geohack.php?pagename=Al-Baqi_Cemetery&params=24.4669_N_39.6164_E_type:landmark"
+      },
+      "about": "Bibi Umm Amr R.Z was one of the wives of Hazrat Usman Bin Affan R.Z. She was known for her piety and devotion to Islam. Like her husband, she is also buried in Jannat al-Baqi cemetery in Medina, Saudi Arabia."
+   },
+   "children": [
+      {
+         "id": "p02",
+         "name": "Hazrat Ameer Amr R.Z",
+         "gender": "male",
+         "alive": false,
+         "dob": "630 CE",
+         "dod": "Not Known",
+         "place": "Madina, Hejaz, Saudi Arabia",
+         "about": "Abu Uthman Amr ibn Uthman ibn Affan al-Umawi (Arabic: أَبُو عُثْمَانُ عَمْرِو بْنُ عُثْمَانُ بْنُ عَفَّان الأُمَوِيّ, romanized: Abū ʿUthmān ʿAmr ibn ʿUthmān ibn ʿAffān al-Umawī) was a son of Caliph Uthman and played political and military roles during the caliphates of Mu'awiya I (r.661-680), Yazid I (r.680-683) and Marwan I (684-685).",
+         "burial": {
+            "place": "Mina, Mecca, Saudi Arabia",
+            "map": "https://www.google.com/maps/place/Mina,+Mecca+Saudi+Arabia/@21.4225,39.8262,15z"
+         },
+         "spouse": {
+            "name": "Bibi Hafsah Bint Abdullah R.Z",
+            "fname": "Hazrat Abdullah bin Hazrat Umar Farooq",
+            "gender": "female",
+            "alive": false,
+            "dob": "Not Known",
+            "dod": "Not Known",
+            "place": "Mecca, Hejaz, Saudi Arabia",
+            "burial": {
+               "place": "Jannat al-Baqi, Medina, Saudi Arabia",
+               "map": "https://geohack.toolforge.org/geohack.php?pagename=Al-Baqi_Cemetery&params=24.4669_N_39.6164_E_type:landmark"
+            },
+            "about": "Bibi Hafsah Bint Abdullah R.Z was one of the wives of Hazrat Usman Bin Affan R.Z. She was known for her piety and devotion to Islam. Like her husband, she is also buried in Jannat al-Baqi cemetery in Medina, Saudi Arabia."
+         },
+         "children": [
+            {
+               "id": "p07",
+               "name": "Hazrat Usman al-Akbar R.H",
+               "gender": "male",
+               "alive": false,
+               "dob": "Not Known",
+               "dod": "Not Known",
+               "place": "Not Known",
+               "about": "Not Known",
+               "burial": null,
+               "spouse": null,
+               "children": []
+            },
+            {
+               "id": "p08",
+               "name": "Hazrat Khalid R.H",
+               "gender": "male",
+               "alive": false,
+               "dob": "Not Known",
+               "dod": "Not Known",
+               "place": "Not Known",
+               "about": "Not Known",
+               "burial": null,
+               "spouse": null,
+               "children": []
+            },
+            {
+               "id": "p09",
+               "name": "Hazrat Abdullah Kabeer R.H",
+               "gender": "male",
+               "alive": false,
+               "dob": "Not Known",
+               "dod": "Not Known",
+               "place": "Not Known",
+               "about": "He got married with Hazrat Bibi Fatima bint Imam Hussain R.Z. She had three children: Hazrat Mohammad Akbar, hazrat Umar and Hazrat Sa'ad R.Z",
+               "burial": null,
+               "spouse": null,
+               "children": [
+                  {
+                     "id": "p11",
+                     "name": "Hazrat Abdul Azeez Awwal R.H",
+                     "gender": "male",
+                     "alive": false,
+                     "dob": "Not Known",
+                     "dod": "Not Known",
+                     "place": "Not Known",
+                     "about": "Not Known",
+                     "burial": null,
+                     "spouse": null,
+                     "children": [
+                        {
+                           "id": "p16",
+                           "name": "Hazrat Abdullah Saani R.H",
+                           "gender": "male",
+                           "alive": false,
+                           "dob": "Not Known",
+                           "dod": "Not Known",
+                           "place": "Not Known",
+                           "about": "Not Known",
+                           "burial": null,
+                           "spouse": null,
+                           "children": [
+                              {
+                                 "id": "p17",
+                                 "name": "Hazrat Abdur Rahman R.H",
+                                 "gender": "male",
+                                 "alive": false,
+                                 "dob": "Not Known",
+                                 "dod": "Not Known",
+                                 "place": "Not Known",
+                                 "about": "Not Known",
+                                 "burial": null,
+                                 "spouse": null,
+                                 "children": [
+                                    {
+                                       "id": "p18",
+                                       "name": "Hazrat Abdul Azeez Saani R.H",
+                                       "gender": "male",
+                                       "alive": false,
+                                       "dob": "Not Known",
+                                       "dod": "Not Known",
+                                       "place": "Not Known",
+                                       "about": "Not Known",
+                                       "burial": null,
+                                       "spouse": null,
+                                       "children": [
+                                          {
+                                             "id": "p19",
+                                             "name": "Hazrat Khwaja Waleed R.H",
+                                             "gender": "male",
+                                             "alive": false,
+                                             "dob": "Not Known",
+                                             "dod": "Not Known",
+                                             "place": "Not Known",
+                                             "about": "Not Known",
+                                             "burial": null,
+                                             "spouse": null,
+                                             "children": [
+                                                {
+                                                   "id": "p20",
+                                                   "name": "Hazrat Khwaja Khalid R.H",
+                                                   "gender": "male",
+                                                   "alive": false,
+                                                   "dob": "Not Known",
+                                                   "dod": "Not Known",
+                                                   "place": "Not Known",
+                                                   "about": "Not Known",
+                                                   "burial": null,
+                                                   "spouse": null,
+                                                   "children": [
+                                                      {
+                                                         "id": "p21",
+                                                         "name": "Hazrat Khwaja Abdul Azeez Surkhusi R.H",
+                                                         "gender": "male",
+                                                         "alive": false,
+                                                         "dob": "Not Known",
+                                                         "dod": "Not Known",
+                                                         "place": "Not Known",
+                                                         "about": "Not Known",
+                                                         "burial": null,
+                                                         "spouse": null,
+                                                         "children": [
+                                                            {
+                                                               "id": "p22",
+                                                               "name": "Hazrat Khwaja Abdur Rahman Gawzarooni R.H",
+                                                               "gender": "male",
+                                                               "alive": false,
+                                                               "dob": "Not Known",
+                                                               "dod": "Not Known",
+                                                               "place": "Not Known",
+                                                               "about": "He came to India with Sultan Mahmood Ghaznavi. Mahmood Ghaznavi occupied the city Lahore in 1021 CE and made Khawaja Abdur Rahman Gawzarooni R.H as the governor of Panipat.",
+                                                               "burial": null,
+                                                               "spouse": null,
+                                                               "children": [
+                                                                  {
+                                                                     "id": "p23",
+                                                                     "name": "Hazrat Khwaja Shahbuddin R.H",
+                                                                     "gender": "male",
+                                                                     "alive": false,
+                                                                     "dob": "Not Known",
+                                                                     "dod": "Not Known",
+                                                                     "place": "Not Known",
+                                                                     "about": "Not Known",
+                                                                     "burial": null,
+                                                                     "spouse": null,
+                                                                     "children": [
+                                                                        {
+                                                                           "id": "p24",
+                                                                           "name": "Hazrat Khwaja Abdullah R.H",
+                                                                           "gender": "male",
+                                                                           "alive": false,
+                                                                           "dob": "Not Known",
+                                                                           "dod": "Not Known",
+                                                                           "place": "Not Known",
+                                                                           "about": "Not Known",
+                                                                           "burial": null,
+                                                                           "spouse": null,
+                                                                           "children": [
+                                                                              {
+                                                                                 "id": "p25",
+                                                                                 "name": "Hazrat Khwaja Usman R.H",
+                                                                                 "gender": "male",
+                                                                                 "alive": false,
+                                                                                 "dob": "Not Known",
+                                                                                 "dod": "Not Known",
+                                                                                 "place": "Not Known",
+                                                                                 "about": "Not Known",
+                                                                                 "burial": null,
+                                                                                 "spouse": null,
+                                                                                 "children": [
+                                                                                    {
+                                                                                       "id": "p26",
+                                                                                       "name": "Hazrat Khwaja Ali R.H",
+                                                                                       "gender": "male",
+                                                                                       "alive": false,
+                                                                                       "dob": "Not Known",
+                                                                                       "dod": "Not Known",
+                                                                                       "place": "Not Known",
+                                                                                       "about": "Not Known",
+                                                                                       "burial": null,
+                                                                                       "spouse": null,
+                                                                                       "children": [
+                                                                                          {
+                                                                                             "id": "p27",
+                                                                                             "name": "Hazrat Khwaja Abubakr Shibli R.H",
+                                                                                             "gender": "male",
+                                                                                             "alive": false,
+                                                                                             "dob": "Not Known",
+                                                                                             "dod": "Not Known",
+                                                                                             "place": "Not Known",
+                                                                                             "about": "Not Known",
+                                                                                             "burial": null,
+                                                                                             "spouse": null,
+                                                                                             "children": [
+                                                                                                {
+                                                                                                   "id": "p28",
+                                                                                                   "name": "Hazrat Khwaja Muhammad R.H",
+                                                                                                   "gender": "male",
+                                                                                                   "alive": false,
+                                                                                                   "dob": "Not Known",
+                                                                                                   "dod": "Not Known",
+                                                                                                   "place": "Not Known",
+                                                                                                   "about": "Not Known",
+                                                                                                   "burial": null,
+                                                                                                   "spouse": null,
+                                                                                                   "children": [
+                                                                                                      {
+                                                                                                         "id": "p29",
+                                                                                                         "name": "Hazrat Khwaja Ismayil R.H",
+                                                                                                         "gender": "male",
+                                                                                                         "alive": false,
+                                                                                                         "dob": "Not Known",
+                                                                                                         "dod": "Not Known",
+                                                                                                         "place": "Not Known",
+                                                                                                         "about": "Not Known",
+                                                                                                         "burial": null,
+                                                                                                         "spouse": null,
+                                                                                                         "children": [
+                                                                                                            {
+                                                                                                               "id": "p30",
+                                                                                                               "name": "Hazrat Khwaja Isa R.H",
+                                                                                                               "gender": "male",
+                                                                                                               "alive": false,
+                                                                                                               "dob": "Not Known",
+                                                                                                               "dod": "Not Known",
+                                                                                                               "place": "Not Known",
+                                                                                                               "about": "Not Known",
+                                                                                                               "burial": null,
+                                                                                                               "spouse": null,
+                                                                                                               "children": [
+                                                                                                                  {
+                                                                                                                     "id": "p31",
+                                                                                                                     "name": "Hazrat Khwaja Yaqoob R.H",
+                                                                                                                     "gender": "male",
+                                                                                                                     "alive": false,
+                                                                                                                     "dob": "Not Known",
+                                                                                                                     "dod": "Not Known",
+                                                                                                                     "place": "Not Known",
+                                                                                                                     "about": "Not Known",
+                                                                                                                     "burial": null,
+                                                                                                                     "spouse": null,
+                                                                                                                     "children": [
+                                                                                                                        {
+                                                                                                                           "id": "p32",
+                                                                                                                           "name": "Hazrat Khwaja Mahmood R.H",
+                                                                                                                           "gender": "male",
+                                                                                                                           "alive": false,
+                                                                                                                           "dob": "Not Known",
+                                                                                                                           "dod": "Not Known",
+                                                                                                                           "place": "Not Known",
+                                                                                                                           "about": "Not Known",
+                                                                                                                           "burial": null,
+                                                                                                                           "spouse": null,
+                                                                                                                           "children": [
+                                                                                                                              {
+                                                                                                                                 "id": "p33",
+                                                                                                                                 "name": "Hazrat Khwaja Muhammad Jalaluddin Kabeer-ul-Aulia R.H",
+                                                                                                                                 "gender": "male",
+                                                                                                                                 "alive": false,
+                                                                                                                                 "dob": "Not Known",
+                                                                                                                                 "dod": "Not Known",
+                                                                                                                                 "place": "Pani pat, New Delhi, India",
+                                                                                                                                 "about": "He was mureed and Khaleefa of Sayedna Shamsuddin Turk R.H. He was famous sufi saint of Silsila Chishtiya Sabriya. He got burried in Panipat and city Jalalabad was named after him.",
+                                                                                                                                 "burial": null,
+                                                                                                                                 "spouse": null,
+                                                                                                                                 "children": [
+                                                                                                                                    {
+                                                                                                                                       "id": "p34",
+                                                                                                                                       "name": "Hazrat Khwaja Shibli R.H",
+                                                                                                                                       "gender": "male",
+                                                                                                                                       "alive": false,
+                                                                                                                                       "dob": "Not Known",
+                                                                                                                                       "dod": "Not Known",
+                                                                                                                                       "place": "Not Known",
+                                                                                                                                       "about": "Not Known",
+                                                                                                                                       "burial": null,
+                                                                                                                                       "spouse": null,
+                                                                                                                                       "children": [
+                                                                                                                                          {
+                                                                                                                                             "id": "p39",
+                                                                                                                                             "name": "Hazrat Khwaja Abdul Quddus R.H",
+                                                                                                                                             "gender": "male",
+                                                                                                                                             "alive": false,
+                                                                                                                                             "dob": "Not Known",
+                                                                                                                                             "dod": "Not Known",
+                                                                                                                                             "place": "Not Known",
+                                                                                                                                             "about": "Not Known",
+                                                                                                                                             "burial": null,
+                                                                                                                                             "spouse": null,
+                                                                                                                                             "children": [
+                                                                                                                                                {
+                                                                                                                                                   "id": "p40",
+                                                                                                                                                   "name": "Hazrat Khwaja Suleman Chishti R.H",
+                                                                                                                                                   "gender": "male",
+                                                                                                                                                   "alive": false,
+                                                                                                                                                   "dob": "Not Known",
+                                                                                                                                                   "dod": "Not Known",
+                                                                                                                                                   "place": "Baiganabad, Bihar, India",
+                                                                                                                                                   "about": "Not Known",
+                                                                                                                                                   "burial": null,
+                                                                                                                                                   "spouse": null,
+                                                                                                                                                   "children": [
+                                                                                                                                                      {
+                                                                                                                                                         "id": "p41",
+                                                                                                                                                         "name": "Hazrat Khwaja Dawood Chishti R.H",
+                                                                                                                                                         "gender": "male",
+                                                                                                                                                         "alive": false,
+                                                                                                                                                         "dob": "Not Known",
+                                                                                                                                                         "dod": "Not Known",
+                                                                                                                                                         "place": "Baiganabad, Bihar, India",
+                                                                                                                                                         "about": "Not Known",
+                                                                                                                                                         "burial": null,
+                                                                                                                                                         "spouse": null,
+                                                                                                                                                         "children": [
+                                                                                                                                                            {
+                                                                                                                                                               "id": "p42",
+                                                                                                                                                               "name": "Hazrat Khwaja Ishaaq Firdausi R.H",
+                                                                                                                                                               "gender": "male",
+                                                                                                                                                               "alive": false,
+                                                                                                                                                               "dob": "Not Known",
+                                                                                                                                                               "dod": "Not Known",
+                                                                                                                                                               "place": "Baiganabad, Bihar, India",
+                                                                                                                                                               "about": "He was Mureed and Khaleefa of Makhdoom Shah Shoaib, Shekhpoora. He got burried in Baiganabad.",
+                                                                                                                                                               "burial": null,
+                                                                                                                                                               "spouse": null,
+                                                                                                                                                               "children": [
+                                                                                                                                                                  {
+                                                                                                                                                                     "id": "p43",
+                                                                                                                                                                     "name": "Hazrat Khwaja Barkhurdaar Firdausi R.H",
+                                                                                                                                                                     "gender": "male",
+                                                                                                                                                                     "alive": false,
+                                                                                                                                                                     "dob": "Not Known",
+                                                                                                                                                                     "dod": "Not Known",
+                                                                                                                                                                     "place": "Baiganabad, Bihar, India",
+                                                                                                                                                                     "about": "He got burried in Baiganabad, Bihar, India.",
+                                                                                                                                                                     "burial": {
+                                                                                                                                                                        "place": "Osaas Dewra, Gaya, Bihar",
+                                                                                                                                                                        "map": "https://maps.app.goo.gl/fy12gm4UH2uXRDaf7"
+                                                                                                                                                                     },
+                                                                                                                                                                     "spouse": null,
+                                                                                                                                                                     "children": [
+                                                                                                                                                                        {
+                                                                                                                                                                           "id": "p44",
+                                                                                                                                                                           "name": "Hazrat Makhdoom Shah Burhanuddin R.H",
+                                                                                                                                                                           "gender": "male",
+                                                                                                                                                                           "alive": false,
+                                                                                                                                                                           "dob": "Not Known",
+                                                                                                                                                                           "dod": "Not Known",
+                                                                                                                                                                           "place": "Not Known",
+                                                                                                                                                                           "about": "Otherwise known as Khoond Miyan Deoravi. He got settled in Osaas-Deora, Bihar and established Khanqah Burhaniya. He was Mureed and Khaleefa of Hazrat Ishaaq Firdausi R.H. He got burried in Osaas-Deora, Bihar.",
+                                                                                                                                                                           "burial": {
+                                                                                                                                                                              "place": "Osaas Dewra, Gaya, Bihar",
+                                                                                                                                                                              "map": "https://maps.app.goo.gl/fy12gm4UH2uXRDaf7"
+                                                                                                                                                                           },
+                                                                                                                                                                           "spouse": [
+                                                                                                                                                                              {
+                                                                                                                                                                                 "name": "Hazrat Bibi Auliya R.H",
+                                                                                                                                                                                 "fname": "hazrat Makhdoom Shah Darwesh Beethwi R.H",
+                                                                                                                                                                                 "gender": "female",
+                                                                                                                                                                                 "alive": false,
+                                                                                                                                                                                 "dob": "Not Known",
+                                                                                                                                                                                 "dod": "Not Known",
+                                                                                                                                                                                 "place": "Bitho Shareef, Gaya",
+                                                                                                                                                                                 "burial": null,
+                                                                                                                                                                                 "about": "She was the daughter of Hazrat Makhdoom Shah Darwesh Beethwi R.H. Makhdoom Shah Darwesh is descendant of sister of Hazrat Syed Ashraf Jahangeer Samnani R.H. Shah Mansoor Danishmand R.H is her son"
+                                                                                                                                                                              },
+                                                                                                                                                                              {
+                                                                                                                                                                                 "name": "Not Known",
+                                                                                                                                                                                 "fname": "Not Known",
+                                                                                                                                                                                 "gender": "female",
+                                                                                                                                                                                 "alive": false,
+                                                                                                                                                                                 "dob": "Not Known",
+                                                                                                                                                                                 "dod": null,
+                                                                                                                                                                                 "place": "Not Known",
+                                                                                                                                                                                 "burial": null,
+                                                                                                                                                                                 "about": "She is other wife of Hazrat Makhdoom Shah Burhanuddin R.H. She had two sons: Shah Jamal and Shah Noor."
+                                                                                                                                                                              }
+                                                                                                                                                                           ],
+                                                                                                                                                                           "children": [
+                                                                                                                                                                              {
+                                                                                                                                                                                 "id": "p45",
+                                                                                                                                                                                 "name": "Hazrat Shah Mansoor Danishmand R.H",
+                                                                                                                                                                                 "gender": "male",
+                                                                                                                                                                                 "alive": false,
+                                                                                                                                                                                 "dob": "Not Known",
+                                                                                                                                                                                 "dod": "Not Known",
+                                                                                                                                                                                 "place": "Deora, Bihar, India",
+                                                                                                                                                                                 "about": "He was the second Sajjada of Khanqah Burhaniya, Deora. He got burried in Deora, Bihar, India.",
+                                                                                                                                                                                 "burial": {
+                                                                                                                                                                                    "place": "Osaas Dewra, Gaya, Bihar",
+                                                                                                                                                                                    "map": "https://maps.app.goo.gl/fy12gm4UH2uXRDaf7"
+                                                                                                                                                                                 },
+                                                                                                                                                                                 "spouse": null,
+                                                                                                                                                                                 "children": [
+                                                                                                                                                                                    {
+                                                                                                                                                                                       "id": "p48",
+                                                                                                                                                                                       "name": "Hazrat Shah Maroof Deoravi R.H",
+                                                                                                                                                                                       "gender": "male",
+                                                                                                                                                                                       "alive": false,
+                                                                                                                                                                                       "dob": "Not Known",
+                                                                                                                                                                                       "dod": "Not Known",
+                                                                                                                                                                                       "place": "Not Known",
+                                                                                                                                                                                       "about": "He is the third Sajjada of Khanqah Burhaniya, Deora. He got burried in Deora, Bihar, India.",
+                                                                                                                                                                                       "burial": {
+                                                                                                                                                                                          "place": "Osaas Dewra, Gaya, Bihar",
+                                                                                                                                                                                          "map": "https://maps.app.goo.gl/fy12gm4UH2uXRDaf7"
+                                                                                                                                                                                       },
+                                                                                                                                                                                       "spouse": null,
+                                                                                                                                                                                       "children": []
+                                                                                                                                                                                    },
+                                                                                                                                                                                    {
+                                                                                                                                                                                       "id": "p49",
+                                                                                                                                                                                       "name": "Hazrat Shah Mohiuddin Deoravi R.H",
+                                                                                                                                                                                       "gender": "male",
+                                                                                                                                                                                       "alive": false,
+                                                                                                                                                                                       "dob": "Not Known",
+                                                                                                                                                                                       "dod": "Not Known",
+                                                                                                                                                                                       "place": "Not Known",
+                                                                                                                                                                                       "about": "He is the fourth Sajjada of Khanqah Burhaniya, Deora. He got burried in Deora, Bihar, India.",
+                                                                                                                                                                                       "burial": {
+                                                                                                                                                                                          "place": "Osaas Dewra, Gaya, Bihar",
+                                                                                                                                                                                          "map": "https://maps.app.goo.gl/fy12gm4UH2uXRDaf7"
+                                                                                                                                                                                       },
+                                                                                                                                                                                       "spouse": null,
+                                                                                                                                                                                       "children": []
+                                                                                                                                                                                    }
+                                                                                                                                                                                 ]
+                                                                                                                                                                              },
+                                                                                                                                                                              {
+                                                                                                                                                                                 "id": "p46",
+                                                                                                                                                                                 "name": "Hazrat Shah Jamaal R.H",
+                                                                                                                                                                                 "gender": "male",
+                                                                                                                                                                                 "alive": false,
+                                                                                                                                                                                 "dob": "Not Known",
+                                                                                                                                                                                 "dod": "Not Known",
+                                                                                                                                                                                 "place": "Not Known",
+                                                                                                                                                                                 "about": "Not Known",
+                                                                                                                                                                                 "burial": null,
+                                                                                                                                                                                 "spouse": null,
+                                                                                                                                                                                 "children": []
+                                                                                                                                                                              },
+                                                                                                                                                                              {
+                                                                                                                                                                                 "id": "p47",
+                                                                                                                                                                                 "name": "Hazrat Shaah Noor R.H",
+                                                                                                                                                                                 "gender": "male",
+                                                                                                                                                                                 "alive": false,
+                                                                                                                                                                                 "dob": "Not Known",
+                                                                                                                                                                                 "dod": "Not Known",
+                                                                                                                                                                                 "place": "Not Known",
+                                                                                                                                                                                 "about": "Not Known",
+                                                                                                                                                                                 "burial": null,
+                                                                                                                                                                                 "spouse": null,
+                                                                                                                                                                                 "children": []
+                                                                                                                                                                              }
+                                                                                                                                                                           ]
+                                                                                                                                                                        }
+                                                                                                                                                                     ]
+                                                                                                                                                                  }
+                                                                                                                                                               ]
+                                                                                                                                                            }
+                                                                                                                                                         ]
+                                                                                                                                                      }
+                                                                                                                                                   ]
+                                                                                                                                                }
+                                                                                                                                             ]
+                                                                                                                                          }
+                                                                                                                                       ]
+                                                                                                                                    },
+                                                                                                                                    {
+                                                                                                                                       "id": "p35",
+                                                                                                                                       "name": "Hazrat Khwaja Abdul Baqi R.H",
+                                                                                                                                       "gender": "male",
+                                                                                                                                       "alive": false,
+                                                                                                                                       "dob": "Not Known",
+                                                                                                                                       "dod": "Not Known",
+                                                                                                                                       "place": "Not Known",
+                                                                                                                                       "about": "Not Known",
+                                                                                                                                       "burial": null,
+                                                                                                                                       "spouse": null,
+                                                                                                                                       "children": []
+                                                                                                                                    },
+                                                                                                                                    {
+                                                                                                                                       "id": "p36",
+                                                                                                                                       "name": "Hazrat Khwaja Ibraheem R.H",
+                                                                                                                                       "gender": "male",
+                                                                                                                                       "alive": false,
+                                                                                                                                       "dob": "Not Known",
+                                                                                                                                       "dod": "Not Known",
+                                                                                                                                       "place": "Not Known",
+                                                                                                                                       "about": "Not Known",
+                                                                                                                                       "burial": null,
+                                                                                                                                       "spouse": null,
+                                                                                                                                       "children": []
+                                                                                                                                    },
+                                                                                                                                    {
+                                                                                                                                       "id": "p37",
+                                                                                                                                       "name": "Hazrat Khwaja Kareemuddin R.H",
+                                                                                                                                       "gender": "male",
+                                                                                                                                       "alive": false,
+                                                                                                                                       "dob": "Not Known",
+                                                                                                                                       "dod": "Not Known",
+                                                                                                                                       "place": "Not Known",
+                                                                                                                                       "about": "Not Known",
+                                                                                                                                       "burial": null,
+                                                                                                                                       "spouse": null,
+                                                                                                                                       "children": []
+                                                                                                                                    },
+                                                                                                                                    {
+                                                                                                                                       "id": "p38",
+                                                                                                                                       "name": "Hazrat Khwaja Abdul Wahid R.H",
+                                                                                                                                       "gender": "male",
+                                                                                                                                       "alive": false,
+                                                                                                                                       "dob": "Not Known",
+                                                                                                                                       "dod": "Not Known",
+                                                                                                                                       "place": "Not Known",
+                                                                                                                                       "about": "Not Known",
+                                                                                                                                       "burial": null,
+                                                                                                                                       "spouse": null,
+                                                                                                                                       "children": []
+                                                                                                                                    }
+                                                                                                                                 ]
+                                                                                                                              }
+                                                                                                                           ]
+                                                                                                                        }
+                                                                                                                     ]
+                                                                                                                  }
+                                                                                                               ]
+                                                                                                            }
+                                                                                                         ]
+                                                                                                      }
+                                                                                                   ]
+                                                                                                }
+                                                                                             ]
+                                                                                          }
+                                                                                       ]
+                                                                                    }
+                                                                                 ]
+                                                                              }
+                                                                           ]
+                                                                        }
+                                                                     ]
+                                                                  }
+                                                               ]
+                                                            }
+                                                         ]
+                                                      }
+                                                   ]
+                                                }
+                                             ]
+                                          }
+                                       ]
+                                    }
+                                 ]
+                              }
+                           ]
+                        }
+                     ]
+                  },
+                  {
+                     "id": "p12",
+                     "name": "Hazrat Khalid R.H",
+                     "gender": "male",
+                     "alive": false,
+                     "dob": "Not Known",
+                     "dod": "Not Known",
+                     "place": "Not Known",
+                     "about": "Not Known",
+                     "burial": null,
+                     "spouse": null,
+                     "children": []
+                  },
+                  {
+                     "id": "p13",
+                     "name": "Bibi Ayesha R.H",
+                     "gender": "female",
+                     "alive": false,
+                     "dob": "Not Known",
+                     "dod": "Not Known",
+                     "place": "Not Known",
+                     "about": "Not Known",
+                     "burial": null,
+                     "spouse": null,
+                     "children": []
+                  },
+                  {
+                     "id": "p14",
+                     "name": "Bibi Aamna R.H",
+                     "gender": "female",
+                     "alive": false,
+                     "dob": "Not Known",
+                     "dod": "Not Known",
+                     "place": "Not Known",
+                     "about": "Not Known",
+                     "burial": null,
+                     "spouse": null,
+                     "children": []
+                  },
+                  {
+                     "id": "p15",
+                     "name": "Hazrat Abdullah R.H",
+                     "gender": "male",
+                     "alive": false,
+                     "dob": "Not Known",
+                     "dod": "Not Known",
+                     "place": "Not Known",
+                     "about": "Not Known",
+                     "burial": null,
+                     "spouse": null,
+                     "children": []
+                  }
+               ]
+            },
+            {
+               "id": "p10",
+               "name": "Hazrat Usman al-Asghar R.H",
+               "gender": "male",
+               "alive": false,
+               "dob": "Not Known",
+               "dod": "Not Known",
+               "place": "Not Known",
+               "about": "Not Known",
+               "burial": null,
+               "spouse": null,
+               "children": []
+            }
+         ]
+      },
+      {
+         "id": "p03",
+         "name": "Walid",
+         "gender": "male",
+         "alive": false,
+         "dob": "Not Known",
+         "dod": "Not Known",
+         "place": "Not Known",
+         "about": "Not Known",
+         "burial": null,
+         "spouse": null,
+         "children": []
+      },
+      {
+         "id": "p04",
+         "name": "Abaan",
+         "gender": "male",
+         "alive": false,
+         "dob": "Not Known",
+         "dod": "Not Known",
+         "place": "Not Known",
+         "about": "Not Known",
+         "burial": null,
+         "spouse": null,
+         "children": []
+      },
+      {
+         "id": "p05",
+         "name": "Mariyam",
+         "gender": "male",
+         "alive": false,
+         "dob": "Not Known",
+         "dod": "Not Known",
+         "place": "Not Known",
+         "about": "Not Known",
+         "burial": null,
+         "spouse": null,
+         "children": []
+      },
+      {
+         "id": "p06",
+         "name": "Amr",
+         "gender": "male",
+         "alive": false,
+         "dob": "Not Known",
+         "dod": "Not Known",
+         "place": "Not Known",
+         "about": "Not Known",
+         "burial": null,
+         "spouse": null,
+         "children": []
+      }
+   ]
+}

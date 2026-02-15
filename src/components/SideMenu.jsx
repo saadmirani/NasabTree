@@ -106,6 +106,70 @@ export default function SideMenu({ section, setSection }) {
                      <span className="icon"><NasabIcon /></span>
                      <span className="label">Qasba Deora</span>
                   </button>
+
+                  <button
+                     className={`submenu-item ${section === "peerbigha" ? "active" : ""}`}
+                     onClick={() => setSection("peerbigha")}
+                  >
+                     <span className="icon"><NasabIcon /></span>
+                     <span className="label">Qasba Peer Bigha</span>
+                  </button>
+
+                  <button
+                     className={`submenu-item ${section === "saadipur" ? "active" : ""}`}
+                     onClick={() => setSection("saadipur")}
+                  >
+                     <span className="icon"><NasabIcon /></span>
+                     <span className="label">Qasba Saadipur</span>
+                  </button>
+
+                  <button
+                     className={`submenu-item ${section === "bikopur" ? "active" : ""}`}
+                     onClick={() => setSection("bikopur")}
+                  >
+                     <span className="icon"><NasabIcon /></span>
+                     <span className="label">Qasba Bikopur</span>
+                  </button>
+
+                  <button
+                     className={`submenu-item ${section === "ramsagar" ? "active" : ""}`}
+                     onClick={() => setSection("ramsagar")}
+                  >
+                     <span className="icon"><NasabIcon /></span>
+                     <span className="label">Qasba Ramsagar</span>
+                  </button>
+
+                  <button
+                     className={`submenu-item ${section === "amjhar" ? "active" : ""}`}
+                     onClick={() => setSection("amjhar")}
+                  >
+                     <span className="icon"><NasabIcon /></span>
+                     <span className="label">Qasba Amjhar</span>
+                  </button>
+
+                  <button
+                     className={`submenu-item ${section === "maner" ? "active" : ""}`}
+                     onClick={() => setSection("maner")}
+                  >
+                     <span className="icon"><NasabIcon /></span>
+                     <span className="label">Qasba Maner</span>
+                  </button>
+
+                  <button
+                     className={`submenu-item ${section === "makaram" ? "active" : ""}`}
+                     onClick={() => setSection("makaram")}
+                  >
+                     <span className="icon"><NasabIcon /></span>
+                     <span className="label">Qasba Makaram Chak</span>
+                  </button>
+
+                  <button
+                     className={`submenu-item ${section === "arwal" ? "active" : ""}`}
+                     onClick={() => setSection("arwal")}
+                  >
+                     <span className="icon"><NasabIcon /></span>
+                     <span className="label">Qasba Arwal</span>
+                  </button>
                </div>
             )}
          </div>

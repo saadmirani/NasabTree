@@ -1,6 +1,4 @@
 import React from "react";
-import { useLanguage } from "../context/LanguageContext";
-import { t } from "../translations";
 import "../styles/Sidemenu.css";
 
 const HomeIcon = () => (

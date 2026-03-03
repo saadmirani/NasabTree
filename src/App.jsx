@@ -7,6 +7,7 @@ import Home from "./components/Home";
 import NasabMiranBigha from "./components/NasabMiranBigha";
 import NasabSimla from "./components/NasabSimla";
 import NasabDeora from "./components/NasabDeora";
+import Bikopur from "./components/bikopur";
 import Books from "./components/Books";
 import UrsCalendar from "./components/UrsCalendar";
 import KhanqahList from "./components/KhanqahList";
@@ -36,6 +37,7 @@ export default function App() {
             {section === "miranbigha" && <NasabMiranBigha />}
             {section === "simla" && <NasabSimla />}
             {section === "deora" && <NasabDeora />}
+            {section === "bikopur" && <Bikopur />}
             {section === "books" && <Books />}
             {section === "urs" && <UrsCalendar />}
             {section === "khanqah" && <KhanqahList />}

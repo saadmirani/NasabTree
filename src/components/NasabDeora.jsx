@@ -251,7 +251,7 @@ export default function NasabDeora() {
          .append("text")
          .attr("class", "material-symbols-outlined")
          .attr("text-anchor", "middle")
-         .attr("dy", "0.35em")
+         .attr("dominant-baseline", "central")
          .attr("fill", "white")
          .attr("font-family", "'Material Symbols Outlined'")
          .text("person")

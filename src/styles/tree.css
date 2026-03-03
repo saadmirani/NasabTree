@@ -64,6 +64,9 @@
       'wght' 500,
       'GRAD' 0,
       'opsz' 48;
+   /* Perfect centering */
+   dominant-baseline: central;
+   text-anchor: middle;
 }
 
 /* Alive indicator badge */

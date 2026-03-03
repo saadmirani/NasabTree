@@ -15,13 +15,22 @@ import ContactUs from "./components/ContactUs";
 
 export default function App() {
   const [section, setSection] = useState("home");
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const handleSectionChange = (newSection) => {
+    setSection(newSection);
+    setMenuOpen(false); // Close menu on mobile when section changes
+  };
 
   return (
     <LanguageProvider>
       <div className="layout">
-        <Navbar />
+        <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+        {menuOpen && (
+          <div className="menu-overlay" onClick={() => setMenuOpen(false)} />
+        )}
         <div className="main-area">
-          <SideMenu section={section} setSection={setSection} />
+          <SideMenu section={section} setSection={handleSectionChange} isOpen={menuOpen} setIsOpen={setMenuOpen} />
           <main className="content">
             {section === "home" && <Home />}
             {section === "miranbigha" && <NasabMiranBigha />}

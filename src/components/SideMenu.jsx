@@ -57,11 +57,11 @@ const MosqueIcon = () => (
    </svg>
 );
 
-export default function SideMenu({ section, setSection }) {
+export default function SideMenu({ section, setSection, isOpen, setIsOpen }) {
    const [showSilsilas, setShowSilsilas] = React.useState(false);
 
    return (
-      <nav className="sidemenu">
+      <nav className={`sidemenu ${isOpen ? "open" : ""}`}>
          <button
             className={`menu-item ${section === "home" ? "active" : ""}`}
             onClick={() => setSection("home")}

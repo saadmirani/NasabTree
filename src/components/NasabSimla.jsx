@@ -3,6 +3,61 @@ import * as d3 from "d3";
 import simlaData from "../data/simla.json";
 import "../styles/tree.css";
 
+// Mapping of religious abbreviations to Urdu translations
+const abbreviationMap = {
+   "R.A": "رضی اللہ تعالیٰ عنہ",
+   "R.H": "رحمۃ اللہ علیہ",
+   "R.Z": "رضی اللہ عنہا",
+   "R.U.A": "رضی اللہ عنہ",
+   "P.B.U.H": "صلی اللہ علیہ وسلم",
+   "PBUH": "صلی اللہ علیہ وسلم",
+   "R.D": "رضی اللہ دعنہ",
+};
+
+// Helper function to translate text to Urdu using Google Translate API
+const translateToUrdu = async (text) => {
+   if (!text || text.trim() === "") return "";
+   try {
+      // Extract religious abbreviations to translate them
+      const abbreviationRegex = /\b(R\.A|R\.H|R\.Z|R\.D|P\.B\.U\.H|PBUH|R\.U\.A|CE|A\.D|B\.C)\b/gi;
+
+      let textToTranslate = text;
+      const abbreviationMatches = text.match(abbreviationRegex) || [];
+      const abbreviationMap_lower = {};
+
+      // Create case-insensitive map and store abbreviations
+      Object.keys(abbreviationMap).forEach(key => {
+         abbreviationMap_lower[key.toUpperCase()] = abbreviationMap[key];
+      });
+
+      // Replace abbreviations with placeholders
+      abbreviationMatches.forEach((abbr, idx) => {
+         textToTranslate = textToTranslate.replace(abbr, `[ABBR${idx}]`);
+      });
+
+      const response = await fetch(
+         `https://api.mymemory.translated.net/get?q=${encodeURIComponent(textToTranslate)}&langpair=en|ur`
+      );
+      const data = await response.json();
+
+      let translatedText = text;
+      if (data.responseStatus === 200 && data.responseData.translatedText) {
+         translatedText = data.responseData.translatedText;
+
+         // Restore abbreviations with their Urdu translations
+         abbreviationMatches.forEach((abbr, idx) => {
+            const urduAbbr = abbreviationMap_lower[abbr.toUpperCase()] || abbr;
+            translatedText = translatedText.replace(`[ABBR${idx}]`, urduAbbr);
+         });
+      }
+
+      return translatedText;
+   } catch (error) {
+      console.error("Translation error:", error);
+      return text; // Fallback to original text on error
+   }
+};
+
 export default function NasabSimla() {
    const svgRef = useRef();
    const peopleRef = useRef([]);
@@ -330,7 +385,7 @@ export default function NasabSimla() {
 
 // Detail Popup Component
 const DetailPopup = memo(function DetailPopup({ data, position, onClose, rootRef }) {
-   const generateAndDownloadShajra = useCallback(() => {
+   const generateAndDownloadShajra = useCallback(async () => {
       if (!rootRef.current || !data.id) return;
 
       // Find the node in the tree by ID
@@ -356,15 +411,35 @@ const DetailPopup = memo(function DetailPopup({ data, position, onClose, rootRef
          current = current.parent;
       }
 
-      // Generate text
-      let text = `Shajra-e-Nasb ${data.name}\n\n`;
+      // Generate text with both Urdu (first) and English
+      let text = '';
+
+      // URDU SECTION - Translate all names
+      // First translate the person's name for the header
+      const personUrduName = await translateToUrdu(data.name);
+      text += `شجرہ نسب ${personUrduName}\n`;
+      text += `${'='.repeat(50)}\n\n`;
+
+      // Translate all names in the chain
+      const urduNames = await Promise.all(
+         chain.map(person => translateToUrdu(person.name))
+      );
+
+      urduNames.forEach((urduName, index) => {
+         text += `${index + 1}. ${urduName}\n`;
+      });
+
+      // ENGLISH SECTION
+      text += `\n\n${'='.repeat(50)}\n`;
+      text += `Shajra-e-Nasb (Genealogy) ${data.name}\n`;
+      text += `${'='.repeat(50)}\n\n`;
       chain.forEach((person, index) => {
          text += `${index + 1}. ${person.name}\n`;
       });
 
-      // Download file
+      // Download file with UTF-8 encoding to support Urdu
       const element = document.createElement('a');
-      const file = new Blob([text], { type: 'text/plain' });
+      const file = new Blob([text], { type: 'text/plain;charset=utf-8' });
       element.href = URL.createObjectURL(file);
       element.download = `Shajra_${data.name.replace(/\s+/g, '_')}.txt`;
       document.body.appendChild(element);

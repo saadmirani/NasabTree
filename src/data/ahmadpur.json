@@ -1,0 +1,822 @@
+{
+   "id": "p01",
+   "name": "Ameer ul Momineen Hazrat Syedna Ali ibn-e-Abi-Talib R.Z",
+   "gender": "male",
+   "alive": false,
+   "dob": "600 CE",
+   "dod": "28/01/661 CE/ 40 AH",
+   "place": "Mecca, Hejaz, Saudi Arabia",
+   "about": "Ali ibn Abi Talib (Arabic: عَلِيُّ بْن أَبِي طَالِب, romanized: ʿAlī ibn Abī Ṭālib) (c. 600 – 661 CE) was the fourth Rashidun caliph who ruled from 656 CE until his assassination in 661, as well as the first Shia Imam. He was the cousin and son-in-law of the Islamic prophet Muhammad. Born to Abu Talib ibn Abd al-Muttalib and Fatima bint Asad, Ali was raised in the household of his cousin Muhammad and was among the first to accept his teachings. Ali played a pivotal role in the early years of Islam when Muslims were severely persecuted in Mecca. After the immigration (hijra) to Medina in 622, Muhammad gave his daughter Fatima to Ali in marriage and swore a pact of brotherhood with him. Ali served as Muhammad's secretary and deputy in this period, and was the flag bearer of his army. ",
+   "burial": {
+      "place": "Koofa, Iraq",
+      "map": "https://maps.app.goo.gl/buPswF1TuBiJPah37"
+   },
+   "spouse": {
+      "name": "Hazrat Bibi Fatima R.Z",
+      "fname": "Hazrat Mohammad Mustafa PBUH",
+      "gender": "female",
+      "alive": false,
+      "dob": "605 CE",
+      "dod": "632 CE",
+      "place": "Mecca, Hejaz, Saudi Arabia",
+      "burial": {
+         "place": "Jannat al-Baqi, Medina, Saudi Arabia",
+         "map": "https://maps.app.goo.gl/wQ91kEouFvFPJaGC6"
+      },
+      "about": "Fatima bint Muhammad (Arabic: فَاطِمَة بِنْت مُحَمَّد, romanized: Fāṭima bint Muḥammad; 605/15–632 CE), commonly known as Fatima al-Zahra' (Arabic: فَاطِمَة ٱلزَّهْرَاء, romanized: Fāṭima al-Zahrāʾ), was the daughter of the Islamic prophet Muhammad and his wife Khadija.[1] Fatima's husband was Ali, the fourth of the Rashidun caliphs and the first Shia imam. Fatima's sons were Hasan and Husayn, the second and third Shia imams, respectively.[2][3] Fatima has been compared to Mary, mother of Jesus, especially in Shia Islam.[4][5] Muhammad is said to have regarded her as the best of women[6][7] and the dearest person to him.[8][6] She is often viewed as an ultimate archetype for Muslim women and an example of compassion, generosity, and enduring suffering.[4] It is through Fatima that Muhammad's family line has survived to this date.[9][7] Her name and her epithets remain popular choices for Muslim girls."
+   },
+   "children": [
+      {
+         "id": "p02",
+         "name": "Ameer ul Momineen Hazrat Syedna Hasan R.Z",
+         "gender": "male",
+         "alive": false,
+         "dob": "04/03/625 CE / 3 AH",
+         "dod": "05/03/670 CE / 49-50 AH",
+         "place": "Medina, Hejaz, Saudi Arabia",
+         "about": "Hasan ibn Ali (Arabic: الحسن ابن علي, romanized: al-Ḥasan ibn ʿAlī; c. 625 – 2 April 670) was an Alid political and religious leader. The eldest son of Ali and Fatima and a grandson of the Islamic prophet Muhammad, Hasan briefly ruled as caliph from January 661 until August 661. He is considered as the second Imam in Shia Islam, succeeding Ali and preceding his brother Husayn. As a grandson of the prophet, he is part of the ahl al-bayt and the ahl al-kisa, and also participated in the event of the mubahala.",
+         "burial": {
+            "place": "Medina, Hejaz, Saudi Arabia",
+            "map": "https://maps.app.goo.gl/wQ91kEouFvFPJaGC6"
+         },
+         "spouse": {
+            "name": "Hazrat Hafsa bint Abd al-Rahman R.Z",
+            "fname": "Hazrat Abd al-Rahman R.H",
+            "gender": "female",
+            "alive": false,
+            "dob": "Not Known",
+            "dod": "Not Known",
+            "place": "Not Known",
+            "burial": {
+               "place": "Jannat al-Baqi, Medina, Saudi Arabia",
+               "map": "https://maps.app.goo.gl/wQ91kEouFvFPJaGC6"
+            },
+            "about": "Not Known"
+         },
+         "children": []
+      },
+      {
+         "id": "p03",
+         "name": "Ameer ul Momineen Hazrat Syedna Hussain R.Z",
+         "gender": "male",
+         "alive": false,
+         "dob": "11/01/625 CE / 4 AH",
+         "dod": "10/10/680 CE / 61 AH",
+         "place": "Medina, Hejaz, Saudi Arabia",
+         "about": "Husayn ibn Ali (Arabic: الحسين بن علي, romanized: al-Ḥusayn ibn ʿAlī; 11 January 626 – 10 October 680 CE) was an Alid political and religious leader. The second son of Ali and Fatima and a grandson of the Islamic prophet Muhammad, as well as a younger brother of Hasan ibn Ali,[4] Husayn is regarded as the third Imam in Shia Islam after his brother, Hasan, and before his son, Ali al-Sajjad. Husayn is a prominent member of the Ahl al-Bayt and is also considered to be a member of the Ahl al-Kisa and a participant in the event of the mubahala. Muhammad described him and his brother, Hasan, as the leaders of the youth of paradise.",
+         "burial": {
+            "place": "Karbala, Iraq",
+            "map": "https://maps.app.goo.gl/AxvtnziVYzNi98AR8"
+         },
+         "spouse": {
+            "name": "Hazrat Bibi Shahrbānū  R.Z",
+            "fname": "Hazrat Yazdegerd",
+            "gender": "female",
+            "alive": false,
+            "dob": "Not Known",
+            "dod": "Not Known",
+            "place": "Persia,Iran",
+            "burial": null,
+            "about": "Not Known"
+         },
+         "children": [
+            {
+               "id": "p07",
+               "name": "Hazrat Syedna Imam Zayn-ul-Abideen R.Z",
+               "gender": "male",
+               "alive": false,
+               "dob": "38 AH",
+               "dod": "94-95 AH",
+               "place": "Medina, Hejaz, Saudi Arabia",
+               "about": "Ali ibn al-Husayn al-Sajjad (Arabic: عَلِيٌّ بْنُ ٱلْحُسَيْنِ ٱلسَّجَّادُ, romanized: ʿAlī ibn al-Ḥusayn al-Sajjād, c. 658 – 712), also known as Zayn al-Abidin (Arabic: زَيْنُ ٱلْعَابِدِينَ, romanized: Zayn al-ʿĀbidīn, lit. 'ornament of worshippers') was the great-grandson of the Islamic prophet Muhammad, and the fourth Imam in Shia Islam, succeeding his father, Husayn ibn Ali, his uncle, Hasan ibn Ali, and his grandfather, Ali ibn Abi Talib.",
+               "burial": {
+                  "place": "Jannat al-Baqi, Medina, Saudi Arabia",
+                  "map": "https://maps.app.goo.gl/wQ91kEouFvFPJaGC6"
+               },
+               "spouse": {
+                  "name": "Hazrat Fatima Bint Hasan R.Z",
+                  "fname": "Hazrat Syedna Imam Hasan R.Z",
+                  "gender": "female",
+                  "alive": false,
+                  "dob": "700 CE",
+                  "dod": "7/8 Century",
+                  "place": "Medina, Hejaz, Saudi Arabia",
+                  "burial": null,
+                  "about": "Not Known"
+               },
+               "children": [
+                  {
+                     "id": "p08",
+                     "name": "Hazrat Syedna Imam Baqar R.H",
+                     "gender": "male",
+                     "alive": false,
+                     "dob": "676 CE",
+                     "dod": "732 CE",
+                     "place": "Medina, Hejaz, Saudi Arabia",
+                     "about": "Muhammad ibn Ali al-Baqir (Arabic: محمد بن علي الباقر, romanized: Muḥammad ibn ʿAlī al-Bāqir; c. 676–732) was a descendant of the Islamic prophet Muhammad and the fifth of the twelve Shia imams, succeeding his father, Ali al-Sajjad, and succeeded by his son, Ja'far al-Sadiq. Muhammad's honorific title al-Baqir is short for baqir al-ilm, which means 'the one who splits knowledge open', a reference to his fame as a religious scholar.",
+                     "burial": {
+                        "place": "Jannat al-Baqi, Medina, Saudi Arabia",
+                        "map": "https://maps.app.goo.gl/wQ91kEouFvFPJaGC6"
+                     },
+                     "spouse": {
+                        "name": "Hazrat Bibi Umm Farwa bint al-Qāsim R.H",
+                        "fname": "Hazrat Qasim ibn Muhammad ibn Abi Bakr R.H",
+                        "gender": "female",
+                        "alive": false,
+                        "dob": "Not Known",
+                        "dod": "Not Known",
+                        "place": "Medina, Hejaz, Saudi Arabia",
+                        "burial": {
+                           "place": "Jannat al-Baqi, Medina, Saudi Arabia",
+                           "map": "https://maps.app.goo.gl/wQ91kEouFvFPJaGC6"
+                        },
+                        "about": "Not Known"
+                     },
+                     "children": [
+                        {
+                           "id": "p09",
+                           "name": "Hazrat Syedna Imam Ja'far Sadiq R.H",
+                           "gender": "male",
+                           "alive": false,
+                           "dob": "83 AH",
+                           "dod": "148 AH",
+                           "place": "Medina, Hejaz, Saudi Arabia",
+                           "about": "Ja'far ibn Muhammad al-Sadiq (Arabic: جعفر ابن محمد الصادق, romanized: Jaʿfar ibn Muḥammad al-Ṣādiq; c. 702–765) was a Muslim scholar, jurist, hadith transmitter and the sixth and last agreed-upon Shia Imam amongst Twelvers and Isma'ilis.[4] Known by the title al-Sadiq",
+                           "burial": {
+                              "place": "Jannat al-Baqi, Medina, Saudi Arabia",
+                              "map": "https://maps.app.goo.gl/wQ91kEouFvFPJaGC6"
+                           },
+                           "spouse": {
+                              "name": "Hazrat Bibi Umm Ḥamīda Khātūn R.H",
+                              "fname": "Not Known",
+                              "gender": "female",
+                              "alive": false,
+                              "dob": "Not Known",
+                              "dod": "Not Known",
+                              "place": "Not Known",
+                              "burial": null,
+                              "about": "Not Known"
+                           },
+                           "children": [
+                              {
+                                 "id": "p10",
+                                 "name": "Hazrat Syedna Imam Moosa Kaazim R.H",
+                                 "gender": "male",
+                                 "alive": false,
+                                 "dob": "128 AH",
+                                 "dod": "183 AH",
+                                 "place": "Medina, Hejaz, Saudi Arabia",
+                                 "about": "Musa al-Kazim (Arabic: مُوسَىٰ ٱبْن جَعْفَر ٱلْكَاظِم, romanized: Mūsā ibn Jaʿfar al-Kāẓim; 745–799) was a descendant of the Islamic prophet Muhammad and the seventh imam in Twelver Shia Islam. Musa is often known by the title al-Kazim (lit. 'forbearing'), apparently a reference to his patience and gentle disposition.",
+                                 "burial": {
+                                    "place": "Baghdaad",
+                                    "map": null
+                                 },
+                                 "spouse": {
+                                    "name": "Hazrat Bibi Najma R.H",
+                                    "fname": "Not Known",
+                                    "gender": "female",
+                                    "alive": false,
+                                    "dob": "Not Known",
+                                    "dod": "Not Known",
+                                    "place": "Not Known",
+                                    "burial": null,
+                                    "about": "Not Known"
+                                 },
+                                 "children": [
+                                    {
+                                       "id": "p11",
+                                       "name": "Hazrat Syedna Imam Ali Raza R.H",
+                                       "gender": "male",
+                                       "alive": false,
+                                       "dob": "148 AH",
+                                       "dod": "202 AH",
+                                       "place": "Medina, Hejaz, Saudi Arabia",
+                                       "about": "Ali ibn Musa al-Raza (Arabic: علي بن موسى الرضا, romanized: ʿAlī ibn Mūsā al-Riḍā, c. 1 January 766 – c. 6 June 818), also known as Abū al-Ḥasan al-Thānī, was a descendant of the Islamic prophet Muhammad, and the eighth Imam in Twelver Shia Islam, succeeding his father, Musa al-Kazim in 799 CE. ",
+                                       "burial": null,
+                                       "spouse": {
+                                          "name": "Hazrat Bibi Sabika (or Khayzuran)",
+                                          "fname": "Not Known",
+                                          "gender": "female",
+                                          "alive": false,
+                                          "dob": "Not Known",
+                                          "dod": "Not Known",
+                                          "place": "Not Known",
+                                          "burial": null,
+                                          "about": "Not Known"
+                                       },
+                                       "children": [
+                                          {
+                                             "id": "p12",
+                                             "name": "Hazrat Syedna Imam Muhammad Taqi R.H",
+                                             "gender": "male",
+                                             "alive": false,
+                                             "dob": "195 AH",
+                                             "dod": "220 AH",
+                                             "place": "Medina, Hejaz, Saudi Arabia",
+                                             "about": "Not Known",
+                                             "burial": null,
+                                             "spouse": {
+                                                "name": "Hazrat Bibi Samana R.H",
+                                                "fname": "Not Known",
+                                                "gender": "female",
+                                                "alive": false,
+                                                "dob": "Not Known",
+                                                "dod": "Not Known",
+                                                "place": "Not Known",
+                                                "burial": null,
+                                                "about": "Not Known"
+                                             },
+                                             "children": [
+                                                {
+                                                   "id": "p13",
+                                                   "name": "Hazrat Syedna Imam Ali Naqi R.H",
+                                                   "gender": "male",
+                                                   "alive": false,
+                                                   "dob": "212 AH",
+                                                   "dod": "254 AH",
+                                                   "place": "Medina, Hejaz, Saudi Arabia",
+                                                   "about": "Not Known",
+                                                   "burial": null,
+                                                   "spouse": {
+                                                      "name": "Hazrat Bibi Hudayth R.H",
+                                                      "fname": "Not Known",
+                                                      "gender": "female",
+                                                      "alive": false,
+                                                      "dob": "Not Known",
+                                                      "dod": "Not Known",
+                                                      "place": "Not Known",
+                                                      "burial": null,
+                                                      "about": "Not Known"
+                                                   },
+                                                   "children": [
+                                                      {
+                                                         "id": "p14",
+                                                         "name": "Hazrat Syedna Imam Hasan al_Askari R.H",
+                                                         "gender": "male",
+                                                         "alive": false,
+                                                         "dob": "232 AH",
+                                                         "dod": "260 AH",
+                                                         "place": "Medina, Hejaz, Saudi Arabia",
+                                                         "about": "Hasan al-Askari (Arabic: الحَسَن بْن عَلِيّ ٱلْعَسْكَرِيّ, romanized: al-Ḥasan ibn ʿAlī al-ʿAskarī; c. 844–874) was a descendant of the Islamic prophet Muhammad. He is regarded as the eleventh of the Twelve Imams, succeeding his father, Ali al-Hadi. Hasan Al-Askari was born in Medina in 844 and brought with his father to the garrison town of Samarra in 848, where the Abbasid caliphs held them under close surveillance until their deaths, even though neither were politically active",
+                                                         "burial": {
+                                                            "place": "Sammara, Iraq",
+                                                            "map": "https://maps.app.goo.gl/tZ5DEDjsyMZwaV6v6"
+                                                         },
+                                                         "spouse": {
+                                                            "name": "Hazrat Bibi Nargis R.H",
+                                                            "fname": "Not Known",
+                                                            "gender": "female",
+                                                            "alive": false,
+                                                            "dob": "Not Known",
+                                                            "dod": "Not Known",
+                                                            "place": "Not Known",
+                                                            "burial": null,
+                                                            "about": "Not Known"
+                                                         },
+                                                         "children": []
+                                                      },
+                                                      {
+                                                         "id": "p15",
+                                                         "name": "Hazrat Syedna Abdullah Jaʿfar R.H",
+                                                         "gender": "male",
+                                                         "alive": false,
+                                                         "dob": "226 AH",
+                                                         "dod": "271 AH",
+                                                         "place": "Medina, Hejaz, Saudi Arabia",
+                                                         "about": "Otherwise known as Ibraheem Abdullah Ali Akbar R.H",
+                                                         "burial": {
+                                                            "place": "Sammara, Iraq",
+                                                            "map": null
+                                                         },
+                                                         "spouse": null,
+                                                         "children": []
+                                                      },
+                                                      {
+                                                         "id": "p16",
+                                                         "name": "Hazrat Syed Abū Jaʿfar Muḥammad R.H",
+                                                         "gender": "male",
+                                                         "alive": false,
+                                                         "dob": "228 AH",
+                                                         "dod": "254 AH",
+                                                         "place": "Medina, Hejaz, Saudi Arabia",
+                                                         "about": "Not Known",
+                                                         "burial": {
+                                                            "place": "Balad, Iraq",
+                                                            "map": null
+                                                         },
+                                                         "spouse": null,
+                                                         "children": [
+                                                            {
+                                                               "id": "p17",
+                                                               "name": "Hazrat Syed Qasim R.H",
+                                                               "gender": "male",
+                                                               "alive": false,
+                                                               "dob": "Not Known",
+                                                               "dod": "Not Known",
+                                                               "place": "Not Known",
+                                                               "about": "Not Known",
+                                                               "burial": null,
+                                                               "spouse": null,
+                                                               "children": [
+                                                                  {
+                                                                     "id": "p18",
+                                                                     "name": "Hazrat Syed Mohammad R.H",
+                                                                     "gender": "male",
+                                                                     "alive": false,
+                                                                     "dob": "Not Known",
+                                                                     "dod": "Not Known",
+                                                                     "place": "Not Known",
+                                                                     "about": "Not Known",
+                                                                     "burial": null,
+                                                                     "spouse": null,
+                                                                     "children": [
+                                                                        {
+                                                                           "id": "p20",
+                                                                           "name": "Hazrat Syed Zaid R.H",
+                                                                           "gender": "male",
+                                                                           "alive": false,
+                                                                           "dob": "Not Known",
+                                                                           "dod": "Not Known",
+                                                                           "place": "Not Known",
+                                                                           "about": "Not Known",
+                                                                           "burial": null,
+                                                                           "spouse": null,
+                                                                           "children": [
+                                                                              {
+                                                                                 "id": "p21",
+                                                                                 "name": "Hazrat Syed Ishaaq R.H",
+                                                                                 "gender": "male",
+                                                                                 "alive": false,
+                                                                                 "dob": "Not Known",
+                                                                                 "dod": "Not Known",
+                                                                                 "place": "Not Known",
+                                                                                 "about": "Not Known",
+                                                                                 "burial": null,
+                                                                                 "spouse": null,
+                                                                                 "children": [
+                                                                                    {
+                                                                                       "id": "p22",
+                                                                                       "name": "Hazrat Syed Ahmad R.H",
+                                                                                       "gender": "male",
+                                                                                       "alive": false,
+                                                                                       "dob": "Not Known",
+                                                                                       "dod": "Not Known",
+                                                                                       "place": "Not Known",
+                                                                                       "about": "Not Known",
+                                                                                       "burial": null,
+                                                                                       "spouse": null,
+                                                                                       "children": [
+                                                                                          {
+                                                                                             "id": "p23",
+                                                                                             "name": "Hazrat Syed Yaqoob R.H",
+                                                                                             "gender": "male",
+                                                                                             "alive": false,
+                                                                                             "dob": "Not Known",
+                                                                                             "dod": "Not Known",
+                                                                                             "place": "Not Known",
+                                                                                             "about": "Not Known",
+                                                                                             "burial": null,
+                                                                                             "spouse": null,
+                                                                                             "children": [
+                                                                                                {
+                                                                                                   "id": "p24",
+                                                                                                   "name": "Hazrat Syed Muhammad R.H",
+                                                                                                   "gender": "male",
+                                                                                                   "alive": false,
+                                                                                                   "dob": "Not Known",
+                                                                                                   "dod": "Not Known",
+                                                                                                   "place": "Not Known",
+                                                                                                   "about": "Not Known",
+                                                                                                   "burial": null,
+                                                                                                   "spouse": null,
+                                                                                                   "children": [
+                                                                                                      {
+                                                                                                         "id": "p25",
+                                                                                                         "name": "Hazrat Syed Zameer R.H",
+                                                                                                         "gender": "male",
+                                                                                                         "alive": false,
+                                                                                                         "dob": "Not Known",
+                                                                                                         "dod": "Not Known",
+                                                                                                         "place": "Not Known",
+                                                                                                         "about": "Not Known",
+                                                                                                         "burial": null,
+                                                                                                         "spouse": null,
+                                                                                                         "children": [
+                                                                                                            {
+                                                                                                               "id": "p26",
+                                                                                                               "name": "Hazrat Meer Syed Akram R.H",
+                                                                                                               "gender": "male",
+                                                                                                               "alive": false,
+                                                                                                               "dob": "Not Known",
+                                                                                                               "dod": "Not Known",
+                                                                                                               "place": "Not Known",
+                                                                                                               "about": "Not Known",
+                                                                                                               "burial": null,
+                                                                                                               "spouse": null,
+                                                                                                               "children": [
+                                                                                                                  {
+                                                                                                                     "id": "p28",
+                                                                                                                     "name": "Hazrat Meer Syed Mursil R.H",
+                                                                                                                     "gender": "male",
+                                                                                                                     "alive": false,
+                                                                                                                     "dob": "Not Known",
+                                                                                                                     "dod": "Not Known",
+                                                                                                                     "place": "Not Known",
+                                                                                                                     "about": "Not Known",
+                                                                                                                     "burial": null,
+                                                                                                                     "spouse": null,
+                                                                                                                     "children": []
+                                                                                                                  }
+                                                                                                               ]
+                                                                                                            },
+                                                                                                            {
+                                                                                                               "id": "p27",
+                                                                                                               "name": "Hazrat Meer Syed Shahid R.H",
+                                                                                                               "gender": "male",
+                                                                                                               "alive": false,
+                                                                                                               "dob": "Not Known",
+                                                                                                               "dod": "Not Known",
+                                                                                                               "place": "Not Known",
+                                                                                                               "about": "Not Known",
+                                                                                                               "burial": null,
+                                                                                                               "spouse": null,
+                                                                                                               "children": [
+                                                                                                                  {
+                                                                                                                     "id": "p29",
+                                                                                                                     "name": "Hazrat Meer Syed Abdul Azeez R.H",
+                                                                                                                     "gender": "male",
+                                                                                                                     "alive": false,
+                                                                                                                     "dob": "Not Known",
+                                                                                                                     "dod": "Not Known",
+                                                                                                                     "place": "Not Known",
+                                                                                                                     "about": "Not Known",
+                                                                                                                     "burial": null,
+                                                                                                                     "spouse": null,
+                                                                                                                     "children": [
+                                                                                                                        {
+                                                                                                                           "id": "p30",
+                                                                                                                           "name": "Hazrat Syed Abdul Kareem R.H",
+                                                                                                                           "gender": "male",
+                                                                                                                           "alive": false,
+                                                                                                                           "dob": "Not Known",
+                                                                                                                           "dod": "Not Known",
+                                                                                                                           "place": "Not Known",
+                                                                                                                           "about": "Not Known",
+                                                                                                                           "burial": null,
+                                                                                                                           "spouse": null,
+                                                                                                                           "children": []
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                           "id": "p31",
+                                                                                                                           "name": "Hazrat Syed Mubarak R.H",
+                                                                                                                           "gender": "male",
+                                                                                                                           "alive": false,
+                                                                                                                           "dob": "Not Known",
+                                                                                                                           "dod": "Not Known",
+                                                                                                                           "place": "Not Known",
+                                                                                                                           "about": "Not Known",
+                                                                                                                           "burial": null,
+                                                                                                                           "spouse": null,
+                                                                                                                           "children": [
+                                                                                                                              {
+                                                                                                                                 "id": "p33",
+                                                                                                                                 "name": "Hazrat Syed Yaqoob R.H",
+                                                                                                                                 "gender": "male",
+                                                                                                                                 "alive": false,
+                                                                                                                                 "dob": "Not Known",
+                                                                                                                                 "dod": "Not Known",
+                                                                                                                                 "place": "Not Known",
+                                                                                                                                 "about": "Not Known",
+                                                                                                                                 "burial": null,
+                                                                                                                                 "spouse": null,
+                                                                                                                                 "children": [
+                                                                                                                                    {
+                                                                                                                                       "id": "p35",
+                                                                                                                                       "name": "Hazrat Syed Mahir R.H",
+                                                                                                                                       "gender": "male",
+                                                                                                                                       "alive": false,
+                                                                                                                                       "dob": "Not Known",
+                                                                                                                                       "dod": "Not Known",
+                                                                                                                                       "place": "Not Known",
+                                                                                                                                       "about": "Not Known",
+                                                                                                                                       "burial": null,
+                                                                                                                                       "spouse": null,
+                                                                                                                                       "children": [
+                                                                                                                                          {
+                                                                                                                                             "id": "p36",
+                                                                                                                                             "name": "Hazrat Syed Mamoon R.H",
+                                                                                                                                             "gender": "male",
+                                                                                                                                             "alive": false,
+                                                                                                                                             "dob": "Not Known",
+                                                                                                                                             "dod": "Not Known",
+                                                                                                                                             "place": "Not Known",
+                                                                                                                                             "about": "Not Known",
+                                                                                                                                             "burial": null,
+                                                                                                                                             "spouse": null,
+                                                                                                                                             "children": [
+                                                                                                                                                {
+                                                                                                                                                   "id": "p37",
+                                                                                                                                                   "name": "Hazrat Syed Aalmeen R.H",
+                                                                                                                                                   "gender": "male",
+                                                                                                                                                   "alive": false,
+                                                                                                                                                   "dob": "Not Known",
+                                                                                                                                                   "dod": "Not Known",
+                                                                                                                                                   "place": "Not Known",
+                                                                                                                                                   "about": "Not Known",
+                                                                                                                                                   "burial": null,
+                                                                                                                                                   "spouse": null,
+                                                                                                                                                   "children": []
+                                                                                                                                                }
+                                                                                                                                             ]
+                                                                                                                                          }
+                                                                                                                                       ]
+                                                                                                                                    }
+                                                                                                                                 ]
+                                                                                                                              },
+                                                                                                                              {
+                                                                                                                                 "id": "p34",
+                                                                                                                                 "name": "Hazrat Syed Mahmood R.H",
+                                                                                                                                 "gender": "male",
+                                                                                                                                 "alive": false,
+                                                                                                                                 "dob": "Not Known",
+                                                                                                                                 "dod": "Not Known",
+                                                                                                                                 "place": "Not Known",
+                                                                                                                                 "about": "Not Known",
+                                                                                                                                 "burial": null,
+                                                                                                                                 "spouse": null,
+                                                                                                                                 "children": []
+                                                                                                                              }
+                                                                                                                           ]
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                           "id": "p32",
+                                                                                                                           "name": "Hazrat Syed Khizar R.H",
+                                                                                                                           "gender": "male",
+                                                                                                                           "alive": false,
+                                                                                                                           "dob": "Not Known",
+                                                                                                                           "dod": "Not Known",
+                                                                                                                           "place": "Not Known",
+                                                                                                                           "about": "Not Known",
+                                                                                                                           "burial": null,
+                                                                                                                           "spouse": null,
+                                                                                                                           "children": [
+                                                                                                                              {
+                                                                                                                                 "id": "p38",
+                                                                                                                                 "name": "Hazrat Syed Muhammad R.H",
+                                                                                                                                 "gender": "male",
+                                                                                                                                 "alive": false,
+                                                                                                                                 "dob": "Not Known",
+                                                                                                                                 "dod": "Not Known",
+                                                                                                                                 "place": "Not Known",
+                                                                                                                                 "about": "Not Known",
+                                                                                                                                 "burial": null,
+                                                                                                                                 "spouse": null,
+                                                                                                                                 "children": [
+                                                                                                                                    {
+                                                                                                                                       "id": "p42",
+                                                                                                                                       "name": "Hazrat Syed Peer Muhammad R.H",
+                                                                                                                                       "gender": "male",
+                                                                                                                                       "alive": false,
+                                                                                                                                       "dob": "Not Known",
+                                                                                                                                       "dod": "Not Known",
+                                                                                                                                       "place": "Not Known",
+                                                                                                                                       "about": "Not Known",
+                                                                                                                                       "burial": null,
+                                                                                                                                       "spouse": null,
+                                                                                                                                       "children": [
+                                                                                                                                          {
+                                                                                                                                             "id": "p44",
+                                                                                                                                             "name": "Hazrat Syed Fakhrullah R.H",
+                                                                                                                                             "gender": "male",
+                                                                                                                                             "alive": false,
+                                                                                                                                             "dob": "Not Known",
+                                                                                                                                             "dod": "Not Known",
+                                                                                                                                             "place": "Not Known",
+                                                                                                                                             "about": "Not Known",
+                                                                                                                                             "burial": null,
+                                                                                                                                             "spouse": null,
+                                                                                                                                             "children": []
+                                                                                                                                          }
+                                                                                                                                       ]
+                                                                                                                                    },
+                                                                                                                                    {
+                                                                                                                                       "id": "p43",
+                                                                                                                                       "name": "Hazrat Syed Mehrbaan R.H",
+                                                                                                                                       "gender": "male",
+                                                                                                                                       "alive": false,
+                                                                                                                                       "dob": "Not Known",
+                                                                                                                                       "dod": "Not Known",
+                                                                                                                                       "place": "Not Known",
+                                                                                                                                       "about": "Not Known",
+                                                                                                                                       "burial": null,
+                                                                                                                                       "spouse": {
+                                                                                                                                          "name": "Hazrat Bibi Saaliha R.H",
+                                                                                                                                          "fname": "Hazrat Syed Hameed",
+                                                                                                                                          "gender": "female",
+                                                                                                                                          "alive": false,
+                                                                                                                                          "dob": "Not Known",
+                                                                                                                                          "dod": "Not Known",
+                                                                                                                                          "place": "Not Known",
+                                                                                                                                          "burial": null,
+                                                                                                                                          "about": "Not Known"
+                                                                                                                                       },
+                                                                                                                                       "children": [
+                                                                                                                                          {
+                                                                                                                                             "id": "p45",
+                                                                                                                                             "name": "Hazrat Syed Ishqullah R.H",
+                                                                                                                                             "gender": "male",
+                                                                                                                                             "alive": false,
+                                                                                                                                             "dob": "Not Known",
+                                                                                                                                             "dod": "Not Known",
+                                                                                                                                             "place": "Not Known",
+                                                                                                                                             "about": "Not Known",
+                                                                                                                                             "burial": null,
+                                                                                                                                             "spouse": null,
+                                                                                                                                             "children": []
+                                                                                                                                          },
+                                                                                                                                          {
+                                                                                                                                             "id": "p46",
+                                                                                                                                             "name": "Hazrat Syed Rahmatullah R.H",
+                                                                                                                                             "gender": "male",
+                                                                                                                                             "alive": false,
+                                                                                                                                             "dob": "Not Known",
+                                                                                                                                             "dod": "Not Known",
+                                                                                                                                             "place": "Not Known",
+                                                                                                                                             "about": "Not Known",
+                                                                                                                                             "burial": null,
+                                                                                                                                             "spouse": null,
+                                                                                                                                             "children": []
+                                                                                                                                          }
+                                                                                                                                       ]
+                                                                                                                                    }
+                                                                                                                                 ]
+                                                                                                                              },
+                                                                                                                              {
+                                                                                                                                 "id": "p39",
+                                                                                                                                 "name": "Hazrat Syed Abdur Razzaq R.H",
+                                                                                                                                 "gender": "male",
+                                                                                                                                 "alive": false,
+                                                                                                                                 "dob": "Not Known",
+                                                                                                                                 "dod": "Not Known",
+                                                                                                                                 "place": "Not Known",
+                                                                                                                                 "about": "Not Known",
+                                                                                                                                 "burial": null,
+                                                                                                                                 "spouse": null,
+                                                                                                                                 "children": []
+                                                                                                                              },
+                                                                                                                              {
+                                                                                                                                 "id": "p40",
+                                                                                                                                 "name": "Hazrat Syed Muzaffar R.H",
+                                                                                                                                 "gender": "male",
+                                                                                                                                 "alive": false,
+                                                                                                                                 "dob": "Not Known",
+                                                                                                                                 "dod": "Not Known",
+                                                                                                                                 "place": "Not Known",
+                                                                                                                                 "about": "Not Known",
+                                                                                                                                 "burial": null,
+                                                                                                                                 "spouse": null,
+                                                                                                                                 "children": [
+                                                                                                                                    {
+                                                                                                                                       "id": "p41",
+                                                                                                                                       "name": "Hazrat Syed Afzal R.H",
+                                                                                                                                       "gender": "male",
+                                                                                                                                       "alive": false,
+                                                                                                                                       "dob": "Not Known",
+                                                                                                                                       "dod": "Not Known",
+                                                                                                                                       "place": "Not Known",
+                                                                                                                                       "about": "Not Known",
+                                                                                                                                       "burial": null,
+                                                                                                                                       "spouse": null,
+                                                                                                                                       "children": []
+                                                                                                                                    }
+                                                                                                                                 ]
+                                                                                                                              }
+                                                                                                                           ]
+                                                                                                                        }
+                                                                                                                     ]
+                                                                                                                  }
+                                                                                                               ]
+                                                                                                            }
+                                                                                                         ]
+                                                                                                      }
+                                                                                                   ]
+                                                                                                }
+                                                                                             ]
+                                                                                          }
+                                                                                       ]
+                                                                                    }
+                                                                                 ]
+                                                                              }
+                                                                           ]
+                                                                        }
+                                                                     ]
+                                                                  },
+                                                                  {
+                                                                     "id": "p19",
+                                                                     "name": "Hazrat Syed Abbas R.H",
+                                                                     "gender": "male",
+                                                                     "alive": false,
+                                                                     "dob": "Not Known",
+                                                                     "dod": "Not Known",
+                                                                     "place": "Not Known",
+                                                                     "about": "His discendants are in Palasi, Bihar",
+                                                                     "burial": null,
+                                                                     "spouse": null,
+                                                                     "children": []
+                                                                  }
+                                                               ]
+                                                            }
+                                                         ]
+                                                      }
+                                                   ]
+                                                }
+                                             ]
+                                          }
+                                       ]
+                                    }
+                                 ]
+                              }
+                           ]
+                        }
+                     ]
+                  }
+               ]
+            }
+         ]
+      },
+      {
+         "id": "p04",
+         "name": "Hazrat Bibi Zaynab bint Ali R.Z",
+         "gender": "female",
+         "alive": false,
+         "dob": "626 CE",
+         "dod": "682 CE",
+         "place": "Medina, Hejaz, Saudi Arabia",
+         "about": "Zaynab bint Ali (Arabic: زَيْنَب بِنْت عَلِيّ, c. 626–682), was the eldest daughter of Fatima and Ali ibn Abi Talib. The former was a daughter of the Islamic prophet Muhammad, and the latter was his cousin. Ali is also recognized as the fourth Rashidun caliph (r. 656–661) and the first Shia imam. Zaynab is best known for her role in the aftermath of the Battle of Karbala (680 CE), in which her brother Husayn and most of her male relatives were massacred by the forces of the Umayyad caliph Yazid ibn Mua'awiya (r. 680–683). Women and children in Husayn's camp were taken captive after the battle and marched to Kufa and then the Umayyad capital Damascus, where Zaynab gave impassioned speeches, condemning Yazid and spreading the news of Karbala. She was later freed and died shortly afterward in 682, but her burial site is uncertain. The two shrines associated with Zaynab in Damascus and Cairo are destinations for Muslim pilgrimage. She is considered to be a symbol of sacrifice, strength, and piety in Islam, and a role model for Muslim women, typifying courage, leadership, and defiance against oppression.",
+         "burial": {
+            "place": "Damascus, Cairo",
+            "map": null
+         },
+         "spouse": {
+            "name": "Hazrat Abdullah ibn Jaffar R.Z",
+            "fname": "Hazrat Jaffar ibn Abi Talib al-Hashimi R.H",
+            "gender": "male",
+            "alive": false,
+            "dob": "622 or 626 CE",
+            "dod": "699 or 702/704 CE",
+            "place": "Abyssinia",
+            "burial": {
+               "place": "Jannat al-Baqi, Medina, Saudi Arabia",
+               "map": "https://geohack.toolforge.org/geohack.php?pagename=Al-Baqi_Cemetery&params=24.4669_N_39.6164_E_type:landmark"
+            },
+            "about": "Abd Allah ibn Ja'far ibn Abi Talib al-Hashimi (Arabic: عَبْدُ اللَّهِ ٱبْن جَعْفَر ٱبْن أَبِي طَالِب الْهَاشِمِي, romanized: ʿAbd Allāh ibn Jaʿfar ibn ʾAbī Ṭālib al-Hāshimī; c. 624 – 699 or 702/704) was a companion and relative of the Islamic prophet Muhammad, a nephew of Ali, a half-brother of Muhammad ibn Abi Bakr and grandfather of Abd Allah ibn Mu'awiya."
+         },
+         "children": []
+      },
+      {
+         "id": "p05",
+         "name": "Hazrat Bibi Umm Kulsum bint Ali R.Z",
+         "gender": "female",
+         "alive": false,
+         "dob": "626 CE",
+         "dod": "685-705 CE",
+         "place": "Medina, Hejaz, Saudi Arabia",
+         "about": "",
+         "burial": {
+            "place": "Damascus, Syria",
+            "map": null
+         },
+         "spouse": {
+            "name": "Hazrat Umar ibn al-Khattab R.Z",
+            "fname": "Hazrat Khattab R.Z",
+            "gender": "male",
+            "alive": false,
+            "dob": "584 CE",
+            "dod": "06/11/644 CE",
+            "place": "Mecca, Hejaz, Saudi Arabia",
+            "burial": {
+               "place": "Hujra-e-Ayesha, Masjid Nabvi, Saudi Arabia",
+               "map": "https://maps.app.goo.gl/abZcehbEH2Y5N8Dn7"
+            },
+            "about": "Umar ibn al-Khattab[a] (Arabic: عُمَر بْن ٱلْخَطَّاب, romanized: ʿUmar ibn al-Khaṭṭāb; c. 584 – 644), also spelled Omar, was the second Rashidun caliph, ruling from August 634 until his assassination in 644. He succeeded Abu Bakr (r. 632–634) and is regarded as a senior companion and father-in-law of the Islamic prophet Muhammad."
+         },
+         "children": []
+      },
+      {
+         "id": "p06",
+         "name": "Hazrat Muhsin ibn Ali R.Z",
+         "gender": "male",
+         "alive": false,
+         "dob": "11 AH",
+         "dod": "11 AH",
+         "place": "Medina, Hejaz, Saudi Arabia",
+         "about": "Muhsin ibn Ali is generally believed to have died in infancy or as a fetus/miscarriage in 11 AH (632 CE) in Medina, shortly after the death of the Prophet Muhammad. He was the youngest son of Ali ibn Abi Talib and Fatima bint Muhammad, and while some sources suggest natural causes, many Shia accounts report he died following a raid on their house.",
+         "burial": {
+            "place": "Jannat al-Baqi, Medina, Saudi Arabia",
+            "map": "https://geohack.toolforge.org/geohack.php?pagename=Al-Baqi_Cemetery&params=24.4669_N_39.6164_E_type:landmark"
+         },
+         "spouse": null,
+         "children": []
+      }
+   ]
+}

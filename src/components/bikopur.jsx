@@ -205,7 +205,7 @@ export default function NasabBikopur() {
       svg.call(zoom);
 
       // Default focus id — change this to center a different node on load
-      const defaultId = 'p70';
+      const defaultId = 'p87';
       const targetNode = root.descendants().find((d) => d.data && d.data.id === defaultId);
       if (targetNode) {
          const s = 1; // initial scale

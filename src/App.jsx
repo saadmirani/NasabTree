@@ -36,10 +36,10 @@ export default function App() {
           <SideMenu section={section} setSection={handleSectionChange} isOpen={menuOpen} setIsOpen={setMenuOpen} />
           <main className="content">
             {section === "home" && <Home />}
-            {section === "miranbigha" && <NasabMiranBigha />}
-            {section === "simla" && <NasabSimla />}
-            {section === "deora" && <NasabDeora />}
-            {section === "bikopur" && <Bikopur />}
+            {section === "miranbigha" && <NasabMiranBigha setSection={handleSectionChange} />}
+            {section === "simla" && <NasabSimla setSection={handleSectionChange} />}
+            {section === "deora" && <NasabDeora setSection={handleSectionChange} />}
+            {section === "bikopur" && <Bikopur setSection={handleSectionChange} />}
             {section === "books" && <Books />}
             {section === "urs" && <UrsCalendar />}
             {section === "khanqah" && <KhanqahList />}

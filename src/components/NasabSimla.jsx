@@ -2,6 +2,8 @@ import React, { useEffect, useRef, useState, useCallback, memo } from "react";
 import * as d3 from "d3";
 import simlaData from "../data/simla.json";
 import "../styles/tree.css";
+import jsPDF from "jspdf";
+import html2canvas from "html2canvas";
 
 // Mapping of religious abbreviations to Urdu translations
 const abbreviationMap = {
@@ -58,7 +60,7 @@ const translateToUrdu = async (text) => {
    }
 };
 
-export default function NasabSimla() {
+export default function NasabSimla({ setSection }) {
    const svgRef = useRef();
    const peopleRef = useRef([]);
    const rootRef = useRef(null);
@@ -71,6 +73,15 @@ export default function NasabSimla() {
    useEffect(() => {
       if (!svgRef.current) return;
       drawTree();
+
+      // Focus on person after navigation from another family
+      setTimeout(() => {
+         if (window.focusPersonById) {
+            const personId = window.focusPersonById;
+            delete window.focusPersonById;
+            focusNodeById(personId);
+         }
+      }, 500);
    }, []);
 
    const handleNodeClick = useCallback((d, event) => {
@@ -134,188 +145,233 @@ export default function NasabSimla() {
    }, [focusNodeById]);
 
    const drawTree = useCallback(() => {
-      const width = window.innerWidth - 280;
-      const height = window.innerHeight - 140;
+      try {
+         const width = window.innerWidth - 280;
+         const height = window.innerHeight - 140;
 
-      const svg = d3.select(svgRef.current);
-      svg.attr("width", width).attr("height", height);
-      svg.selectAll("*").remove();
+         const svg = d3.select(svgRef.current);
+         svg.attr("width", width).attr("height", height);
+         svg.selectAll("*").remove();
 
-      // Calculate tree dimensions
-      const root = d3.hierarchy(simlaData);
-      const treeLayout = d3.tree().nodeSize([240, 180]);
-      treeLayout(root);
+         console.log("Drawing tree for Simla data");
 
-      // store root and flattened people for search (includes main people + spouses)
-      rootRef.current = root;
-      const peopleList = [];
-      root.descendants().forEach((d) => {
-         if (d.data && d.data.name) {
-            peopleList.push({
-               id: d.data.id,
-               name: d.data.name || "",
-               fname: d.data.fname || "",
-               parentName: d.parent && d.parent.data ? d.parent.data.name || "" : "",
-               gender: d.data.gender || null,
-               focusId: d.data.id,
-               type: "person",
-            });
-         }
-         // Add spouses
-         if (d.data && d.data.spouse) {
-            const spouses = Array.isArray(d.data.spouse) ? d.data.spouse : [d.data.spouse];
-            spouses.forEach((s) => {
+         // Calculate tree dimensions
+         const root = d3.hierarchy(simlaData);
+         const treeLayout = d3.tree().nodeSize([240, 180]);
+         treeLayout(root);
+
+         // store root and flattened people for search (includes main people + spouses)
+         rootRef.current = root;
+         const peopleList = [];
+         root.descendants().forEach((d) => {
+            if (d.data && d.data.name) {
                peopleList.push({
-                  id: s.id || `${d.data.id}-spouse`,
-                  name: s.name || "",
-                  fname: s.fname || "",
-                  parentName: d.data.name || "",
-                  gender: s.gender || null,
+                  id: d.data.id,
+                  name: d.data.name || "",
+                  fname: d.data.fname || "",
+                  parentName: d.parent && d.parent.data ? d.parent.data.name || "" : "",
+                  gender: d.data.gender || null,
                   focusId: d.data.id,
-                  type: "spouse",
+                  type: "person",
                });
-            });
-         }
-      });
-      peopleRef.current = peopleList;
-
-
-      // Calculate bounds
-      const bounds = {
-         minX: d3.min(root.descendants(), (d) => d.x),
-         maxX: d3.max(root.descendants(), (d) => d.x),
-         minY: 0,
-         maxY: d3.max(root.descendants(), (d) => d.y),
-      };
-
-      // Center both horizontally and vertically
-      const offsetX = width / 2 - (bounds.maxX + bounds.minX) / 2;
-      const offsetY = Math.max(60, (height - bounds.maxY) / 2);
-
-      const g = svg
-         .append("g")
-         .attr("transform", `translate(${offsetX},${offsetY})`);
-
-      // Zoom behavior
-      const zoom = d3.zoom().on("zoom", (event) => {
-         g.attr("transform", event.transform);
-      });
-
-      zoomRef.current = zoom;
-      svg.call(zoom);
-
-      // Default focus id — change this to center a different node on load
-      const defaultId = 'p75';
-      const targetNode = root.descendants().find((d) => d.data && d.data.id === defaultId);
-      if (targetNode) {
-         const s = 1; // initial scale
-         // When we set the zoom transform it REPLACES the group's translate(offsetX,offsetY).
-         // So compute tx/ty relative to node's raw x/y (not adding offsetX/offsetY).
-         const tx = width / 2 - targetNode.x * s;
-         const ty = height / 2 - targetNode.y * s;
-         svg.transition().duration(750).call(zoom.transform, d3.zoomIdentity.translate(tx, ty).scale(s));
-      }
-
-      // Draw links
-      g.selectAll(".link")
-         .data(root.links())
-         .enter()
-         .append("path")
-         .attr("class", "link")
-         .attr(
-            "d",
-            d3
-               .linkVertical()
-               .x((d) => d.x)
-               .y((d) => d.y)
-         );
-
-      // Draw nodes
-      const nodes = g
-         .selectAll(".node")
-         .data(root.descendants())
-         .enter()
-         .append("g")
-         .attr("class", "node")
-         .attr("transform", (d) => `translate(${d.x},${d.y})`)
-         .style("cursor", "pointer");
-
-      // Node background circle - gender based color
-      nodes
-         .append("circle")
-         .attr("r", 42)
-         .attr("class", (d) => `node-bg ${d.data.gender || "unknown"}`);
-
-      // Person icon using Material Symbols - with explicit centering for iOS compatibility
-      nodes
-         .append("text")
-         .attr("class", "material-symbols-outlined")
-         .attr("x", 0)
-         .attr("y", 0)
-         .attr("text-anchor", "middle")
-         .attr("dominant-baseline", "middle")
-         .attr("dy", "0em")
-         .attr("fill", "white")
-         .attr("font-family", "'Material Symbols Outlined'")
-         .attr("font-size", "48px")
-         .text("person")
-         .style("filter", "drop-shadow(0 2px 4px rgba(0,0,0,0.2))")
-         .style("pointer-events", "none");
-
-      // Alive indicator - diamond/badge style positioned at bottom-right
-      nodes
-         .append("circle")
-         .attr("class", (d) => `alive-badge ${d.data.alive ? "alive" : "deceased"}`)
-         .attr("r", 8)
-         .attr("cx", 32)
-         .attr("cy", 32);
-
-      // Node name (wrap long names into multiple tspans)
-      nodes
-         .append("text")
-         .attr("class", "node-label")
-         .attr("text-anchor", "middle")
-         .attr("y", 58)
-         .style("font-size", "13px")
-         .style("font-weight", "600")
-         .each(function (d) {
-            const text = d.data.name || "";
-            const words = text.split(/\s+/).filter(Boolean);
-            const maxPerLine = 2;
-            const lines = [];
-            for (let i = 0; i < words.length; i += maxPerLine) {
-               lines.push(words.slice(i, i + maxPerLine).join(" "));
             }
-            const t = d3.select(this);
-            t.selectAll("tspan").data(lines).enter().append("tspan").attr("x", 0).attr("dy", (l, i) => (i === 0 ? "0em" : "1.2em")).text((l) => l);
+            // Add spouses
+            if (d.data && d.data.spouse) {
+               const spouses = Array.isArray(d.data.spouse) ? d.data.spouse : [d.data.spouse];
+               spouses.forEach((s) => {
+                  peopleList.push({
+                     id: s.id || `${d.data.id}-spouse`,
+                     name: s.name || "",
+                     fname: s.fname || "",
+                     parentName: d.data.name || "",
+                     gender: s.gender || null,
+                     focusId: d.data.id,
+                     type: "spouse",
+                  });
+               });
+            }
+         });
+         peopleRef.current = peopleList;
+
+
+         // Calculate bounds
+         const bounds = {
+            minX: d3.min(root.descendants(), (d) => d.x),
+            maxX: d3.max(root.descendants(), (d) => d.x),
+            minY: 0,
+            maxY: d3.max(root.descendants(), (d) => d.y),
+         };
+
+         // Center both horizontally and vertically
+         const offsetX = width / 2 - (bounds.maxX + bounds.minX) / 2;
+         const offsetY = Math.max(60, (height - bounds.maxY) / 2);
+
+         const g = svg
+            .append("g")
+            .attr("transform", `translate(${offsetX},${offsetY})`);
+
+         // Zoom behavior
+         const zoom = d3.zoom().on("zoom", (event) => {
+            g.attr("transform", event.transform);
          });
 
-      // Node years (position below wrapped name)
-      nodes
-         .append("text")
-         .attr("class", "node-years")
-         .attr("text-anchor", "middle")
-         .attr("y", (d) => {
-            const words = (d.data.name || "").split(/\s+/).filter(Boolean);
-            const lines = Math.max(1, Math.ceil(words.length / 2));
-            return 50 + lines * 16; // base y + line height
-         })
-         .text((d) => {
-            const dob = d.data.dob || "?";
-            const dod = d.data.dod || "?";
-            return d.data.alive ? `b. ${dob}` : `${dob} - ${dod}`;
-         })
-         .style("font-size", "11px");
+         zoomRef.current = zoom;
+         svg.call(zoom);
 
-      // Click handler
-      nodes.on("click", (event, d) => {
-         handleNodeClick(d, event);
-      });
+         // Default focus id — change this to center a different node on load
+         const defaultId = 'p75';
+         const targetNode = root.descendants().find((d) => d.data && d.data.id === defaultId);
+         if (targetNode) {
+            const s = 1; // initial scale
+            // When we set the zoom transform it REPLACES the group's translate(offsetX,offsetY).
+            // So compute tx/ty relative to node's raw x/y (not adding offsetX/offsetY).
+            const tx = width / 2 - targetNode.x * s;
+            const ty = height / 2 - targetNode.y * s;
+            svg.transition().duration(750).call(zoom.transform, d3.zoomIdentity.translate(tx, ty).scale(s));
+         }
 
-      // Reset zoom on double-click
-      svg.on("dblclick", () => {
-         svg.transition().duration(750).call(zoom.transform, d3.zoomIdentity);
-      });
+         // Draw links
+         g.selectAll(".link")
+            .data(root.links())
+            .enter()
+            .append("path")
+            .attr("class", "link")
+            .attr(
+               "d",
+               d3
+                  .linkVertical()
+                  .x((d) => d.x)
+                  .y((d) => d.y)
+            );
+
+         // Draw nodes
+         const nodes = g
+            .selectAll(".node")
+            .data(root.descendants())
+            .enter()
+            .append("g")
+            .attr("class", "node")
+            .attr("transform", (d) => `translate(${d.x},${d.y})`)
+            .style("cursor", "pointer");
+
+         // Node background circle - gender based color
+         nodes
+            .append("circle")
+            .attr("r", 42)
+            .attr("class", (d) => `node-bg ${d.data.gender || "unknown"}`);
+
+         // Person icon using emoji - Muslim man/woman representation with white color
+         nodes
+            .append("text")
+            .attr("x", 0)
+            .attr("y", 0)
+            .attr("text-anchor", "middle")
+            .attr("dominant-baseline", "middle")
+            .attr("dy", "0em")
+            .attr("font-size", "40px")
+            .attr("fill", "white")
+            .text((d) => d.data.gender === "female" ? "🧕" : "🧔‍♂️")
+            .style("filter", "drop-shadow(0 2px 4px rgba(0,0,0,0.2))")
+            .style("pointer-events", "none");
+
+         // Alive indicator - diamond/badge style positioned at bottom-right
+         nodes
+            .append("circle")
+            .attr("class", (d) => `alive-badge ${d.data.alive ? "alive" : "deceased"}`)
+            .attr("r", 8)
+            .attr("cx", 32)
+            .attr("cy", 32);
+
+         // Link indicator - shows when descendants exist in another family (removed green bubble)
+         // Now shows as blue "See children" text below the years
+         nodes
+            .filter((d) => d.data.link === true)
+            .append("text")
+            .attr("class", "see-children-link")
+            .attr("text-anchor", "middle")
+            .attr("y", (d) => {
+               const words = (d.data.name || "").split(/\s+/).filter(Boolean);
+               let lines = 1;
+               if (words.length > 2) {
+                  lines = 2;
+               }
+               return 58 + lines * 16 + 20; // below years with some spacing
+            })
+            .style("font-size", "11px")
+            .style("fill", "#2196F3")
+            .style("cursor", "pointer")
+            .style("font-weight", "500")
+            .text("👁 See children")
+            .on("click", function (event, d) {
+               event.stopPropagation();
+               if (d.data.link && d.data.qasba && setSection) {
+                  setSection(d.data.qasba);
+                  setTimeout(() => {
+                     window.focusPersonById = d.data.personId;
+                  }, 300);
+               }
+            });
+
+         // Node name (full name split into maximum 2 lines, only if needed)
+         nodes
+            .append("text")
+            .attr("class", "node-label")
+            .attr("text-anchor", "middle")
+            .attr("y", 58)
+            .style("font-size", "13px")
+            .style("font-weight", "600")
+            .each(function (d) {
+               const text = d.data.name || "";
+               const words = text.split(/\s+/).filter(Boolean);
+               let lines = [];
+
+               // Only split into 2 lines if more than 2 words
+               if (words.length <= 2) {
+                  lines = [words.join(" ")];
+               } else {
+                  const mid = Math.ceil(words.length / 2);
+                  lines = [
+                     words.slice(0, mid).join(" "),
+                     words.slice(mid).join(" ")
+                  ].filter(l => l);
+               }
+
+               const t = d3.select(this);
+               t.selectAll("tspan").data(lines).enter().append("tspan").attr("x", 0).attr("dy", (l, i) => (i === 0 ? "0em" : "1.2em")).text((l) => l);
+            });
+
+         // Node years (position below wrapped name - only 2 lines if name is long)
+         nodes
+            .append("text")
+            .attr("class", "node-years")
+            .attr("text-anchor", "middle")
+            .attr("y", (d) => {
+               const words = (d.data.name || "").split(/\s+/).filter(Boolean);
+               let lines = 1;
+               if (words.length > 2) {
+                  lines = 2;
+               }
+               return 58 + lines * 16; // base y + line height
+            })
+            .text((d) => {
+               const dob = d.data.dob || "?";
+               const dod = d.data.dod || "?";
+               return d.data.alive ? `b. ${dob}` : `${dob} - ${dod}`;
+            })
+            .style("font-size", "11px");
+
+         // Click handler
+         nodes.on("click", (event, d) => {
+            handleNodeClick(d, event);
+         });
+
+         // Reset zoom on double-click
+         svg.on("dblclick", () => {
+            svg.transition().duration(750).call(zoom.transform, d3.zoomIdentity);
+         });
+      } catch (error) {
+         console.error("Error drawing Simla tree:", error);
+      }
    }, [handleNodeClick]);
 
    return (
@@ -393,7 +449,6 @@ const DetailPopup = memo(function DetailPopup({ data, position, onClose, rootRef
    const generateAndDownloadShajra = useCallback(async () => {
       if (!rootRef.current || !data.id) return;
 
-      // Find the node in the tree by ID
       const findNodeById = (node, id) => {
          if (node.data.id === id) return node;
          if (node.children) {
@@ -408,49 +463,91 @@ const DetailPopup = memo(function DetailPopup({ data, position, onClose, rootRef
       const node = findNodeById(rootRef.current, data.id);
       if (!node) return;
 
-      // Trace back to root
       const chain = [];
       let current = node;
       while (current) {
-         chain.unshift(current.data); // Add to beginning
+         chain.unshift(current.data);
          current = current.parent;
       }
 
-      // Generate text with both Urdu (first) and English
-      let text = '';
-
-      // URDU SECTION - Translate all names
-      // First translate the person's name for the header
       const personUrduName = await translateToUrdu(data.name);
-      text += `شجرہ نسب ${personUrduName}\n`;
-      text += `${'='.repeat(50)}\n\n`;
-
-      // Translate all names in the chain
       const urduNames = await Promise.all(
          chain.map(person => translateToUrdu(person.name))
       );
 
-      urduNames.forEach((urduName, index) => {
-         text += `${index + 1}. ${urduName}\n`;
-      });
+      const htmlContent = `
+         <div style="font-family: Arial, sans-serif; padding: 20px; direction: rtl;">
+            <div style="text-align: center; margin-bottom: 30px;">
+               <h1 style="color: #1e3c72; font-size: 24px; margin: 0; font-weight: bold;">شجرہ نسب</h1>
+               <h2 style="color: #2a5298; font-size: 18px; margin: 10px 0; font-weight: 600;">${personUrduName}</h2>
+            </div>
+            
+            <div style="background: #f5f5f5; padding: 15px; border-left: 4px solid #2196F3; margin-bottom: 20px;">
+               <h3 style="color: #1e3c72; margin-top: 0; font-size: 16px;">سلسلہ نسب (اردو)</h3>
+               ${urduNames.map((name, idx) => `
+                  <div style="margin: 8px 0; font-size: 14px; line-height: 1.6;">
+                     <span style="color: #2196F3; font-weight: bold;">${idx + 1}.</span>
+                     <span style="margin-right: 8px;">${name}</span>
+                  </div>
+               `).join('')}
+            </div>
+            
+            <div style="background: #f9f9f9; padding: 15px; border-left: 4px solid #4CAF50;">
+               <h3 style="color: #1e3c72; margin-top: 0; font-size: 16px;">Genealogy (English)</h3>
+               ${chain.map((person, idx) => `
+                  <div style="margin: 8px 0; font-size: 14px; line-height: 1.6;">
+                     <span style="color: #4CAF50; font-weight: bold;">${idx + 1}.</span>
+                     <span style="margin-left: 8px;">${person.name}</span>
+                  </div>
+               `).join('')}
+            </div>
+         </div>
+      `;
 
-      // ENGLISH SECTION
-      text += `\n\n${'='.repeat(50)}\n`;
-      text += `Shajra-e-Nasb (Genealogy) ${data.name}\n`;
-      text += `${'='.repeat(50)}\n\n`;
-      chain.forEach((person, index) => {
-         text += `${index + 1}. ${person.name}\n`;
-      });
+      const container = document.createElement('div');
+      container.innerHTML = htmlContent;
+      container.style.position = 'absolute';
+      container.style.left = '-9999px';
+      container.style.top = '0';
+      container.style.width = '210mm';
+      container.style.height = 'auto';
+      document.body.appendChild(container);
 
-      // Download file with UTF-8 encoding to support Urdu
-      const element = document.createElement('a');
-      const file = new Blob([text], { type: 'text/plain;charset=utf-8' });
-      element.href = URL.createObjectURL(file);
-      element.download = `Shajra_${data.name.replace(/\s+/g, '_')}.txt`;
-      document.body.appendChild(element);
-      element.click();
-      document.body.removeChild(element);
-      URL.revokeObjectURL(element.href);
+      try {
+         const canvas = await html2canvas(container, {
+            scale: 2,
+            useCORS: true,
+            backgroundColor: '#ffffff',
+            allowTaint: true
+         });
+
+         const pdf = new jsPDF({
+            orientation: 'portrait',
+            unit: 'mm',
+            format: 'a4'
+         });
+
+         const pageWidth = pdf.internal.pageSize.getWidth();
+         const pageHeight = pdf.internal.pageSize.getHeight();
+         const imgData = canvas.toDataURL('image/png');
+         const imgHeight = (canvas.height * pageWidth) / canvas.width;
+         let currentHeight = 0;
+
+         while (currentHeight < imgHeight) {
+            if (currentHeight > 0) {
+               pdf.addPage();
+            }
+            pdf.addImage(imgData, 'PNG', 0, -currentHeight, pageWidth, imgHeight);
+            currentHeight += pageHeight;
+         }
+
+         pdf.save(`Shajra_${data.name.replace(/\s+/g, '_')}.pdf`);
+      } catch (error) {
+         console.error('Error generating PDF:', error);
+         alert('Error generating PDF. Please try again.');
+      } finally {
+         document.body.removeChild(container);
+      }
    }, [data, rootRef]);
 
    return (

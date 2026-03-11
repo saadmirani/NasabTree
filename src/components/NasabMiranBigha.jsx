@@ -261,17 +261,17 @@ export default function NasabMiranBigha({ setSection }) {
          // Person icon - FontAwesome user icon
          nodes
             .append("foreignObject")
-            .attr("x", -15)
-            .attr("y", -15)
-            .attr("width", 30)
-            .attr("height", 30)
+            .attr("x", -20)
+            .attr("y", -20)
+            .attr("width", 40)
+            .attr("height", 40)
             .append("xhtml:div")
             .style("display", "flex")
             .style("align-items", "center")
             .style("justify-content", "center")
             .style("width", "100%")
             .style("height", "100%")
-            .html(`<i class="fas fa-user" style="color: white; font-size: 32px;"></i>`);
+            .html(`<i class="fas fa-user" style="color: white; font-size: 40px;"></i>`);
 
          // Alive indicator - diamond/badge style positioned at bottom-right
          nodes

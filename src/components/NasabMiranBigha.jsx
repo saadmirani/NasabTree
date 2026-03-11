@@ -246,16 +246,21 @@ export default function NasabMiranBigha() {
          .attr("r", 42)
          .attr("class", (d) => `node-bg ${d.data.gender || "unknown"}`);
 
-      // Person icon using Material Symbols
+      // Person icon using Material Symbols - with explicit centering for iOS compatibility
       nodes
          .append("text")
          .attr("class", "material-symbols-outlined")
+         .attr("x", 0)
+         .attr("y", 0)
          .attr("text-anchor", "middle")
-         .attr("dominant-baseline", "central")
+         .attr("dominant-baseline", "middle")
+         .attr("dy", "0em")
          .attr("fill", "white")
          .attr("font-family", "'Material Symbols Outlined'")
+         .attr("font-size", "48px")
          .text("person")
-         .style("filter", "drop-shadow(0 2px 4px rgba(0,0,0,0.2))");
+         .style("filter", "drop-shadow(0 2px 4px rgba(0,0,0,0.2))")
+         .style("pointer-events", "none");
 
       // Alive indicator - diamond/badge style positioned at bottom-right
       nodes
@@ -270,7 +275,7 @@ export default function NasabMiranBigha() {
          .append("text")
          .attr("class", "node-label")
          .attr("text-anchor", "middle")
-         .attr("y", 50)
+         .attr("y", 58)
          .style("font-size", "13px")
          .style("font-weight", "600")
          .each(function (d) {
@@ -339,7 +344,7 @@ export default function NasabMiranBigha() {
                         <li key={`${s.id}-${s.type}`} onClick={() => onSelectSuggestion(s)}>
                            <div style={{ display: 'flex', justifyContent: 'space-between', width: '100%' }}>
                               <div>
-                                 <strong>{shortName(s.name) || s.name}</strong>
+                                 <strong>{s.name}</strong>
                                  {displayName && <span className="suggest-fname"> — {prefix}{displayName}</span>}
                               </div>
                               <div style={{ color: '#9ca3af', fontSize: 12 }}>{s.focusId}</div>

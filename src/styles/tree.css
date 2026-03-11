@@ -64,9 +64,14 @@
       'wght' 500,
       'GRAD' 0,
       'opsz' 48;
-   /* Perfect centering */
+   /* Explicit centering properties for cross-browser compatibility */
    dominant-baseline: central;
    text-anchor: middle;
+   /* iOS Safari fixes */
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+   -webkit-transform: translate3d(0, 0, 0);
+   transform: translate3d(0, 0, 0);
 }
 
 /* Alive indicator badge */

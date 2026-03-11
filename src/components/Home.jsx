@@ -61,7 +61,7 @@ export default function Home() {
                   </p>
                   <p>
                      Starting with <strong>Saadat-e-Miran Bigha Tekari</strong>, the birthplace of the developer
-                     <strong>Saad Ahmad Mirani</strong>, we are committed to expanding this legacy and bringing
+                     <strong> Saad Ahmad Mirani</strong>, we are committed to expanding this legacy and bringing
                      the genealogies of other Saadat communities to a global audience through this
                      interactive digital platform.
                   </p>

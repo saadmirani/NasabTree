@@ -27,19 +27,49 @@ const NasabIcon = () => (
 
 const BooksIcon = () => (
    <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden>
-      <path d="M18 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 18H6V4h12v16z" />
+      {/* Left page */}
+      <path d="M4 4h8v16H4z" fill="none" stroke="currentColor" strokeWidth="1.5" />
+      {/* Right page */}
+      <path d="M12 4h8v16h-8z" fill="none" stroke="currentColor" strokeWidth="1.5" />
+      {/* Spine/fold */}
+      <line x1="12" y1="4" x2="12" y2="20" stroke="currentColor" strokeWidth="1.5" />
+      {/* Lines on left page */}
+      <line x1="5" y1="8" x2="10" y2="8" stroke="currentColor" strokeWidth="0.8" opacity="0.6" />
+      <line x1="5" y1="11" x2="10" y2="11" stroke="currentColor" strokeWidth="0.8" opacity="0.6" />
+      <line x1="5" y1="14" x2="9" y2="14" stroke="currentColor" strokeWidth="0.8" opacity="0.6" />
+      {/* Lines on right page */}
+      <line x1="13" y1="8" x2="18" y2="8" stroke="currentColor" strokeWidth="0.8" opacity="0.6" />
+      <line x1="13" y1="11" x2="18" y2="11" stroke="currentColor" strokeWidth="0.8" opacity="0.6" />
+      <line x1="13" y1="14" x2="17" y2="14" stroke="currentColor" strokeWidth="0.8" opacity="0.6" />
    </svg>
 );
 
 const LocationIcon = () => (
    <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden>
-      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm3.5-9c.83 0 1.5-.67 1.5-1.5S16.33 8 15.5 8 14 8.67 14 9.5s.67 1.5 1.5 1.5z" />
+      {/* Dome/Rouza top - semi-circle */}
+      <path d="M7 9c0-2.8 2.2-5 5-5s5 2.2 5 5" fill="none" stroke="currentColor" strokeWidth="1.5" />
+      {/* Dome curve continuation */}
+      <path d="M8 9c0-2.2 1.8-4 4-4s4 1.8 4 4" fill="none" stroke="currentColor" strokeWidth="1" opacity="0.5" />
+      {/* Main chamber/base */}
+      <rect x="7" y="9" width="10" height="9" fill="none" stroke="currentColor" strokeWidth="1.5" />
+      {/* Decorative arched entrance/niche */}
+      <path d="M11 12c0-.5 0.4-1 1-1s1 0.4 1 1" fill="none" stroke="currentColor" strokeWidth="1" />
+      {/* Ground foundation */}
+      <line x1="5" y1="18" x2="19" y2="18" stroke="currentColor" strokeWidth="1.5" />
+      {/* Spire/finial on top - crescent or point */}
+      <line x1="12" y1="4" x2="12" y2="2" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" />
+      <circle cx="12" cy="1.5" r="0.6" fill="currentColor" />
    </svg>
 );
 
 const ContactIcon = () => (
    <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden>
-      <path d="M17 10.5V7c0 .55-.45 1-1 1H4c-.55 0-1-.45-1-1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4z" />
+      {/* Envelope body */}
+      <rect x="2" y="5" width="20" height="14" rx="1" fill="none" stroke="currentColor" strokeWidth="1.5" />
+      {/* Triangle flap - left */}
+      <line x1="2" y1="5" x2="12" y2="13" stroke="currentColor" strokeWidth="1.5" />
+      {/* Triangle flap - right */}
+      <line x1="22" y1="5" x2="12" y2="13" stroke="currentColor" strokeWidth="1.5" />
    </svg>
 );
 
@@ -61,6 +91,20 @@ const ContributeIcon = () => (
    </svg>
 );
 
+const BiographyIcon = () => (
+   <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden>
+      {/* Notepad */}
+      <rect x="2" y="4" width="14" height="16" rx="1" fill="none" stroke="currentColor" strokeWidth="1.5" />
+      {/* Lines on notepad */}
+      <line x1="4" y1="8" x2="14" y2="8" stroke="currentColor" strokeWidth="1" opacity="0.6" />
+      <line x1="4" y1="11" x2="14" y2="11" stroke="currentColor" strokeWidth="1" opacity="0.6" />
+      <line x1="4" y1="14" x2="12" y2="14" stroke="currentColor" strokeWidth="1" opacity="0.6" />
+      {/* Pen */}
+      <line x1="15" y1="5" x2="22" y2="2" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+      <circle cx="22" cy="2" r="1.2" fill="currentColor" />
+   </svg>
+);
+
 export default function SideMenu({ section, setSection, isOpen, setIsOpen }) {
    const [showSilsilas, setShowSilsilas] = React.useState(false);
 
@@ -68,7 +112,7 @@ export default function SideMenu({ section, setSection, isOpen, setIsOpen }) {
       <nav className={`sidemenu ${isOpen ? "open" : ""}`}>
          <button
             className={`menu-item ${section === "home" ? "active" : ""}`}
-            onClick={() => setSection("home")}
+            onClick={() => { setShowSilsilas(false); setSection("home"); }}
          >
             <span className="icon"><HomeIcon /></span>
             <span className="label">Home</span>
@@ -179,8 +223,8 @@ export default function SideMenu({ section, setSection, isOpen, setIsOpen }) {
          </div>
 
          <button
-            className={`menu-item coming-soon ${section === "books" ? "active" : ""}`}
-            onClick={() => setSection("books")}
+            className={`menu-item ${section === "books" ? "active" : ""}`}
+            onClick={() => { setShowSilsilas(false); setSection("books"); }}
          >
             <span className="icon"><BooksIcon /></span>
             <span className="label">Books</span>
@@ -188,7 +232,7 @@ export default function SideMenu({ section, setSection, isOpen, setIsOpen }) {
 
          <button
             className={`menu-item ${section === "urs" ? "active" : ""}`}
-            onClick={() => setSection("urs")}
+            onClick={() => { setShowSilsilas(false); setSection("urs"); }}
          >
             <span className="icon"><CalendarIcon /></span>
             <span className="label">Urs Calendar</span>
@@ -196,7 +240,7 @@ export default function SideMenu({ section, setSection, isOpen, setIsOpen }) {
 
          <button
             className={`menu-item ${section === "khanqah" ? "active" : ""}`}
-            onClick={() => setSection("khanqah")}
+            onClick={() => { setShowSilsilas(false); setSection("khanqah"); }}
          >
             <span className="icon"><MosqueIcon /></span>
             <span className="label">Khanqah List</span>
@@ -204,7 +248,7 @@ export default function SideMenu({ section, setSection, isOpen, setIsOpen }) {
 
          <button
             className={`menu-item coming-soon ${section === "graveyards" ? "active" : ""}`}
-            onClick={() => setSection("graveyards")}
+            onClick={() => { setShowSilsilas(false); setSection("graveyards"); }}
          >
             <span className="icon"><LocationIcon /></span>
             <span className="label">Graveyards</span>
@@ -212,15 +256,23 @@ export default function SideMenu({ section, setSection, isOpen, setIsOpen }) {
 
          <button
             className={`menu-item ${section === "contact" ? "active" : ""}`}
-            onClick={() => setSection("contact")}
+            onClick={() => { setShowSilsilas(false); setSection("contact"); }}
          >
             <span className="icon"><ContactIcon /></span>
             <span className="label">Contact Us</span>
          </button>
 
          <button
+            className={`menu-item ${section === "biography" ? "active" : ""}`}
+            onClick={() => { setShowSilsilas(false); setSection("biography"); }}
+         >
+            <span className="icon"><BiographyIcon /></span>
+            <span className="label">Biography</span>
+         </button>
+
+         <button
             className={`menu-item ${section === "contribute" ? "active" : ""}`}
-            onClick={() => setSection("contribute")}
+            onClick={() => { setShowSilsilas(false); setSection("contribute"); }}
          >
             <span className="icon"><ContributeIcon /></span>
             <span className="label">Contribute</span>

@@ -13,7 +13,8 @@ import UrsCalendar from "./components/UrsCalendar";
 import KhanqahList from "./components/KhanqahList";
 import Graveyards from "./components/Graveyards";
 import ContactUs from "./components/ContactUs";
-import Contribute from "./components/contribute"
+import Contribute from "./components/contribute";
+import Biography from "./components/Biography";
 
 export default function App() {
   const [section, setSection] = useState("home");
@@ -44,6 +45,7 @@ export default function App() {
             {section === "khanqah" && <KhanqahList />}
             {section === "graveyards" && <Graveyards />}
             {section === "contact" && <ContactUs />}
+            {section === "biography" && <Biography />}
             {section === "contribute" && <Contribute />}
           </main>
         </div>

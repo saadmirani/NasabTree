@@ -29,7 +29,7 @@ import {
 } from "@mui/material";
 
 // Separate component to prevent re-renders
-function PersonForm({ data, setter, isEdit, onAddSpouse, onAddChild, errors }) {
+function PersonForm({ data, setter, isEdit, onAddSpouse, onAddChild, errors, spouseErrors, childErrors }) {
    const handleChange = useCallback((e) => {
       const { name, value } = e.target;
       setter(prev => ({ ...prev, [name]: value }));
@@ -162,6 +162,8 @@ function PersonForm({ data, setter, isEdit, onAddSpouse, onAddChild, errors }) {
                   fullWidth
                   value={spouse.name}
                   onChange={(e) => handleSpouseChange(idx, "name", e.target.value)}
+                  error={!!spouseErrors?.[idx]?.name}
+                  helperText={spouseErrors?.[idx]?.name}
                   sx={{ mb: 1 }}
                />
                <TextField
@@ -171,7 +173,7 @@ function PersonForm({ data, setter, isEdit, onAddSpouse, onAddChild, errors }) {
                   onChange={(e) => handleSpouseChange(idx, "fname", e.target.value)}
                   sx={{ mb: 1 }}
                />
-               <FormControl fullWidth sx={{ mb: 1 }}>
+               <FormControl fullWidth sx={{ mb: 1 }} error={!!spouseErrors?.[idx]?.gender}>
                   <InputLabel id={`spouse-gender-${idx}`}>Gender</InputLabel>
                   <Select
                      labelId={`spouse-gender-${idx}`}
@@ -183,6 +185,7 @@ function PersonForm({ data, setter, isEdit, onAddSpouse, onAddChild, errors }) {
                      <MenuItem value="Female">Female</MenuItem>
                      <MenuItem value="Other">Other</MenuItem>
                   </Select>
+                  {spouseErrors?.[idx]?.gender && <Typography sx={{ fontSize: "0.75rem", color: "#d32f2f", mt: 0.5 }}>{spouseErrors?.[idx]?.gender}</Typography>}
                </FormControl>
                <FormControlLabel
                   control={
@@ -249,9 +252,11 @@ function PersonForm({ data, setter, isEdit, onAddSpouse, onAddChild, errors }) {
                   fullWidth
                   value={child.name}
                   onChange={(e) => handleChildChange(idx, "name", e.target.value)}
+                  error={!!childErrors?.[idx]?.name}
+                  helperText={childErrors?.[idx]?.name}
                   sx={{ mb: 1 }}
                />
-               <FormControl fullWidth sx={{ mb: 1 }}>
+               <FormControl fullWidth sx={{ mb: 1 }} error={!!childErrors?.[idx]?.gender}>
                   <InputLabel id={`child-gender-${idx}`}>Gender</InputLabel>
                   <Select
                      labelId={`child-gender-${idx}`}
@@ -263,6 +268,7 @@ function PersonForm({ data, setter, isEdit, onAddSpouse, onAddChild, errors }) {
                      <MenuItem value="Female">Female</MenuItem>
                      <MenuItem value="Other">Other</MenuItem>
                   </Select>
+                  {childErrors?.[idx]?.gender && <Typography sx={{ fontSize: "0.75rem", color: "#d32f2f", mt: 0.5 }}>{childErrors?.[idx]?.gender}</Typography>}
                </FormControl>
                <TextField
                   type="date"
@@ -311,8 +317,15 @@ export default function Contribute() {
    const [snackbar, setSnackbar] = useState({ open: false, message: "", severity: "success" });
    const [formErrors, setFormErrors] = useState({ name: "", gender: "" });
    const [editFormErrors, setEditFormErrors] = useState({ name: "", gender: "" });
+   const [formSpouseErrors, setFormSpouseErrors] = useState([]);
+   const [editSpouseErrors, setEditSpouseErrors] = useState([]);
+   const [formChildErrors, setFormChildErrors] = useState([]);
+   const [editChildErrors, setEditChildErrors] = useState([]);
 
    const personsRef = collection(db, "persons");
+
+   const hasSpouseErrors = (errors) => errors.some(err => err.name || err.gender);
+   const hasChildErrors = (errors) => errors.some(err => err.name || err.gender);
 
    // Validate form on formData change
    useEffect(() => {
@@ -324,7 +337,21 @@ export default function Contribute() {
          errors.gender = "Gender is mandatory";
       }
       setFormErrors(errors);
-   }, [formData.name, formData.gender]);
+
+      // Validate spouses
+      const spouseErrors = formData.spouses.map((spouse) => ({
+         name: !spouse.name || !spouse.name.trim() ? "Spouse name is mandatory" : "",
+         gender: !spouse.gender || !spouse.gender.trim() ? "Spouse gender is mandatory" : ""
+      }));
+      setFormSpouseErrors(spouseErrors);
+
+      // Validate children
+      const childErrors = formData.children.map((child) => ({
+         name: !child.name || !child.name.trim() ? "Child name is mandatory" : "",
+         gender: !child.gender || !child.gender.trim() ? "Child gender is mandatory" : ""
+      }));
+      setFormChildErrors(childErrors);
+   }, [formData.name, formData.gender, formData.spouses, formData.children]);
 
    // Validate edit form on editData change
    useEffect(() => {
@@ -337,8 +364,22 @@ export default function Contribute() {
             errors.gender = "Gender is mandatory";
          }
          setEditFormErrors(errors);
+
+         // Validate spouses
+         const spouseErrors = editData.spouses.map((spouse) => ({
+            name: !spouse.name || !spouse.name.trim() ? "Spouse name is mandatory" : "",
+            gender: !spouse.gender || !spouse.gender.trim() ? "Spouse gender is mandatory" : ""
+         }));
+         setEditSpouseErrors(spouseErrors);
+
+         // Validate children
+         const childErrors = editData.children.map((child) => ({
+            name: !child.name || !child.name.trim() ? "Child name is mandatory" : "",
+            gender: !child.gender || !child.gender.trim() ? "Child gender is mandatory" : ""
+         }));
+         setEditChildErrors(childErrors);
       }
-   }, [editData?.name, editData?.gender]);
+   }, [editData?.name, editData?.gender, editData?.spouses, editData?.children]);
 
    useEffect(() => {
       loadPersons();
@@ -361,6 +402,16 @@ export default function Contribute() {
       // Check if there are any validation errors
       if (formErrors.name || formErrors.gender) {
          setSnackbar({ open: true, message: "Please fill all required fields", severity: "error" });
+         return;
+      }
+
+      if (hasSpouseErrors(formSpouseErrors)) {
+         setSnackbar({ open: true, message: "Please fill all spouse name and gender fields", severity: "error" });
+         return;
+      }
+
+      if (hasChildErrors(formChildErrors)) {
+         setSnackbar({ open: true, message: "Please fill all child name and gender fields", severity: "error" });
          return;
       }
 
@@ -440,12 +491,19 @@ export default function Contribute() {
                   onAddSpouse={() => setFormData(addSpouseToFormData(formData))}
                   onAddChild={() => setFormData(addChildToFormData(formData))}
                   errors={formErrors}
+                  spouseErrors={formSpouseErrors}
+                  childErrors={formChildErrors}
                />
                <Box sx={{ display: "flex", justifyContent: "center", mt: 3 }}>
                   <Button
                      variant="contained"
                      type="submit"
-                     disabled={!!formErrors.name || !!formErrors.gender}
+                     disabled={
+                        !!formErrors.name ||
+                        !!formErrors.gender ||
+                        hasSpouseErrors(formSpouseErrors) ||
+                        hasChildErrors(formChildErrors)
+                     }
                   >
                      Submit New Person
                   </Button>
@@ -504,6 +562,8 @@ export default function Contribute() {
                         onAddSpouse={() => setEditData(addSpouseToFormData(editData))}
                         onAddChild={() => setEditData(addChildToFormData(editData))}
                         errors={editFormErrors}
+                        spouseErrors={editSpouseErrors}
+                        childErrors={editChildErrors}
                      />
                   </Box>
                </DialogContent>
@@ -512,7 +572,12 @@ export default function Contribute() {
                   <Button
                      variant="contained"
                      onClick={handleUpdate}
-                     disabled={!!editFormErrors.name || !!editFormErrors.gender}
+                     disabled={
+                        !!editFormErrors.name ||
+                        !!editFormErrors.gender ||
+                        hasSpouseErrors(editSpouseErrors) ||
+                        hasChildErrors(editChildErrors)
+                     }
                   >
                      Update
                   </Button>

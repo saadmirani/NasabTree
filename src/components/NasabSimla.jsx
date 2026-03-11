@@ -260,19 +260,20 @@ export default function NasabSimla({ setSection }) {
             .attr("r", 42)
             .attr("class", (d) => `node-bg ${d.data.gender || "unknown"}`);
 
-         // Person icon using emoji - Muslim man/woman representation with white color
+         // Person icon - FontAwesome user icon
          nodes
-            .append("text")
-            .attr("x", 0)
-            .attr("y", 0)
-            .attr("text-anchor", "middle")
-            .attr("dominant-baseline", "middle")
-            .attr("dy", "0em")
-            .attr("font-size", "40px")
-            .attr("fill", "white")
-            .text((d) => d.data.gender === "female" ? "🧕" : "🧔‍♂️")
-            .style("filter", "drop-shadow(0 2px 4px rgba(0,0,0,0.2))")
-            .style("pointer-events", "none");
+            .append("foreignObject")
+            .attr("x", -15)
+            .attr("y", -15)
+            .attr("width", 30)
+            .attr("height", 30)
+            .append("xhtml:div")
+            .style("display", "flex")
+            .style("align-items", "center")
+            .style("justify-content", "center")
+            .style("width", "100%")
+            .style("height", "100%")
+            .html(`<i class="fas fa-user" style="color: white; font-size: 32px;"></i>`);
 
          // Alive indicator - diamond/badge style positioned at bottom-right
          nodes

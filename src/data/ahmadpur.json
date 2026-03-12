@@ -461,7 +461,7 @@
                                                                                                                            "dob": "Not Known",
                                                                                                                            "dod": "Not Known",
                                                                                                                            "place": "Not Known",
-                                                                                                                           "about": "Not Known",
+                                                                                                                           "about": "This chain further goes to Saadaat-e-Bikopur. See Qasba Bikopur section for details.",
                                                                                                                            "burial": null,
                                                                                                                            "spouse": null,
                                                                                                                            "children": []
@@ -632,7 +632,103 @@
                                                                                                                                              "about": "Not Known",
                                                                                                                                              "burial": null,
                                                                                                                                              "spouse": null,
-                                                                                                                                             "children": []
+                                                                                                                                             "children": [
+                                                                                                                                                {
+                                                                                                                                                   "id": "p51",
+                                                                                                                                                   "name": "Hazrat Syed Habeebullah R.H",
+                                                                                                                                                   "gender": "male",
+                                                                                                                                                   "alive": false,
+                                                                                                                                                   "dob": "Not Known",
+                                                                                                                                                   "dod": "Not Known",
+                                                                                                                                                   "place": "Not Known",
+                                                                                                                                                   "about": "Not Known",
+                                                                                                                                                   "burial": null,
+                                                                                                                                                   "spouse": null,
+                                                                                                                                                   "children": []
+                                                                                                                                                },
+                                                                                                                                                {
+                                                                                                                                                   "id": "p52",
+                                                                                                                                                   "name": "Hazrat Syed Abdullah R.H",
+                                                                                                                                                   "gender": "male",
+                                                                                                                                                   "alive": false,
+                                                                                                                                                   "dob": "Not Known",
+                                                                                                                                                   "dod": "Not Known",
+                                                                                                                                                   "place": "Not Known",
+                                                                                                                                                   "about": "Not Known",
+                                                                                                                                                   "burial": null,
+                                                                                                                                                   "spouse": {
+                                                                                                                                                      "name": "Bibi Rasheeda R.Z",
+                                                                                                                                                      "fname": "Not Known",
+                                                                                                                                                      "gender": "female",
+                                                                                                                                                      "alive": false,
+                                                                                                                                                      "dob": "Not Known",
+                                                                                                                                                      "dod": "Not Known",
+                                                                                                                                                      "place": "Not Known",
+                                                                                                                                                      "burial": null,
+                                                                                                                                                      "about": "Not Known"
+                                                                                                                                                   },
+                                                                                                                                                   "children": []
+                                                                                                                                                },
+                                                                                                                                                {
+                                                                                                                                                   "id": "p53",
+                                                                                                                                                   "name": "Hazrat Syed Tawakulallah R.H",
+                                                                                                                                                   "gender": "male",
+                                                                                                                                                   "alive": false,
+                                                                                                                                                   "dob": "Not Known",
+                                                                                                                                                   "dod": "Not Known",
+                                                                                                                                                   "place": "Not Known",
+                                                                                                                                                   "about": "Not Known",
+                                                                                                                                                   "burial": null,
+                                                                                                                                                   "spouse": {
+                                                                                                                                                      "name": "Bibi Baasrah R.Z",
+                                                                                                                                                      "fname": "Not Known",
+                                                                                                                                                      "gender": "female",
+                                                                                                                                                      "alive": false,
+                                                                                                                                                      "dob": "Not Known",
+                                                                                                                                                      "dod": "Not Known",
+                                                                                                                                                      "place": "Not Known",
+                                                                                                                                                      "burial": null,
+                                                                                                                                                      "about": "Not Known"
+                                                                                                                                                   },
+                                                                                                                                                   "children": []
+                                                                                                                                                },
+                                                                                                                                                {
+                                                                                                                                                   "id": "p54",
+                                                                                                                                                   "name": "Hazrat Syed Sanaullah R.H",
+                                                                                                                                                   "gender": "male",
+                                                                                                                                                   "alive": false,
+                                                                                                                                                   "dob": "Not Known",
+                                                                                                                                                   "dod": "Not Known",
+                                                                                                                                                   "place": "Not Known",
+                                                                                                                                                   "about": "Not Known",
+                                                                                                                                                   "burial": null,
+                                                                                                                                                   "spouse": null,
+                                                                                                                                                   "children": []
+                                                                                                                                                },
+                                                                                                                                                {
+                                                                                                                                                   "id": "p55",
+                                                                                                                                                   "name": "Hazrat Syed Ramzan Ali R.H",
+                                                                                                                                                   "gender": "male",
+                                                                                                                                                   "alive": false,
+                                                                                                                                                   "dob": "Not Known",
+                                                                                                                                                   "dod": "Not Known",
+                                                                                                                                                   "place": "Not Known",
+                                                                                                                                                   "about": "Not Known",
+                                                                                                                                                   "burial": null,
+                                                                                                                                                   "spouse": {
+                                                                                                                                                      "name": "Bibi Maajda R.Z",
+                                                                                                                                                      "fname": "Not Known",
+                                                                                                                                                      "gender": "female",
+                                                                                                                                                      "alive": false,
+                                                                                                                                                      "dob": "Not Known",
+                                                                                                                                                      "dod": "Not Known",
+                                                                                                                                                      "place": "Not Known",
+                                                                                                                                                      "burial": null,
+                                                                                                                                                      "about": "Not Known"
+                                                                                                                                                   },
+                                                                                                                                                   "children": []
+                                                                                                                                                }
+                                                                                                                                             ]
                                                                                                                                           },
                                                                                                                                           {
                                                                                                                                              "id": "p46",
@@ -645,7 +741,682 @@
                                                                                                                                              "about": "Not Known",
                                                                                                                                              "burial": null,
                                                                                                                                              "spouse": null,
-                                                                                                                                             "children": []
+                                                                                                                                             "children": [
+                                                                                                                                                {
+                                                                                                                                                   "id": "p47",
+                                                                                                                                                   "name": "Hazrat Syed Ameerullah R.H",
+                                                                                                                                                   "gender": "male",
+                                                                                                                                                   "alive": false,
+                                                                                                                                                   "dob": "Not Known",
+                                                                                                                                                   "dod": "Not Known",
+                                                                                                                                                   "place": "Not Known",
+                                                                                                                                                   "about": "Not Known",
+                                                                                                                                                   "burial": null,
+                                                                                                                                                   "spouse": null,
+                                                                                                                                                   "children": [
+                                                                                                                                                      {
+                                                                                                                                                         "id": "p56",
+                                                                                                                                                         "name": "Hazrat Syed Wajihullah R.H",
+                                                                                                                                                         "gender": "male",
+                                                                                                                                                         "alive": false,
+                                                                                                                                                         "dob": "Not Known",
+                                                                                                                                                         "dod": "Not Known",
+                                                                                                                                                         "place": "Not Known",
+                                                                                                                                                         "about": "Not Known",
+                                                                                                                                                         "burial": null,
+                                                                                                                                                         "spouse": null,
+                                                                                                                                                         "children": [
+                                                                                                                                                            {
+                                                                                                                                                               "id": "p57",
+                                                                                                                                                               "name": "Hazrat Syed Khursheed Ali R.H",
+                                                                                                                                                               "gender": "male",
+                                                                                                                                                               "alive": false,
+                                                                                                                                                               "dob": "Not Known",
+                                                                                                                                                               "dod": "Not Known",
+                                                                                                                                                               "place": "Not Known",
+                                                                                                                                                               "about": "Not Known",
+                                                                                                                                                               "burial": null,
+                                                                                                                                                               "spouse": null,
+                                                                                                                                                               "children": []
+                                                                                                                                                            }
+                                                                                                                                                         ]
+                                                                                                                                                      }
+                                                                                                                                                   ]
+                                                                                                                                                },
+                                                                                                                                                {
+                                                                                                                                                   "id": "p48",
+                                                                                                                                                   "name": "Hazrat Syed Roohullah R.H",
+                                                                                                                                                   "gender": "male",
+                                                                                                                                                   "alive": false,
+                                                                                                                                                   "dob": "Not Known",
+                                                                                                                                                   "dod": "Not Known",
+                                                                                                                                                   "place": "Not Known",
+                                                                                                                                                   "about": "Not Known",
+                                                                                                                                                   "burial": null,
+                                                                                                                                                   "spouse": null,
+                                                                                                                                                   "children": [
+                                                                                                                                                      {
+                                                                                                                                                         "id": "p58",
+                                                                                                                                                         "name": "Hazrat Syed Farhatullah R.H",
+                                                                                                                                                         "gender": "male",
+                                                                                                                                                         "alive": false,
+                                                                                                                                                         "dob": "Not Known",
+                                                                                                                                                         "dod": "Not Known",
+                                                                                                                                                         "place": "Not Known",
+                                                                                                                                                         "about": "Not Known",
+                                                                                                                                                         "burial": null,
+                                                                                                                                                         "spouse": null,
+                                                                                                                                                         "children": []
+                                                                                                                                                      },
+                                                                                                                                                      {
+                                                                                                                                                         "id": "p59",
+                                                                                                                                                         "name": "Hazrat Syed Barkatullah R.H",
+                                                                                                                                                         "gender": "male",
+                                                                                                                                                         "alive": false,
+                                                                                                                                                         "dob": "Not Known",
+                                                                                                                                                         "dod": "Not Known",
+                                                                                                                                                         "place": "Not Known",
+                                                                                                                                                         "about": "Not Known",
+                                                                                                                                                         "burial": null,
+                                                                                                                                                         "spouse": null,
+                                                                                                                                                         "children": []
+                                                                                                                                                      }
+                                                                                                                                                   ]
+                                                                                                                                                },
+                                                                                                                                                {
+                                                                                                                                                   "id": "p49",
+                                                                                                                                                   "name": "Hazrat Syed Maseehullah R.H",
+                                                                                                                                                   "gender": "male",
+                                                                                                                                                   "alive": false,
+                                                                                                                                                   "dob": "Not Known",
+                                                                                                                                                   "dod": "Not Known",
+                                                                                                                                                   "place": "Not Known",
+                                                                                                                                                   "about": "Not Known",
+                                                                                                                                                   "burial": null,
+                                                                                                                                                   "spouse": null,
+                                                                                                                                                   "children": []
+                                                                                                                                                },
+                                                                                                                                                {
+                                                                                                                                                   "id": "p50",
+                                                                                                                                                   "name": "Hazrat Syed Ameenullah R.H",
+                                                                                                                                                   "gender": "male",
+                                                                                                                                                   "alive": false,
+                                                                                                                                                   "dob": "Not Known",
+                                                                                                                                                   "dod": "Not Known",
+                                                                                                                                                   "place": "Not Known",
+                                                                                                                                                   "about": "Not Known",
+                                                                                                                                                   "burial": null,
+                                                                                                                                                   "spouse": null,
+                                                                                                                                                   "children": [
+                                                                                                                                                      {
+                                                                                                                                                         "id": "p60",
+                                                                                                                                                         "name": "Hazrat Syed Ghiyasullah R.H",
+                                                                                                                                                         "gender": "male",
+                                                                                                                                                         "alive": false,
+                                                                                                                                                         "dob": "Not Known",
+                                                                                                                                                         "dod": "Not Known",
+                                                                                                                                                         "place": "Not Known",
+                                                                                                                                                         "about": "Not Known",
+                                                                                                                                                         "burial": null,
+                                                                                                                                                         "spouse": null,
+                                                                                                                                                         "children": []
+                                                                                                                                                      },
+                                                                                                                                                      {
+                                                                                                                                                         "id": "p61",
+                                                                                                                                                         "name": "Hazrat Syed Ahlullah R.H",
+                                                                                                                                                         "gender": "male",
+                                                                                                                                                         "alive": false,
+                                                                                                                                                         "dob": "Not Known",
+                                                                                                                                                         "dod": "Not Known",
+                                                                                                                                                         "place": "Not Known",
+                                                                                                                                                         "about": "Not Known",
+                                                                                                                                                         "burial": null,
+                                                                                                                                                         "spouse": {
+                                                                                                                                                            "name": "Bibi Shakeela R.Z",
+                                                                                                                                                            "fname": "Hazrat Syed Sozan Ali R.H",
+                                                                                                                                                            "gender": "female",
+                                                                                                                                                            "alive": false,
+                                                                                                                                                            "dob": "Not Known",
+                                                                                                                                                            "dod": "Not Known",
+                                                                                                                                                            "place": "Not Known",
+                                                                                                                                                            "burial": null,
+                                                                                                                                                            "about": "Not Known"
+                                                                                                                                                         },
+                                                                                                                                                         "children": [
+                                                                                                                                                            {
+                                                                                                                                                               "id": "p69",
+                                                                                                                                                               "name": "Hazrat Bibi Hashmat R.H",
+                                                                                                                                                               "gender": "female",
+                                                                                                                                                               "alive": false,
+                                                                                                                                                               "dob": "Not Known",
+                                                                                                                                                               "dod": "Not Known",
+                                                                                                                                                               "place": "Not Known",
+                                                                                                                                                               "about": "Not Known",
+                                                                                                                                                               "burial": null,
+                                                                                                                                                               "spouse": {
+                                                                                                                                                                  "name": "Hazrat Syed Azhar Ali R.Z",
+                                                                                                                                                                  "fname": "Not Known",
+                                                                                                                                                                  "gender": "male",
+                                                                                                                                                                  "alive": false,
+                                                                                                                                                                  "dob": "Not Known",
+                                                                                                                                                                  "dod": "Not Known",
+                                                                                                                                                                  "place": "Ahmadpur, Jhikatiya",
+                                                                                                                                                                  "burial": null,
+                                                                                                                                                                  "about": "Lawald"
+                                                                                                                                                               },
+                                                                                                                                                               "children": []
+                                                                                                                                                            },
+                                                                                                                                                            {
+                                                                                                                                                               "id": "p70",
+                                                                                                                                                               "name": "Hazrat Bibi Hayatan R.H",
+                                                                                                                                                               "gender": "female",
+                                                                                                                                                               "alive": false,
+                                                                                                                                                               "dob": "Not Known",
+                                                                                                                                                               "dod": "Not Known",
+                                                                                                                                                               "place": "Not Known",
+                                                                                                                                                               "about": "Not Known",
+                                                                                                                                                               "burial": null,
+                                                                                                                                                               "spouse": {
+                                                                                                                                                                  "name": "Hazrat Syed Tafazzul Hussain R.Z",
+                                                                                                                                                                  "fname": "Hazrat Syed Abdur Razzaq R.H",
+                                                                                                                                                                  "gender": "male",
+                                                                                                                                                                  "alive": false,
+                                                                                                                                                                  "dob": "Not Known",
+                                                                                                                                                                  "dod": "Not Known",
+                                                                                                                                                                  "place": "Not Known",
+                                                                                                                                                                  "burial": null,
+                                                                                                                                                                  "about": "Not Known"
+                                                                                                                                                               },
+                                                                                                                                                               "children": []
+                                                                                                                                                            },
+                                                                                                                                                            {
+                                                                                                                                                               "id": "p71",
+                                                                                                                                                               "name": "Hazrat Syed Mohammad Hussain R.H",
+                                                                                                                                                               "gender": "male",
+                                                                                                                                                               "alive": false,
+                                                                                                                                                               "dob": "Not Known",
+                                                                                                                                                               "dod": "Not Known",
+                                                                                                                                                               "place": "Not Known",
+                                                                                                                                                               "about": "Not Known",
+                                                                                                                                                               "burial": null,
+                                                                                                                                                               "spouse": {
+                                                                                                                                                                  "name": "Bibi Zameeran R.Z",
+                                                                                                                                                                  "fname": "Hazrat Syed Ghulam Mustafa R.H",
+                                                                                                                                                                  "gender": "female",
+                                                                                                                                                                  "alive": false,
+                                                                                                                                                                  "dob": "Not Known",
+                                                                                                                                                                  "dod": "Not Known",
+                                                                                                                                                                  "place": "Ahmadpur, Jhikatiya",
+                                                                                                                                                                  "burial": null,
+                                                                                                                                                                  "about": "Not Known"
+                                                                                                                                                               },
+                                                                                                                                                               "children": [
+                                                                                                                                                                  {
+                                                                                                                                                                     "id": "p73",
+                                                                                                                                                                     "name": "Hazrat Syed Zaheer-ul-Hasan R.H",
+                                                                                                                                                                     "gender": "male",
+                                                                                                                                                                     "alive": false,
+                                                                                                                                                                     "dob": "Not Known",
+                                                                                                                                                                     "dod": "Not Known",
+                                                                                                                                                                     "place": "Not Known",
+                                                                                                                                                                     "about": "Lawald",
+                                                                                                                                                                     "burial": null,
+                                                                                                                                                                     "spouse": {
+                                                                                                                                                                        "name": "Bibi Azeezan R.Z",
+                                                                                                                                                                        "fname": "Hazrat Syed Mozaffar Hussain R.H",
+                                                                                                                                                                        "gender": "female",
+                                                                                                                                                                        "alive": false,
+                                                                                                                                                                        "dob": "Not Known",
+                                                                                                                                                                        "dod": "Not Known",
+                                                                                                                                                                        "place": "Not Known",
+                                                                                                                                                                        "burial": null,
+                                                                                                                                                                        "about": "Not Known"
+                                                                                                                                                                     },
+                                                                                                                                                                     "children": []
+                                                                                                                                                                  },
+                                                                                                                                                                  {
+                                                                                                                                                                     "id": "p74",
+                                                                                                                                                                     "name": "Hazrat Syed Inayat Kareem R.H",
+                                                                                                                                                                     "gender": "male",
+                                                                                                                                                                     "alive": false,
+                                                                                                                                                                     "dob": "Not Known",
+                                                                                                                                                                     "dod": "Not Known",
+                                                                                                                                                                     "place": "Not Known",
+                                                                                                                                                                     "about": "Lawald",
+                                                                                                                                                                     "burial": null,
+                                                                                                                                                                     "spouse": null,
+                                                                                                                                                                     "children": [
+                                                                                                                                                                        {
+                                                                                                                                                                           "id": "p76",
+                                                                                                                                                                           "name": "Hazrat Syed Ahmad Kareem R.H",
+                                                                                                                                                                           "gender": "male",
+                                                                                                                                                                           "alive": false,
+                                                                                                                                                                           "dob": "Not Known",
+                                                                                                                                                                           "dod": "Not Known",
+                                                                                                                                                                           "place": "Not Known",
+                                                                                                                                                                           "about": "Not Known",
+                                                                                                                                                                           "burial": null,
+                                                                                                                                                                           "spouse": {
+                                                                                                                                                                              "name": "Bibi Quddusa Khatoon R.Z",
+                                                                                                                                                                              "fname": "Not Known",
+                                                                                                                                                                              "gender": "female",
+                                                                                                                                                                              "alive": false,
+                                                                                                                                                                              "dob": "Not Known",
+                                                                                                                                                                              "dod": "Not Known",
+                                                                                                                                                                              "place": "Bitho Shareef, Gaya",
+                                                                                                                                                                              "burial": null,
+                                                                                                                                                                              "about": "Not Known"
+                                                                                                                                                                           },
+                                                                                                                                                                           "children": [
+                                                                                                                                                                              {
+                                                                                                                                                                                 "id": "p87",
+                                                                                                                                                                                 "name": "Syeda Bibi Tahira Khatoon R.H",
+                                                                                                                                                                                 "gender": "female",
+                                                                                                                                                                                 "alive": false,
+                                                                                                                                                                                 "dob": "1932 CE",
+                                                                                                                                                                                 "dod": "2013 CE",
+                                                                                                                                                                                 "place": "Ahmadpur, Jhikatiya",
+                                                                                                                                                                                 "about": "Not Known",
+                                                                                                                                                                                 "burial": {
+                                                                                                                                                                                    "place": "Miran Bigha",
+                                                                                                                                                                                    "map": "https://maps.app.goo.gl/WhoeC5T5TsL2Cy9L8"
+                                                                                                                                                                                 },
+                                                                                                                                                                                 "spouse": {
+                                                                                                                                                                                    "name": "Hazrat Syed Mushtaque Rasool Mirani R.Z",
+                                                                                                                                                                                    "fname": "Hazrat Syed Wajahat Rasool Qadri R.H",
+                                                                                                                                                                                    "gender": "male",
+                                                                                                                                                                                    "alive": false,
+                                                                                                                                                                                    "dob": "1914 CE",
+                                                                                                                                                                                    "dod": "1981 CE",
+                                                                                                                                                                                    "place": "Miranbigha, Gaya",
+                                                                                                                                                                                    "burial": {
+                                                                                                                                                                                       "place": "Miran Bigha",
+                                                                                                                                                                                       "map": "https://maps.app.goo.gl/WhoeC5T5TsL2Cy9L8"
+                                                                                                                                                                                    },
+                                                                                                                                                                                    "about": "he was the Sajjada-e-Awwal Khanqah Hazrat Miran Bhik R.H"
+                                                                                                                                                                                 },
+                                                                                                                                                                                 "children": [],
+                                                                                                                                                                                 "link": true,
+                                                                                                                                                                                 "qasba": "miranbigha",
+                                                                                                                                                                                 "personId": "p139"
+                                                                                                                                                                              },
+                                                                                                                                                                              {
+                                                                                                                                                                                 "id": "p88",
+                                                                                                                                                                                 "name": "Anwari Khatoon R.H",
+                                                                                                                                                                                 "gender": "female",
+                                                                                                                                                                                 "alive": false,
+                                                                                                                                                                                 "dob": "Not Known",
+                                                                                                                                                                                 "dod": "Not Known",
+                                                                                                                                                                                 "place": "Not Known",
+                                                                                                                                                                                 "about": "Not Known",
+                                                                                                                                                                                 "burial": null,
+                                                                                                                                                                                 "spouse": null,
+                                                                                                                                                                                 "children": []
+                                                                                                                                                                              },
+                                                                                                                                                                              {
+                                                                                                                                                                                 "id": "p89",
+                                                                                                                                                                                 "name": "Hazrat Syed Amjad Kareem R.H",
+                                                                                                                                                                                 "gender": "male",
+                                                                                                                                                                                 "alive": false,
+                                                                                                                                                                                 "dob": "Not Known",
+                                                                                                                                                                                 "dod": "Not Known",
+                                                                                                                                                                                 "place": "Not Known",
+                                                                                                                                                                                 "about": "Not Known",
+                                                                                                                                                                                 "burial": null,
+                                                                                                                                                                                 "spouse": null,
+                                                                                                                                                                                 "children": []
+                                                                                                                                                                              },
+                                                                                                                                                                              {
+                                                                                                                                                                                 "id": "p90",
+                                                                                                                                                                                 "name": "Hazrat Syed Aftab Kareem R.H",
+                                                                                                                                                                                 "gender": "male",
+                                                                                                                                                                                 "alive": false,
+                                                                                                                                                                                 "dob": "Not Known",
+                                                                                                                                                                                 "dod": "Not Known",
+                                                                                                                                                                                 "place": "Not Known",
+                                                                                                                                                                                 "about": "Not Known",
+                                                                                                                                                                                 "burial": null,
+                                                                                                                                                                                 "spouse": null,
+                                                                                                                                                                                 "children": []
+                                                                                                                                                                              }
+                                                                                                                                                                           ]
+                                                                                                                                                                        },
+                                                                                                                                                                        {
+                                                                                                                                                                           "id": "p77",
+                                                                                                                                                                           "name": "Hazrat Syed Manzar Kareem R.H",
+                                                                                                                                                                           "gender": "male",
+                                                                                                                                                                           "alive": false,
+                                                                                                                                                                           "dob": "Not Known",
+                                                                                                                                                                           "dod": "Not Known",
+                                                                                                                                                                           "place": "Not Known",
+                                                                                                                                                                           "about": "Not Known",
+                                                                                                                                                                           "burial": null,
+                                                                                                                                                                           "spouse": null,
+                                                                                                                                                                           "children": []
+                                                                                                                                                                        },
+                                                                                                                                                                        {
+                                                                                                                                                                           "id": "p78",
+                                                                                                                                                                           "name": "Hazrat Syed Azhar Kareem R.H",
+                                                                                                                                                                           "gender": "male",
+                                                                                                                                                                           "alive": false,
+                                                                                                                                                                           "dob": "Not Known",
+                                                                                                                                                                           "dod": "Not Known",
+                                                                                                                                                                           "place": "Not Known",
+                                                                                                                                                                           "about": "Not Known",
+                                                                                                                                                                           "burial": null,
+                                                                                                                                                                           "spouse": {
+                                                                                                                                                                              "name": "Bibi Haseena Khatoon R.Z",
+                                                                                                                                                                              "fname": "Not Knwon",
+                                                                                                                                                                              "gender": "female",
+                                                                                                                                                                              "alive": false,
+                                                                                                                                                                              "dob": "Not Known",
+                                                                                                                                                                              "dod": "Not Known",
+                                                                                                                                                                              "place": "Bitho Shareef, Gaya",
+                                                                                                                                                                              "burial": null,
+                                                                                                                                                                              "about": "Not Known"
+                                                                                                                                                                           },
+                                                                                                                                                                           "children": []
+                                                                                                                                                                        },
+                                                                                                                                                                        {
+                                                                                                                                                                           "id": "p79",
+                                                                                                                                                                           "name": "Bibi Ummat Rasool R.H",
+                                                                                                                                                                           "gender": "female",
+                                                                                                                                                                           "alive": false,
+                                                                                                                                                                           "dob": "Not Known",
+                                                                                                                                                                           "dod": "Not Known",
+                                                                                                                                                                           "place": "Not Known",
+                                                                                                                                                                           "about": "Not Known",
+                                                                                                                                                                           "burial": null,
+                                                                                                                                                                           "spouse": {
+                                                                                                                                                                              "name": "Hazrat Syed Kareem Hussain R.Z",
+                                                                                                                                                                              "fname": "Not Known",
+                                                                                                                                                                              "gender": "male",
+                                                                                                                                                                              "alive": false,
+                                                                                                                                                                              "dob": "Not Known",
+                                                                                                                                                                              "dod": "Not Known",
+                                                                                                                                                                              "place": "Bikopur, Gaya",
+                                                                                                                                                                              "burial": null,
+                                                                                                                                                                              "about": "Not Known"
+                                                                                                                                                                           },
+                                                                                                                                                                           "children": [
+                                                                                                                                                                              {
+                                                                                                                                                                                 "id": "p82",
+                                                                                                                                                                                 "name": "Hazrat Syed Mohammad Azeem R.H",
+                                                                                                                                                                                 "gender": "male",
+                                                                                                                                                                                 "alive": false,
+                                                                                                                                                                                 "dob": "Not Known",
+                                                                                                                                                                                 "dod": "Not Known",
+                                                                                                                                                                                 "place": "Not Known",
+                                                                                                                                                                                 "about": "Not Known",
+                                                                                                                                                                                 "burial": null,
+                                                                                                                                                                                 "spouse": null,
+                                                                                                                                                                                 "children": []
+                                                                                                                                                                              },
+                                                                                                                                                                              {
+                                                                                                                                                                                 "id": "p83",
+                                                                                                                                                                                 "name": "Hazrat Syed Hafiz Kareem R.H",
+                                                                                                                                                                                 "gender": "male",
+                                                                                                                                                                                 "alive": false,
+                                                                                                                                                                                 "dob": "Not Known",
+                                                                                                                                                                                 "dod": "Not Known",
+                                                                                                                                                                                 "place": "Not Known",
+                                                                                                                                                                                 "about": "Not Known",
+                                                                                                                                                                                 "burial": null,
+                                                                                                                                                                                 "spouse": null,
+                                                                                                                                                                                 "children": []
+                                                                                                                                                                              },
+                                                                                                                                                                              {
+                                                                                                                                                                                 "id": "p84",
+                                                                                                                                                                                 "name": "Bibi Saabra R.H",
+                                                                                                                                                                                 "gender": "female",
+                                                                                                                                                                                 "alive": false,
+                                                                                                                                                                                 "dob": "Not Known",
+                                                                                                                                                                                 "dod": "Not Known",
+                                                                                                                                                                                 "place": "Not Known",
+                                                                                                                                                                                 "about": "Not Known",
+                                                                                                                                                                                 "burial": null,
+                                                                                                                                                                                 "spouse": null,
+                                                                                                                                                                                 "children": []
+                                                                                                                                                                              },
+                                                                                                                                                                              {
+                                                                                                                                                                                 "id": "p85",
+                                                                                                                                                                                 "name": "Bibi Mahmooda R.H",
+                                                                                                                                                                                 "gender": "female",
+                                                                                                                                                                                 "alive": false,
+                                                                                                                                                                                 "dob": "Not Known",
+                                                                                                                                                                                 "dod": "Not Known",
+                                                                                                                                                                                 "place": "Not Known",
+                                                                                                                                                                                 "about": "Not Known",
+                                                                                                                                                                                 "burial": null,
+                                                                                                                                                                                 "spouse": null,
+                                                                                                                                                                                 "children": []
+                                                                                                                                                                              },
+                                                                                                                                                                              {
+                                                                                                                                                                                 "id": "p86",
+                                                                                                                                                                                 "name": "Bibi Ameena R.H",
+                                                                                                                                                                                 "gender": "female",
+                                                                                                                                                                                 "alive": false,
+                                                                                                                                                                                 "dob": "Not Known",
+                                                                                                                                                                                 "dod": "Not Known",
+                                                                                                                                                                                 "place": "Not Known",
+                                                                                                                                                                                 "about": "Not Known",
+                                                                                                                                                                                 "burial": null,
+                                                                                                                                                                                 "spouse": null,
+                                                                                                                                                                                 "children": []
+                                                                                                                                                                              }
+                                                                                                                                                                           ]
+                                                                                                                                                                        },
+                                                                                                                                                                        {
+                                                                                                                                                                           "id": "p80",
+                                                                                                                                                                           "name": "Bibi Aabida R.H",
+                                                                                                                                                                           "gender": "female",
+                                                                                                                                                                           "alive": false,
+                                                                                                                                                                           "dob": "Not Known",
+                                                                                                                                                                           "dod": "Not Known",
+                                                                                                                                                                           "place": "Not Known",
+                                                                                                                                                                           "about": "Not Known",
+                                                                                                                                                                           "burial": null,
+                                                                                                                                                                           "spouse": {
+                                                                                                                                                                              "name": "Syed Shuja'at Hussain R.Z",
+                                                                                                                                                                              "fname": "Not Known",
+                                                                                                                                                                              "gender": "male",
+                                                                                                                                                                              "alive": false,
+                                                                                                                                                                              "dob": "Not Known",
+                                                                                                                                                                              "dod": "Not Known",
+                                                                                                                                                                              "place": "Not Known",
+                                                                                                                                                                              "burial": null,
+                                                                                                                                                                              "about": "Not Known"
+                                                                                                                                                                           },
+                                                                                                                                                                           "children": [
+                                                                                                                                                                              {
+                                                                                                                                                                                 "id": "p81",
+                                                                                                                                                                                 "name": "Hazrat Syed Jamaluddin Ahmad R.H",
+                                                                                                                                                                                 "gender": "male",
+                                                                                                                                                                                 "alive": false,
+                                                                                                                                                                                 "dob": "Not Known",
+                                                                                                                                                                                 "dod": "Not Known",
+                                                                                                                                                                                 "place": "Not Known",
+                                                                                                                                                                                 "about": "Not Known",
+                                                                                                                                                                                 "burial": null,
+                                                                                                                                                                                 "spouse": null,
+                                                                                                                                                                                 "children": []
+                                                                                                                                                                              },
+                                                                                                                                                                              {
+                                                                                                                                                                                 "id": "p82",
+                                                                                                                                                                                 "name": "Bibi Sayyeda R.H",
+                                                                                                                                                                                 "gender": "female",
+                                                                                                                                                                                 "alive": false,
+                                                                                                                                                                                 "dob": "Not Known",
+                                                                                                                                                                                 "dod": "Not Known",
+                                                                                                                                                                                 "place": "Not Known",
+                                                                                                                                                                                 "about": "Not Known",
+                                                                                                                                                                                 "burial": null,
+                                                                                                                                                                                 "spouse": null,
+                                                                                                                                                                                 "children": []
+                                                                                                                                                                              },
+                                                                                                                                                                              {
+                                                                                                                                                                                 "id": "p83",
+                                                                                                                                                                                 "name": "Unknown",
+                                                                                                                                                                                 "gender": "female",
+                                                                                                                                                                                 "alive": false,
+                                                                                                                                                                                 "dob": "Not Known",
+                                                                                                                                                                                 "dod": "Not Known",
+                                                                                                                                                                                 "place": "Not Known",
+                                                                                                                                                                                 "about": "Not Known",
+                                                                                                                                                                                 "burial": null,
+                                                                                                                                                                                 "spouse": null,
+                                                                                                                                                                                 "children": []
+                                                                                                                                                                              }
+                                                                                                                                                                           ]
+                                                                                                                                                                        }
+                                                                                                                                                                     ]
+                                                                                                                                                                  },
+                                                                                                                                                                  {
+                                                                                                                                                                     "id": "p75",
+                                                                                                                                                                     "name": "Hazrat Syed Mohibb-ul-Hussain R.H",
+                                                                                                                                                                     "gender": "male",
+                                                                                                                                                                     "alive": false,
+                                                                                                                                                                     "dob": "Not Known",
+                                                                                                                                                                     "dod": "Not Known",
+                                                                                                                                                                     "place": "Not Known",
+                                                                                                                                                                     "about": "Lawald",
+                                                                                                                                                                     "burial": null,
+                                                                                                                                                                     "spouse": {
+                                                                                                                                                                        "name": "Bibi kaneezan R.Z",
+                                                                                                                                                                        "fname": "Hazrat Syed Ashraf Hussain R.H",
+                                                                                                                                                                        "gender": "female",
+                                                                                                                                                                        "alive": false,
+                                                                                                                                                                        "dob": "Not Known",
+                                                                                                                                                                        "dod": "Not Known",
+                                                                                                                                                                        "place": "Ahmadpur, Jhikatiya",
+                                                                                                                                                                        "burial": null,
+                                                                                                                                                                        "about": "Not Known"
+                                                                                                                                                                     },
+                                                                                                                                                                     "children": []
+                                                                                                                                                                  }
+                                                                                                                                                               ]
+                                                                                                                                                            },
+                                                                                                                                                            {
+                                                                                                                                                               "id": "p72",
+                                                                                                                                                               "name": "Hazrat Syed Basharat Hussain R.H",
+                                                                                                                                                               "gender": "male",
+                                                                                                                                                               "alive": false,
+                                                                                                                                                               "dob": "Not Known",
+                                                                                                                                                               "dod": "Not Known",
+                                                                                                                                                               "place": "Not Known",
+                                                                                                                                                               "about": "Lawald",
+                                                                                                                                                               "burial": null,
+                                                                                                                                                               "spouse": null,
+                                                                                                                                                               "children": []
+                                                                                                                                                            }
+                                                                                                                                                         ]
+                                                                                                                                                      },
+                                                                                                                                                      {
+                                                                                                                                                         "id": "p62",
+                                                                                                                                                         "name": "Hazrat Syed Amanullah R.H",
+                                                                                                                                                         "gender": "male",
+                                                                                                                                                         "alive": false,
+                                                                                                                                                         "dob": "Not Known",
+                                                                                                                                                         "dod": "Not Known",
+                                                                                                                                                         "place": "Not Known",
+                                                                                                                                                         "about": "Not Known",
+                                                                                                                                                         "burial": null,
+                                                                                                                                                         "spouse": null,
+                                                                                                                                                         "children": []
+                                                                                                                                                      },
+                                                                                                                                                      {
+                                                                                                                                                         "id": "p63",
+                                                                                                                                                         "name": "Hazrat Syed Aayatullah R.H",
+                                                                                                                                                         "gender": "male",
+                                                                                                                                                         "alive": false,
+                                                                                                                                                         "dob": "Not Known",
+                                                                                                                                                         "dod": "Not Known",
+                                                                                                                                                         "place": "Not Known",
+                                                                                                                                                         "about": "Not Known",
+                                                                                                                                                         "burial": null,
+                                                                                                                                                         "spouse": null,
+                                                                                                                                                         "children": [
+                                                                                                                                                            {
+                                                                                                                                                               "id": "p67",
+                                                                                                                                                               "name": "Hazrat Syed Ali Bakhsh R.H",
+                                                                                                                                                               "gender": "male",
+                                                                                                                                                               "alive": false,
+                                                                                                                                                               "dob": "Not Known",
+                                                                                                                                                               "dod": "Not Known",
+                                                                                                                                                               "place": "Not Known",
+                                                                                                                                                               "about": "Not Known",
+                                                                                                                                                               "burial": null,
+                                                                                                                                                               "spouse": null,
+                                                                                                                                                               "children": []
+                                                                                                                                                            },
+                                                                                                                                                            {
+                                                                                                                                                               "id": "p68",
+                                                                                                                                                               "name": "Hazrat Bibi Kabeeran R.H",
+                                                                                                                                                               "gender": "female",
+                                                                                                                                                               "alive": false,
+                                                                                                                                                               "dob": "Not Known",
+                                                                                                                                                               "dod": "Not Known",
+                                                                                                                                                               "place": "Not Known",
+                                                                                                                                                               "about": "Not Known",
+                                                                                                                                                               "burial": null,
+                                                                                                                                                               "spouse": null,
+                                                                                                                                                               "children": []
+                                                                                                                                                            }
+                                                                                                                                                         ]
+                                                                                                                                                      },
+                                                                                                                                                      {
+                                                                                                                                                         "id": "p64",
+                                                                                                                                                         "name": "Hazrat Syed Abdur Razzaq R.H",
+                                                                                                                                                         "gender": "male",
+                                                                                                                                                         "alive": false,
+                                                                                                                                                         "dob": "Not Known",
+                                                                                                                                                         "dod": "Not Known",
+                                                                                                                                                         "place": "Not Known",
+                                                                                                                                                         "about": "Not Known",
+                                                                                                                                                         "burial": null,
+                                                                                                                                                         "spouse": null,
+                                                                                                                                                         "children": [
+                                                                                                                                                            {
+                                                                                                                                                               "id": "p65",
+                                                                                                                                                               "name": "Hazrat Syed Tafazzul Hussain R.H",
+                                                                                                                                                               "gender": "male",
+                                                                                                                                                               "alive": false,
+                                                                                                                                                               "dob": "Not Known",
+                                                                                                                                                               "dod": "Not Known",
+                                                                                                                                                               "place": "Not Known",
+                                                                                                                                                               "about": "Not Known",
+                                                                                                                                                               "burial": null,
+                                                                                                                                                               "spouse": {
+                                                                                                                                                                  "name": "Bibi Hayatan R.Z",
+                                                                                                                                                                  "fname": "Hazrat Syed Ahlullah",
+                                                                                                                                                                  "gender": "female",
+                                                                                                                                                                  "alive": false,
+                                                                                                                                                                  "dob": "Not Known",
+                                                                                                                                                                  "dod": "Not Known",
+                                                                                                                                                                  "place": "Not Known",
+                                                                                                                                                                  "burial": null,
+                                                                                                                                                                  "about": "Not Known"
+                                                                                                                                                               },
+                                                                                                                                                               "children": []
+                                                                                                                                                            },
+                                                                                                                                                            {
+                                                                                                                                                               "id": "p66",
+                                                                                                                                                               "name": "Hazrat Bibi Ameeran R.H",
+                                                                                                                                                               "gender": "female",
+                                                                                                                                                               "alive": false,
+                                                                                                                                                               "dob": "Not Known",
+                                                                                                                                                               "dod": "Not Known",
+                                                                                                                                                               "place": "Not Known",
+                                                                                                                                                               "about": "Not Known",
+                                                                                                                                                               "burial": null,
+                                                                                                                                                               "spouse": null,
+                                                                                                                                                               "children": []
+                                                                                                                                                            }
+                                                                                                                                                         ]
+                                                                                                                                                      }
+                                                                                                                                                   ]
+                                                                                                                                                }
+                                                                                                                                             ]
                                                                                                                                           }
                                                                                                                                        ]
                                                                                                                                     }

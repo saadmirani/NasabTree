@@ -1,0 +1,58 @@
+{
+	"name": "Bibi Mujeeba R.H",
+ 	"fname": "Hazrat Miran Syed Habeeb R.H",
+	"gender": "female",
+	"alive": false,
+   "dob": "Not Known",
+   "dod": "Not Known",
+   "place": "Not Known",
+   "burial": null,
+   "about": "Not Known"
+}
+
+
+{
+	"name": "Hazrat Syed Tafazzul Hussain R.H",
+	"fname": "Hazrat Syed Abdur Razzaq R.H",
+	"gender": "male",
+	"alive": false,
+	"dob": "Not Known",
+	"dod": "Not Known",
+	"place": "Not Known",
+	"burial": null,
+	"about": "Not Known"
+}
+
+
+
+{
+ 	"id": "p54",
+	"name": "Hazrat Syed Sanaullah R.H",
+	"gender": "male",
+	"alive": false,
+	"dob": "Not Known",
+ 	"dod": "Not Known",
+	"place": "Not Known",
+	"about": "Not Known",
+	"burial": null,
+	"spouse": null,
+	"children": []
+}
+
+
+
+{
+	"place": "Sammara, Iraq",
+	"map": null
+}
+
+{
+	"place": "Miran Bigha",
+	"map": "https://maps.app.goo.gl/WhoeC5T5TsL2Cy9L8"
+}
+
+
+"dob": "≈1790-95 CE",
+"dod": "28 Zulhijja ≈1870-75 CE",
+
+

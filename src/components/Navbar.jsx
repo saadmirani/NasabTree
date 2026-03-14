@@ -18,8 +18,8 @@ export default function Navbar({ menuOpen, setMenuOpen }) {
          </button>
 
          <div className="navbar-left">
-            <img src={logo} className="navbar-logo" alt="NasabTree logo" />
-            <h1 className="navbar-title">NasabTree</h1>
+            <img src={logo} className="navbar-logo" alt="Bazm-e-Saadaat logo" />
+            <h1 className="navbar-title">Bazm-e-Saadaat</h1>
          </div>
 
          <div className="language-toggle">

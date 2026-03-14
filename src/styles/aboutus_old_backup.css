@@ -1,0 +1,370 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;600&family=Poppins:wght@500;600;700&display=swap");
+
+.aboutus-container {
+   background: #ffffff;
+   border-radius: 0;
+   border: none;
+   overflow: visible;
+}
+
+/* HEADER */
+
+.header-section {
+   padding: 4rem 2rem 2rem;
+   background: #ffffff;
+   border-bottom: 1px solid #e8e8e8;
+   text-align: center;
+}
+
+.main-heading {
+   font-family: "Lora", serif;
+   font-size: clamp(2.8rem, 5vw, 3.5rem);
+   text-align: center;
+   color: #1c1c1c;
+   letter-spacing: -0.02em;
+   font-weight: 600;
+   margin: 0;
+}
+
+/* CONTENT */
+
+.content-section {
+   padding: 3rem 2rem;
+   max-width: 1200px;
+   margin: 0 auto;
+}
+
+/* ARTICLE - Magazine style */
+
+.article-body {
+   display: grid;
+   grid-template-columns: 1fr 1.3fr;
+   gap: 3rem;
+   align-items: start;
+   margin-bottom: 4rem;
+}
+
+/* PHOTO CARD */
+
+.admin-card {
+   position: sticky;
+   top: 2rem;
+   border-radius: 8px;
+   overflow: hidden;
+   border: 1px solid #e0e0e0;
+   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+   background: #f8f8f8;
+}
+
+.photo-container {
+   width: 100%;
+   aspect-ratio: 3/4;
+   overflow: hidden;
+}
+
+.admin-photo {
+   width: 100%;
+   height: 100%;
+   display: block;
+   object-fit: cover;
+}
+
+/* SECTION TITLE */
+
+.section-title {
+   font-family: "Lora", serif;
+   font-size: clamp(2rem, 3.5vw, 2.6rem);
+   color: #1c1c1c;
+   margin: 0 0 1.5rem 0;
+   font-weight: 600;
+   border-bottom: none;
+   padding-bottom: 0;
+   display: block;
+   line-height: 1.2;
+}
+
+/* BODY TEXT */
+
+.mission-text {
+   font-family: "Lora", serif;
+   font-size: 1.05rem;
+   line-height: 1.9;
+   color: #212121;
+   text-align: left;
+}
+
+.mission-text .MuiTypography-root {
+   color: #212121;
+   font-family: "Lora", serif;
+}
+
+.mission-text strong {
+   font-weight: 600;
+   color: #1c1c1c;
+}
+
+/* FEATURES BOX */
+
+.features-list {
+   background: #fafaf9;
+   border-left: 3px solid #8b7355;
+   padding: 1.8rem 1.8rem;
+   border-radius: 0;
+   margin: 2.5rem 0;
+   line-height: 1.9;
+}
+
+.features-list Typography {
+   color: #212121;
+   font-family: "Lora", serif;
+   font-size: 1.02rem;
+}
+
+/* CTA SECTION */
+
+.cta-section {
+   margin-top: 5rem;
+   padding: 3.5rem 3rem;
+   background: #fafaf9;
+   border-radius: 0;
+   text-align: left;
+   border-top: 1px solid #e0e0e0;
+   border-bottom: 1px solid #e0e0e0;
+}
+
+.cta-header {
+   margin-bottom: 2rem;
+}
+
+.cta-title {
+   color: #1c1c1c !important;
+   font-family: "Lora", serif;
+   font-size: clamp(2rem, 3vw, 2.4rem);
+   font-weight: 600;
+   margin: 0 0 1rem 0 !important;
+   letter-spacing: -0.01em;
+}
+
+.cta-subtitle {
+   color: #4a4a4a;
+   font-family: "Lora", serif;
+   font-size: 1.1rem;
+   line-height: 1.8;
+   max-width: 700px;
+   margin: 0;
+}
+
+/* SUPPORT BOX */
+
+.support-container {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+   gap: 2rem;
+   margin: 2.5rem 0;
+   padding: 0;
+   background: transparent;
+   border-radius: 0;
+}
+
+.support-heading {
+   grid-column: 1 / -1;
+   font-family: "Lora", serif;
+   font-size: 1.25rem;
+   font-weight: 600;
+   margin: 1.5rem 0 1.5rem 0;
+   color: #1c1c1c;
+   letter-spacing: -0.01em;
+   text-transform: capitalize;
+}
+
+.support-points {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+   display: contents;
+}
+
+.support-point {
+   margin: 0;
+   padding: 1.5rem;
+   background: #ffffff;
+   border-left: 3px solid #8b7355;
+   border-radius: 0;
+   transition: all 0.3s ease;
+   text-align: left;
+   border-top: 1px solid #e8e8e8;
+   border-right: 1px solid #e8e8e8;
+   border-bottom: 1px solid #e8e8e8;
+}
+
+.support-point:hover {
+   background: #fafaf9;
+   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.support-label {
+   font-family: "Lora", serif;
+   font-weight: 600;
+   color: #1c1c1c;
+   font-size: 1rem;
+   margin-bottom: 0.5rem;
+}
+
+.support-desc {
+   font-family: "Lora", serif;
+   color: #4a4a4a;
+   font-size: 0.95rem;
+   line-height: 1.7;
+}
+
+/* CTA FOOTER */
+
+.cta-footer {
+   margin-top: 2.5rem;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   gap: 1.5rem;
+}
+
+.cta-note {
+   font-family: "Lora", serif;
+   color: #4a4a4a;
+   font-size: 1rem;
+   line-height: 1.8;
+   max-width: 800px;
+   margin: 0;
+}
+
+/* BUTTON */
+
+.cta-button {
+   background: #8b7355 !important;
+   color: white !important;
+   padding: 0.9rem 2.2rem !important;
+   font-family: "Poppins", sans-serif !important;
+   font-size: 0.95rem !important;
+   font-weight: 600 !important;
+   border-radius: 4px !important;
+   text-transform: uppercase !important;
+   border: none !important;
+   box-shadow: 0 4px 14px rgba(139, 115, 85, 0.25) !important;
+   transition: all 0.3s ease !important;
+   letter-spacing: 0.05em !important;
+}
+
+.cta-button:hover {
+   background: #6b5845 !important;
+   box-shadow: 0 6px 20px rgba(139, 115, 85, 0.35) !important;
+}
+
+/* MOBILE */
+
+@media (max-width: 1024px) {
+   .article-body {
+      grid-template-columns: 1fr;
+      gap: 2.5rem;
+   }
+
+   .admin-card {
+      position: static;
+      max-width: 350px;
+      margin: 0 auto;
+   }
+}
+
+@media (max-width: 768px) {
+   .header-section {
+      padding: 2.5rem 1.5rem 1.5rem;
+   }
+
+   .main-heading {
+      font-size: 2.2rem;
+   }
+
+   .content-section {
+      padding: 2rem 1.5rem;
+   }
+
+   .article-body {
+      gap: 2rem;
+   }
+
+   .section-title {
+      font-size: 1.6rem;
+   }
+
+   .mission-text {
+      font-size: 1rem;
+      line-height: 1.85;
+   }
+
+   .features-list {
+      padding: 1.4rem 1.4rem;
+   }
+
+   .cta-section {
+      margin-top: 3rem;
+      padding: 2.5rem 1.5rem;
+   }
+
+   .cta-title {
+      font-size: 1.8rem;
+   }
+
+   .cta-subtitle {
+      font-size: 1rem;
+   }
+
+   .support-container {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+   }
+
+   .support-point {
+      padding: 1.3rem;
+   }
+
+   .cta-button {
+      width: 100%;
+      text-align: center;
+   }
+}
+
+@media (max-width: 480px) {
+   .header-section {
+      padding: 2rem 1rem 1rem;
+   }
+
+   .main-heading {
+      font-size: 1.8rem;
+   }
+
+   .content-section {
+      padding: 1.5rem 1rem;
+   }
+
+   .admin-card {
+      max-width: 100%;
+   }
+
+   .section-title {
+      font-size: 1.4rem;
+   }
+
+   .mission-text {
+      font-size: 0.95rem;
+   }
+
+   .cta-section {
+      padding: 1.8rem 1rem;
+   }
+
+   .cta-title {
+      font-size: 1.5rem;
+   }
+
+   .support-point {
+      padding: 1rem;
+   }
+}

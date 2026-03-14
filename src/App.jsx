@@ -9,6 +9,7 @@ import NasabSimla from "./components/NasabSimla";
 import NasabDeora from "./components/NasabDeora";
 import Bikopur from "./components/bikopur";
 import NasabAhmadpur from "./components/NasabAhmadpur";
+import NasabKharbaiyya from "./components/NasabKharbaiyya";
 import Books from "./components/Books";
 import UrsCalendar from "./components/UrsCalendar";
 import KhanqahList from "./components/KhanqahList";
@@ -16,6 +17,7 @@ import Graveyards from "./components/Graveyards";
 import ContactUs from "./components/ContactUs";
 import Contribute from "./components/contribute";
 import Biography from "./components/Biography";
+import AboutUs from "./components/AboutUs";
 
 export default function App() {
   const [section, setSection] = useState("home");
@@ -42,6 +44,7 @@ export default function App() {
             {section === "deora" && <NasabDeora setSection={handleSectionChange} />}
             {section === "bikopur" && <Bikopur setSection={handleSectionChange} />}
             {section === "ahmadpur" && <NasabAhmadpur setSection={handleSectionChange} />}
+            {section === "kharbaiyya" && <NasabKharbaiyya setSection={handleSectionChange} />}
             {section === "books" && <Books />}
             {section === "urs" && <UrsCalendar />}
             {section === "khanqah" && <KhanqahList />}
@@ -49,6 +52,7 @@ export default function App() {
             {section === "contact" && <ContactUs />}
             {section === "biography" && <Biography />}
             {section === "contribute" && <Contribute />}
+            {section === "aboutus" && <AboutUs />}
           </main>
         </div>
       </div>

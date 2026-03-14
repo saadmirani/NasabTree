@@ -10,6 +10,7 @@ const CalendarIcon = () => <i className="fas fa-calendar" style={{ fontSize: "20
 const MosqueIcon = () => <i className="fas fa-list" style={{ fontSize: "20px" }}></i>;
 const ContributeIcon = () => <i className="fas fa-handshake" style={{ fontSize: "20px" }}></i>;
 const BiographyIcon = () => <i className="fas fa-scroll" style={{ fontSize: "20px" }}></i>;
+const AboutIcon = () => <i className="fas fa-info-circle" style={{ fontSize: "20px" }}></i>;
 
 export default function SideMenu({ section, setSection, isOpen, setIsOpen }) {
    const [showSilsilas, setShowSilsilas] = React.useState(false);
@@ -132,6 +133,14 @@ export default function SideMenu({ section, setSection, isOpen, setIsOpen }) {
                      <span className="icon"><NasabIcon /></span>
                      <span className="label">Qasba Ahmadpur (Jhikatiya)</span>
                   </button>
+
+                  <button
+                     className={`submenu-item ${section === "kharbaiyya" ? "active" : ""}`}
+                     onClick={() => setSection("kharbaiyya")}
+                  >
+                     <span className="icon"><NasabIcon /></span>
+                     <span className="label">Qasba Kharbaiyya</span>
+                  </button>
                </div>
             )}
          </div>
@@ -182,6 +191,14 @@ export default function SideMenu({ section, setSection, isOpen, setIsOpen }) {
          >
             <span className="icon"><BiographyIcon /></span>
             <span className="label">Biography</span>
+         </button>
+
+         <button
+            className={`menu-item ${section === "aboutus" ? "active" : ""}`}
+            onClick={() => { setShowSilsilas(false); setSection("aboutus"); }}
+         >
+            <span className="icon"><AboutIcon /></span>
+            <span className="label">About Us</span>
          </button>
 
          <button

@@ -1,0 +1,361 @@
+/* Genealogy Text Component Styling */
+
+.genealogy-text-container {
+   background: white;
+   border-radius: 8px;
+   padding: 24px;
+}
+
+.genealogy-text-header {
+   margin-bottom: 30px;
+   border-bottom: 2px solid #e0e0e0;
+   padding-bottom: 16px;
+}
+
+.genealogy-text-header h2 {
+   font-size: 2em;
+   margin: 0 0 8px 0;
+   color: #1a1a1a;
+}
+
+.genealogy-text-description {
+   color: #666;
+   margin: 0;
+   font-size: 0.95em;
+   line-height: 1.5;
+}
+
+.genealogy-text-empty {
+   text-align: center;
+   padding: 60px 20px;
+   color: #999;
+   font-size: 1.1em;
+}
+
+/* Tree Structure */
+.genealogy-tree {
+   margin-top: 20px;
+}
+
+.genealogy-root {
+   margin-bottom: 20px;
+}
+
+.genealogy-person-item {
+   margin-left: 0;
+   padding-left: 20px;
+   border-left: 2px solid #e0e0e0;
+   margin-bottom: 8px;
+   position: relative;
+}
+
+.genealogy-person-item.level-0 {
+   border-left-width: 3px;
+   border-left-color: #1e3c72;
+   padding-left: 24px;
+   background: linear-gradient(to right, rgba(30, 60, 114, 0.05) 0%, transparent 100%);
+}
+
+.genealogy-person-item.level-1 {
+   border-left-color: #2196f3;
+   margin-left: 20px;
+}
+
+.genealogy-person-item.level-2 {
+   border-left-color: #64b5f6;
+   margin-left: 40px;
+}
+
+.genealogy-person-item.level-3 {
+   border-left-color: #90caf9;
+   margin-left: 60px;
+}
+
+.genealogy-person-item.level-4 {
+   border-left-color: #bbdefb;
+   margin-left: 80px;
+}
+
+.genealogy-person-item.level-5 {
+   border-left-color: #e3f2fd;
+   margin-left: 100px;
+}
+
+.genealogy-person-item.level-6 {
+   border-left-color: #e3f2fd;
+   margin-left: 120px;
+}
+
+/* Person Header */
+.genealogy-person-header {
+   display: flex;
+   align-items: center;
+   gap: 8px;
+   padding: 8px 12px;
+   border-radius: 4px;
+   transition: all 0.2s ease;
+   flex-wrap: wrap;
+}
+
+.genealogy-person-header.male {
+   background: rgba(33, 150, 243, 0.05);
+}
+
+.genealogy-person-header.female {
+   background: rgba(233, 30, 99, 0.05);
+}
+
+.genealogy-person-header.deceased {
+   opacity: 0.7;
+}
+
+.genealogy-person-header:hover {
+   background: rgba(30, 60, 114, 0.1);
+   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Expand Button */
+.expand-button {
+   background: none;
+   border: none;
+   cursor: pointer;
+   color: #666;
+   font-size: 0.8em;
+   padding: 4px 4px;
+   width: 20px;
+   height: 20px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   transition: all 0.2s ease;
+   flex-shrink: 0;
+}
+
+.expand-button:hover {
+   color: #1e3c72;
+   transform: scale(1.2);
+}
+
+.expand-button.expanded {
+   color: #2196f3;
+}
+
+.no-children-spacer {
+   width: 20px;
+   display: inline-block;
+   flex-shrink: 0;
+}
+
+/* Person Name Button */
+.genealogy-person-name {
+   background: none;
+   border: none;
+   cursor: pointer;
+   display: flex;
+   align-items: center;
+   gap: 8px;
+   padding: 4px 8px;
+   border-radius: 4px;
+   transition: all 0.2s ease;
+   flex: 1;
+   min-width: 200px;
+}
+
+.genealogy-person-name:hover {
+   background: rgba(30, 60, 114, 0.15);
+   color: #1e3c72;
+}
+
+.person-name {
+   font-weight: 500;
+   color: #333;
+   text-align: left;
+}
+
+.genealogy-person-name:hover .person-name {
+   color: #1e3c72;
+   text-decoration: underline;
+}
+
+.deceased-marker {
+   color: #999;
+   font-size: 1.1em;
+   font-weight: bold;
+}
+
+.gender-indicator {
+   font-size: 1.1em;
+   color: #666;
+   flex-shrink: 0;
+}
+
+.genealogy-person-header.male .gender-indicator {
+   color: #2196f3;
+}
+
+.genealogy-person-header.female .gender-indicator {
+   color: #e91e63;
+}
+
+/* Dates */
+.person-dates {
+   font-size: 0.85em;
+   color: #999;
+   white-space: nowrap;
+   margin-left: auto;
+   padding-left: 12px;
+   flex-shrink: 0;
+}
+
+.person-dates .dob {
+   font-weight: 500;
+}
+
+.person-dates .dod {
+   margin-left: 4px;
+}
+
+/* Spouse Info */
+.genealogy-spouse-info {
+   font-size: 0.85em;
+   color: #e91e63;
+   padding: 4px 12px 4px 44px;
+   background: rgba(233, 30, 99, 0.05);
+   border-radius: 3px;
+   margin-top: 4px;
+   display: flex;
+   gap: 8px;
+}
+
+.spouse-label {
+   font-weight: 600;
+}
+
+.spouse-name {
+   color: #c2185b;
+}
+
+/* Children Container */
+.genealogy-children-container {
+   margin-top: 8px;
+   margin-left: -5px;
+}
+
+.genealogy-collapsed-indicator {
+   font-size: 0.8em;
+   color: #999;
+   padding: 4px 12px;
+   margin-top: 4px;
+   font-style: italic;
+   background: rgba(0, 0, 0, 0.02);
+   border-radius: 3px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+   .genealogy-text-container {
+      padding: 16px;
+   }
+
+   .genealogy-text-header h2 {
+      font-size: 1.5em;
+   }
+
+   .genealogy-person-header {
+      flex-wrap: nowrap;
+      gap: 4px;
+   }
+
+   .genealogy-person-name {
+      min-width: auto;
+      flex: 0 1 auto;
+   }
+
+   .person-dates {
+      display: none;
+   }
+
+   .genealogy-person-item {
+      padding-left: 16px;
+      border-left-width: 2px;
+   }
+
+   .genealogy-person-item.level-0 {
+      padding-left: 16px;
+      border-left-width: 2px;
+   }
+
+   .genealogy-person-item.level-1 {
+      margin-left: 10px;
+   }
+
+   .genealogy-person-item.level-2 {
+      margin-left: 20px;
+   }
+
+   .genealogy-person-item.level-3 {
+      margin-left: 30px;
+   }
+
+   .genealogy-person-item.level-4 {
+      margin-left: 40px;
+   }
+
+   .genealogy-person-item.level-5 {
+      margin-left: 50px;
+   }
+
+   .genealogy-person-item.level-6 {
+      margin-left: 60px;
+   }
+
+   .genealogy-spouse-info {
+      padding: 4px 8px 4px 16px;
+      font-size: 0.8em;
+   }
+}
+
+@media (max-width: 480px) {
+   .genealogy-text-container {
+      padding: 12px;
+   }
+
+   .genealogy-text-header h2 {
+      font-size: 1.2em;
+   }
+
+   .genealogy-person-header {
+      font-size: 0.9em;
+   }
+
+   .genealogy-person-name {
+      flex: 0 1 auto;
+   }
+
+   .person-name {
+      font-size: 0.9em;
+   }
+
+   .genealogy-person-item {
+      padding-left: 12px;
+      margin-bottom: 6px;
+      border-left-width: 2px !important;
+   }
+}
+
+/* Print Styles */
+@media print {
+   .genealogy-person-header:hover {
+      background: transparent;
+   }
+
+   .genealogy-person-name:hover {
+      background: transparent;
+      text-decoration: none;
+   }
+
+   .expand-button,
+   .genealogy-person-name {
+      cursor: default;
+   }
+}

@@ -1,9 +1,12 @@
 import React, { useState, useCallback } from "react";
 import { Helmet } from "react-helmet";
 import kharbaiyyaData from "../data/kharbaiyya.json";
+import familyInfo from "../data/familyInfo/kharbaiyya.json";
 import "../styles/tree.css";
 import GenealogyText from "./GenealogyText";
 import { DetailPopup } from "./DetailPopup";
+import StatisticsPanel from "./StatisticsPanel";
+import FamilyInfoModal from "./FamilyInfoModal";
 import { useTreeRendering } from "../hooks/useTreeRendering";
 import { generateFamilyTreeSchema, generateBreadcrumbSchema } from "../utils/seoUtils";
 
@@ -22,6 +25,8 @@ export default function NasabKharbaiyya({ setSection }) {
    const [query, setQuery] = useState("");
    const [suggestions, setSuggestions] = useState([]);
    const [viewMode, setViewMode] = useState("tree");
+   const [stats, setStats] = useState(null);
+   const [showInfoModal, setShowInfoModal] = useState(false);
 
    // Use the custom hook for all D3 rendering logic
    const handleNodeClick = useCallback((d, popupX, popupY) => {
@@ -29,7 +34,7 @@ export default function NasabKharbaiyya({ setSection }) {
       setPopupPos({ x: popupX, y: popupY });
    }, []);
 
-   const { svgRef, drawTree, focusNodeById, rootRef, peopleRef } = useTreeRendering(
+   const { svgRef, drawTree, focusNodeById, rootRef, peopleRef, getStats } = useTreeRendering(
       QASBA_CONFIG,
       handleNodeClick,
       setSection
@@ -42,12 +47,16 @@ export default function NasabKharbaiyya({ setSection }) {
    // Draw tree when component mounts or viewMode changes
    React.useEffect(() => {
       if (viewMode === "tree") {
-         setTimeout(() => drawTree(), 100);
+         setTimeout(() => {
+            drawTree();
+            setStats(getStats());
+         }, 100);
       }
-   }, [viewMode, drawTree]);
+   }, [viewMode, drawTree, getStats]);
 
    React.useEffect(() => {
       drawTree();
+      setStats(getStats());
 
       // Focus on person after navigation from another family
       setTimeout(() => {
@@ -57,7 +66,7 @@ export default function NasabKharbaiyya({ setSection }) {
             focusNodeById(personId);
          }
       }, 500);
-   }, [drawTree, focusNodeById]);
+   }, [drawTree, focusNodeById, getStats]);
 
    const shortName = (full) => {
       if (!full) return "";
@@ -97,6 +106,11 @@ export default function NasabKharbaiyya({ setSection }) {
                {JSON.stringify(generateBreadcrumbSchema(QASBA_CONFIG.qasbaName))}
             </script>
          </Helmet>
+         <FamilyInfoModal
+            isOpen={showInfoModal}
+            onClose={() => setShowInfoModal(false)}
+            familyInfo={familyInfo}
+         />
          <div className="tree-container" onClick={() => setSelectedNode(null)}>
             {/* Tree View */}
             {viewMode === "tree" && (
@@ -137,7 +151,14 @@ export default function NasabKharbaiyya({ setSection }) {
                            </ul>
                         )}
                      </div>
-
+                     {/* Info Button */}
+                     <button
+                        className="info-button"
+                        onClick={() => setShowInfoModal(true)}
+                        title="Family Information"
+                     >
+                        ℹ
+                     </button>
                      {/* View Mode Toggle Switch */}
                      <div className="view-mode-switch">
                         <button
@@ -166,6 +187,8 @@ export default function NasabKharbaiyya({ setSection }) {
                         setSection={setSection}
                      />
                   )}
+
+                  <StatisticsPanel stats={stats} />
 
                   <div className="tree-legend">
                      <div className="legend-item">

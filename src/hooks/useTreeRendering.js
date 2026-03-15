@@ -1,5 +1,6 @@
 import { useRef, useCallback } from "react";
 import * as d3 from "d3";
+import { getTreeStatistics } from "../utils/genealogyStats";
 
 /**
  * Custom hook for rendering genealogy trees using D3.js
@@ -12,13 +13,14 @@ import * as d3 from "d3";
  * @param {Function} handleNodeClick - Callback function when node is clicked
  * @param {Function} setSection - Callback to change section (for links)
  * 
- * @returns {Object} - { svgRef, drawTree, focusNodeById, rootRef, peopleRef }
+ * @returns {Object} - { svgRef, drawTree, focusNodeById, rootRef, peopleRef, getStats }
  */
 export function useTreeRendering(config, handleNodeClick, setSection) {
    const svgRef = useRef();
    const rootRef = useRef(null);
    const zoomRef = useRef(null);
    const peopleRef = useRef([]);
+   const statsRef = useRef(null);
 
    // Main D3 tree rendering function - shared by all 50+ family trees
    const drawTree = useCallback(() => {
@@ -36,6 +38,9 @@ export function useTreeRendering(config, handleNodeClick, setSection) {
 
          // store root and flattened people for search (includes main people + spouses)
          rootRef.current = root;
+
+         // Calculate statistics from the tree data
+         statsRef.current = getTreeStatistics(config.jsonData);
          const peopleList = [];
          root.descendants().forEach((d) => {
             if (d.data && d.data.name) {
@@ -269,11 +274,17 @@ export function useTreeRendering(config, handleNodeClick, setSection) {
          .call(zoomRef.current.transform, d3.zoomIdentity.translate(tx, ty).scale(s));
    }, []);
 
+   // Get the computed statistics for the current tree
+   const getStats = useCallback(() => {
+      return statsRef.current;
+   }, []);
+
    return {
       svgRef,
       drawTree,
       focusNodeById,
       rootRef,
       peopleRef,
+      getStats,
    };
 }

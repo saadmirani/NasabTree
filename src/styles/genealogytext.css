@@ -3,26 +3,28 @@
 .genealogy-text-container {
    background: white;
    border-radius: 8px;
-   padding: 24px;
+   padding: 16px;
+   width: 100%;
+   box-sizing: border-box;
 }
 
 .genealogy-text-header {
-   margin-bottom: 30px;
+   margin-bottom: 16px;
    border-bottom: 2px solid #e0e0e0;
-   padding-bottom: 16px;
+   padding-bottom: 12px;
 }
 
 .genealogy-text-header h2 {
-   font-size: 2em;
-   margin: 0 0 8px 0;
+   font-size: 1.4em;
+   margin: 0 0 6px 0;
    color: #1a1a1a;
 }
 
 .genealogy-text-description {
    color: #666;
    margin: 0;
-   font-size: 0.95em;
-   line-height: 1.5;
+   font-size: 0.8em;
+   line-height: 1.4;
 }
 
 .genealogy-text-empty {
@@ -159,6 +161,7 @@
    transition: all 0.2s ease;
    flex: 1;
    min-width: 200px;
+   color: #1a1a1a;
 }
 
 .genealogy-person-name:hover {
@@ -166,9 +169,9 @@
    color: #1e3c72;
 }
 
-.person-name {
+.genealogy-person-name .person-name {
    font-weight: 500;
-   color: #333;
+   color: #1a1a1a !important;
    text-align: left;
 }
 

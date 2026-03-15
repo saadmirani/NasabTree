@@ -401,8 +401,9 @@
                                                                                                                                                                            "gender": "male",
                                                                                                                                                                            "alive": false,
                                                                                                                                                                            "dob": "Not Known",
-                                                                                                                                                                           "dod": "Not Known",
+                                                                                                                                                                           "dod": null,
                                                                                                                                                                            "place": "Not Known",
+                                                                                                                                                                           "biography": true,
                                                                                                                                                                            "about": "Otherwise known as Khoond Miyan Deoravi. He got settled in Osaas-Deora, Bihar and established Khanqah Burhaniya. He was Mureed and Khaleefa of Hazrat Ishaaq Firdausi R.H. He got burried in Osaas-Deora, Bihar.",
                                                                                                                                                                            "burial": {
                                                                                                                                                                               "place": "Osaas Dewra, Gaya, Bihar",
@@ -418,6 +419,7 @@
                                                                                                                                                                                  "dod": "Not Known",
                                                                                                                                                                                  "place": "Bitho Shareef, Gaya",
                                                                                                                                                                                  "burial": null,
+                                                                                                                                                                                 "biography": true,
                                                                                                                                                                                  "about": "She was the daughter of Hazrat Makhdoom Shah Darwesh Beethwi R.H. Makhdoom Shah Darwesh is descendant of sister of Hazrat Syed Ashraf Jahangeer Samnani R.H. Shah Mansoor Danishmand R.H is her son"
                                                                                                                                                                               },
                                                                                                                                                                               {

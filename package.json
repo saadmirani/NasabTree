@@ -5,7 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && node scripts/generateSitemap.js && node scripts/generatePersonPages.js",
+    "build:vite": "vite build",
+    "generate:sitemap": "node scripts/generateSitemap.js",
+    "generate:pages": "node scripts/generatePersonPages.js",
     "lint": "eslint .",
     "preview": "vite preview"
   },

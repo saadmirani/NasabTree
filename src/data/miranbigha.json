@@ -1611,8 +1611,12 @@
                                                                                                                                                                                                    "dod": "23/03/1994 CE",
                                                                                                                                                                                                    "place": "Miran Bigha",
                                                                                                                                                                                                    "about": "Jan Sevak (VLW) Sherghati Block. Youngest son of Miran Syed Wajahat Rasool",
+                                                                                                                                                                                                   "burial": {
+                                                                                                                                                                                                      "place": "Miran Bigha",
+                                                                                                                                                                                                      "map": "https://maps.app.goo.gl/WhoeC5T5TsL2Cy9L8"
+                                                                                                                                                                                                   },
                                                                                                                                                                                                    "spouse": {
-                                                                                                                                                                                                      "name": "Syeda Nafeesa Khatoon Usmani R.H",
+                                                                                                                                                                                                      "name": "Bibi Nafeesa Khatoon Usmani R.H",
                                                                                                                                                                                                       "fname": "Shah Muhammad Usmani Firdausi R.H",
                                                                                                                                                                                                       "alive": false,
                                                                                                                                                                                                       "gender": "female",
@@ -2060,19 +2064,6 @@
                                                                                                                                                                      "about": "Not Known",
                                                                                                                                                                      "burial": null,
                                                                                                                                                                      "spouse": null,
-                                                                                                                                                                     "children": []
-                                                                                                                                                                  },
-                                                                                                                                                                  {
-                                                                                                                                                                     "id": "p99",
-                                                                                                                                                                     "name": "Hazrat Miran Syed Shah Dawood Ali R.H",
-                                                                                                                                                                     "gender": "male",
-                                                                                                                                                                     "alive": false,
-                                                                                                                                                                     "dob": "Not Known",
-                                                                                                                                                                     "dod": "Not Known",
-                                                                                                                                                                     "place": "Not Known",
-                                                                                                                                                                     "about": "Not Known",
-                                                                                                                                                                     "burial": null,
-                                                                                                                                                                     "spouse": null,
                                                                                                                                                                      "children": [
                                                                                                                                                                         {
                                                                                                                                                                            "id": "p100",
@@ -2084,11 +2075,21 @@
                                                                                                                                                                            "place": "Not Known",
                                                                                                                                                                            "about": "Not Known",
                                                                                                                                                                            "burial": null,
-                                                                                                                                                                           "spouse": null,
+                                                                                                                                                                           "spouse": {
+                                                                                                                                                                              "name": "Bibi Shafeeha Khatoon R.H",
+                                                                                                                                                                              "fname": "Not Known",
+                                                                                                                                                                              "gender": "male",
+                                                                                                                                                                              "alive": false,
+                                                                                                                                                                              "dob": "Not Known",
+                                                                                                                                                                              "dod": "Not Known",
+                                                                                                                                                                              "place": "Not Known",
+                                                                                                                                                                              "burial": null,
+                                                                                                                                                                              "about": "Not Known"
+                                                                                                                                                                           },
                                                                                                                                                                            "children": [
                                                                                                                                                                               {
                                                                                                                                                                                  "id": "p101",
-                                                                                                                                                                                 "name": "Hazrat Syed Faiyyaz-uddin R.H",
+                                                                                                                                                                                 "name": "Hazrat Syed Moulvi Faiyyaz-uddin R.H",
                                                                                                                                                                                  "gender": "male",
                                                                                                                                                                                  "alive": false,
                                                                                                                                                                                  "dob": "Not Known",
@@ -2096,7 +2097,17 @@
                                                                                                                                                                                  "place": "Not Known",
                                                                                                                                                                                  "about": "Not Known",
                                                                                                                                                                                  "burial": null,
-                                                                                                                                                                                 "spouse": null,
+                                                                                                                                                                                 "spouse": {
+                                                                                                                                                                                    "name": "Bibi Soghra Khatoon R.H",
+                                                                                                                                                                                    "fname": "Not Known",
+                                                                                                                                                                                    "gender": "male",
+                                                                                                                                                                                    "alive": false,
+                                                                                                                                                                                    "dob": "Not Known",
+                                                                                                                                                                                    "dod": "Not Known",
+                                                                                                                                                                                    "place": "Not Known",
+                                                                                                                                                                                    "burial": null,
+                                                                                                                                                                                    "about": "Not Known"
+                                                                                                                                                                                 },
                                                                                                                                                                                  "children": [
                                                                                                                                                                                     {
                                                                                                                                                                                        "id": "p102",
@@ -2110,14 +2121,14 @@
                                                                                                                                                                                        "burial": null,
                                                                                                                                                                                        "spouse": {
                                                                                                                                                                                           "name": "Syeda Hameeda R.H",
-                                                                                                                                                                                          "fname": "Hazrat Syed Aal-e-Hasan",
-                                                                                                                                                                                          "gender": "male",
+                                                                                                                                                                                          "fname": "Hazrat Syed Aal-e-Hasan R.H",
+                                                                                                                                                                                          "gender": "female",
                                                                                                                                                                                           "alive": false,
                                                                                                                                                                                           "dob": "Not Known",
                                                                                                                                                                                           "dod": "Not Known",
                                                                                                                                                                                           "place": "Not Known",
                                                                                                                                                                                           "burial": null,
-                                                                                                                                                                                          "about": "She was from Kharbaiyya, Sakin Kopa"
+                                                                                                                                                                                          "about": "She was from Kopa, Bihar."
                                                                                                                                                                                        },
                                                                                                                                                                                        "children": [
                                                                                                                                                                                           {
@@ -2285,7 +2296,17 @@
                                                                                                                                                                                        "place": "Not Known",
                                                                                                                                                                                        "about": "Not Known",
                                                                                                                                                                                        "burial": null,
-                                                                                                                                                                                       "spouse": null,
+                                                                                                                                                                                       "spouse": {
+                                                                                                                                                                                          "name": "Bibi Khudaija Khatoon R.H",
+                                                                                                                                                                                          "fname": "Syed Azeez R.H",
+                                                                                                                                                                                          "gender": "male",
+                                                                                                                                                                                          "alive": false,
+                                                                                                                                                                                          "dob": "Not Known",
+                                                                                                                                                                                          "dod": "Not Known",
+                                                                                                                                                                                          "place": "Not Known",
+                                                                                                                                                                                          "burial": null,
+                                                                                                                                                                                          "about": "Not Known"
+                                                                                                                                                                                       },
                                                                                                                                                                                        "children": []
                                                                                                                                                                                     },
                                                                                                                                                                                     {
@@ -2298,12 +2319,355 @@
                                                                                                                                                                                        "place": "Not Known",
                                                                                                                                                                                        "about": "Not Known",
                                                                                                                                                                                        "burial": null,
+                                                                                                                                                                                       "spouse": {
+                                                                                                                                                                                          "name": "Bibi Salma Khatoon R.H",
+                                                                                                                                                                                          "fname": "Not Known",
+                                                                                                                                                                                          "gender": "male",
+                                                                                                                                                                                          "alive": false,
+                                                                                                                                                                                          "dob": "Not Known",
+                                                                                                                                                                                          "dod": "Not Known",
+                                                                                                                                                                                          "place": "Not Known",
+                                                                                                                                                                                          "burial": null,
+                                                                                                                                                                                          "about": "She was from Simri, Bihar."
+                                                                                                                                                                                       },
+                                                                                                                                                                                       "children": []
+                                                                                                                                                                                    },
+                                                                                                                                                                                    {
+                                                                                                                                                                                       "id": "p181",
+                                                                                                                                                                                       "name": "Bibi Saleha Khatoon R.H",
+                                                                                                                                                                                       "gender": "female",
+                                                                                                                                                                                       "alive": false,
+                                                                                                                                                                                       "dob": "Not Known",
+                                                                                                                                                                                       "dod": "Not Known",
+                                                                                                                                                                                       "place": "Not Known",
+                                                                                                                                                                                       "about": "Not Known",
+                                                                                                                                                                                       "burial": null,
+                                                                                                                                                                                       "spouse": {
+                                                                                                                                                                                          "name": "Hazrat Syed Abdus Salaam R.H",
+                                                                                                                                                                                          "fname": "Unknown",
+                                                                                                                                                                                          "gender": "male",
+                                                                                                                                                                                          "alive": false,
+                                                                                                                                                                                          "dob": "Not Known",
+                                                                                                                                                                                          "dod": "Not Known",
+                                                                                                                                                                                          "place": "Not Known",
+                                                                                                                                                                                          "burial": null,
+                                                                                                                                                                                          "about": "Not Known"
+                                                                                                                                                                                       },
+                                                                                                                                                                                       "children": [
+                                                                                                                                                                                          {
+                                                                                                                                                                                             "id": "p188",
+                                                                                                                                                                                             "name": "Bibi Mahfooza Khatoon R.H",
+                                                                                                                                                                                             "gender": "female",
+                                                                                                                                                                                             "alive": false,
+                                                                                                                                                                                             "dob": "Not Known",
+                                                                                                                                                                                             "dod": "Not Known",
+                                                                                                                                                                                             "place": "Not Known",
+                                                                                                                                                                                             "about": "None",
+                                                                                                                                                                                             "burial": null,
+                                                                                                                                                                                             "spouse": {
+                                                                                                                                                                                                "name": "Hazrat Master Israr",
+                                                                                                                                                                                                "fname": "Not Known",
+                                                                                                                                                                                                "gender": "male",
+                                                                                                                                                                                                "alive": false,
+                                                                                                                                                                                                "dob": "Not Known",
+                                                                                                                                                                                                "dod": "Not Known",
+                                                                                                                                                                                                "place": "Not Known",
+                                                                                                                                                                                                "burial": null,
+                                                                                                                                                                                                "about": "Not Known"
+                                                                                                                                                                                             },
+                                                                                                                                                                                             "children": []
+                                                                                                                                                                                          },
+                                                                                                                                                                                          {
+                                                                                                                                                                                             "id": "p189",
+                                                                                                                                                                                             "name": "Bibi Hafiza Khatoon R.H",
+                                                                                                                                                                                             "gender": "female",
+                                                                                                                                                                                             "alive": false,
+                                                                                                                                                                                             "dob": "Not Known",
+                                                                                                                                                                                             "dod": "Not Known",
+                                                                                                                                                                                             "place": "Not Known",
+                                                                                                                                                                                             "about": "None",
+                                                                                                                                                                                             "burial": null,
+                                                                                                                                                                                             "spouse": {
+                                                                                                                                                                                                "name": "Hazrat Shah Shamsuddin R.H",
+                                                                                                                                                                                                "fname": "Hazrat Shah Ismail R.H",
+                                                                                                                                                                                                "gender": "male",
+                                                                                                                                                                                                "alive": false,
+                                                                                                                                                                                                "dob": "Not Known",
+                                                                                                                                                                                                "dod": "Not Known",
+                                                                                                                                                                                                "place": "Not Known",
+                                                                                                                                                                                                "burial": null,
+                                                                                                                                                                                                "about": "He was from Deorah, Osaas."
+                                                                                                                                                                                             },
+                                                                                                                                                                                             "children": []
+                                                                                                                                                                                          },
+                                                                                                                                                                                          {
+                                                                                                                                                                                             "id": "p190",
+                                                                                                                                                                                             "name": "Bibi Raziya Khatoon R.H",
+                                                                                                                                                                                             "gender": "female",
+                                                                                                                                                                                             "alive": false,
+                                                                                                                                                                                             "dob": "Not Known",
+                                                                                                                                                                                             "dod": "Not Known",
+                                                                                                                                                                                             "place": "Not Known",
+                                                                                                                                                                                             "about": "None",
+                                                                                                                                                                                             "burial": null,
+                                                                                                                                                                                             "spouse": {
+                                                                                                                                                                                                "name": "Hazrat Syed Zubair R.H",
+                                                                                                                                                                                                "fname": "Not Known",
+                                                                                                                                                                                                "gender": "male",
+                                                                                                                                                                                                "alive": false,
+                                                                                                                                                                                                "dob": "Not Known",
+                                                                                                                                                                                                "dod": "Not Known",
+                                                                                                                                                                                                "place": "Not Known",
+                                                                                                                                                                                                "burial": null,
+                                                                                                                                                                                                "about": "Not Known"
+                                                                                                                                                                                             },
+                                                                                                                                                                                             "children": []
+                                                                                                                                                                                          },
+                                                                                                                                                                                          {
+                                                                                                                                                                                             "id": "p191",
+                                                                                                                                                                                             "name": "Hazrat Syed Ali Imaam R.H",
+                                                                                                                                                                                             "gender": "male",
+                                                                                                                                                                                             "alive": false,
+                                                                                                                                                                                             "dob": "Not Known",
+                                                                                                                                                                                             "dod": "Not Known",
+                                                                                                                                                                                             "place": "Not Known",
+                                                                                                                                                                                             "about": "None",
+                                                                                                                                                                                             "burial": null,
+                                                                                                                                                                                             "spouse": null,
+                                                                                                                                                                                             "children": []
+                                                                                                                                                                                          },
+                                                                                                                                                                                          {
+                                                                                                                                                                                             "id": "p192",
+                                                                                                                                                                                             "name": "Hazrat Syed Kalaam R.H",
+                                                                                                                                                                                             "gender": "male",
+                                                                                                                                                                                             "alive": false,
+                                                                                                                                                                                             "dob": "Not Known",
+                                                                                                                                                                                             "dod": "Not Known",
+                                                                                                                                                                                             "place": "Not Known",
+                                                                                                                                                                                             "about": "None",
+                                                                                                                                                                                             "burial": null,
+                                                                                                                                                                                             "spouse": {
+                                                                                                                                                                                                "name": "Bibi Shameema Khatoon R.H",
+                                                                                                                                                                                                "fname": "Not Known",
+                                                                                                                                                                                                "gender": "male",
+                                                                                                                                                                                                "alive": false,
+                                                                                                                                                                                                "dob": "Not Known",
+                                                                                                                                                                                                "dod": "Not Known",
+                                                                                                                                                                                                "place": "Not Known",
+                                                                                                                                                                                                "burial": null,
+                                                                                                                                                                                                "about": "Not Known"
+                                                                                                                                                                                             },
+                                                                                                                                                                                             "children": []
+                                                                                                                                                                                          }
+                                                                                                                                                                                       ]
+                                                                                                                                                                                    },
+                                                                                                                                                                                    {
+                                                                                                                                                                                       "id": "p182",
+                                                                                                                                                                                       "name": "Bibi Haajra Khatoon R.H",
+                                                                                                                                                                                       "gender": "female",
+                                                                                                                                                                                       "alive": false,
+                                                                                                                                                                                       "dob": "Not Known",
+                                                                                                                                                                                       "dod": "Not Known",
+                                                                                                                                                                                       "place": "Not Known",
+                                                                                                                                                                                       "about": "Not Known",
+                                                                                                                                                                                       "burial": null,
+                                                                                                                                                                                       "spouse": {
+                                                                                                                                                                                          "name": "Hazrat Hakeem Syed Ata-ullah R.H",
+                                                                                                                                                                                          "fname": "Hazrat hakeem Syed Sana-ullah R.H",
+                                                                                                                                                                                          "gender": "male",
+                                                                                                                                                                                          "alive": false,
+                                                                                                                                                                                          "dob": "Not Known",
+                                                                                                                                                                                          "dod": "Not Known",
+                                                                                                                                                                                          "place": "Not Known",
+                                                                                                                                                                                          "burial": null,
+                                                                                                                                                                                          "about": "Not Known"
+                                                                                                                                                                                       },
+                                                                                                                                                                                       "children": []
+                                                                                                                                                                                    },
+                                                                                                                                                                                    {
+                                                                                                                                                                                       "id": "p183",
+                                                                                                                                                                                       "name": "Bibi Ayesha Khatoon R.H",
+                                                                                                                                                                                       "gender": "female",
+                                                                                                                                                                                       "alive": false,
+                                                                                                                                                                                       "dob": "Not Known",
+                                                                                                                                                                                       "dod": "Not Known",
+                                                                                                                                                                                       "place": "Not Known",
+                                                                                                                                                                                       "about": "Not Known",
+                                                                                                                                                                                       "burial": null,
+                                                                                                                                                                                       "spouse": {
+                                                                                                                                                                                          "name": "Hazrat Syed Abdur Rahman R.H",
+                                                                                                                                                                                          "fname": "Unknown",
+                                                                                                                                                                                          "gender": "male",
+                                                                                                                                                                                          "alive": false,
+                                                                                                                                                                                          "dob": "Not Known",
+                                                                                                                                                                                          "dod": "Not Known",
+                                                                                                                                                                                          "place": "Not Known",
+                                                                                                                                                                                          "burial": null,
+                                                                                                                                                                                          "about": "He was from Miran Bigha, Tekari"
+                                                                                                                                                                                       },
+                                                                                                                                                                                       "children": []
+                                                                                                                                                                                    },
+                                                                                                                                                                                    {
+                                                                                                                                                                                       "id": "p184",
+                                                                                                                                                                                       "name": "Bibi Mahmooda Khatoon R.H",
+                                                                                                                                                                                       "gender": "female",
+                                                                                                                                                                                       "alive": false,
+                                                                                                                                                                                       "dob": "Not Known",
+                                                                                                                                                                                       "dod": "Not Known",
+                                                                                                                                                                                       "place": "Not Known",
+                                                                                                                                                                                       "about": "Otheriwse known as Battu",
+                                                                                                                                                                                       "burial": null,
+                                                                                                                                                                                       "spouse": {
+                                                                                                                                                                                          "name": "Hazrat Shah Abdur rab R.H",
+                                                                                                                                                                                          "fname": "Unknown",
+                                                                                                                                                                                          "gender": "male",
+                                                                                                                                                                                          "alive": false,
+                                                                                                                                                                                          "dob": "Not Known",
+                                                                                                                                                                                          "dod": "Not Known",
+                                                                                                                                                                                          "place": "Not Known",
+                                                                                                                                                                                          "burial": null,
+                                                                                                                                                                                          "about": "He was from Dhibri"
+                                                                                                                                                                                       },
+                                                                                                                                                                                       "children": []
+                                                                                                                                                                                    },
+                                                                                                                                                                                    {
+                                                                                                                                                                                       "id": "p185",
+                                                                                                                                                                                       "name": "Bibi Zubaidah Khatoon R.H",
+                                                                                                                                                                                       "gender": "female",
+                                                                                                                                                                                       "alive": false,
+                                                                                                                                                                                       "dob": "Not Known",
+                                                                                                                                                                                       "dod": "Not Known",
+                                                                                                                                                                                       "place": "Not Known",
+                                                                                                                                                                                       "about": "Not Known",
+                                                                                                                                                                                       "burial": null,
+                                                                                                                                                                                       "spouse": {
+                                                                                                                                                                                          "name": "Hazrat Shah Abdul Bari R.H",
+                                                                                                                                                                                          "fname": "Unknown",
+                                                                                                                                                                                          "gender": "male",
+                                                                                                                                                                                          "alive": false,
+                                                                                                                                                                                          "dob": "Not Known",
+                                                                                                                                                                                          "dod": "Not Known",
+                                                                                                                                                                                          "place": "Not Known",
+                                                                                                                                                                                          "burial": null,
+                                                                                                                                                                                          "about": "He was from Abgila, Gaya."
+                                                                                                                                                                                       },
+                                                                                                                                                                                       "children": []
+                                                                                                                                                                                    },
+                                                                                                                                                                                    {
+                                                                                                                                                                                       "id": "p186",
+                                                                                                                                                                                       "name": "Bibi Rabiya Khatoon R.H",
+                                                                                                                                                                                       "gender": "female",
+                                                                                                                                                                                       "alive": false,
+                                                                                                                                                                                       "dob": "Not Known",
+                                                                                                                                                                                       "dod": "Not Known",
+                                                                                                                                                                                       "place": "Not Known",
+                                                                                                                                                                                       "about": "Otheriwse known as Bibi Habeeba",
+                                                                                                                                                                                       "burial": null,
+                                                                                                                                                                                       "spouse": {
+                                                                                                                                                                                          "name": "Hazrat Shah Muhammad Ibraheem Firdausi R.H",
+                                                                                                                                                                                          "fname": "Hazrat Shah Fida Hussain Firdausi R.H",
+                                                                                                                                                                                          "gender": "male",
+                                                                                                                                                                                          "alive": false,
+                                                                                                                                                                                          "dob": "Not Known",
+                                                                                                                                                                                          "dod": "Not Known",
+                                                                                                                                                                                          "place": "Not Known",
+                                                                                                                                                                                          "burial": null,
+                                                                                                                                                                                          "about": "He was from Deorah, Osaas."
+                                                                                                                                                                                       },
+                                                                                                                                                                                       "children": []
+                                                                                                                                                                                    },
+                                                                                                                                                                                    {
+                                                                                                                                                                                       "id": "p187",
+                                                                                                                                                                                       "name": "Bibi Umran Khatoon R.H",
+                                                                                                                                                                                       "gender": "female",
+                                                                                                                                                                                       "alive": false,
+                                                                                                                                                                                       "dob": "Not Known",
+                                                                                                                                                                                       "dod": "Not Known",
+                                                                                                                                                                                       "place": "Not Known",
+                                                                                                                                                                                       "about": "She died in young age(17th years)",
+                                                                                                                                                                                       "burial": null,
                                                                                                                                                                                        "spouse": null,
                                                                                                                                                                                        "children": []
                                                                                                                                                                                     }
                                                                                                                                                                                  ]
+                                                                                                                                                                              },
+                                                                                                                                                                              {
+                                                                                                                                                                                 "id": "p180",
+                                                                                                                                                                                 "name": "Bibi Fatima R.H",
+                                                                                                                                                                                 "gender": "female",
+                                                                                                                                                                                 "alive": false,
+                                                                                                                                                                                 "dob": "Not Known",
+                                                                                                                                                                                 "dod": "Not Known",
+                                                                                                                                                                                 "place": "Not Known",
+                                                                                                                                                                                 "about": "Not Known",
+                                                                                                                                                                                 "burial": null,
+                                                                                                                                                                                 "spouse": null,
+                                                                                                                                                                                 "children": []
                                                                                                                                                                               }
                                                                                                                                                                            ]
+                                                                                                                                                                        },
+                                                                                                                                                                        {
+                                                                                                                                                                           "id": "p179",
+                                                                                                                                                                           "name": "Bibi Amaddun Khatoon R.H",
+                                                                                                                                                                           "gender": "female",
+                                                                                                                                                                           "alive": false,
+                                                                                                                                                                           "dob": "Not Known",
+                                                                                                                                                                           "dod": "Not Known",
+                                                                                                                                                                           "place": "Not Known",
+                                                                                                                                                                           "about": "Not Known",
+                                                                                                                                                                           "burial": null,
+                                                                                                                                                                           "spouse": {
+                                                                                                                                                                              "name": "Hazrat Dildaar Hussain R.H",
+                                                                                                                                                                              "fname": "Not Known",
+                                                                                                                                                                              "gender": "male",
+                                                                                                                                                                              "alive": false,
+                                                                                                                                                                              "dob": "Not Known",
+                                                                                                                                                                              "dod": "Not Known",
+                                                                                                                                                                              "place": "Not Known",
+                                                                                                                                                                              "burial": null,
+                                                                                                                                                                              "about": "Not Known"
+                                                                                                                                                                           },
+                                                                                                                                                                           "children": []
+                                                                                                                                                                        }
+                                                                                                                                                                     ]
+                                                                                                                                                                  },
+                                                                                                                                                                  {
+                                                                                                                                                                     "id": "p99",
+                                                                                                                                                                     "name": "Hazrat Miran Syed Shah Dawood Ali R.H",
+                                                                                                                                                                     "gender": "male",
+                                                                                                                                                                     "alive": false,
+                                                                                                                                                                     "dob": "Not Known",
+                                                                                                                                                                     "dod": "Not Known",
+                                                                                                                                                                     "place": "Not Known",
+                                                                                                                                                                     "about": "Otherwise known as Waj-hullah",
+                                                                                                                                                                     "burial": null,
+                                                                                                                                                                     "spouse": null,
+                                                                                                                                                                     "children": [
+                                                                                                                                                                        {
+                                                                                                                                                                           "id": "p177",
+                                                                                                                                                                           "name": "Hazrat Syed Hafiz R.H",
+                                                                                                                                                                           "gender": "male",
+                                                                                                                                                                           "alive": false,
+                                                                                                                                                                           "dob": "Not Known",
+                                                                                                                                                                           "dod": "Not Known",
+                                                                                                                                                                           "place": "Not Known",
+                                                                                                                                                                           "about": "Not Known",
+                                                                                                                                                                           "burial": null,
+                                                                                                                                                                           "spouse": null,
+                                                                                                                                                                           "children": []
+                                                                                                                                                                        },
+                                                                                                                                                                        {
+                                                                                                                                                                           "id": "p178",
+                                                                                                                                                                           "name": "Hazrat Syed Chaand R.H",
+                                                                                                                                                                           "gender": "male",
+                                                                                                                                                                           "alive": false,
+                                                                                                                                                                           "dob": "Not Known",
+                                                                                                                                                                           "dod": "Not Known",
+                                                                                                                                                                           "place": "Not Known",
+                                                                                                                                                                           "about": "Not Known",
+                                                                                                                                                                           "burial": null,
+                                                                                                                                                                           "spouse": null,
+                                                                                                                                                                           "children": []
                                                                                                                                                                         }
                                                                                                                                                                      ]
                                                                                                                                                                   }

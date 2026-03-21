@@ -4,8 +4,8 @@ import { getAllDescendants } from "../utils/genealogyUtils";
 
 /**
  * GenealogyText Component
- * Displays genealogical tree in text/hierarchy format for search engines and readability
- * Alternative to D3 visualization that is SEO-friendly
+ * Displays genealogical tree in text/hierarchy format with connecting lines
+ * Alternative to D3 visualization that is SEO-friendly and accessible
  */
 export default function GenealogyText({ data, onPersonClick = null, qasbaName = "" }) {
    const [expandedIds, setExpandedIds] = useState({});
@@ -17,78 +17,105 @@ export default function GenealogyText({ data, onPersonClick = null, qasbaName = 
       }));
    };
 
-   const renderPerson = (person, level = 0) => {
+   const renderSpouses = (spouse) => {
+      if (!spouse) return null;
+
+      if (Array.isArray(spouse)) {
+         return (
+            <div className="genealogy-spouses">
+               {spouse.map((s, idx) => (
+                  <div key={`${s.id || idx}`} className="spouse-item">
+                     <span className="wife-number">{idx + 1}.</span>
+                     <span className="wife-name">{s.name}</span>
+                  </div>
+               ))}
+            </div>
+         );
+      }
+
+      return (
+         <div className="genealogy-spouses">
+            <div className="spouse-item">
+               <span className="wife-number">1.</span>
+               <span className="wife-name">{spouse.name}</span>
+            </div>
+         </div>
+      );
+   };
+
+   const renderPerson = (person, level = 0, isLast = true, path = "") => {
       const hasChildren = person.children && person.children.length > 0;
       const isExpanded = expandedIds[person.id];
-      const genderClass = person.gender === "male" ? "male" : "female";
-      const statusClass = person.alive ? "living" : "deceased";
+      const newPath = path + (isLast ? "0" : "1");
 
       return (
          <div
             key={person.id}
             className={`genealogy-person-item level-${level}`}
             data-person-id={person.id}
-            data-gender={person.gender}
-            data-status={person.alive ? "living" : "deceased"}
          >
-            <div className={`genealogy-person-header ${genderClass} ${statusClass}`}>
-               {hasChildren && (
-                  <button
-                     className={`expand-button ${isExpanded ? "expanded" : ""}`}
-                     onClick={() => toggleExpanded(person.id)}
-                     aria-label={`${isExpanded ? "Collapse" : "Expand"} ${person.name}`}
-                  >
-                     {isExpanded ? "▼" : "▶"}
-                  </button>
-               )}
-               {!hasChildren && <span className="no-children-spacer"></span>}
-
-               <button
-                  className="genealogy-person-name"
-                  onClick={() => onPersonClick && onPersonClick(person.id)}
-                  title={`Click to view ${person.name}'s details`}
-               >
-                  <span className="person-name">{person.name}</span>
-                  {person.alive === false && <span className="deceased-marker">†</span>}
-                  {person.gender && (
-                     <span className="gender-indicator" aria-label={`Gender: ${person.gender}`}>
-                        {person.gender === "male" ? "♂" : "♀"}
-                     </span>
-                  )}
-               </button>
-
-               {(person.dob || person.dod) && (
-                  <span className="person-dates">
-                     {person.dob && person.dob !== "Not Known" && (
-                        <span className="dob">{person.dob}</span>
-                     )}
-                     {person.dod && person.dod !== "Not Known" && (
-                        <span className="dod">- {person.dod}</span>
-                     )}
-                  </span>
+            {/* Tree connecting lines */}
+            <div className="tree-lines">
+               {level > 0 && (
+                  <>
+                     <div className={`vertical-line ${isLast ? "last" : ""}`}></div>
+                     <div className="horizontal-line"></div>
+                  </>
                )}
             </div>
 
-            {/* Spouse Information */}
-            {person.spouse && (
-               <div className="genealogy-spouse-info">
-                  <span className="spouse-label">Spouse:</span>
-                  <span className="spouse-name">{person.spouse.name}</span>
-               </div>
-            )}
+            {/* Person Card */}
+            <div className="person-card">
+               {/* Header with expand button and name */}
+               <div className="person-header">
+                  <button
+                     className={`expand-button ${hasChildren ? "visible" : "hidden"} ${isExpanded ? "expanded" : ""
+                        }`}
+                     onClick={() => toggleExpanded(person.id)}
+                     title={hasChildren ? "Toggle children" : "No children"}
+                  >
+                     {hasChildren ? (isExpanded ? "−" : "+") : " "}
+                  </button>
 
-            {/* Children */}
+                  <button
+                     className="person-name-button"
+                     onClick={() => onPersonClick && onPersonClick(person.id)}
+                     title={`View ${person.name}`}
+                  >
+                     <span className={`person-name ${person.isLawald ? "lawald" : ""}`}>
+                        {person.name}
+                        {person.isLawald && <span className="lawald-badge"> (Lawald)</span>}
+                     </span>
+                     {person.alive === false && <span className="deceased-badge">†</span>}
+                  </button>
+
+                  {(person.dob || person.dod) && (
+                     <span className="person-dates">
+                        {person.dob && person.dob !== "Not Known" && `b. ${person.dob}`}
+                        {person.dod && person.dod !== "Not Known" && ` - d. ${person.dod}`}
+                     </span>
+                  )}
+               </div>
+
+               {/* Spouses - displayed below main person */}
+               {person.spouse && renderSpouses(person.spouse)}
+            </div>
+
+            {/* Children - only render if expanded and has children */}
             {hasChildren && isExpanded && (
-               <div className="genealogy-children-container">
-                  {person.children.map((child) => renderPerson(child, level + 1))}
+               <div className="children-group">
+                  {person.children.map((child, idx) => (
+                     <div key={child.id} className={`child-wrapper ${idx === person.children.length - 1 ? "last-child" : ""}`}>
+                        {renderPerson(child, level + 1, idx === person.children.length - 1, newPath)}
+                     </div>
+                  ))}
                </div>
             )}
 
-            {/* Children Count Indicator */}
+            {/* Collapsed info */}
             {hasChildren && !isExpanded && (
-               <div className="genealogy-collapsed-indicator">
-                  {person.children.length} child{person.children.length !== 1 ? "ren" : ""} +{" "}
-                  {getAllDescendants(person).length} descendants
+               <div className="collapsed-info">
+                  ({person.children.length} child{person.children.length !== 1 ? "ren" : ""})
                </div>
             )}
          </div>
@@ -104,17 +131,16 @@ export default function GenealogyText({ data, onPersonClick = null, qasbaName = 
    return (
       <div className="genealogy-text-container">
          <div className="genealogy-text-header">
-            <h2>Genealogical Hierarchy {qasbaName && `- ${qasbaName}`}</h2>
+            <h2>Family Tree {qasbaName && `- ${qasbaName}`}</h2>
             <p className="genealogy-text-description">
-               Interactive family tree showing genealogical relationships. Click on a name to view details,
-               or click the arrow to expand/collapse families.
+               Click + to expand families or on a name to view details
             </p>
          </div>
 
-         <div className="genealogy-tree">
+         <div className="genealogy-tree-view">
             {rootData.map((root) => (
-               <div key={root.id} className="genealogy-root">
-                  {renderPerson(root, 0)}
+               <div key={root.id} className="genealogy-root-person">
+                  {renderPerson(root, 0, true, "")}
                </div>
             ))}
          </div>

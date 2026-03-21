@@ -159,6 +159,31 @@ export function useTreeRendering(config, handleNodeClick, setSection) {
             .attr("cx", 32)
             .attr("cy", 32);
 
+         // Generation number tag - positioned at top-right edge of profile circle
+         nodes
+            .append("circle")
+            .attr("class", "generation-badge")
+            .attr("r", 12)
+            .attr("cx", 30)
+            .attr("cy", -30)
+            .style("fill", "#FF6B35")
+            .style("stroke", "#fff")
+            .style("stroke-width", "2px")
+            .style("box-shadow", "0 2px 4px rgba(0,0,0,0.2)");
+
+         nodes
+            .append("text")
+            .attr("class", "generation-label")
+            .attr("text-anchor", "middle")
+            .attr("dominant-baseline", "middle")
+            .attr("x", 30)
+            .attr("y", -30)
+            .text((d) => d.depth + 1)
+            .style("font-size", "11px")
+            .style("font-weight", "700")
+            .style("fill", "#fff")
+            .style("pointer-events", "none");
+
          // Link indicator - shows when descendants exist in another family
          nodes
             .filter((d) => d.data.link === true)
@@ -196,6 +221,7 @@ export function useTreeRendering(config, handleNodeClick, setSection) {
             .attr("y", 58)
             .style("font-size", "13px")
             .style("font-weight", "600")
+            .style("fill", (d) => d.data.isLawald ? "#dc2626" : "#1f2937")
             .each(function (d) {
                const text = d.data.name || "";
                const words = text.split(/\s+/).filter(Boolean);

@@ -902,9 +902,10 @@
                                                                                                                                                                   "dod": "Not Known",
                                                                                                                                                                   "place": "Ahmadpur, Jhikatiya",
                                                                                                                                                                   "burial": null,
-                                                                                                                                                                  "about": "Lawald"
+                                                                                                                                                                  "about": "Not Known"
                                                                                                                                                                },
-                                                                                                                                                               "children": []
+                                                                                                                                                               "children": [],
+                                                                                                                                                               "isLawald": true
                                                                                                                                                             },
                                                                                                                                                             {
                                                                                                                                                                "id": "p70",
@@ -959,7 +960,7 @@
                                                                                                                                                                      "dob": "Not Known",
                                                                                                                                                                      "dod": "Not Known",
                                                                                                                                                                      "place": "Not Known",
-                                                                                                                                                                     "about": "Lawald",
+                                                                                                                                                                     "about": "Not Known",
                                                                                                                                                                      "burial": null,
                                                                                                                                                                      "spouse": {
                                                                                                                                                                         "name": "Bibi Azeezan R.Z",
@@ -972,7 +973,8 @@
                                                                                                                                                                         "burial": null,
                                                                                                                                                                         "about": "Not Known"
                                                                                                                                                                      },
-                                                                                                                                                                     "children": []
+                                                                                                                                                                     "children": [],
+                                                                                                                                                                     "isLawald": true
                                                                                                                                                                   },
                                                                                                                                                                   {
                                                                                                                                                                      "id": "p74",
@@ -982,7 +984,7 @@
                                                                                                                                                                      "dob": "Not Known",
                                                                                                                                                                      "dod": "Not Known",
                                                                                                                                                                      "place": "Not Known",
-                                                                                                                                                                     "about": "Lawald",
+                                                                                                                                                                     "about": "Not Known",
                                                                                                                                                                      "burial": null,
                                                                                                                                                                      "spouse": null,
                                                                                                                                                                      "children": [
@@ -1279,7 +1281,7 @@
                                                                                                                                                                      "dob": "Not Known",
                                                                                                                                                                      "dod": "Not Known",
                                                                                                                                                                      "place": "Not Known",
-                                                                                                                                                                     "about": "Lawald",
+                                                                                                                                                                     "about": "Not Known",
                                                                                                                                                                      "burial": null,
                                                                                                                                                                      "spouse": {
                                                                                                                                                                         "name": "Bibi kaneezan R.Z",
@@ -1292,7 +1294,8 @@
                                                                                                                                                                         "burial": null,
                                                                                                                                                                         "about": "Not Known"
                                                                                                                                                                      },
-                                                                                                                                                                     "children": []
+                                                                                                                                                                     "children": [],
+                                                                                                                                                                     "isLawald": true
                                                                                                                                                                   }
                                                                                                                                                                ]
                                                                                                                                                             },
@@ -1304,10 +1307,11 @@
                                                                                                                                                                "dob": "Not Known",
                                                                                                                                                                "dod": "Not Known",
                                                                                                                                                                "place": "Not Known",
-                                                                                                                                                               "about": "Lawald",
+                                                                                                                                                               "about": "Not Known",
                                                                                                                                                                "burial": null,
                                                                                                                                                                "spouse": null,
-                                                                                                                                                               "children": []
+                                                                                                                                                               "children": [],
+                                                                                                                                                               "isLawald": true
                                                                                                                                                             }
                                                                                                                                                          ]
                                                                                                                                                       },

@@ -2686,7 +2686,8 @@
                                                                                                                                                          "about": "Not Known",
                                                                                                                                                          "burial": null,
                                                                                                                                                          "spouse": null,
-                                                                                                                                                         "children": []
+                                                                                                                                                         "children": [],
+                                                                                                                                                         "isLawald": true
                                                                                                                                                       }
                                                                                                                                                    ]
                                                                                                                                                 },

@@ -141,6 +141,14 @@ export default function SideMenu({ section, setSection, isOpen, setIsOpen }) {
                      <span className="icon"><NasabIcon /></span>
                      <span className="label">Qasba Kharbaiyya</span>
                   </button>
+
+                  <button
+                     className={`submenu-item ${section === "palasi" ? "active" : ""}`}
+                     onClick={() => setSection("palasi")}
+                  >
+                     <span className="icon"><NasabIcon /></span>
+                     <span className="label">Qasba Palasi</span>
+                  </button>
                </div>
             )}
          </div>

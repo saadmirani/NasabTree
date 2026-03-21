@@ -10,6 +10,7 @@ import NasabDeora from "./components/NasabDeora";
 import Bikopur from "./components/bikopur";
 import NasabAhmadpur from "./components/NasabAhmadpur";
 import NasabKharbaiyya from "./components/NasabKharbaiyya";
+import NasabPalasi from "./components/NasabPalasi";
 import Books from "./components/Books";
 import UrsCalendar from "./components/UrsCalendar";
 import KhanqahList from "./components/KhanqahList";
@@ -90,6 +91,7 @@ export default function App() {
                 {section === "bikopur" && <Bikopur setSection={handleSectionChange} onPersonClick={handleNavigateToPerson} />}
                 {section === "ahmadpur" && <NasabAhmadpur setSection={handleSectionChange} onPersonClick={handleNavigateToPerson} />}
                 {section === "kharbaiyya" && <NasabKharbaiyya setSection={handleSectionChange} onPersonClick={handleNavigateToPerson} />}
+                {section === "palasi" && <NasabPalasi setSection={handleSectionChange} onPersonClick={handleNavigateToPerson} />}
                 {section === "books" && <Books />}
                 {section === "urs" && <UrsCalendar />}
                 {section === "khanqah" && <KhanqahList />}
@@ -118,6 +120,7 @@ function getCurrentQasbaData(section) {
     ahmadpur: require("./data/ahmadpur.json"),
     bikopur: require("./data/bikopur.json"),
     kharbaiyya: require("./data/kharbaiyya.json"),
+    palasi: require("./data/palasi.json"),
     nasabpeerbighachakand: require("./data/peerbighachakand.json"),
     nasabsaadipur: require("./data/saadipur.json"),
     makaramchak: require("./data/makaramchak.json"),

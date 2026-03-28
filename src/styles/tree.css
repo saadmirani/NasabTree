@@ -536,14 +536,14 @@
    justify-content: center;
    width: 32px;
    height: 32px;
-   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+   box-shadow: none !important;
    outline: none;
    -webkit-tap-highlight-color: transparent;
    -webkit-appearance: none;
    -webkit-user-select: none;
    user-select: none;
    -webkit-touch-callout: none;
-   box-shadow: none !important;
+   border: 1px solid transparent;
 }
 
 .info-button:hover {

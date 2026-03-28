@@ -12,8 +12,8 @@
 /* Stats Wrapper Container */
 .stats-wrapper {
    position: absolute;
-   bottom: 20px;
-   left: 20px;
+   top: 70px;
+   right: 20px;
    z-index: 101;
 }
 
@@ -35,6 +35,7 @@
    margin: 0;
    -webkit-tap-highlight-color: transparent;
    -webkit-appearance: none;
+   appearance: none;
    -webkit-user-select: none;
    user-select: none;
    -webkit-touch-callout: none;
@@ -60,8 +61,8 @@
 /* Statistics Popup Modal */
 .stats-popup {
    position: absolute;
-   bottom: 60px;
-   left: 0;
+   top: 60px;
+   right: 0;
    background: white;
    border: 1px solid #e2e8f0;
    border-radius: 8px;
@@ -69,14 +70,14 @@
    font-size: 13px;
    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
    z-index: 102;
-   animation: popupSlideUp 0.3s ease-out;
+   animation: popupSlideDown 0.3s ease-out;
    min-width: 220px;
 }
 
-@keyframes popupSlideUp {
+@keyframes popupSlideDown {
    from {
       opacity: 0;
-      transform: translateY(10px);
+      transform: translateY(-10px);
    }
 
    to {
@@ -180,8 +181,8 @@
 /* Mobile Responsive - same button and popup, just smaller */
 @media (max-width: 768px) {
    .stats-wrapper {
-      bottom: 16px;
-      left: 16px;
+      top: 70px;
+      right: 16px;
    }
 
    .stats-button {
@@ -234,7 +235,6 @@
    .legend-text {
       font-size: 9px;
    }
-}
 }
 
 /* Dark theme support */

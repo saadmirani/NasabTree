@@ -523,7 +523,7 @@
 .info-button {
    padding: 0;
    background: linear-gradient(135deg, #374151 0%, #1f2937 100%);
-   border: none;
+   border: none !important;
    border-radius: 8px;
    cursor: pointer;
    font-size: 24px;
@@ -537,30 +537,35 @@
    width: 32px;
    height: 32px;
    box-shadow: none !important;
-   outline: none;
-   -webkit-tap-highlight-color: transparent;
-   -webkit-appearance: none;
+   outline: none !important;
+   -webkit-tap-highlight-color: transparent !important;
    -webkit-user-select: none;
    user-select: none;
    -webkit-touch-callout: none;
-   border: 1px solid transparent;
+   -webkit-focus-ring-color: transparent;
+   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .info-button:hover {
    background: linear-gradient(135deg, #4b5563 0%, #374151 100%);
    color: #ffffff;
-   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
    transform: translateY(-2px);
 }
 
 .info-button:active {
    transform: translateY(0) scale(0.98);
-   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.info-button:focus {
+   outline: none !important;
+   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2) !important;
 }
 
 .info-button:focus-visible {
-   outline: 2px solid #60a5fa;
-   outline-offset: 2px;
+   outline: none !important;
+   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2) !important;
 }
 
 /* Search Bar Header - Same line for toggle and search */

@@ -1,14 +1,26 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../styles/statisticsPanel.css';
 
 export default function StatisticsPanel({ stats }) {
+   const [isExpanded, setIsExpanded] = useState(false);
+
    if (!stats) {
       return null;
    }
 
    return (
       <div className="statistics-panel">
-         <div className="stats-horizontal">
+         <div className="stats-header-mobile">
+            <button
+               className="stats-toggle-button"
+               onClick={() => setIsExpanded(!isExpanded)}
+               aria-label="Toggle statistics"
+            >
+               {isExpanded ? '−' : '+'}
+            </button>
+         </div>
+
+         <div className={`stats-horizontal ${isExpanded ? 'expanded' : ''}`}>
             <div className="stat-item-inline">
                <span className="stat-label">Total Gen.</span>
                <span className="stat-value">{stats.generations}</span>

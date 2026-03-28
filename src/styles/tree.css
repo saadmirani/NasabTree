@@ -402,6 +402,33 @@
    border-color: #dc2626;
 }
 
+/* Mobile responsive legend */
+@media (max-width: 768px) {
+   .tree-legend {
+      position: absolute;
+      bottom: auto;
+      top: 70px;
+      right: 12px;
+      left: auto;
+      gap: 12px;
+      padding: 10px 12px;
+      font-size: 11px;
+      flex-wrap: wrap;
+      max-width: 160px;
+      justify-content: flex-end;
+   }
+
+   .legend-item {
+      gap: 6px;
+   }
+
+   .legend-icon {
+      width: 14px;
+      height: 14px;
+      border-width: 1px;
+   }
+}
+
 /* Search box in tree area */
 .search-container {
    flex: 1;
@@ -418,6 +445,8 @@
    background: white;
    box-shadow: 0 6px 18px rgba(16, 24, 40, 0.06);
    font-size: 14px;
+   -webkit-appearance: none;
+   -webkit-font-smoothing: antialiased;
 }
 
 .search-suggestions {
@@ -509,6 +538,8 @@
    height: 32px;
    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
    outline: none;
+   -webkit-tap-highlight-color: transparent;
+   -webkit-appearance: none;
 }
 
 .info-button:hover {

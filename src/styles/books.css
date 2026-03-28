@@ -227,21 +227,26 @@
 
    .books-table-header,
    .books-table-row {
-      grid-template-columns: 1fr;
-   }
-
-   .books-table-header .books-table-cell:nth-child(2),
-   .books-table-row .books-table-cell:nth-child(2) {
-      display: none;
+      grid-template-columns: 1fr 0.8fr;
    }
 
    .books-table-cell {
-      padding: 0.8rem 1rem;
-      font-size: 0.9rem;
+      padding: 0.8rem 0.6rem;
+      font-size: 0.85rem;
    }
 
    .books-table-header .books-table-cell {
-      padding: 1rem;
+      padding: 0.9rem 0.6rem;
+      font-size: 0.75rem;
+   }
+
+   .books-table-name {
+      min-height: 40px;
+   }
+
+   .books-table-author {
+      min-height: 40px;
+      font-size: 0.8rem;
    }
 }
 
@@ -261,5 +266,39 @@
 
    .books-hero .tagline {
       font-size: 0.95em;
+   }
+
+   .books-section {
+      padding: 20px 15px;
+      margin: 10px 5px;
+   }
+
+   .books-search-input {
+      padding: 10px 12px;
+      font-size: 13px;
+   }
+
+   .books-table-header,
+   .books-table-row {
+      grid-template-columns: 1fr 0.7fr;
+   }
+
+   .books-table-cell {
+      padding: 0.7rem 0.5rem;
+      font-size: 0.75rem;
+   }
+
+   .books-table-header .books-table-cell {
+      padding: 0.8rem 0.5rem;
+      font-size: 0.65rem;
+   }
+
+   .books-table-name {
+      min-height: 35px;
+   }
+
+   .books-table-author {
+      min-height: 35px;
+      font-size: 0.7rem;
    }
 }

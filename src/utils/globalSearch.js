@@ -1,28 +1,35 @@
 // Global search utility for finding people across all Qasba data
-// Dynamically discovers and loads all Nas*.json files (genealogy data)
+// Uses statically imported Nas*.json files for reliable loading
 
-// Cache for loaded data
-const dataCache = {};
+// Static imports of all Qasba data files
+import Nasmiranbigha from "../data/Nasmiranbigha.json";
+import Nassimla from "../data/Nassimla.json";
+import Nasdeora from "../data/Nasdeora.json";
+import Nasahmadpur from "../data/Nasahmadpur.json";
+import Nasbikopur from "../data/Nasbikopur.json";
+import Naskharbaiyya from "../data/Naskharbaiyya.json";
+import Naspalasi from "../data/Naspalasi.json";
+
+// Map of qasba keys to their data
+const qasbaDataMap = {
+   miranbigha: Nasmiranbigha,
+   simla: Nassimla,
+   deora: Nasdeora,
+   ahmadpur: Nasahmadpur,
+   bikopur: Nasbikopur,
+   kharbaiyya: Naskharbaiyya,
+   palasi: Naspalasi,
+};
 
 /**
- * Dynamically load a Nas*.json file
+ * Load Qasba data from the static map
  */
-const loadQasbaData = async (qasbaKey) => {
-   if (dataCache[qasbaKey]) {
-      return dataCache[qasbaKey];
+const loadQasbaData = (qasbaKey) => {
+   const data = qasbaDataMap[qasbaKey];
+   if (!data) {
+      console.warn(`No data found for Qasba: ${qasbaKey}`);
    }
-
-   try {
-      // Construct the import path
-      const importPath = `../data/Nas${qasbaKey}.json`;
-      const module = await import(importPath);
-      const data = module.default || module;
-      dataCache[qasbaKey] = data;
-      return data;
-   } catch (error) {
-      console.warn(`Failed to load Qasba data for ${qasbaKey}:`, error);
-      return null;
-   }
+   return data || null;
 };
 
 /**
@@ -103,13 +110,13 @@ const calculateRelevanceScore = (personName, query) => {
 /**
  * Build a complete searchable index of all people across all Qasbas
  */
-const buildSearchIndex = async () => {
+const buildSearchIndex = () => {
    const index = [];
    const qasbas = getAvailableQasbas();
 
    for (const qasbaInfo of qasbas) {
       try {
-         const data = await loadQasbaData(qasbaInfo.key);
+         const data = loadQasbaData(qasbaInfo.key);
 
          if (data) {
             const flattenedPeople = flattenFamilyTree(
@@ -132,13 +139,13 @@ const buildSearchIndex = async () => {
  * Returns an array of results with id, name, qasbaKey, and qasbaName
  * sorted by relevance
  */
-export const globalSearch = async (query) => {
+export const globalSearch = (query) => {
    if (!query || query.trim().length === 0) {
       return [];
    }
 
    try {
-      const searchIndex = await buildSearchIndex();
+      const searchIndex = buildSearchIndex();
       const lowerQuery = query.toLowerCase().trim();
 
       // Filter and score results

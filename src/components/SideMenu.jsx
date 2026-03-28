@@ -6,7 +6,6 @@ const NasabIcon = () => <i className="fas fa-sitemap" style={{ fontSize: "20px" 
 const BooksIcon = () => <i className="fas fa-book" style={{ fontSize: "20px" }}></i>;
 const LocationIcon = () => <i className="fas fa-mosque" style={{ fontSize: "20px" }}></i>;
 const ContactIcon = () => <i className="fas fa-phone" style={{ fontSize: "20px" }}></i>;
-const CalendarIcon = () => <i className="fas fa-calendar" style={{ fontSize: "20px" }}></i>;
 const MosqueIcon = () => <i className="fas fa-list" style={{ fontSize: "20px" }}></i>;
 const ContributeIcon = () => <i className="fas fa-handshake" style={{ fontSize: "20px" }}></i>;
 const BiographyIcon = () => <i className="fas fa-scroll" style={{ fontSize: "20px" }}></i>;
@@ -162,11 +161,11 @@ export default function SideMenu({ section, setSection, isOpen, setIsOpen }) {
          </button>
 
          <button
-            className={`menu-item ${section === "urs" ? "active" : ""}`}
-            onClick={() => { setShowSilsilas(false); setSection("urs"); }}
+            className={`menu-item ${section === "biography" ? "active" : ""}`}
+            onClick={() => { setShowSilsilas(false); setSection("biography"); }}
          >
-            <span className="icon"><CalendarIcon /></span>
-            <span className="label">Urs Calendar</span>
+            <span className="icon"><BiographyIcon /></span>
+            <span className="label">Biography</span>
          </button>
 
          <button
@@ -186,19 +185,11 @@ export default function SideMenu({ section, setSection, isOpen, setIsOpen }) {
          </button>
 
          <button
-            className={`menu-item ${section === "contact" ? "active" : ""}`}
-            onClick={() => { setShowSilsilas(false); setSection("contact"); }}
+            className={`menu-item ${section === "contribute" ? "active" : ""}`}
+            onClick={() => { setShowSilsilas(false); setSection("contribute"); }}
          >
-            <span className="icon"><ContactIcon /></span>
-            <span className="label">Contact Us</span>
-         </button>
-
-         <button
-            className={`menu-item ${section === "biography" ? "active" : ""}`}
-            onClick={() => { setShowSilsilas(false); setSection("biography"); }}
-         >
-            <span className="icon"><BiographyIcon /></span>
-            <span className="label">Biography</span>
+            <span className="icon"><ContributeIcon /></span>
+            <span className="label">Contribute</span>
          </button>
 
          <button
@@ -210,11 +201,11 @@ export default function SideMenu({ section, setSection, isOpen, setIsOpen }) {
          </button>
 
          <button
-            className={`menu-item ${section === "contribute" ? "active" : ""}`}
-            onClick={() => { setShowSilsilas(false); setSection("contribute"); }}
+            className={`menu-item ${section === "contact" ? "active" : ""}`}
+            onClick={() => { setShowSilsilas(false); setSection("contact"); }}
          >
-            <span className="icon"><ContributeIcon /></span>
-            <span className="label">Contribute</span>
+            <span className="icon"><ContactIcon /></span>
+            <span className="label">Contact Us</span>
          </button>
       </nav>
    );

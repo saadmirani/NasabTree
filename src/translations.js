@@ -10,7 +10,6 @@ export const translations = {
       qasbaSimla: "Qasba Simla",
       qasbaDeora: "Qasba Deora",
       books: "Books",
-      ursCalendar: "Urs Calendar",
       khanqahList: "Khanqah List",
       graveyards: "Graveyards",
       contactUs: "Contact Us",
@@ -18,11 +17,6 @@ export const translations = {
       // Home Page
       currentFocus: "Exploring the Genealogies of Aal-e-Miran",
       welcomeMessage: "Documenting the spiritual legacy and family histories of the revered Saadat families",
-
-      // Urs Calendar
-      upcomingUrs: "Upcoming Urs",
-      threeMonthOverview: "Three Month Overview",
-      noUrsEvents: "No Urs events this month",
 
       // Khanqah List
       fehristEKhanqah: "Fehrist-e-Khanqah Auliya-e-Karaam",
@@ -56,7 +50,6 @@ export const translations = {
       qasbaSimla: "قصبہ سملہ",
       qasbaDeora: "قصبہ ڈیورہ",
       books: "کتابیں",
-      ursCalendar: "عرس کیلنڈر",
       khanqahList: "خانقاہ کی فہرست",
       graveyards: "قبرستانیں",
       contactUs: "رابطہ کریں",
@@ -64,11 +57,6 @@ export const translations = {
       // Home Page
       currentFocus: "آل ِ میران کے نسب ناموں کی تحقیق",
       welcomeMessage: "معزز سادات خاندانوں کی روحانی میراث اور خاندانی تاریخ کو دستاویز کرنا",
-
-      // Urs Calendar
-      upcomingUrs: "آنے والے عرس",
-      threeMonthOverview: "تین ماہ کا جائزہ",
-      noUrsEvents: "اس ماہ میں کوئی عرس کی تقریب نہیں",
 
       // Khanqah List
       fehristEKhanqah: "فہرست ِ خانقاہ اولیاء ِ کرام",

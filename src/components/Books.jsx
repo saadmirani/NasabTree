@@ -1,29 +1,39 @@
-import React from "react";
+import React, { useState, useMemo } from "react";
 import { Container, Typography, Box } from "@mui/material";
-import "../styles/home.css";
+import "../styles/books.css";
 
 export default function Books() {
+   const [searchTerm, setSearchTerm] = useState("");
+
    const books = [
       {
          name: "Kitab-ul-Ansab",
          slug: "kitab-ul-ansab",
-         description: "Book of Genealogies - A comprehensive record of Islamic family histories and genealogical connections among noble families"
+         author: "Traditional Islamic Authors"
       },
       {
          name: "Saadat-e-Bihar Chronicles",
          slug: "saadat-e-bihar",
-         description: "Historical chronicles documenting the spiritual heritage and contributions of the Saadat-e-Bihar community"
+         author: "Historical Scholars"
       },
    ];
+
+   const filteredBooks = useMemo(() => {
+      if (!searchTerm.trim()) return books;
+      return books.filter(book =>
+         book.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+         book.author.toLowerCase().includes(searchTerm.toLowerCase())
+      );
+   }, [searchTerm]);
 
    const handleBookClick = (slug) => {
       window.location.href = `https://www.bazmesaadaat.org/books/${slug}`;
    };
 
    return (
-      <div className="home-container">
-         <section className="hero">
-            <div className="hero-content">
+      <div className="books-container">
+         <section className="books-hero">
+            <div className="books-hero-content">
                <h1>Digital Library</h1>
                <p className="subtitle">Books & Historical Texts</p>
                <p className="tagline">Explore our collection of historical and genealogical works</p>
@@ -33,24 +43,47 @@ export default function Books() {
          <section className="books-section">
             <Container maxWidth="lg" sx={{ py: 4 }}>
                <Box className="books-list-container">
-                  <Box className="books-grid">
-                     {books.map((book) => (
-                        <Box
-                           key={book.slug}
-                           className="book-item"
-                           onClick={() => handleBookClick(book.slug)}
-                        >
-                           <Typography className="book-name" variant="h6">
-                              {book.name}
-                           </Typography>
-                           <Typography className="book-description" variant="body2">
-                              {book.description}
-                           </Typography>
-                           <Typography className="read-more">
-                              Read Full Text →
-                           </Typography>
-                        </Box>
-                     ))}
+                  <Box className="books-search-container">
+                     <input
+                        type="text"
+                        placeholder="Search by book name or author..."
+                        value={searchTerm}
+                        onChange={(e) => setSearchTerm(e.target.value)}
+                        className="books-search-input"
+                     />
+                  </Box>
+
+                  <Box className="books-table">
+                     <Box className="books-table-header">
+                        <Typography className="books-table-cell books-table-name">
+                           Book Name</Typography>
+                        <Typography className="books-table-cell books-table-author">
+                           Author
+                        </Typography>
+                     </Box>
+
+                     <Box className="books-table-body">
+                        {filteredBooks.length > 0 ? (
+                           filteredBooks.map((book, index) => (
+                              <Box
+                                 key={book.slug}
+                                 className={`books-table-row ${index % 2 === 0 ? 'even' : 'odd'}`}
+                                 onClick={() => handleBookClick(book.slug)}
+                              >
+                                 <Typography className="books-table-cell books-table-name">
+                                    {book.name}
+                                 </Typography>
+                                 <Typography className="books-table-cell books-table-author">
+                                    {book.author}
+                                 </Typography>
+                              </Box>
+                           ))
+                        ) : (
+                           <Box className="no-results">
+                              <Typography>No books found</Typography>
+                           </Box>
+                        )}
+                     </Box>
                   </Box>
                </Box>
             </Container>

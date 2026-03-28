@@ -1,69 +1,95 @@
-import React from "react";
+import React, { useState, useMemo } from "react";
 import { Container, Typography, Box } from "@mui/material";
 import "../styles/biography.css";
 
 export default function Biography() {
+   const [searchTerm, setSearchTerm] = useState("");
+
    const biographies = [
       {
          name: "Hazrat Miran Bhik R.H",
          slug: "miran-bhik",
-         description: "A revered spiritual guide and founder of the Saadat-e-Bihar spiritual lineage"
       },
       {
          name: "Hazrat Rahman Bakhsh Qadri",
          slug: "rahman-bakhsh-qadri",
-         description: "A renowned Sufi saint and spiritual master known for his wisdom and teachings"
       },
       {
          name: "Hazrat Bibi Malihan (Maalo Sahiba)",
          slug: "bibi-malihan",
-         description: "A prominent spiritual figure in the Saadat lineage, revered for her spiritual contributions"
       },
    ];
+
+   const filteredBiographies = useMemo(() => {
+      if (!searchTerm.trim()) return biographies;
+      return biographies.filter(bio =>
+         bio.name.toLowerCase().includes(searchTerm.toLowerCase())
+      );
+   }, [searchTerm]);
 
    const handleBiographyClick = (slug) => {
       window.location.href = `https://www.bazmesaadaat.org/biography/${slug}`;
    };
 
    return (
-      <>
-         <Box className="biography-hero">
-            <Box className="biography-hero-content">
-               <Typography variant="h1" className="biography-hero-title">
-                  Sawaneh Hayaat | <span className="biography-urdu-title">سوانح حیات</span>
-               </Typography>
-               <Typography className="biography-hero-subtitle">
-                  Exploring the Lives and Legacies of Notable Figures
-               </Typography>
-               <Typography className="biography-hero-tagline">
-                  Discover the biographical narratives and spiritual contributions of our revered ancestors
-               </Typography>
-            </Box>
-         </Box>
+      <div className="biography-container">
+         <section className="biography-hero">
+            <div className="biography-hero-content">
+               <h1>
+                  Sawaneh Hayaat |{" "}
+                  <span className="biography-urdu-title">سوانح حیات</span>
+               </h1>
+               <p className="subtitle">Biographies of Revered Sufi Saints</p>
+               <p className="tagline">
+                  Click on any name to read the full biography
+               </p>
+            </div>
+         </section>
 
-         <Container maxWidth="lg" sx={{ py: 4 }}>
-            <Box className="biography-list-container">
-               <Box className="biographies-grid">
-                  {biographies.map((bio) => (
-                     <Box
-                        key={bio.slug}
-                        className="biography-item"
-                        onClick={() => handleBiographyClick(bio.slug)}
-                     >
-                        <Typography className="biography-name" variant="h6">
-                           {bio.name}
-                        </Typography>
-                        <Typography className="biography-description" variant="body2">
-                           {bio.description}
-                        </Typography>
-                        <Typography className="read-more">
-                           Read Full Biography →
+         <section className="biography-section">
+            <Container maxWidth="lg" sx={{ py: 4 }}>
+               <Box className="biography-list-container">
+                  <Box className="biography-search-container">
+                     <input
+                        type="text"
+                        placeholder="Search biographies..."
+                        value={searchTerm}
+                        onChange={(e) => setSearchTerm(e.target.value)}
+                        className="biography-search-input"
+                     />
+                  </Box>
+
+                  <Box className="biography-table">
+                     <Box className="biography-table-header">
+                        <Typography className="biography-table-cell biography-table-title">
+                           Saint Name
                         </Typography>
                      </Box>
-                  ))}
+
+                     <Box className="biography-table-body">
+                        {filteredBiographies.length > 0 ? (
+                           filteredBiographies.map((bio, index) => (
+                              <Box
+                                 key={bio.slug}
+                                 className={`biography-table-row ${index % 2 === 0 ? "even" : "odd"
+                                    }`}
+                                 onClick={() => handleBiographyClick(bio.slug)}
+                              >
+                                 <Typography className="biography-table-cell biography-name-cell">
+                                    {bio.name}
+                                 </Typography>
+                              </Box>
+                           ))
+                        ) : (
+                           <Box className="no-results">
+                              <Typography>No biographies found</Typography>
+                           </Box>
+                        )}
+                     </Box>
+                  </Box>
                </Box>
-            </Box>
-         </Container>
-      </>
+            </Container>
+         </section>
+      </div>
    );
 }

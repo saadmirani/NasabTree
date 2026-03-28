@@ -1,6 +1,5 @@
 import "./App.css";
 import React, { useState, useEffect } from "react";
-import { LanguageProvider } from "./context/LanguageContext";
 import Navbar from "./components/Navbar";
 import SideMenu from "./components/SideMenu";
 import Home from "./components/Home";
@@ -12,7 +11,6 @@ import NasabAhmadpur from "./components/NasabAhmadpur";
 import NasabKharbaiyya from "./components/NasabKharbaiyya";
 import NasabPalasi from "./components/NasabPalasi";
 import Books from "./components/Books";
-import UrsCalendar from "./components/UrsCalendar";
 import KhanqahList from "./components/KhanqahList";
 import Graveyards from "./components/Graveyards";
 import ContactUs from "./components/ContactUs";
@@ -60,52 +58,49 @@ export default function App() {
   };
 
   return (
-    <LanguageProvider>
-      <div className="layout">
-        <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-        {menuOpen && (
-          <div className="menu-overlay" onClick={() => setMenuOpen(false)} />
-        )}
-        <div className="main-area">
-          <SideMenu section={section} setSection={handleSectionChange} isOpen={menuOpen} setIsOpen={setMenuOpen} />
-          <main className="content">
-            {/* Person View Modal */}
-            {personView && (
-              <div className="personpage-overlay">
-                <PersonPage
-                  personId={personView}
-                  qasba={personQasba || section}
-                  data={getCurrentQasbaData(section)}
-                  onClose={handleClosePerson}
-                  onNavigateToPerson={handleNavigateToPerson}
-                />
-              </div>
-            )}
+    <div className="layout">
+      <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+      {menuOpen && (
+        <div className="menu-overlay" onClick={() => setMenuOpen(false)} />
+      )}
+      <div className="main-area">
+        <SideMenu section={section} setSection={handleSectionChange} isOpen={menuOpen} setIsOpen={setMenuOpen} />
+        <main className="content">
+          {/* Person View Modal */}
+          {personView && (
+            <div className="personpage-overlay">
+              <PersonPage
+                personId={personView}
+                qasba={personQasba || section}
+                data={getCurrentQasbaData(section)}
+                onClose={handleClosePerson}
+                onNavigateToPerson={handleNavigateToPerson}
+              />
+            </div>
+          )}
 
-            {!personView && (
-              <>
-                {section === "home" && <Home />}
-                {section === "miranbigha" && <NasabMiranBigha setSection={handleSectionChange} onPersonClick={handleNavigateToPerson} />}
-                {section === "simla" && <NasabSimla setSection={handleSectionChange} onPersonClick={handleNavigateToPerson} />}
-                {section === "deora" && <NasabDeora setSection={handleSectionChange} onPersonClick={handleNavigateToPerson} />}
-                {section === "bikopur" && <Bikopur setSection={handleSectionChange} onPersonClick={handleNavigateToPerson} />}
-                {section === "ahmadpur" && <NasabAhmadpur setSection={handleSectionChange} onPersonClick={handleNavigateToPerson} />}
-                {section === "kharbaiyya" && <NasabKharbaiyya setSection={handleSectionChange} onPersonClick={handleNavigateToPerson} />}
-                {section === "palasi" && <NasabPalasi setSection={handleSectionChange} onPersonClick={handleNavigateToPerson} />}
-                {section === "books" && <Books />}
-                {section === "urs" && <UrsCalendar />}
-                {section === "khanqah" && <KhanqahList />}
-                {section === "graveyards" && <Graveyards />}
-                {section === "contact" && <ContactUs />}
-                {section === "biography" && <Biography />}
-                {section === "contribute" && <Contribute />}
-                {section === "aboutus" && <AboutUs />}
-              </>
-            )}
-          </main>
-        </div>
+          {!personView && (
+            <>
+              {section === "home" && <Home />}
+              {section === "miranbigha" && <NasabMiranBigha setSection={handleSectionChange} onPersonClick={handleNavigateToPerson} />}
+              {section === "simla" && <NasabSimla setSection={handleSectionChange} onPersonClick={handleNavigateToPerson} />}
+              {section === "deora" && <NasabDeora setSection={handleSectionChange} onPersonClick={handleNavigateToPerson} />}
+              {section === "bikopur" && <Bikopur setSection={handleSectionChange} onPersonClick={handleNavigateToPerson} />}
+              {section === "ahmadpur" && <NasabAhmadpur setSection={handleSectionChange} onPersonClick={handleNavigateToPerson} />}
+              {section === "kharbaiyya" && <NasabKharbaiyya setSection={handleSectionChange} onPersonClick={handleNavigateToPerson} />}
+              {section === "palasi" && <NasabPalasi setSection={handleSectionChange} onPersonClick={handleNavigateToPerson} />}
+              {section === "books" && <Books />}
+              {section === "biography" && <Biography />}
+              {section === "khanqah" && <KhanqahList />}
+              {section === "graveyards" && <Graveyards />}
+              {section === "contribute" && <Contribute />}
+              {section === "aboutus" && <AboutUs />}
+              {section === "contact" && <ContactUs />}
+            </>
+          )}
+        </main>
       </div>
-    </LanguageProvider>
+    </div>
   );
 }
 

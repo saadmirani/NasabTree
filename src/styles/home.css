@@ -416,6 +416,12 @@
    text-align: right;
 }
 
+/* Urdu Title Font */
+.urdu-title {
+   font-family: "Noto Nastaliq Urdu", "Jameel Noori Nastaleeq", serif;
+   font-weight: 600;
+}
+
 
 
 /* Books Section Styling */

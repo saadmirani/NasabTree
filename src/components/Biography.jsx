@@ -1,25 +1,29 @@
-import React, { useState, useCallback } from "react";
-import {
-   Container,
-   Typography,
-   Box,
-   Autocomplete,
-   TextField,
-} from "@mui/material";
+import React from "react";
+import { Container, Typography, Box } from "@mui/material";
 import "../styles/biography.css";
 
 export default function Biography() {
-   const [selectedPerson, setSelectedPerson] = useState(null);
-
    const biographies = [
-      "Hazrat Miran Bhik R.H (Urdu)",
-      "Hazrat Miran Syed Hakeem Rahman Bakhsh (Urdu)",
-      "Hazrat Bibi Malihan Urf Maalo Sahiba (Urdu)",
+      {
+         name: "Hazrat Miran Bhik R.H",
+         slug: "miran-bhik",
+         description: "A revered spiritual guide and founder of the Saadat-e-Bihar spiritual lineage"
+      },
+      {
+         name: "Hazrat Rahman Bakhsh Qadri",
+         slug: "rahman-bakhsh-qadri",
+         description: "A renowned Sufi saint and spiritual master known for his wisdom and teachings"
+      },
+      {
+         name: "Hazrat Bibi Malihan (Maalo Sahiba)",
+         slug: "bibi-malihan",
+         description: "A prominent spiritual figure in the Saadat lineage, revered for her spiritual contributions"
+      },
    ];
 
-   const handlePersonChange = useCallback((event, value) => {
-      setSelectedPerson(value);
-   }, []);
+   const handleBiographyClick = (slug) => {
+      window.location.href = `https://www.bazmesaadaat.org/biography/${slug}`;
+   };
 
    return (
       <>
@@ -37,51 +41,27 @@ export default function Biography() {
             </Box>
          </Box>
 
-         <Container maxWidth="lg" sx={{ py: 2 }}>
-            <Box className="biography-container">
-               {/* Search Section */}
-
-               {/* Search & Selection Combined */}
-               <Box className="search-selection-wrapper">
-                  <Autocomplete
-                     options={biographies}
-                     value={selectedPerson}
-                     onChange={handlePersonChange}
-                     renderInput={(params) => (
-                        <TextField
-                           {...params}
-                           placeholder="Search biography..."
-                           variant="outlined"
-                           size="small"
-                        />
-                     )}
-                     fullWidth
-                     sx={{ maxWidth: 400 }}
-                  />
-               </Box>
-
-               {/* Content Display Area */}
-               {selectedPerson && (
-                  <Box className="content-area">
-                     <Box className="biography-content">
-                        <Typography variant="h5" sx={{ mb: 2, fontWeight: 600 }}>
-                           {selectedPerson}
+         <Container maxWidth="lg" sx={{ py: 4 }}>
+            <Box className="biography-list-container">
+               <Box className="biographies-grid">
+                  {biographies.map((bio) => (
+                     <Box
+                        key={bio.slug}
+                        className="biography-item"
+                        onClick={() => handleBiographyClick(bio.slug)}
+                     >
+                        <Typography className="biography-name" variant="h6">
+                           {bio.name}
                         </Typography>
-                        <Typography variant="body1" sx={{ lineHeight: 1.8 }}>
-                           Biography content will be implemented here...
+                        <Typography className="biography-description" variant="body2">
+                           {bio.description}
+                        </Typography>
+                        <Typography className="read-more">
+                           Read Full Biography →
                         </Typography>
                      </Box>
-                  </Box>
-               )}
-
-               {/* No Selection Message */}
-               {!selectedPerson && (
-                  <Box className="no-selection-message">
-                     <Typography variant="body2" sx={{ color: "#999" }}>
-                        Select a biography from the list to view details.
-                     </Typography>
-                  </Box>
-               )}
+                  ))}
+               </Box>
             </Box>
          </Container>
       </>

@@ -521,51 +521,62 @@
 
 /*Info Button - Family Information */
 .info-button {
-   padding: 0;
+   width: 32px;
+   height: 32px;
+   border-radius: 50%;
    background: linear-gradient(135deg, #374151 0%, #1f2937 100%);
-   border: none !important;
-   border-radius: 8px;
-   cursor: pointer;
+   color: #f3f4f6;
    font-size: 24px;
    font-weight: 600;
-   color: #f3f4f6;
-   transition: all 0.3s ease;
-   flex-shrink: 0;
    display: flex;
    align-items: center;
    justify-content: center;
-   width: 32px;
-   height: 32px;
-   box-shadow: none !important;
-   outline: none !important;
-   -webkit-tap-highlight-color: transparent !important;
-   -webkit-user-select: none;
+   cursor: pointer;
+   flex-shrink: 0;
+   transition: all 0.2s ease-out;
+   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+
+   /* Prevent all browser default styling */
+   -webkit-appearance: none;
+   appearance: none;
    user-select: none;
+   -webkit-user-select: none;
    -webkit-touch-callout: none;
-   -webkit-focus-ring-color: transparent;
-   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+
+   /* Create custom focus ring using box-shadow instead of outline */
+   position: relative;
 }
 
 .info-button:hover {
    background: linear-gradient(135deg, #4b5563 0%, #374151 100%);
-   color: #ffffff;
-   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-   transform: translateY(-2px);
+   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+   transform: translateY(-1px);
 }
 
 .info-button:active {
-   transform: translateY(0) scale(0.98);
-   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+   transform: translateY(0) scale(0.96);
+   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
 }
 
 .info-button:focus {
-   outline: none !important;
-   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2) !important;
+   /* Custom focus ring using inset box-shadow */
+   box-shadow:
+      0 2px 8px rgba(0, 0, 0, 0.15),
+      inset 0 0 0 2px #f3f4f6,
+      inset 0 0 0 4px #374151;
+}
+
+.info-button:focus:not(:focus-visible) {
+   /* Remove custom focus ring on non-keyboard focus */
+   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
 .info-button:focus-visible {
-   outline: none !important;
-   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2) !important;
+   /* Custom focus ring using inset box-shadow for keyboard focus */
+   box-shadow:
+      0 2px 8px rgba(0, 0, 0, 0.15),
+      inset 0 0 0 2px #f3f4f6,
+      inset 0 0 0 4px #374151;
 }
 
 /* Search Bar Header - Same line for toggle and search */

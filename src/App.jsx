@@ -1,5 +1,6 @@
 import "./App.css";
 import React, { useState, useEffect } from "react";
+import { getQasbaRoute } from "./utils/globalSearch";
 import Navbar from "./components/Navbar";
 import SideMenu from "./components/SideMenu";
 import Home from "./components/Home";
@@ -17,13 +18,11 @@ import ContactUs from "./components/ContactUs";
 import Contribute from "./components/contribute";
 import Biography from "./components/Biography";
 import AboutUs from "./components/AboutUs";
-import PersonPage from "./components/PersonPage";
 
 export default function App() {
   const [section, setSection] = useState("home");
   const [menuOpen, setMenuOpen] = useState(false);
-  const [personView, setPersonView] = useState(null);
-  const [personQasba, setPersonQasba] = useState(null);
+  const [focusPersonId, setFocusPersonId] = useState(null);
 
   // Parse URL parameters on mount
   useEffect(() => {
@@ -31,30 +30,32 @@ export default function App() {
     const personId = params.get("person");
     const qasba = params.get("qasba");
 
-    if (personId) {
-      setPersonView(personId);
-      setPersonQasba(qasba);
-      // Set the qasba section if specified
-      if (qasba) {
-        setSection(qasba);
-      }
+    if (personId && qasba) {
+      setSection(qasba);
+      setFocusPersonId(personId);
     }
   }, []);
 
   const handleSectionChange = (newSection) => {
     setSection(newSection);
+    setFocusPersonId(null); // Clear focus when navigating between sections
     setMenuOpen(false);
   };
 
-  const handleNavigateToPerson = (personId) => {
-    setPersonView(personId);
-    window.history.pushState(null, "", `?person=${personId}&qasba=${section}`);
-  };
+  const handleSearchPersonFound = (personId, qasbaKey) => {
+    // Get the route name from qasbaKey
+    const route = getQasbaRoute(qasbaKey);
 
-  const handleClosePerson = () => {
-    setPersonView(null);
-    setPersonQasba(null);
-    window.history.pushState(null, "", window.location.pathname);
+    if (!route) {
+      console.error("❌ Invalid qasbaKey:", qasbaKey);
+      return;
+    }
+
+    // Navigate to the Qasba section and focus on the person
+    setSection(route);
+    setFocusPersonId(personId);
+    setMenuOpen(false);
+    window.history.pushState(null, "", `?person=${personId}&qasba=${route}`);
   };
 
   return (
@@ -66,59 +67,24 @@ export default function App() {
       <div className="main-area">
         <SideMenu section={section} setSection={handleSectionChange} isOpen={menuOpen} setIsOpen={setMenuOpen} />
         <main className="content">
-          {/* Person View Modal */}
-          {personView && (
-            <div className="personpage-overlay">
-              <PersonPage
-                personId={personView}
-                qasba={personQasba || section}
-                data={getCurrentQasbaData(section)}
-                onClose={handleClosePerson}
-                onNavigateToPerson={handleNavigateToPerson}
-              />
-            </div>
-          )}
-
-          {!personView && (
-            <>
-              {section === "home" && <Home />}
-              {section === "miranbigha" && <NasabMiranBigha setSection={handleSectionChange} onPersonClick={handleNavigateToPerson} />}
-              {section === "simla" && <NasabSimla setSection={handleSectionChange} onPersonClick={handleNavigateToPerson} />}
-              {section === "deora" && <NasabDeora setSection={handleSectionChange} onPersonClick={handleNavigateToPerson} />}
-              {section === "bikopur" && <Bikopur setSection={handleSectionChange} onPersonClick={handleNavigateToPerson} />}
-              {section === "ahmadpur" && <NasabAhmadpur setSection={handleSectionChange} onPersonClick={handleNavigateToPerson} />}
-              {section === "kharbaiyya" && <NasabKharbaiyya setSection={handleSectionChange} onPersonClick={handleNavigateToPerson} />}
-              {section === "palasi" && <NasabPalasi setSection={handleSectionChange} onPersonClick={handleNavigateToPerson} />}
-              {section === "books" && <Books />}
-              {section === "biography" && <Biography />}
-              {section === "khanqah" && <KhanqahList />}
-              {section === "graveyards" && <Graveyards />}
-              {section === "contribute" && <Contribute />}
-              {section === "aboutus" && <AboutUs />}
-              {section === "contact" && <ContactUs />}
-            </>
-          )}
+          {section === "home" && <Home onPersonFound={handleSearchPersonFound} />}
+          {section === "miranbigha" && <NasabMiranBigha setSection={handleSectionChange} focusPersonId={focusPersonId} />}
+          {section === "simla" && <NasabSimla setSection={handleSectionChange} focusPersonId={focusPersonId} />}
+          {section === "deora" && <NasabDeora setSection={handleSectionChange} focusPersonId={focusPersonId} />}
+          {section === "bikopur" && <Bikopur setSection={handleSectionChange} focusPersonId={focusPersonId} />}
+          {section === "ahmadpur" && <NasabAhmadpur setSection={handleSectionChange} focusPersonId={focusPersonId} />}
+          {section === "kharbaiyya" && <NasabKharbaiyya setSection={handleSectionChange} focusPersonId={focusPersonId} />}
+          {section === "palasi" && <NasabPalasi setSection={handleSectionChange} focusPersonId={focusPersonId} />}
+          {section === "books" && <Books />}
+          {section === "biography" && <Biography />}
+          {section === "khanqah" && <KhanqahList />}
+          {section === "graveyards" && <Graveyards />}
+          {section === "contribute" && <Contribute />}
+          {section === "aboutus" && <AboutUs />}
+          {section === "contact" && <ContactUs />}
         </main>
       </div>
     </div>
   );
 }
 
-/**
- * Helper function to get genealogical data for current qasba
- */
-function getCurrentQasbaData(section) {
-  const dataMap = {
-    miranbigha: require("./data/miranbigha.json"),
-    simla: require("./data/simla.json"),
-    deora: require("./data/deora.json"),
-    ahmadpur: require("./data/ahmadpur.json"),
-    bikopur: require("./data/bikopur.json"),
-    kharbaiyya: require("./data/kharbaiyya.json"),
-    palasi: require("./data/palasi.json"),
-    nasabpeerbighachakand: require("./data/peerbighachakand.json"),
-    nasabsaadipur: require("./data/saadipur.json"),
-    makaramchak: require("./data/makaramchak.json"),
-  };
-  return dataMap[section] || null;
-}

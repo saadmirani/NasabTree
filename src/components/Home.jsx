@@ -1,7 +1,8 @@
 import React from "react";
+import GlobalSearchBox from "./GlobalSearchBox";
 import "../styles/home.css";
 
-export default function Home() {
+export default function Home({ onPersonFound }) {
    return (
       <div className="home-container">
          {/* Hero Section */}
@@ -15,6 +16,9 @@ export default function Home() {
                <p className="tagline">Connecting generations through history, spirituality, and heritage</p>
             </div>
          </section>
+
+         {/* Global Search Box */}
+         <GlobalSearchBox onPersonFound={onPersonFound} />
 
          {/* Purpose Section */}
          <section className="section purpose-section">

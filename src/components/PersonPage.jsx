@@ -17,30 +17,62 @@ import {
  * Displays detailed information about a single person with SEO metadata
  * Accessible via URL like: /?person=p012&qasba=miranbigha
  */
-export default function PersonPage({ personId, qasba, data, onClose, onNavigateToPerson }) {
+export default function PersonPage({ personId, qasba, qasbaRoute, onClose, onNavigateToPerson, getQasbaData }) {
    const [person, setPerson] = useState(null);
    const [parent, setParent] = useState(null);
    const [siblings, setSiblings] = useState([]);
    const [descendants, setDescendants] = useState([]);
    const [ancestry, setAncestry] = useState([]);
+   const [loading, setLoading] = useState(true);
+   const [data, setData] = useState(null);
 
    useEffect(() => {
-      if (!personId || !data) return;
+      if (!personId || !qasbaRoute) {
+         setLoading(false);
+         return;
+      }
 
-      const foundPerson = findPersonById(data, personId);
+      setLoading(true);
+
+      // Get data using the provided function
+      const loadedData = getQasbaData ? getQasbaData(qasbaRoute) : null;
+
+      if (!loadedData) {
+         setLoading(false);
+         return;
+      }
+
+      setData(loadedData);
+      const foundPerson = findPersonById(loadedData, personId);
+
       if (foundPerson) {
          setPerson(foundPerson);
-         setAncestry(buildAncestryChain(data, personId));
-         setParent(findParent(data, personId));
-         setSiblings(findSiblings(data, personId));
+         setAncestry(buildAncestryChain(loadedData, personId));
+         setParent(findParent(loadedData, personId));
+         setSiblings(findSiblings(loadedData, personId));
          setDescendants(getAllDescendants(foundPerson).slice(0, 20)); // Limit to first 20 for performance
       }
-   }, [personId, data]);
+
+      setLoading(false);
+   }, [personId, qasbaRoute, getQasbaData]);
+
+   if (loading) {
+      return (
+         <div className="personpage-container">
+            <div className="personpage-loading">Loading...</div>
+         </div>
+      );
+   }
 
    if (!person) {
       return (
          <div className="personpage-container">
-            <div className="personpage-loading">Person not found</div>
+            <div className="personpage-loading">
+               <p>Person not found in {qasba}</p>
+               <button onClick={onClose} style={{ marginTop: "20px", padding: "10px 20px" }}>
+                  Close
+               </button>
+            </div>
          </div>
       );
    }

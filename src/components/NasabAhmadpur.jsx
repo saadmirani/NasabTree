@@ -1,6 +1,6 @@
 import React, { useState, useCallback } from "react";
 import { Helmet } from "react-helmet";
-import ahmadpurData from "../data/ahmadpur.json";
+import ahmadpurData from "../data/Nasahmadpur.json";
 import familyInfo from "../data/familyInfo/ahmadpur.json";
 import "../styles/tree.css";
 import GenealogyText from "./GenealogyText";
@@ -19,7 +19,7 @@ const QASBA_CONFIG = {
 // ==========================================================
 
 
-export default function NasabAhmadpur({ setSection }) {
+export default function NasabAhmadpur({ setSection, focusPersonId }) {
    const [selectedNode, setSelectedNode] = useState(null);
    const [popupPos, setPopupPos] = useState({ x: 0, y: 0 });
    const [query, setQuery] = useState("");
@@ -27,6 +27,7 @@ export default function NasabAhmadpur({ setSection }) {
    const [viewMode, setViewMode] = useState("tree");
    const [stats, setStats] = useState(null);
    const [showInfoModal, setShowInfoModal] = useState(false);
+   const [isFocused, setIsFocused] = useState(false);
 
    // Use the custom hook for all D3 rendering logic
    const handleNodeClick = useCallback((d, popupX, popupY) => {
@@ -67,6 +68,16 @@ export default function NasabAhmadpur({ setSection }) {
          }
       }, 500);
    }, [drawTree, focusNodeById, getStats]);
+
+   // Focus on person when focusPersonId prop is set (from global search)
+   React.useEffect(() => {
+      if (focusPersonId && !isFocused) {
+         setTimeout(() => {
+            focusNodeById(focusPersonId);
+            setIsFocused(true);
+         }, 300);
+      }
+   }, [focusPersonId, isFocused, focusNodeById]);
 
    const shortName = (full) => {
       if (!full) return "";
@@ -152,13 +163,16 @@ export default function NasabAhmadpur({ setSection }) {
                         )}
                      </div>
                      {/* Info Button */}
-                     <button
+                     <div
                         className="info-button"
                         onClick={() => setShowInfoModal(true)}
+                        onKeyDown={(e) => e.key === 'Enter' && setShowInfoModal(true)}
                         title="Family Information"
+                        role="button"
+                        tabIndex="0"
                      >
                         ℹ
-                     </button>
+                     </div>
                      {/* View Mode Toggle Switch */}
                      <div className="view-mode-switch">
                         <button

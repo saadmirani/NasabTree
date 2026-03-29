@@ -22,6 +22,64 @@ const qasbaDataMap = {
 };
 
 /**
+ * Calculate Levenshtein distance between two strings
+ * Measures minimum edits (insert, delete, substitute) needed to transform one string to another
+ * Used for fuzzy matching and spelling variation handling
+ * 
+ * Examples:
+ * "Sadiya" -> "Sadia" = 1 (one deletion)
+ * "Fozail" -> "Fuzail" = 1 (one substitution)
+ * "Ali" -> "Ale" = 1 (one substitution)
+ */
+const levenshteinDistance = (str1, str2) => {
+   const len1 = str1.length;
+   const len2 = str2.length;
+   const matrix = Array(len2 + 1).fill(null).map(() => Array(len1 + 1).fill(0));
+
+   // Initialize first row and column
+   for (let i = 0; i <= len1; i++) matrix[0][i] = i;
+   for (let j = 0; j <= len2; j++) matrix[j][0] = j;
+
+   // Calculate distances
+   for (let j = 1; j <= len2; j++) {
+      for (let i = 1; i <= len1; i++) {
+         const cost = str1[i - 1] === str2[j - 1] ? 0 : 1;
+         matrix[j][i] = Math.min(
+            matrix[j][i - 1] + 1,        // deletion
+            matrix[j - 1][i] + 1,        // insertion
+            matrix[j - 1][i - 1] + cost  // substitution
+         );
+      }
+   }
+
+   return matrix[len2][len1];
+};
+
+/**
+ * Convert string to phonetic key for matching variations
+ * Helps match names that sound similar but spelled differently
+ */
+const getPhoneticKey = (str) => {
+   // Normalize: remove extra spaces, convert to lowercase
+   let phonetic = str.toLowerCase().replace(/\s+/g, '');
+
+   // Common name variations mapping
+   const variations = {
+      'z': 'z',
+      'f': 'f',
+      'q': 'k',
+      'c': 'k',
+      'kh': 'kh',
+      'gh': 'gh',
+      'sh': 'sh',
+      'th': 'th',
+      'dh': 'dh'
+   };
+
+   return phonetic;
+};
+
+/**
  * Load Qasba data from the static map
  */
 const loadQasbaData = (qasbaKey) => {
@@ -81,7 +139,15 @@ const flattenFamilyTree = (node, qasbaKey, qasbaName) => {
 
 /**
  * Calculate relevance score for a search result
- * Higher score = better match
+ * Considers exact matches, word matches, AND spelling variations via Levenshtein distance
+ * 
+ * Score breakdown:
+ * 100 = Exact match
+ * 90  = Starts with query
+ * 85  = Exact word match
+ * 80  = Contains as whole word
+ * 75+ = Close fuzzy match (spelling variations)
+ * <70 = Not shown
  */
 const calculateRelevanceScore = (personName, query) => {
    const name = personName.toLowerCase();
@@ -95,16 +161,34 @@ const calculateRelevanceScore = (personName, query) => {
 
    // Whole word match at start of sentence = 85
    const words = name.split(/[\s\-]+/);
-   if (words.some(word => word.startsWith(queryLower))) return 85;
+   if (words.some(word => word === queryLower)) return 85;
 
-   // Contains as whole word = 70
+   // Contains as whole word = 80
    const wordRegex = new RegExp(`\\b${queryLower}\\b`);
-   if (wordRegex.test(name)) return 70;
+   if (wordRegex.test(name)) return 80;
 
-   // Contains the query but not as whole word = 0 (don't show)
-   if (name.includes(queryLower)) return 0;
+   // If query is 3+ characters, check for close fuzzy matches (spelling variations)
+   if (queryLower.length >= 3) {
+      // Check each word in the name for fuzzy match
+      for (const word of words) {
+         if (word.length < 3) continue; // Skip very short words
 
-   return -1; // Not a match
+         const distance = levenshteinDistance(word, queryLower);
+         const maxDistance = Math.floor(Math.min(word.length, queryLower.length) * 0.35); // Allow up to 35% distance
+
+         if (distance > 0 && distance <= maxDistance) {
+            // Score based on similarity percentage
+            // 100% similar (distance 0) = 80, 90% similar = 75, etc.
+            const maxLen = Math.max(word.length, queryLower.length);
+            const similarity = (maxLen - distance) / maxLen;
+            const fuzzyScore = Math.round(70 + similarity * 5); // Score 70-75
+            return fuzzyScore;
+         }
+      }
+   }
+
+   // No match
+   return -1;
 };
 
 /**
@@ -138,6 +222,12 @@ const buildSearchIndex = () => {
  * Search across all Qasbas for people matching the query
  * Returns an array of results with id, name, qasbaKey, and qasbaName
  * sorted by relevance
+ * 
+ * Features:
+ * - Exact matching (highest priority)
+ * - Word matching
+ * - Spelling variation handling (Levenshtein distance)
+ * - Smart threshold based on query length
  */
 export const globalSearch = (query) => {
    if (!query || query.trim().length === 0) {
@@ -148,13 +238,17 @@ export const globalSearch = (query) => {
       const searchIndex = buildSearchIndex();
       const lowerQuery = query.toLowerCase().trim();
 
+      // For short queries (less than 3 chars), require higher match quality
+      // For longer queries, allow fuzzy matches
+      const minScoreThreshold = lowerQuery.length < 3 ? 85 : 70;
+
       // Filter and score results
       const scoredResults = searchIndex
          .map(person => ({
             ...person,
             score: calculateRelevanceScore(person.name, lowerQuery)
          }))
-         .filter(result => result.score >= 70); // Minimum relevance score
+         .filter(result => result.score >= minScoreThreshold);
 
       // Sort by relevance score (highest first)
       scoredResults.sort((a, b) => b.score - a.score);

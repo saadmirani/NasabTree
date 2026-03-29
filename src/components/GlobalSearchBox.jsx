@@ -19,7 +19,7 @@ export default function GlobalSearchBox({ onPersonFound }) {
 
       if (query.trim().length > 0) {
          setIsSearching(true);
-         // Debounce search by 300ms
+         // Debounce search by 500ms to avoid showing partial/incomplete results
          searchTimeoutRef.current = setTimeout(() => {
             try {
                const searchResults = globalSearch(query);
@@ -31,7 +31,7 @@ export default function GlobalSearchBox({ onPersonFound }) {
             } finally {
                setIsSearching(false);
             }
-         }, 300);
+         }, 500);
       } else {
          setResults([]);
          setShowResults(false);

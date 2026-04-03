@@ -725,3 +725,78 @@
 .genealogy-text-scrollable::-webkit-scrollbar-thumb:hover {
    background: #666;
 }
+
+/* Mobile responsive search bar and controls */
+@media (max-width: 768px) {
+   .search-bar-header {
+      flex-wrap: wrap;
+      gap: 8px;
+      top: 8px;
+      left: 8px;
+      right: 8px;
+      z-index: 150;
+      background: rgba(255, 255, 255, 0.98);
+      padding: 8px;
+      border-radius: 6px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+   }
+
+   .info-button {
+      width: 36px;
+      height: 36px;
+      font-size: 20px;
+      flex-shrink: 0;
+      margin-left: auto;
+      order: 2;
+   }
+
+   .view-mode-switch {
+      flex-shrink: 0;
+      transform: scale(0.9);
+      transform-origin: center;
+      order: 3;
+   }
+}
+
+@media (max-width: 480px) {
+   .search-bar-header {
+      flex-wrap: wrap;
+      gap: 6px;
+      top: 6px;
+      left: 6px;
+      right: 6px;
+      z-index: 150;
+      background: rgba(255, 255, 255, 0.99);
+      padding: 6px;
+      border-radius: 4px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+   }
+
+   .search-container {
+      flex-basis: 100%;
+      min-width: 100%;
+      max-width: 100%;
+      z-index: 50;
+   }
+
+   .info-button {
+      width: 32px;
+      height: 32px;
+      font-size: 18px;
+      order: 1;
+      flex-basis: 32px;
+      flex-shrink: 0;
+   }
+
+   .view-mode-switch {
+      flex-basis: 100%;
+      width: 100%;
+      order: 2;
+   }
+
+   .view-mode-switch button {
+      flex: 1;
+      padding: 6px 12px;
+      font-size: 0.8em;
+   }
+}

@@ -40,6 +40,8 @@ export default function App() {
     setSection(newSection);
     setFocusPersonId(null); // Clear focus when navigating between sections
     setMenuOpen(false);
+    // Clear URL parameters when navigating away from person focus
+    window.history.pushState(null, "", window.location.pathname);
   };
 
   const handleSearchPersonFound = (personId, qasbaKey) => {

@@ -16,10 +16,9 @@ export default function SideMenu({ section, setSection, isOpen, setIsOpen }) {
 
    // Get the correct biography URL based on environment
    const getBiographyUrl = () => {
-      if (window.location.hostname === 'localhost') {
+      if (window.location.hostname === 'localhost')
          return 'http://localhost:3000/biographies/view-all';
-      }
-      return `${window.location.origin}/biographies/view-all`;
+      return 'https://app.bazmesaadaat.org/biographies/view-all'; // subdomain
    };
 
    return (

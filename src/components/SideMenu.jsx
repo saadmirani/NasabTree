@@ -7,12 +7,20 @@ const BooksIcon = () => <i className="fas fa-book" style={{ fontSize: "20px" }}>
 const LocationIcon = () => <i className="fas fa-mosque" style={{ fontSize: "20px" }}></i>;
 const ContactIcon = () => <i className="fas fa-phone" style={{ fontSize: "20px" }}></i>;
 const MosqueIcon = () => <i className="fas fa-list" style={{ fontSize: "20px" }}></i>;
-const ContributeIcon = () => <i className="fas fa-handshake" style={{ fontSize: "20px" }}></i>;
+
 const BiographyIcon = () => <i className="fas fa-scroll" style={{ fontSize: "20px" }}></i>;
 const AboutIcon = () => <i className="fas fa-info-circle" style={{ fontSize: "20px" }}></i>;
 
 export default function SideMenu({ section, setSection, isOpen, setIsOpen }) {
    const [showSilsilas, setShowSilsilas] = React.useState(false);
+
+   // Get the correct biography URL based on environment
+   const getBiographyUrl = () => {
+      if (window.location.hostname === 'localhost') {
+         return 'http://localhost:3000/biographies/view-all';
+      }
+      return `${window.location.origin}/biographies/view-all`;
+   };
 
    return (
       <nav className={`sidemenu ${isOpen ? "open" : ""}`}>
@@ -153,19 +161,20 @@ export default function SideMenu({ section, setSection, isOpen, setIsOpen }) {
          </div>
 
          <button
-            className={`menu-item ${section === "books" ? "active" : ""}`}
-            onClick={() => { setShowSilsilas(false); setSection("books"); }}
-         >
-            <span className="icon"><BooksIcon /></span>
-            <span className="label">Books</span>
-         </button>
-
-         <button
-            className={`menu-item ${section === "biography" ? "active" : ""}`}
-            onClick={() => { setShowSilsilas(false); setSection("biography"); }}
+            className="menu-item"
+            onClick={() => { setShowSilsilas(false); window.location.href = getBiographyUrl(); }}
          >
             <span className="icon"><BiographyIcon /></span>
             <span className="label">Biography</span>
+         </button>
+
+         <button
+            className="menu-item coming-soon"
+            disabled
+            style={{ cursor: 'not-allowed', opacity: 0.5 }}
+         >
+            <span className="icon"><BooksIcon /></span>
+            <span className="label">Books</span>
          </button>
 
          <button
@@ -177,19 +186,12 @@ export default function SideMenu({ section, setSection, isOpen, setIsOpen }) {
          </button>
 
          <button
-            className={`menu-item coming-soon ${section === "graveyards" ? "active" : ""}`}
-            onClick={() => { setShowSilsilas(false); setSection("graveyards"); }}
+            className="menu-item coming-soon"
+            disabled
+            style={{ cursor: 'not-allowed', opacity: 0.5 }}
          >
             <span className="icon"><LocationIcon /></span>
             <span className="label">Graveyards</span>
-         </button>
-
-         <button
-            className={`menu-item ${section === "contribute" ? "active" : ""}`}
-            onClick={() => { setShowSilsilas(false); setSection("contribute"); }}
-         >
-            <span className="icon"><ContributeIcon /></span>
-            <span className="label">Contribute</span>
          </button>
 
          <button

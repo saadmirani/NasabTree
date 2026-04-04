@@ -15,8 +15,6 @@ import Books from "./components/Books";
 import KhanqahList from "./components/KhanqahList";
 import Graveyards from "./components/Graveyards";
 import ContactUs from "./components/ContactUs";
-import Contribute from "./components/contribute";
-import Biography from "./components/Biography";
 import AboutUs from "./components/AboutUs";
 
 export default function App() {
@@ -78,10 +76,8 @@ export default function App() {
           {section === "kharbaiyya" && <NasabKharbaiyya setSection={handleSectionChange} focusPersonId={focusPersonId} />}
           {section === "palasi" && <NasabPalasi setSection={handleSectionChange} focusPersonId={focusPersonId} />}
           {section === "books" && <Books />}
-          {section === "biography" && <Biography />}
           {section === "khanqah" && <KhanqahList />}
           {section === "graveyards" && <Graveyards />}
-          {section === "contribute" && <Contribute />}
           {section === "aboutus" && <AboutUs />}
           {section === "contact" && <ContactUs />}
         </main>
